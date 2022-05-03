@@ -1,0 +1,198 @@
+---
+sidebar: sidebar 
+permalink: reference-configs-aws.html 
+keywords: ec2, instance, type, explore, standard, premium, byol, capacity, maximum, virtual machine, Cloud Volumes ONTAP, supported, configurations, sizes, disks, networking, bandwidth, professional package 
+summary: AWS支援多Cloud Volumes ONTAP 種支援的支援功能。 
+---
+= AWS支援的組態
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+AWS支援多Cloud Volumes ONTAP 種支援的支援功能。
+
+
+
+== 支援的節點數
+
+AWS可在單一節點系統中使用、也可作為高可用度（HA）節點配對、以提供容錯功能和不中斷營運。Cloud Volumes ONTAP
+
+不支援將單一節點系統升級為HA配對。如果您想在單一節點系統和HA配對之間切換、則需要部署新系統、並將資料從現有系統複寫到新系統。
+
+
+
+== 支援的儲存設備
+
+支援多種EBS磁碟類型、以及S3物件儲存、以利資料分層。Cloud Volumes ONTAP最大儲存容量取決於您選擇的授權。
+
+
+
+=== 依授權提供儲存支援
+
+每個授權都支援不同的最大系統容量。最大系統容量包括磁碟型儲存設備、以及用於資料分層的物件式儲存設備。NetApp不支援超過此限制。
+
+[cols="h,d,d,d,d,d,d"]
+|===
+|  | Freemium | PAYGO瀏覽 | PAYGO標準 | PAYGO Premium | 節點型授權 | 容量型授權 
+
+
+| 最大系統容量（磁碟+物件儲存）^1^ | 500 GiB | 2 TiB | 10 TiB | 368TiB ^2^ | 每個授權368TiB ^2^ | 2 PIB ^2^ 
+
+
+| 支援的磁碟類型  a| 
+* 通用SSD（GP3和gp2）^3^
+* 已配置的IOPS SSD（IO1）^3^
+* 處理量最佳化的HDD（ST1）^4^
+
+
+
+
+| 冷資料分層至S3 | 支援 | 不支援 4+| 支援 
+|===
+. 對於HA配對、容量限制是針對整個HA配對。不是每個節點。例如、如果您使用Premium授權、則兩個節點之間最多可有368TiB的容量。
+. 在某些組態中、磁碟限制會讓您無法單獨使用磁碟來達到容量限制。在這些情況下、您可以達到容量上限 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-data-tiering.html["將非作用中資料分層至物件儲存設備"^]。如需磁碟限制的相關資訊、請參閱 link:reference-limits-aws.html["儲存限制"]。
+. 除了Cloud Volumes ONTAP PAYGO Explore之外、使用SSD搭配所有的支援功能組態時、都會啟用增強的寫入效能。
+. 使用處理量最佳化的HDD（ST1）時、不建議將資料分層至物件儲存設備。
+
+
+
+
+=== 支援的磁碟大小
+
+在AWS中、Aggregate最多可包含6個相同類型和大小的磁碟。
+
+[cols="3*"]
+|===
+| 通用SSD（GP3和gp2） | 已配置的IOPS SSD（IO1） | 處理量最佳化的HDD（ST1） 
+
+
+ a| 
+* 100 GiB
+* 500 GiB
+* 1 TiB
+* 2 TiB
+* 4 TiB
+* 6 TiB
+* 8 TiB
+* 16 TiB
+
+ a| 
+* 100 GiB
+* 500 GiB
+* 1 TiB
+* 2 TiB
+* 4 TiB
+* 6 TiB
+* 8 TiB
+* 16 TiB
+
+ a| 
+* 500 GiB
+* 1 TiB
+* 2 TiB
+* 4 TiB
+* 6 TiB
+* 8 TiB
+* 16 TiB
+
+
+|===
+
+
+== 支援的EC2運算
+
+每Cloud Volumes ONTAP 個支援不同EC2執行個體類型的支援。為了方便起見、下表顯示每種支援執行個體類型的vCPU、RAM和頻寬。 https://aws.amazon.com/ec2/instance-types/["您應該參閱AWS以取得EC2執行個體類型的最新完整詳細資料"^]。
+
+下表所示的頻寬與每個執行個體類型的AWS記錄限制相符。這些限制並不完全符合Cloud Volumes ONTAP 本公司所能提供的功能。如需預期效能、請參閱 https://www.netapp.com/us/media/tr-4383.pdf["NetApp 技術報告 4383 ： Cloud Volumes ONTAP 運用應用程式工作負載、將 Amazon Web Services 中的功能特性化"^]。
+
+[cols="8*"]
+|===
+| 授權 | 支援的執行個體 | VCPU | RAM | Flash Cache（快閃快取）^1^ | 網路頻寬（Gbps） | EBS頻寬（Mbps） | 高速寫入速度^2^ 
+
+
+| *瀏覽或任何其他授權* | M5.xLarge | 4. | 16 | 不支援 | 最多10個 | 最多4、750次 | 支援（僅限單一節點） 
+
+
+.3+| *標準或任何其他授權* | R5.xlarge | 4. | 32 | 不支援 | 最多10個 | 最多4、750次 | 支援（僅限單一節點） 
+
+
+| m5a.2xlarge | 8. | 32 | 不支援 | 最多10個 | 最多2、880 | 支援 
+
+
+| m5.2xLarge | 8. | 32 | 不支援 | 最多10個 | 最多4、750次 | 支援 
+
+
+.19+| *高級版或任何其他授權* | m5n.2xlarge | 8. | 32 | 不支援 | 最多25個 | 最多4、750次 | 支援 
+
+
+| r5.2xlarge | 8. | 64 | 不支援 | 最多10個 | 最多4、750次 | 支援 
+
+
+| r5d.2xlarge | 8. | 64 | 支援 | 最多10個 | 最多4、750次 | 支援 
+
+
+| c5d.4xlarge | 16 | 32 | 支援 | 最多10個 | 4、570 | 支援 
+
+
+| M5.4xLarge | 16 | 64 | 不支援 | 最多10個 | 4、750 | 支援 
+
+
+| m5d.8xlarge | 32 | 128/128 | 支援 | 10. | 6、800 | 支援 
+
+
+| r5.8xlarge | 32 | 256 | 不支援 | 10. | 6、800 | 支援 
+
+
+| c5.9xlarge | 36 | 72. | 不支援 | 10. | 9、500 | 支援 
+
+
+| c5d.9xlarge | 36 | 72. | 支援 | 10. | 9、500 | 支援 
+
+
+| c5n.9xlarge | 36 | 96 | 不支援 | 50 | 9、500 | 支援 
+
+
+| C5a.12xlarge | 48 ^4^ | 96 | 不支援 | 12. | 4、750 | 支援 
+
+
+| c5.18xlarge | 48 ^4^ | 144. | 不支援 | 25 | 19、000 | 支援 
+
+
+| c5d.18xlarge | 48 ^4^ | 144. | 支援 | 25 | 19、000 | 支援 
+
+
+| m5d.12xlarge | 48 | 192. | 支援 | 12. | 9、500 | 支援 
+
+
+| c5n.18xlarge | 48 ^4^ | 192. | 不支援 | 100 | 19、000 | 支援 
+
+
+| m5a.16xlarge | 48 ^4^ | 256 | 不支援 | 12. | 9、500 | 支援 
+
+
+| m5.16xlarge | 48 ^4^ | 256 | 不支援 | 20 | 13、600 | 支援 
+
+
+| r5.12xlarge ^3^ | 48 | 384.. | 不支援 | 10. | 9、500 | 支援 
+
+
+| m5dn.24xlarge | 48 ^4^ | 384.. | 支援 | 100 | 19、000 | 支援 
+|===
+. 某些執行個體類型包括本機NVMe儲存設備、Cloud Volumes ONTAP 這些儲存設備使用做為_Flash Cache。Flash Cache 可透過即時智慧快取來加速資料存取、快取最近讀取的使用者資料和 NetApp 中繼資料。它適用於隨機讀取密集的工作負載、包括資料庫、電子郵件和檔案服務。所有磁碟區都必須停用壓縮、才能充分發揮 Flash Cache 效能的改善效益。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-flash-cache.html["深入瞭解 Flash Cache"^]。
+. 使用HA配對時、支援大部分執行個體類型的高速寫入速度。Cloud Volumes ONTAP使用單一節點系統時、所有執行個體類型都支援高速寫入。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-write-speed.html["深入瞭解如何選擇寫入速度"^]。
+. r5.12xlarge執行個體類型具有已知的支援限制。如果節點因發生緊急狀況而意外重新開機、系統可能不會收集用於疑難排解的核心檔案、而會造成問題的根本原因。客戶接受風險及有限支援條款、並在發生此情況時承擔所有支援責任。此限制會影響新部署的HA配對和從9.8升級的HA配對。此限制不會影響新部署的單一節點系統。
+. 雖然這些EC2執行個體類型支援超過48個vCPU、Cloud Volumes ONTAP 但支援多達48個vCPU。
+. 當您選擇EC2執行個體類型時、可以指定它是共用執行個體或專屬執行個體。
+. 可在保留或隨需EC2執行個體上執行。Cloud Volumes ONTAP不支援使用其他執行個體類型的解決方案。
+
+
+
+
+== 支援的地區
+
+如需AWS區域支援、請參閱 https://cloud.netapp.com/cloud-volumes-global-regions["Cloud Volumes全球區域"^]。

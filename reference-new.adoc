@@ -1,0 +1,85 @@
+---
+sidebar: sidebar 
+permalink: reference-new.html 
+keywords: 'what"s new, new, features, release notes, enhancements' 
+summary: 包含全新的增強功能。Cloud Volumes ONTAP 
+---
+= 更新功能Cloud Volumes ONTAP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+包含全新的增強功能。Cloud Volumes ONTAP
+
+最新版Cloud Manager也會提供其他功能與增強功能。請參閱 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html["Cloud Manager版本資訊"^] 以取得詳細資料。
+
+
+
+== 9.11.0 P1（2022年5月2日）
+
+目前AWS、Azure和Google Cloud均提供此版本的《解決方案與解決方案Cloud Volumes ONTAP 與解決方案與解決方案與解決方案的相關問題：此版本包含下列增強功能。
+
+
+
+=== 支援AWS的SS3 ONTAP
+
+您現在可以在Cloud Volumes ONTAP AWS中提供來自於支援Microsoft Azure的S3物件儲存設備（已支援Microsoft Azure）。除了傳統的檔案型傳輸協定（例如NFS和SMB）之外、支援S3作為橫向擴充儲存設備的選項。Cloud Volumes ONTAP
+
+請注意下列事項：
+
+* 搭配使用功能的S3的主要用途是ONTAP 一般用途物件儲存區。Cloud Volumes ONTAP
+* 目前、Google Cloud Volumes ONTAP Cloud不支援使用S3傳輸協定。
+* Cloud Manager無法提供ONTAP 任何有關「支援不支援」S3功能的管理功能。
+
+
+https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["瞭解如何在ONTAP 功能區中設定及管理S3物件儲存服務"^]。
+
+
+
+== 升級附註
+
+請閱讀這些附註、深入瞭解升級至此版本的相關資訊。
+
+
+
+=== 如何升級
+
+必須從 Cloud Manager 完成升級。 Cloud Volumes ONTAP您不應 Cloud Volumes ONTAP 使用 System Manager 或 CLI 來升級功能。這樣做可能會影響系統穩定性。
+
+http://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html["瞭解如何在Cloud Manager通知您的情況下進行升級"^]。
+
+
+
+=== 支援的升級途徑
+
+您可以從Cloud Volumes ONTAP 9.10.1版升級至版本的版本。Cloud Manager會提示您將合格Cloud Volumes ONTAP 的更新版升級至此版本。
+
+
+
+=== 所需版本的Connector
+
+Cloud Manager Connector必須執行3.9.18版或更新版本、才能將現有系統升級至9.11.0版。
+
+
+TIP: 連接器的自動升級預設為啟用、因此您應該執行最新版本。
+
+
+
+=== 停機
+
+* 單一節點系統的升級可讓系統離線長達25分鐘、在此期間I/O會中斷。
+* 升級 HA 配對不中斷營運、而且 I/O 不中斷。在此不中斷營運的升級程序中、會同時升級每個節點、以繼續為用戶端提供 I/O 服務。
+
+
+
+
+=== c4、m4和r4執行個體類型
+
+從9.8版開始、新Cloud Volumes ONTAP 版的更新版不支援C4、M4和R4執行個體類型。如果您現有Cloud Volumes ONTAP 的某個執行於c4、m4或r4執行個體類型上的版本、您仍可升級至此版本。
+
+建議變更為c5、m5或R5執行個體系列中的執行個體類型。

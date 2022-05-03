@@ -1,0 +1,37 @@
+---
+sidebar: sidebar 
+permalink: reference-provider-integrations.html 
+keywords: maintenance event, azure maintenance event, cloud provider, issues, support 
+summary: 本頁說明NetApp如何與雲端供應商合作、以解決可能發生的問題。 
+---
+= 雲端供應商整合
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+本頁說明NetApp如何與雲端供應商合作、以解決可能發生的問題。
+
+
+
+== 協作支援最佳實務做法
+
+NetApp致力於為被授權人提供支援、並在Cloud Volumes ONTAP 獲授權人回報時、利用商業上合理的努力來解決有關的技術支援問題。NetApp與適用的雲端供應商對於彼此的授權軟體或基礎架構沒有任何直接支援義務。
+
+NetApp已實作工具、目的是針對可能因適用的雲端供應商服務而導致的客戶技術問題、與適用的雲端供應商建立連結。不過、 維持無縫支援流程的最佳方法是：（i）與NetApp及適用的雲端供應商維持目前的支援合約、以及（ii）在發生技術問題且客戶需要清楚說明時、與NetApp及適用的雲端供應商協調聯合提報會議 導致這些技術問題的產品或服務。
+
+
+
+== Azure維護活動
+
+Microsoft會在Azure虛擬機器（VM）基礎架構上排程並以程式設計方式宣布可能影響Cloud Volumes ONTAP 到某些虛擬機器的維護事件。這些活動會在維護時間前15分鐘公布。
+
+支援針對維護事件進行特殊處理、以利Cloud Volumes ONTAP 實現高可用度（HA）配對。為了維持應用程式健全狀況、我們會執行預防性接管、以排定穩定性的優先順序、因為連線中斷超過15秒將會停用容錯移轉功能。
+
+當維護時段公佈時、目標節點的合作夥伴節點將執行接管。維護完成後、系統會啟動一個恢復功能。恢復之後、HA配對應該會恢復正常狀態。如果沒有發生這種情況、請聯絡NetApp支援部門以尋求協助。請注意、維護事件一次針對HA配對中的其中一個VM、通常兩個節點都會在相對短的時間內鎖定。
+
+使用Cloud Volumes ONTAP 非持續可用CIFS共用的CIFS/SMB用戶端、在發生接管時、以及工作階段所使用的集合體被賦予Aggregate主節點時、都會發生工作階段遺失的情況。這是CIFS/SMB傳輸協定本身所造成的限制。客戶可能希望使用第三方產品、以避免接管和恢復可能產生的問題。如需進一步協助、請聯絡NetApp支援部門。

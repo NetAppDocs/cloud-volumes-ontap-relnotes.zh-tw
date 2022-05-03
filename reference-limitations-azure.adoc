@@ -1,0 +1,44 @@
+---
+sidebar: sidebar 
+permalink: reference-limitations-azure.html 
+keywords: limitations, ha, azure, pay-as-you-go, paygo, cloud solution provider, nfsv3 
+summary: 這些已知限制僅適用於Cloud Volumes ONTAP Microsoft Azure中的某些功能。 
+---
+= Azure的已知限制
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+下列已知限制僅適用於Cloud Volumes ONTAP Microsoft Azure中的功能。請務必同時檢閱 link:reference-limitations.html["所有雲端供應商的不完整功能Cloud Volumes ONTAP"]。
+
+
+
+== Flash Cache限制
+
+Standard_L8s_v2 VM類型包含本機NVMe儲存設備、Cloud Volumes ONTAP 此儲存設備用作_Flash Cache。請注意Flash Cache的下列限制：
+
+* 所有磁碟區都必須停用壓縮、才能充分發揮 Flash Cache 效能的改善效益。
++
+從Cloud Manager建立磁碟區時、您可以選擇「無儲存效率」、也可以先建立磁碟區、然後再建立 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-vsmg/GUID-8508A4CB-DB43-4D0D-97EB-859F58B29054.html["使用 CLI 停用資料壓縮"^]。
+
+* 重新開機後的快取重新溫熱功能不支援 Cloud Volumes ONTAP 使用此功能。
+
+
+
+
+== HA 限制
+
+某些地區不支援HA配對。
+
+https://cloud.netapp.com/cloud-volumes-global-regions["檢視支援的Azure地區清單"^]。
+
+
+
+== CSP合作夥伴無法使用「隨用隨付」
+
+如果您是Microsoft Cloud Solution Provider（CSP）合作夥伴、則無法部署Cloud Volumes ONTAP SfExplore、Standard或Premium、因為CSP合作夥伴無法使用隨用付費訂閱。您必須購買授權並部署Cloud Volumes ONTAP BYOL。

@@ -1,0 +1,110 @@
+---
+sidebar: sidebar 
+permalink: reference-limitations.html 
+keywords: limitations, detaching, snapmanager, features, disks, aggregates, features, svm 
+summary: 已知限制指出本產品版本不支援的平台、裝置或功能、或是無法與產品正確互通的平台、裝置或功能。請仔細檢閱這些限制。 
+---
+= 所有雲端供應商的限制
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+已知限制指出本產品版本不支援的平台、裝置或功能、或是無法與產品正確互通的平台、裝置或功能。請仔細檢閱這些限制。
+
+下列限制適用於Cloud Volumes ONTAP 所有雲端供應商的解決方案：AWS、Azure和Google Cloud。
+
+
+
+== 最大並行複寫作業數
+
+無論執行個體類型或機器類型為何、每個節點的並行SnapMirror或SnapVault 支援Cloud Volumes ONTAP 物件傳輸數量上限為100。
+
+
+
+== 雲端供應商快照不得用於您的備份與還原計畫
+
+您不應將雲端供應商的快照作為Cloud Volumes ONTAP 還原資料的備份與恢復計畫的一部分。您應該一律使用ONTAP 「不間斷快照複本」或第三方備份解決方案來備份及還原Cloud Volumes ONTAP 以「支援」為主的資料。
+
+https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["瞭解如何使用Cloud Backup Service 此功能來備份及還原ONTAP 還原不知道的資料"^]。
+
+
+NOTE: 由資料一致性決定資料一致性。ONTAP WAFL只ONTAP 有當WAFL 機時、才能靜止不動的檔案系統來進行一致的備份。
+
+
+
+== 中國地區的支援
+
+支援中國地區的下列項目。Cloud Volumes ONTAP
+
+* 支援AWS中國地區的支援區域為支援區域9.6。Cloud Volumes ONTAP
+* 支援單一節點系統。
+* 支援直接向NetApp購買的授權。
+
+
+不支援所有其他位置、版本、組態和授權。
+
+
+
+== 支援保留和隨需VM執行個體Cloud Volumes ONTAP
+
+可在雲端供應商的保留或隨需VM執行個體上執行。Cloud Volumes ONTAP不支援其他類型的VM執行個體。
+
+
+
+== 不應使用自動應用程式資源管理解決方案
+
+自動應用程式資源管理解決方案不應管理Cloud Volumes ONTAP 功能完善的系統。否則可能會變更不受支援的組態。例如、解決方案Cloud Volumes ONTAP 可能會變更為不受支援的VM執行個體類型。
+
+
+
+== 軟體更新必須由Cloud Manager完成
+
+必須從 Cloud Manager 完成升級。 Cloud Volumes ONTAP您不應 Cloud Volumes ONTAP 使用 System Manager 或 CLI 來升級功能。這樣做可能會影響系統穩定性。
+
+
+
+== 不得從雲端供應商的主控台修改部署Cloud Volumes ONTAP
+
+從Cloud Volumes ONTAP 雲端供應商的主控台變更支援的支援功能組態、會導致不受支援的組態設定。Cloud Manager所建立及管理的任何更新、都可能影響系統穩定性及Cloud Manager管理系統的能力。Cloud Volumes ONTAP
+
+
+
+== 磁碟和集合體必須從Cloud Manager進行管理
+
+所有磁碟和集合體都必須直接從 Cloud Manager 建立和刪除。您不應從其他管理工具執行這些動作。這樣做可能會影響系統穩定性、阻礙未來新增磁碟的能力、並可能產生備援雲端供應商費用。
+
+
+
+== 不受授權限制SnapManager
+
+支援以伺服器為單位的各個伺服器授權。SnapManager Cloud Volumes ONTAP不SnapManager 支援每個儲存系統（不支援此套件）授權。
+
+
+
+== 不支援ONTAP 的支援功能
+
+下列功能Cloud Volumes ONTAP 不支援使用下列功能：
+
+* Aggregate層級即時重複資料刪除技術
+* Aggregate層級背景重複資料刪除技術
+* 磁碟維護中心
+* 磁碟資料抹除
+* 鏡射FabricPool
+* 光纖通道（FC）
+* Flash資源池
+* 無限Volume
+* 介面群組
+* 內部網路模式LIF容錯移轉
+* MetroCluster
+* Google Cloud中的S3（Azure和AWS支援S3傳輸協定）ONTAP
+* RAID4、RAID-DP、RAID-TEC 功能（支援RAID0）
+* 服務處理器
+* 支援一致性與企業模式（僅支援Cloud WORM）SnapLock
+* SnapMirror同步
+* VLAN
+

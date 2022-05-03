@@ -1,0 +1,16 @@
+---
+layout: astra 
+sidebar: sidebar 
+permalink: index.html 
+lead: These release notes describe new features, limitations, and known issues for Cloud Volumes ONTAP 9.11.0. 
+summary: 這些版本說明Cloud Volumes ONTAP 介紹有關發行版的功能、限制和已知問題。 
+---
+= 《》發行說明Cloud Volumes ONTAP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+

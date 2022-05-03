@@ -1,0 +1,210 @@
+---
+sidebar: sidebar 
+permalink: reference-limits-gcp.html 
+keywords: limits, maximum, storage, aggregates, disks, volumes, capacity, luns, size, storage virtual machine, SVM 
+summary: 在Google Cloud中、由於儲存組態限制、可提供可靠的作業。Cloud Volumes ONTAP為獲得最佳效能、請勿將系統設定為最大值。 
+---
+= Google Cloud的儲存限制
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+提供可靠作業的儲存組態限制。Cloud Volumes ONTAP為獲得最佳效能、請勿將系統設定為最大值。
+
+
+
+== 依授權提供的最大系統容量
+
+整個系統的最大容量Cloud Volumes ONTAP 取決於其授權。最大系統容量包括磁碟型儲存設備、以及用於資料分層的物件式儲存設備。
+
+NetApp不支援超過系統容量限制。如果您達到授權容量上限、Cloud Manager會顯示必要行動訊息、不再允許您新增其他磁碟。
+
+在某些組態中、磁碟限制會讓您無法單獨使用磁碟來達到容量限制。您可以達到容量上限 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-data-tiering.html["將非作用中資料分層至物件儲存設備"^]。如需詳細資料、請參閱下列磁碟限制。
+
+[cols="25,75"]
+|===
+| 授權 | 最大系統容量（磁碟+物件儲存） 
+
+
+| Freemium | 500 GB 
+
+
+| PAYGO瀏覽 | 2 TB（Explore不支援資料分層） 
+
+
+| PAYGO標準 | 10 TB 
+
+
+| PAYGO Premium | 3668 TB 
+
+
+| 節點型授權 | 每個授權368TB 
+
+
+| 容量型授權 | 2 PIB 
+|===
+
+
+===== 對於HA配對、每個節點或整個HA配對的授權容量限制是多少？
+
+容量限制適用於整個HA配對。不是每個節點。例如、如果您使用Premium授權、則兩個節點之間最多可有368TB的容量。
+
+
+
+===== 對於HA配對、鏡射資料是否會根據授權容量限制計算？
+
+不、這不需要。HA配對中的資料會在節點之間同步鏡射、以便在Google Cloud發生故障時提供資料。例如、如果您在節點A上購買8 TB磁碟、Cloud Manager也會在節點B上配置8 TB磁碟、用於鏡射資料。雖然已配置16 TB容量、但根據授權上限、僅需8 TB。
+
+
+
+== 磁碟和分層限制
+
+下表顯示單一磁碟的最大系統容量、以及磁碟和冷資料分層至物件儲存設備的最大系統容量。磁碟限制僅適用於包含使用者資料的磁碟。限制不包括開機磁碟和根磁碟。
+
+[cols="60,40"]
+|===
+| 參數 | 限制 
+
+
+| 最大資料磁碟數  a| 
+* 124適用於單一節點系統
+* 每個節點123個、適用於HA配對
+
+
+
+
+| 最大磁碟大小 | 64 TB 
+
+
+| 僅使用磁碟即可獲得最大系統容量 | 256 TB ^1^ 
+
+
+| 利用磁碟和冷資料分層、將系統容量最大化至Google Cloud Storage儲存庫 | 視授權而定。請參閱上表。 
+|===
+此限制是由Google Cloud Platform中的虛擬機器限制所定義。
+
+
+
+== Aggregate限制
+
+可將Google Cloud Platform磁碟分組為_aggregate。Cloud Volumes ONTAPAggregate可為磁碟區提供儲存設備。
+
+[cols="2*"]
+|===
+| 參數 | 限制 
+
+
+| 最大資料集合數^1^  a| 
+* 99個用於單一節點
+* 64個（用於整個HA配對）
+
+
+
+
+| 最大Aggregate大小 | 256 TB原始容量^2^ 
+
+
+| 每個集合體的磁碟數 | 1-6 ^3^ 
+
+
+| 每個Aggregate的RAID群組數目上限 | 1. 
+|===
+附註：
+
+. 資料集合體的最大數量不包括根Aggregate。
+. Aggregate容量限制是根據組成Aggregate的磁碟而來。此限制不包括用於資料分層的物件儲存設備。
+. 集合體中的所有磁碟大小必須相同。
+
+
+
+
+== 邏輯儲存限制
+
+[cols="22,22,56"]
+|===
+| 邏輯儲存設備 | 參數 | 限制 
+
+
+| *儲存虛擬機器（SVM）* | 最大Cloud Volumes ONTAP 數目（HA配對或單一節點） | 一個資料服務SVM和一個目的地SVM、用於災難恢復。如果來源SVM發生中斷、您可以啟動目的地SVM進行資料存取。一部資料服務SVM橫跨Cloud Volumes ONTAP 整個整個作業系統（HA配對或單一節點）。 
+
+
+.2+| *檔案* | 最大尺寸 | 16 TB 
+
+
+| 每個Volume的最大值 | 磁碟區大小視情況而定、高達20億 
+
+
+| * FlexClone Volumes * | 階層式複製深度^2^ | 499年 
+
+
+.3+| *《*》卷* FlexVol | 每個節點的最大值 | 500 
+
+
+| 最小尺寸 | 20 MB 
+
+
+| 最大尺寸 | 100 TB 
+
+
+| * qtree * | 每FlexVol 個速度區塊的最大值 | 4、995 
+
+
+| * Snapshot複本* | 每FlexVol 個速度區塊的最大值 | 1、023 
+|===
+附註：
+
+. Cloud Manager不提供任何SVM災難恢復的設定或協調支援。它也不支援其他SVM上的儲存相關工作。您必須使用System Manager或CLI進行SVM災難恢復。
++
+** https://library.netapp.com/ecm/ecm_get_file/ECMLP2839856["SVM 災難恢復準備快速指南"^]
+** https://library.netapp.com/ecm/ecm_get_file/ECMLP2839857["SVM Disaster Recovery Express 指南"^]
+
+
+. 階層式複製深度是FlexClone Volume的巢狀階層架構深度上限、可從單FlexVol 一的實體磁碟區建立。
+
+
+
+
+== iSCSI儲存限制
+
+[cols="3*"]
+|===
+| iSCSI儲存設備 | 參數 | 限制 
+
+
+.4+| * LUN* | 每個節點的最大值 | 1 、 024 
+
+
+| LUN對應的最大數目 | 1 、 024 
+
+
+| 最大尺寸 | 16 TB 
+
+
+| 每個Volume的最大值 | 512 
+
+
+| *群組* | 每個節點的最大值 | 256 
+
+
+.2+| *啟動器* | 每個節點的最大值 | 512 
+
+
+| 每個igroup的最大值 | 128/128 
+
+
+| * iSCSI工作階段* | 每個節點的最大值 | 1 、 024 
+
+
+.2+| *生命* | 每個連接埠的上限 | 1. 
+
+
+| 每個連接埠集的上限 | 32 
+
+
+| * PortSets* | 每個節點的最大值 | 256 
+|===

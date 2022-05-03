@@ -1,0 +1,278 @@
+---
+sidebar: sidebar 
+permalink: reference-configs-azure.html 
+keywords: vm, explore, standard, premium, byol, capacity, maximum, virtual machine, Cloud Volumes ONTAP, supported, configurations, disks, sizes 
+summary: Azure支援多Cloud Volumes ONTAP 種支援的支援功能。 
+---
+= Azure支援的組態
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Azure支援多Cloud Volumes ONTAP 種支援的支援功能。
+
+
+
+== 依授權支援的組態
+
+Azure中提供的支援可作為單一節點系統、以及高可用度（HA）節點配對、以提供容錯能力和不中斷營運。Cloud Volumes ONTAP
+
+不支援將單一節點系統升級為HA配對。如果您想在單一節點系統和HA配對之間切換、則需要部署新系統、並將資料從現有系統複寫到新系統。
+
+
+
+=== 單一節點系統
+
+當您在Cloud Volumes ONTAP Azure中部署以單節點系統的方式部署時、可以從下列組態中進行選擇：
+
+[cols="h,d,d,d,d,d,d"]
+|===
+|  | Freemium | PAYGO瀏覽 | PAYGO標準 | PAYGO Premium | 節點型授權 | 容量型授權 
+
+
+| 最大系統容量（磁碟+物件儲存） | 500 GiB | 2 TiB ^1^ | 10 TiB | 368TiB | 每個授權368TiB | 2 PIB 
+
+
+| 支援的虛擬機器類型  a| 
+* DS4_v2
+* DS5_v2
+* DS13_v2
+* DS14_v2
+* DS15_v2
+* L8s_v2 ^2^
+* E4s_v3
+* E8s_v3
+* E32s_v3 ^3^
+* E48s_v3 ^3^
+* E64is_v3 ^3^
+* E4ds_v4 ^3^
+* E8ds_v4 ^3^
+* E32ds_v4 ^3^
+* E48ds_v4 ^3^
+* E80ids_v4 ^3^
+
+ a| 
+* E4s_v3
+* E4ds_v4 ^3^
+
+ a| 
+* DS4_v2
+* DS13_v2
+* E8s_v3
+* E8ds_v4 ^3^
+
+ a| 
+* DS5_v2
+* DS14_v2
+* DS15_v2
+* E32s_v3 ^3^
+* E48s_v3 ^3^
+* E64is_v3 ^3^
+* E32ds_v4 ^3^
+* E48ds_v4 ^3^
+* E80ids_v4 ^3^
+
+ a| 
+* DS4_v2
+* DS5_v2
+* DS13_v2
+* DS14_v2
+* DS15_v2
+* L8s_v2 ^2^
+* E4s_v3
+* E8s_v3
+* E32s_v3 ^3^
+* E48s_v3 ^3^
+* E64is_v3 ^3^
+* E4ds_v4 ^3^
+* E8ds_v4 ^3^
+* E32ds_v4 ^3^
+* E48ds_v4 ^3^
+* E80ids_v4 ^3^
+
+ a| 
+* DS4_v2
+* DS5_v2
+* DS13_v2
+* DS14_v2
+* DS15_v2
+* L8s_v2 ^2^
+* E4s_v3
+* E8s_v3
+* E32s_v3 ^3^
+* E48s_v3 ^3^
+* E64is_v3 ^3^
+* E4ds_v4 ^3^
+* E8ds_v4 ^3^
+* E32ds_v4 ^3^
+* E48ds_v4 ^3^
+* E80ids_v4 ^3^
+
+
+
+
+| 支援的磁碟類型^4^ 6+| 標準HDD託管磁碟、標準SSD託管磁碟和優質SSD託管磁碟 
+|===
+附註：
+
+. PAYGO Explore不支援資料分層至Azure Blob儲存設備。
+. 這種VM類型包括本機NVMe儲存設備、Cloud Volumes ONTAP 這些儲存設備以_Flash Cache的形式使用。Flash Cache 可透過即時智慧快取來加速資料存取、快取最近讀取的使用者資料和 NetApp 中繼資料。它適用於隨機讀取密集的工作負載、包括資料庫、電子郵件和檔案服務。所有磁碟區都必須停用壓縮、才能充分發揮 Flash Cache 效能的改善效益。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-flash-cache.html["深入瞭解"^]。
+. 這些VM類型使用 https://docs.microsoft.com/en-us/azure/virtual-machines/windows/disks-enable-ultra-ssd["超SSD"^] 適用於VNVRAM、可提供更佳的寫入效能。
++
+如果您在部署新Cloud Volumes ONTAP 的支援系統時選擇任何一種VM類型、就無法改用另一種VM類型、也就是_不使用適用於VNVRAM的Ultra SSD。例如、您無法從E8ds_v4變更為E8s_v3、但您可以從E8ds_v4變更為E32ds_v4、因為這兩種VM類型都使用Ultra SSD。
+
++
+相反地、如果您Cloud Volumes ONTAP 使用任何其他VM類型來部署支援功能、您將無法變更為使用Ultra SSD來執行VNVRAM的VM類型。例如、您無法從E8s_v3變更為E8ds_v4。
+
+. 使用SSD時可啟用增強的寫入效能。
+. 如需Azure地區支援、請參閱 https://cloud.netapp.com/cloud-volumes-global-regions["Cloud Volumes全球區域"^]。
+. 可在雲端供應商的保留或隨需VM執行個體上執行。Cloud Volumes ONTAP不支援使用其他VM執行個體類型的解決方案。
+
+
+
+
+=== HA 配對
+
+在Cloud Volumes ONTAP Azure中部署以HA配對形式部署的時、您可以從下列組態中進行選擇。
+
+[cols="h,d,d,d,d,d"]
+|===
+|  | Freemium | PAYGO標準 | PAYGO Premium | 節點型授權 | 容量型授權 
+
+
+| 最大系統容量（磁碟+物件儲存） | 500 GiB | 10 TiB | 368TiB | 每個授權368TiB | 2 PIB 
+
+
+| 支援的虛擬機器類型  a| 
+* DS4_v2
+* DS5_v2 ^1^
+* DS13_v2
+* DS14_v2 ^1^
+* DS15_v2 ^1^
+* E8s_v3
+* E48s_v3 ^1^
+* E8ds_v4 ^1^
+* E32ds_v4 ^1^
+* E48ds_v4 ^1^
+* E80ids_v4 ^2^
+
+ a| 
+* DS4_v2
+* DS13_v2
+* E8ds_v4 ^1^
+
+ a| 
+* DS5_v2 ^1^
+* DS14_v2 ^1^
+* DS15_v2 ^1^
+* E8s_v3
+* E48s_v3 ^1^
+* E32ds_v4 ^1^
+* E48ds_v4 ^1^
+* E80ids_v4 ^2^
+
+ a| 
+* DS4_v2
+* DS5_v2 ^1^
+* DS13_v2
+* DS14_v2 ^1^
+* DS15_v2 ^1^
+* E8s_v3
+* E48s_v3 ^1^
+* E8ds_v4 ^1^
+* E32ds_v4 ^1^
+* E48ds_v4 ^1^
+* E80ids_v4 ^2^
+
+ a| 
+* DS4_v2
+* DS5_v2 ^1^
+* DS13_v2
+* DS14_v2 ^1^
+* DS15_v2 ^1^
+* E8s_v3
+* E48s_v3 ^1^
+* E8ds_v4 ^1^
+* E32ds_v4 ^1^
+* E48ds_v4 ^1^
+* E80ids_v4 ^2^
+
+
+
+
+| 支援的磁碟類型 5+| 優質網頁 
+|===
+附註：
+
+. 使用HA配對時、支援這些VM類型的高速寫入速度。Cloud Volumes ONTAP使用單一節點系統時、所有執行個體類型都支援高速寫入。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-write-speed.html["深入瞭解如何選擇寫入速度"^]。
+. 建議僅在需要Azure維護控管時才使用此VM。由於價格較高、因此不建議用於任何其他使用案例。
+. Azure中的HA配對不支援PAYGO Explore。
+. 如需Azure地區支援、請參閱 https://cloud.netapp.com/cloud-volumes-global-regions["Cloud Volumes全球區域"^]。
+. 可在雲端供應商的保留或隨需VM執行個體上執行。Cloud Volumes ONTAP不支援使用其他VM執行個體類型的解決方案。
+
+
+
+
+== 支援的磁碟大小
+
+在Azure中、Aggregate最多可包含12個相同類型和大小的磁碟。
+
+
+
+=== 單一節點系統
+
+單一節點系統使用Azure託管磁碟。支援下列磁碟大小：
+
+[cols="3*"]
+|===
+| 優質SSD | 標準SSD | 標準HDD 
+
+
+ a| 
+* 500 GiB
+* 1 TiB
+* 2 TiB
+* 4 TiB
+* 8 TiB
+* 16 TiB
+* 32 TiB
+
+ a| 
+* 100 GiB
+* 500 GiB
+* 1 TiB
+* 2 TiB
+* 4 TiB
+* 8 TiB
+* 16 TiB
+* 32 TiB
+
+ a| 
+* 100 GiB
+* 500 GiB
+* 1 TiB
+* 2 TiB
+* 4 TiB
+* 8 TiB
+* 16 TiB
+* 32 TiB
+
+
+|===
+
+
+=== HA 配對
+
+HA配對使用優質網頁瀏覽器。支援下列磁碟大小：
+
+* 500 GiB
+* 1 TiB
+* 2 TiB
+* 4 TiB
+* 8 TiB
+

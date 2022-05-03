@@ -1,0 +1,497 @@
+---
+sidebar: sidebar 
+permalink: reference-limits-azure.html 
+keywords: limits, maximum, storage, aggregates, disks, volumes, capacity, luns, size, storage virtual machine, SVM, page blobs, ebs, managed disks 
+summary: 在Azure中、由於儲存組態限制、因此可提供可靠的作業。Cloud Volumes ONTAP為獲得最佳效能、請勿將系統設定為最大值。 
+---
+= Azure的儲存限制
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+提供可靠作業的儲存組態限制。Cloud Volumes ONTAP為獲得最佳效能、請勿將系統設定為最大值。
+
+
+
+== 依授權提供的最大系統容量
+
+整個系統的最大容量Cloud Volumes ONTAP 取決於其授權。最大系統容量包括磁碟型儲存設備、以及用於資料分層的物件式儲存設備。
+
+NetApp不支援超過系統容量限制。如果您達到授權容量上限、Cloud Manager會顯示必要行動訊息、不再允許您新增其他磁碟。
+
+[cols="25,75"]
+|===
+| 授權 | 最大系統容量（磁碟+物件儲存） 
+
+
+| Freemium | 500 GiB 
+
+
+| PAYGO瀏覽 | 2 TiB（Explore不支援資料分層） 
+
+
+| PAYGO標準 | 10 TiB 
+
+
+| PAYGO Premium | 368TiB 
+
+
+| 節點型授權 | 每個授權368TiB 
+
+
+| 容量型授權 | 2 PIB 
+|===
+
+
+===== 對於HA、每個節點或整個HA配對的授權容量限制是多少？
+
+容量限制適用於整個HA配對。不是每個節點。例如、如果您使用Premium授權、則兩個節點之間最多可有368TiB的容量。
+
+
+
+== 磁碟和分層限制、依VM大小而定
+
+下列磁碟限制僅適用於包含使用者資料的磁碟。限制不包括根磁碟、核心磁碟和VNVRAM。
+
+下表顯示單一磁碟、以及磁碟和冷資料分層至物件儲存設備的VM大小上限。
+
+* 單一節點系統可使用標準HDD託管磁碟、標準SSD託管磁碟和優質SSD託管磁碟、每個磁碟最多32 TiB。支援的磁碟數量會因VM大小而異。
+* HA系統使用優質頁面區塊做為磁碟、每頁區塊最多8個TiB。支援的磁碟數量會因VM大小而異。
+
+
+
+NOTE: 您可以購買Cloud Volumes ONTAP 多個節點型授權給某個不支援的解決方案、以分配超過3668 TiB的容量。單一節點系統或 HA 配對可購買的授權數量不受限制。請注意、磁碟限制可能會讓您無法單獨使用磁碟來達到容量限制。您可以超越磁碟限制 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-data-tiering.html["將非作用中資料分層至物件儲存設備"^]。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html["瞭解如何將額外的系統授權新增Cloud Volumes ONTAP 至功能完善"^]。
+
+
+
+=== 具有Premium授權的單一節點
+
+[cols="14,20,31,33"]
+|===
+| VM大小 | 每個節點的實體磁碟數MAX Data | 僅使用磁碟就能達到最大系統容量 | 利用磁碟和資料分層來最大化系統容量 
+
+
+| DS5_v2 | 61. | 368TiB | 368TiB 
+
+
+| DS14_v2 | 61. | 368TiB | 368TiB 
+
+
+| DS15_v2 | 61. | 368TiB | 368TiB 
+
+
+| E32s_v3 | 29 | 368TiB | 368TiB 
+
+
+| E48s_v3 | 29 | 368TiB | 368TiB 
+
+
+| E64is_v3 | 29 | 368TiB | 368TiB 
+
+
+| E32ds_v4 | 29 | 368TiB | 368TiB 
+
+
+| E48ds_v4 | 29 | 368TiB | 368TiB 
+
+
+| E80ids_v4 | 61. | 368TiB | 368TiB 
+|===
+
+
+=== 具有節點型授權的單一節點
+
+
+NOTE: 對於某些VM類型、您需要數個BYOL授權、才能達到下列系統容量上限。例如、您需要6個BYOL授權、才能使用DS5_v2達到1.95 PIB。
+
+[cols="10,18,18,18,18,18"]
+|===
+| VM大小 | 每個節點的實體磁碟數MAX Data 2+| 單一授權即可達到最大系統容量 2+| 最多可容納多個授權的系統容量 
+
+
+2+|  | *單獨磁碟* | *磁碟+資料分層* | *單獨磁碟* | *磁碟+資料分層* 
+
+
+| DS4_v2 | 29 | 368TiB | 368TiB | 928 TiB | 每個授權使用368TiB 
+
+
+| DS5_v2 | 61. | 368TiB | 368TiB | 1.95 PIB | 每個授權使用368TiB 
+
+
+| DS13_v2 | 29 | 368TiB | 368TiB | 928 TiB | 每個授權使用368TiB 
+
+
+| DS14_v2 | 61. | 368TiB | 368TiB | 1.95 PIB | 每個授權使用368TiB 
+
+
+| DS15_v2 | 61. | 368TiB | 368TiB | 1.95 PIB | 每個授權使用368TiB 
+
+
+| L8s_v2 | 13. | 368TiB | 368TiB | 416 TiB | 每個授權使用368TiB 
+
+
+| E4s_v3 | 5. | 160 TiB | 368TiB | 160 TiB | 每個授權使用368TiB 
+
+
+| E8s_v3 | 13. | 368TiB | 368TiB | 416 TiB | 每個授權使用368TiB 
+
+
+| E32s_v3 | 29 | 368TiB | 368TiB | 928 TiB | 每個授權使用368TiB 
+
+
+| E48s_v3 | 29 | 368TiB | 368TiB | 928 TiB | 每個授權使用368TiB 
+
+
+| E64is_v3 | 29 | 368TiB | 368TiB | 928 TiB | 每個授權使用368TiB 
+
+
+| E4ds_v4 | 5. | 160 TiB | 368TiB | 160 TiB | 每個授權使用368TiB 
+
+
+| E8ds_v4 | 13. | 368TiB | 368TiB | 416 TiB | 每個授權使用368TiB 
+
+
+| E32ds_v4 | 29 | 368TiB | 368TiB | 928 TiB | 每個授權使用368TiB 
+
+
+| E48ds_v4 | 29 | 368TiB | 368TiB | 928 TiB | 每個授權使用368TiB 
+
+
+| E80ids_v4 | 61. | 368TiB | 368TiB | 1.95 PIB | 每個授權使用368TiB 
+|===
+
+
+=== 具有容量型授權的單一節點
+
+[cols="14,20,31,33"]
+|===
+| VM大小 | 每個節點的實體磁碟數MAX Data | 僅使用磁碟就能達到最大系統容量 | 利用磁碟和資料分層來最大化系統容量 
+
+
+| DS4_v2 | 29 | 928 TiB | 2 PIB 
+
+
+| DS5_v2 | 61. | 1.95 PIB | 2 PIB 
+
+
+| DS13_v2 | 29 | 928 TiB | 2 PIB 
+
+
+| DS14_v2 | 61. | 1.95 PIB | 2 PIB 
+
+
+| DS15_v2 | 61. | 1.95 PIB | 2 PIB 
+
+
+| L8s_v2 | 13. | 416 TiB | 2 PIB 
+
+
+| E4s_v3 | 5. | 160 TiB | 2 PIB 
+
+
+| E8s_v3 | 13. | 416 TiB | 2 PIB 
+
+
+| E32s_v3 | 29 | 928 TiB | 2 PIB 
+
+
+| E48s_v3 | 29 | 928 TiB | 2 PIB 
+
+
+| E64is_v3 | 29 | 928 TiB | 2 PIB 
+
+
+| E4ds_v4 | 5. | 160 TiB | 2 PIB 
+
+
+| E8ds_v4 | 13. | 416 TiB | 2 PIB 
+
+
+| E32ds_v4 | 29 | 928 TiB | 2 PIB 
+
+
+| E48ds_v4 | 29 | 928 TiB | 2 PIB 
+
+
+| E80ids_v4 | 61. | 1.95 PIB | 2 PIB 
+|===
+
+
+=== HA與Premium授權配對
+
+[cols="14,20,31,33"]
+|===
+| VM大小 | HA配對的實體磁碟MAX Data | 僅使用磁碟就能達到最大系統容量 | 利用磁碟和資料分層來最大化系統容量 
+
+
+| DS5_v2 | 61. | 368TiB | 368TiB 
+
+
+| DS14_v2 | 61. | 368TiB | 368TiB 
+
+
+| DS15_v2 | 61. | 368TiB | 368TiB 
+
+
+| E8s_v3 | 13. | 104 TiB | 368TiB 
+
+
+| E48s_v3 | 29 | 232TiB | 368TiB 
+
+
+| E32ds_v4 | 29 | 232TiB | 368TiB 
+
+
+| E48ds_v4 | 29 | 232TiB | 368TiB 
+
+
+| E80ids_v4 | 61. | 368TiB | 368TiB 
+|===
+
+
+=== HA與節點型授權配對
+
+[cols="10,18,18,18,18,18"]
+|===
+| VM大小 | HA配對的實體磁碟MAX Data 2+| 單一授權即可達到最大系統容量 2+| 最多可容納多個授權的系統容量 
+
+
+2+|  | *單獨磁碟* | *磁碟+資料分層* | *單獨磁碟* | *磁碟+資料分層* 
+
+
+| DS4_v2 | 29 | 232TiB | 368TiB | 232TiB | 每個授權使用368TiB 
+
+
+| DS5_v2 | 61. | 368TiB | 368TiB | 488TiB | 每個授權使用368TiB 
+
+
+| DS13_v2 | 29 | 232TiB | 368TiB | 232TiB | 每個授權使用368TiB 
+
+
+| DS14_v2 | 61. | 368TiB | 368TiB | 488TiB | 每個授權使用368TiB 
+
+
+| DS15_v2 | 61. | 368TiB | 368TiB | 488TiB | 每個授權使用368TiB 
+
+
+| E8s_v3 | 13. | 104 TiB | 368TiB | 104 TiB | 每個授權使用368TiB 
+
+
+| E48s_v3 | 29 | 232TiB | 368TiB | 232TiB | 每個授權使用368TiB 
+
+
+| E8ds_v4 | 13. | 104 TiB | 368TiB | 104 TiB | 每個授權使用368TiB 
+
+
+| E32ds_v4 | 29 | 232TiB | 368TiB | 232TiB | 每個授權使用368TiB 
+
+
+| E48ds_v4 | 29 | 232TiB | 368TiB | 232TiB | 每個授權使用368TiB 
+
+
+| E80ids_v4 | 61. | 368TiB | 368TiB | 488TiB | 每個授權使用368TiB 
+|===
+
+
+=== HA與容量型授權配對
+
+[cols="14,20,31,33"]
+|===
+| VM大小 | HA配對的實體磁碟MAX Data | 僅使用磁碟就能達到最大系統容量 | 利用磁碟和資料分層來最大化系統容量 
+
+
+| DS4_v2 | 29 | 232TiB | 2 PIB 
+
+
+| DS5_v2 | 61. | 488TiB | 2 PIB 
+
+
+| DS13_v2 | 29 | 232TiB | 2 PIB 
+
+
+| DS14_v2 | 61. | 488TiB | 2 PIB 
+
+
+| DS15_v2 | 61. | 488TiB | 2 PIB 
+
+
+| E8s_v3 | 13. | 104 TiB | 2 PIB 
+
+
+| E48s_v3 | 29 | 232TiB | 2 PIB 
+
+
+| E8ds_v4 | 13. | 104 TiB | 2 PIB 
+
+
+| E32ds_v4 | 29 | 232TiB | 2 PIB 
+
+
+| E48ds_v4 | 29 | 232TiB | 2 PIB 
+
+
+| E80ids_v4 | 61. | 488TiB | 2 PIB 
+|===
+
+
+== Aggregate限制
+
+使用Azure儲存設備做為磁碟、並將其分組為_aggregate。Cloud Volumes ONTAPAggregate可為磁碟區提供儲存設備。
+
+[cols="2*"]
+|===
+| 參數 | 限制 
+
+
+| 最大集合體數 | 與磁碟限制相同 
+
+
+| 最大Aggregate大小為^1^ | 384 TiB原始容量、適用於單一節點^2^ 352 TiB原始容量、適用於單一節點、搭配PAYGO 96 TiB原始容量、適用於HA配對 
+
+
+| 每個集合體的磁碟數 | 1-12^3^ 
+
+
+| 每個Aggregate的RAID群組數目上限 | 1. 
+|===
+附註：
+
+. Aggregate容量限制是根據組成Aggregate的磁碟而來。此限制不包括用於資料分層的物件儲存設備。
+. 如果使用節點型授權、則需要兩個BYOL授權才能達到384 TiB。
+. 集合體中的所有磁碟大小必須相同。
+
+
+
+
+== 儲存VM限制
+
+有些組態可讓您建立更多的儲存VM（SVM）以Cloud Volumes ONTAP 供支援。
+
+這些是測試的限制。雖然理論上可以設定額外的儲存VM、但不受支援。
+
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-managing-svms-azure.html["瞭解如何建立額外的儲存VM"^]。
+
+[cols="2*"]
+|===
+| 授權類型 | 儲存VM限制 
+
+
+| * Freemium *  a| 
+總共24個儲存VM、共1、2、^
+
+
+
+| *容量型PAYGO或BYOL*^3^  a| 
+總共24個儲存VM、共1、2、^
+
+
+
+| *節點型BYOL*^4^  a| 
+總共24個儲存VM、共1、2、^
+
+
+
+| *基於節點的PAYGO*  a| 
+* 1個儲存VM、用於處理資料
+* 1個儲存VM、用於災難恢復
+
+
+|===
+. 這24個儲存虛擬機器可提供資料、或是設定災難恢復（DR）。
+. 每個儲存VM最多可有三個生命期、其中兩個為資料生命期、另一個為SVM管理LIF。
+. 對於容量型授權、額外的儲存虛擬機器不需要額外的授權成本、但每個儲存虛擬機器的最低容量費用為4 TiB。例如、如果您建立兩個儲存VM、每個VM都有2個TiB的已配置容量、則總共會收取8 TiB的費用。
+. 對於節點型BYOL、Cloud Volumes ONTAP 預設情況下、除了第一部隨附的儲存虛擬機器之外、每個額外的_dataServing儲存虛擬機器都需要附加授權。請聯絡您的客戶團隊、以取得儲存VM附加授權。
++
+您設定用於災難恢復（DR）的儲存VM不需要附加授權（免費）、但它們確實會根據儲存VM的限制而計算。例如、如果您有12個資料服務儲存VM和12個儲存VM設定用於災難恢復、則您已經達到極限、無法建立任何其他儲存VM。
+
+
+
+
+
+== 檔案與Volume限制
+
+[cols="22,22,56"]
+|===
+| 邏輯儲存設備 | 參數 | 限制 
+
+
+.2+| *檔案* | 最大尺寸 | 16 TiB 
+
+
+| 每個Volume的最大值 | 磁碟區大小視情況而定、高達20億 
+
+
+| * FlexClone Volumes * | 階層式複製深度^2^ | 499年 
+
+
+.3+| *《*》卷* FlexVol | 每個節點的最大值 | 500 
+
+
+| 最小尺寸 | 20 MB 
+
+
+| 最大尺寸 | 100 TiB 
+
+
+| * qtree * | 每FlexVol 個速度區塊的最大值 | 4、995 
+
+
+| * Snapshot複本* | 每FlexVol 個速度區塊的最大值 | 1、023 
+|===
+附註：
+
+. Cloud Manager不提供任何SVM災難恢復的設定或協調支援。它也不支援其他SVM上的儲存相關工作。您必須使用System Manager或CLI進行SVM災難恢復。
++
+** https://library.netapp.com/ecm/ecm_get_file/ECMLP2839856["SVM 災難恢復準備快速指南"^]
+** https://library.netapp.com/ecm/ecm_get_file/ECMLP2839857["SVM Disaster Recovery Express 指南"^]
+
+
+. 階層式複製深度是FlexClone Volume的巢狀階層架構深度上限、可從單FlexVol 一的實體磁碟區建立。
+
+
+
+
+== iSCSI儲存限制
+
+[cols="3*"]
+|===
+| iSCSI儲存設備 | 參數 | 限制 
+
+
+.4+| * LUN* | 每個節點的最大值 | 1 、 024 
+
+
+| LUN對應的最大數目 | 1 、 024 
+
+
+| 最大尺寸 | 16 TiB 
+
+
+| 每個Volume的最大值 | 512 
+
+
+| *群組* | 每個節點的最大值 | 256 
+
+
+.2+| *啟動器* | 每個節點的最大值 | 512 
+
+
+| 每個igroup的最大值 | 128/128 
+
+
+| * iSCSI工作階段* | 每個節點的最大值 | 1 、 024 
+
+
+.2+| *生命* | 每個連接埠的上限 | 32 
+
+
+| 每個連接埠集的上限 | 32 
+
+
+| * PortSets* | 每個節點的最大值 | 256 
+|===

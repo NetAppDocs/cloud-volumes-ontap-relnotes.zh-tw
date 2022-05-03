@@ -1,0 +1,127 @@
+---
+settings:
+  name: Cloud Volumes ONTAP 9.11.0 release notes
+  platform: cloud
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  versions:
+  - name: Cloud Volumes ONTAP
+    url: "/cloud-volumes-ontap-relnotes"
+    version-number: 9.11.0
+  - name: Cloud Volumes ONTAP
+    url: "/cloud-volumes-ontap-9101-relnotes"
+    version-number: 9.10.1
+  - name: Cloud Volumes ONTAP
+    url: "/cloud-volumes-ontap-9100-relnotes"
+    version-number: 9.10.0
+  - name: Cloud Volumes ONTAP
+    url: "/cloud-volumes-ontap-991-relnotes"
+    version-number: 9.9.1
+  - name: Cloud Volumes ONTAP
+    url: "/cloud-volumes-ontap-990-relnotes"
+    version-number: 9.9.0
+  - name: Cloud Volumes ONTAP
+    url: "/cloud-volumes-ontap-98-relnotes"
+    version-number: '9.8'
+  - name: Cloud Volumes ONTAP
+    url: "/cloud-volumes-ontap-97-relnotes"
+    version-number: '9.7'
+  - name: Cloud Volumes ONTAP
+    url: "/cloud-volumes-ontap-96-relnotes"
+    version-number: '9.6'
+  - name: Cloud Volumes ONTAP
+    url: "/cloud-volumes-ontap-95-relnotes"
+    version-number: '9.5'
+  - name: Cloud Volumes ONTAP
+    url: "/cloud-volumes-ontap-94-relnotes"
+    version-number: '9.4'
+  - name: 解決方案ONTAP
+    url: "/cloud-volumes-ontap-93-relnotes"
+    version-number: '9.3'
+  langs: zh-tw,us-en,ja-jp,zh-cn,ko-kr
+sidebar:
+  entries:
+  - title: 所有Cloud Manager文件
+    url: https://docs.netapp.com/us-en/cloud-manager-family
+  - title: 版本資訊首頁
+    url: "/index.html"
+  - title: 新增功能
+    url: "/reference-new.html"
+  - title: 授權總覽
+    url: "/concept-licensing.html"
+  - title: 支援的組態
+    entries:
+    - title: AWS
+      url: "/reference-configs-aws.html"
+    - title: Azure
+      url: "/reference-configs-azure.html"
+    - title: Google Cloud
+      url: "/reference-configs-gcp.html"
+  - title: 儲存限制
+    entries:
+    - title: AWS
+      url: "/reference-limits-aws.html"
+    - title: Azure
+      url: "/reference-limits-azure.html"
+    - title: Google Cloud
+      url: "/reference-limits-gcp.html"
+  - title: 已知問題
+    url: "/reference-issues.html"
+  - title: 已知限制
+    entries:
+    - title: 常見限制
+      url: "/reference-limitations.html"
+    - title: AWS的限制
+      url: "/reference-limitations-aws.html"
+    - title: Azure的限制
+      url: "/reference-limitations-azure.html"
+    - title: Google Cloud的限制
+      url: "/reference-limitations-gcp.html"
+  - title: 雲端供應商整合
+    url: "/reference-provider-integrations.html"
+  - title: 法律聲明
+    url: "/legal-notices.html"
+homepage:
+  tiles:
+  - title: 開始使用
+    links:
+    - title: 新增功能
+      url: reference-new.html
+    - title: 授權總覽
+      url: concept-licensing.html
+  - title: Amazon Web Services
+    links:
+    - title: 支援的組態
+      url: reference-configs-aws.html
+    - title: 儲存限制
+      url: reference-limits-aws.html
+    - title: 限制
+      url: reference-limitations-aws.html
+  - title: Google Cloud
+    links:
+    - title: 支援的組態
+      url: reference-configs-gcp.html
+    - title: 儲存限制
+      url: reference-limits-gcp.html
+    - title: 限制
+      url: reference-limitations-gcp.html
+  - title: Microsoft Azure
+    links:
+    - title: 支援的組態
+      url: reference-configs-azure.html
+    - title: 儲存限制
+      url: reference-limits-azure.html
+    - title: 限制
+      url: reference-limitations-azure.html
+  - title: 部落格社群
+    links:
+    - title: NetApp社群
+      url: https://community.netapp.com/t5/Cloud-Data-Services/ct-p/CDS
+    - title: Cloud Central部落格
+      url: https://cloud.netapp.com/blog
+    - title: 雲端網路研討會
+      url: https://cloud.netapp.com/events
+product-family: {}
