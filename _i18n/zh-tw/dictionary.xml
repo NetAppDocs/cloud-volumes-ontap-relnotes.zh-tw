@@ -505,11 +505,6 @@
   <block id="49fc376ed35249f3841846ede4dab884" category="inline-link">NetApp Cloud Central</block>
   <block id="48ad756d03abbc6e0fe01e9831a6e964" category="paragraph">如需定價的詳細資訊、請前往<block ref="073c3927129b02897890200010eee524" category="inline-link-rx"></block>。</block>
   <block id="25b035aed2fdd6599b8102a76363fdec" category="section-title">免費試用</block>
-  <block id="33d5706170e3b14a39e3a949fb3d1ea4" category="paragraph">您可以在雲端供應商的市場中、透過隨用隨付訂閱取得30天的免費試用版。免費試用版包含Cloud Volumes ONTAP 了VMware和Cloud Backup、並於您訂閱市場上市時開始。</block>
-  <block id="2f6de72cbf1a20ae28f0ecb7f67442cc" category="paragraph">舉例來說、並不收取每小時的軟體授權費用、但您的雲端供應商仍需支付基礎架構費用。</block>
-  <block id="b699152a7dc0147566cf5d4a54e7af89" category="paragraph">免費試用版會在到期時自動轉換為付費的每小時訂閱。如果您在期限內終止執行個體、則您部署的下一個執行個體不屬於免費試用（即使是在30天內部署）。</block>
-  <block id="fce1a93d81ea8b79481e4dea03cf7dee" category="paragraph">您可以 Cloud Volumes ONTAP 在 Cloud Volumes ONTAP 付款人的帳戶中建立第一個的 VMware 系統、從 Cloud Manager 開始 30 天的免費試用版。</block>
-  <block id="cd48c2333fa4df56febc08e8e277024b" category="paragraph">隨用隨付的試用版是透過雲端供應商提供、不得以任何方式延長。</block>
   <block id="1f0b82560627b660c6c6958a1df834b8" category="section-title">支援的組態</block>
   <block id="4e4c431843fe55f93c074808800bf7d0" category="paragraph">以容量為基礎的授權套件可搭配Cloud Volumes ONTAP 使用於NetApp 9.7及更新版本。</block>
   <block id="37040d43404231d8205705e4353af733" category="section-title">容量限制</block>
@@ -748,4 +743,7 @@
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">雲端網路研討會</block>
   <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="sidebar">Cloud Volumes ONTAP</block>
   <block id="dea335c9c6f638eb584011e253ad6ca1" category="sidebar">解決方案ONTAP</block>
+  <block id="656d282ec4da3b613132f8e29d6cb90e" category="paragraph">您可以在雲端供應商的市場中、透過隨用隨付訂閱取得30天的免費試用版。免費試用版包含Cloud Volumes ONTAP 了VMware及Cloud Backup。試用版會在您訂閱市場上的產品項目時開始。</block>
+  <block id="2986f3edb85e34a7556b412028be57fb" category="paragraph">沒有執行個體或容量限制。您可以任意部署Cloud Volumes ONTAP 多個不需付費的功能、並視需要配置多餘的容量、30天內即可免費部署。免費試用版會在30天後自動轉換為付費的每小時訂閱。</block>
+  <block id="631556a144b10d5d5f19603b18176e32" category="paragraph">雖然不收取Cloud Volumes ONTAP 每小時的軟體授權費用、但您的雲端供應商仍需支付基礎架構費用。</block>
 </blocks>
