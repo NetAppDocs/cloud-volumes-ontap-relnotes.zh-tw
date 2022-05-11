@@ -746,4 +746,5 @@
   <block id="656d282ec4da3b613132f8e29d6cb90e" category="paragraph">您可以在雲端供應商的市場中、透過隨用隨付訂閱取得30天的免費試用版。免費試用版包含Cloud Volumes ONTAP 了VMware及Cloud Backup。試用版會在您訂閱市場上的產品項目時開始。</block>
   <block id="2986f3edb85e34a7556b412028be57fb" category="paragraph">沒有執行個體或容量限制。您可以任意部署Cloud Volumes ONTAP 多個不需付費的功能、並視需要配置多餘的容量、30天內即可免費部署。免費試用版會在30天後自動轉換為付費的每小時訂閱。</block>
   <block id="631556a144b10d5d5f19603b18176e32" category="paragraph">雖然不收取Cloud Volumes ONTAP 每小時的軟體授權費用、但您的雲端供應商仍需支付基礎架構費用。</block>
+  <block id="79561dd1a4e00a3e05c0d892a01e77bf" category="list-text">n2-Standard-16</block>
 </blocks>

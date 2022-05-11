@@ -37,6 +37,7 @@ Google Cloud支援多Cloud Volumes ONTAP 種支援的支援功能。
 * N1-標準32
 * n2-Standard-4
 * n2-Standard-8.
+* n2-Standard-16
 * n2-Standard-32
 
  a| 
@@ -48,6 +49,7 @@ Google Cloud支援多Cloud Volumes ONTAP 種支援的支援功能。
 
  a| 
 * N1-標準32
+* n2-Standard-16
 * n2-Standard-32
 
  a| 
@@ -55,6 +57,7 @@ Google Cloud支援多Cloud Volumes ONTAP 種支援的支援功能。
 * N1-標準32
 * n2-Standard-4
 * n2-Standard-8.
+* n2-Standard-16
 * n2-Standard-32
 
  a| 
@@ -62,6 +65,7 @@ Google Cloud支援多Cloud Volumes ONTAP 種支援的支援功能。
 * N1-標準32
 * n2-Standard-4
 * n2-Standard-8.
+* n2-Standard-16
 * n2-Standard-32
 
 
