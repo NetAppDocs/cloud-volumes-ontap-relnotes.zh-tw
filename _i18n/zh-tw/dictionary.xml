@@ -467,13 +467,6 @@
   <block id="78bd6ae14d58c0754e9678cbf2ebad05" category="list-text">每個NetApp帳戶最多可搭配Cloud Volumes ONTAP Freemium產品使用10個NetApp系統。</block>
   <block id="922e54a2e69b279fbb6ab93d4f189181" category="list-text">如果Cloud Volumes ONTAP 供應的功能超過500 GiB、Cloud Manager會將系統轉換成Essentials套件（容量型授權）。</block>
   <block id="2b5b1f6feb7719bc282a3518f33b1784" category="paragraph">任何其他配置容量低於500 GiB的系統、都會留在Freemium上（只要使用Freemium產品進行部署）。</block>
-  <block id="9911a1f4ee7b400064d4cd20d4db15cb" category="paragraph">若要開始使用Freemium產品、請建立一個全新Cloud Volumes ONTAP 的運作環境、並在系統提示您選擇充電方法時選擇* Freemium *。</block>
-  <block id="6602afb860a6cca23c3b75bf601365eb" category="inline-link">在 Cloud Volumes ONTAP AWS 中啟動</block>
-  <block id="3e33b81f05bb640dee79c5aa4e351c91" category="list-text"><block ref="3e33b81f05bb640dee79c5aa4e351c91" category="inline-link-rx"></block></block>
-  <block id="7ca1af679f0ba86814f2ad58a578cb7c" category="inline-link">在 Cloud Volumes ONTAP Azure 中啟動</block>
-  <block id="0be0836bc69799b792b188dfc8c7fe7e" category="list-text"><block ref="0be0836bc69799b792b188dfc8c7fe7e" category="inline-link-rx"></block></block>
-  <block id="254d5c87d5ab437395f866390ea49cd0" category="inline-link">在Cloud Volumes ONTAP Google Cloud上啟動</block>
-  <block id="22113986c035dbadc96db01d006caa97" category="list-text"><block ref="22113986c035dbadc96db01d006caa97" category="inline-link-rx"></block></block>
   <block id="19bcaffbe8361f9d452beabc8065f223" category="section-title">容量型授權套件</block>
   <block id="e7cf94fb6f7d5441689859c52b410a98" category="paragraph">容量型授權可讓您針對Cloud Volumes ONTAP 容量的每個TiB付費。授權與您的NetApp帳戶相關聯、只要授權有足夠的容量可用、您就能根據授權向多個系統收取費用。</block>
   <block id="68935a38790e91889cd56742a47079f3" category="paragraph">例如、您可以購買單一20 TiB授權、部署四Cloud Volumes ONTAP 個作業系統、然後將5個TiB磁碟區分配給每個系統、總共20 TiB。容量可用於Cloud Volumes ONTAP 該帳戶中部署的每個作業系統上的磁碟區。</block>
@@ -519,11 +512,6 @@
   <block id="e61eacf9a2b260a46a8935478c8a063d" category="list-text">FlexClone磁碟區所使用的容量不需付費。</block>
   <block id="529bcec2b9675b3cb0a81186e626a92b" category="list-text">來源FlexCache 和目的地的資料不只是主要資料、而且會根據已配置的空間進行收費。</block>
   <block id="07e1d66babe77070cc76a4e637c9f26d" category="section-title">如何開始使用</block>
-  <block id="e8e4b0657c553a7e676cdc5f933acb44" category="inline-link">請聯絡NetApp銷售人員以取得授權</block>
-  <block id="72b3374c901e61bb6433b0f7f23d1b5a" category="list-text"><block ref="9740246e7721e1c54946ab07fff5f1b1" category="inline-link-rx"></block>。</block>
-  <block id="362ed31bbc07a795001d3f4ea80581f9" category="inline-link">將授權新增至Cloud Manager</block>
-  <block id="7d0b1a626ee22c4c467fa2d44b30a070" category="list-text"><block ref="9ea887e49a883a1f1c871be3c00cc1d4" category="inline-link-rx"></block>。</block>
-  <block id="27c4782d97cee4ee21e258777f0f3167" category="list-text">建立Cloud Volumes ONTAP 一套功能完善的系統時、請選擇容量型BYOL充電方法。</block>
   <block id="69c3857459c8cf827b42c61c1b02fdd2" category="paragraph">以隨成長付費訂閱為基礎的服務、可為偏好營運成本使用模式的使用者、提供無縫的混合雲體驗、以供預先支付資本支出或租賃之用。</block>
   <block id="c2d000408838a6b2031536d54c067fd9" category="paragraph">充電是根據Cloud Volumes ONTAP 您在Keystone Flex訂閱中一或多對的已認可容量大小而計算。</block>
   <block id="892e0a2b50821daaef1eddd0b5cfa034" category="paragraph">每個磁碟區的已配置容量會定期彙總、並與Keystone Flex訂閱上的已提交容量進行比較、而且任何超額的費用都會在Keystone Flex訂閱上以「連串」的形式進行收費。</block>
@@ -531,12 +519,6 @@
   <block id="fc05a23e35af50e1b5d94bf324daab38" category="paragraph"><block ref="29cce53a470361b575f0254c84bcbedb" category="inline-link-rx"></block>。</block>
   <block id="6f4c790c1d9416682af57e0872022ec6" category="paragraph">Keystone Flex訂閱支援HA配對。目前單一節點系統不支援此授權選項。</block>
   <block id="aad2b08c0103cffcbb5efae0a56ee747" category="paragraph">每Cloud Volumes ONTAP 個個別的支援透過磁碟和分層至物件儲存設備、最多可支援2個PIB容量。</block>
-  <block id="b2e75bbfb9933bc21b7f875e8676641d" category="inline-link">請聯絡NetApp</block>
-  <block id="63573dab314c98e4e22e47653c15cf64" category="list-text">如果您尚未訂閱、<block ref="49d6686f1a400348bbcff579d9d978a6" category="inline-link-rx"></block>。</block>
-  <block id="697cc5090bb98ee57c1e28438084378b" category="list-text">mailto：ng-keystone-success@netapp.com [聯絡NetApp]、以一或多個Keystone Flex訂閱授權您的Cloud Manager使用者帳戶。</block>
-  <block id="72aa254218c757aad3e3703bdaf90694" category="inline-link">連結您的訂閱內容以供Cloud Volumes ONTAP 搭配使用</block>
-  <block id="48f0974a79de83d6884f04d71ab3a90a" category="list-text">NetApp授權您的帳戶之後、<block ref="691060edb0108ad45359b1773c59fa65" category="inline-link-rx"></block></block>
-  <block id="de4b56542275c5f0b46bea6fcc27b034" category="list-text">當您建立Cloud Volumes ONTAP 一套功能完善的系統時、請選取Keystone Flex訂閱充電方法。</block>
   <block id="a2f6a3e98ea1849ed1ab07d821bf6a18" category="section-title">節點型授權</block>
   <block id="361abfc2eaabdb045de49dafd20dbdf1" category="paragraph">節點型授權是前一代的授權模式、可讓您依Cloud Volumes ONTAP 節點授權使用。此授權模式不適用於新客戶、也不提供免費試用。副節點充電已由上述的副容量充電方法取代。</block>
   <block id="749b4d71be76e8fee5fe7895ae5ff71d" category="paragraph">現有客戶仍可使用節點型授權：</block>
@@ -747,4 +729,15 @@
   <block id="2986f3edb85e34a7556b412028be57fb" category="paragraph">沒有執行個體或容量限制。您可以任意部署Cloud Volumes ONTAP 多個不需付費的功能、並視需要配置多餘的容量、30天內即可免費部署。免費試用版會在30天後自動轉換為付費的每小時訂閱。</block>
   <block id="631556a144b10d5d5f19603b18176e32" category="paragraph">雖然不收取Cloud Volumes ONTAP 每小時的軟體授權費用、但您的雲端供應商仍需支付基礎架構費用。</block>
   <block id="79561dd1a4e00a3e05c0d892a01e77bf" category="list-text">n2-Standard-16</block>
+  <block id="e83e6938f82d96149155f11617a3f4b6" category="paragraph">瞭解如何開始使用Freemium產品：</block>
+  <block id="050c120c7155ccd2f0ee729008e2ff37" category="inline-link">在Cloud Volumes ONTAP AWS中設定適用於此功能的授權</block>
+  <block id="c7d4e4151a6a2ec8774f6f1eaef692ca" category="list-text"><block ref="c7d4e4151a6a2ec8774f6f1eaef692ca" category="inline-link-rx"></block></block>
+  <block id="0cce9e09385c0d8e677ff5d9518dc514" category="inline-link">在Cloud Volumes ONTAP Azure中設定for NetApp的授權</block>
+  <block id="9717c5625f2395e947c8a8c77b525384" category="list-text"><block ref="9717c5625f2395e947c8a8c77b525384" category="inline-link-rx"></block></block>
+  <block id="8f0a98314b48214c48339998c2fc4f5a" category="inline-link">在Cloud Volumes ONTAP Google Cloud中設定適用於此技術的授權</block>
+  <block id="75a8cf4b193e2d19db02d027cadf7073" category="list-text"><block ref="75a8cf4b193e2d19db02d027cadf7073" category="inline-link-rx"></block></block>
+  <block id="a24ad69dba38b7a2ce7bc133c0c71859" category="inline-image-macro">Cloud Manager介面中通知的螢幕快照顯示、免費試用期僅剩7天。</block>
+  <block id="fed5c8246ca485a22abc959eb3025a8c" category="admonition">免費試用開始、剩餘7天、以及剩餘1天時、您將會在Cloud Manager中收到通知。例如：<block ref="4c1747a7ecb096dffecedae45404dae8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="451e7fc5df78c19113abdb3f6a0dc54e" category="paragraph">瞭解如何開始使用容量型授權：</block>
+  <block id="fdb736034a6801c8a5010a511211a4a7" category="paragraph">瞭解如何開始使用Keystone Flex訂閱：</block>
 </blocks>

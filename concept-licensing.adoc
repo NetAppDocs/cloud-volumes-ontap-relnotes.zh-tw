@@ -48,11 +48,11 @@ NetApp Cloud Volumes ONTAP 免費提供所有的支援功能（仍需支付雲�
 
 
 
-若要開始使用Freemium產品、請建立一個全新Cloud Volumes ONTAP 的運作環境、並在系統提示您選擇充電方法時選擇* Freemium *。
+瞭解如何開始使用Freemium產品：
 
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-aws.html["在 Cloud Volumes ONTAP AWS 中啟動"^]
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-azure.html["在 Cloud Volumes ONTAP Azure 中啟動"^]
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-gcp.html["在Cloud Volumes ONTAP Google Cloud上啟動"^]
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-set-up-licensing-aws.html["在Cloud Volumes ONTAP AWS中設定適用於此功能的授權"^]
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-set-up-licensing-azure.html["在Cloud Volumes ONTAP Azure中設定for NetApp的授權"^]
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-set-up-licensing-google.html["在Cloud Volumes ONTAP Google Cloud中設定適用於此技術的授權"^]
 
 
 
@@ -146,6 +146,9 @@ NetApp與您分享私人優惠之後、您可以在工作環境建立期間、�
 雖然不收取Cloud Volumes ONTAP 每小時的軟體授權費用、但您的雲端供應商仍需支付基礎架構費用。
 
 
+TIP: 免費試用開始、剩餘7天、以及剩餘1天時、您將會在Cloud Manager中收到通知。例如：image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-free-trial-notification.png["Cloud Manager介面中通知的螢幕快照顯示、免費試用期僅剩7天。"]
+
+
 
 === 支援的組態
 
@@ -176,15 +179,11 @@ NetApp與您分享私人優惠之後、您可以在工作環境建立期間、�
 
 === 如何開始使用
 
-. https://cloud.netapp.com/contact-cds["請聯絡NetApp銷售人員以取得授權"^]。
-. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capacity-licenses.html["將授權新增至Cloud Manager"^]。
-. 建立Cloud Volumes ONTAP 一套功能完善的系統時、請選擇容量型BYOL充電方法。
-+
-** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-aws.html["在 Cloud Volumes ONTAP AWS 中啟動"^]
-** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-azure.html["在 Cloud Volumes ONTAP Azure 中啟動"^]
-** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-gcp.html["在Cloud Volumes ONTAP Google Cloud上啟動"^]
+瞭解如何開始使用容量型授權：
 
-
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-set-up-licensing-aws.html["在Cloud Volumes ONTAP AWS中設定適用於此功能的授權"^]
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-set-up-licensing-azure.html["在Cloud Volumes ONTAP Azure中設定for NetApp的授權"^]
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-set-up-licensing-google.html["在Cloud Volumes ONTAP Google Cloud中設定適用於此技術的授權"^]
 
 
 
@@ -215,16 +214,11 @@ Keystone Flex訂閱支援HA配對。目前單一節點系統不支援此授權�
 
 === 如何開始使用
 
-. 如果您尚未訂閱、 https://www.netapp.com/forms/keystone-sales-contact/["請聯絡NetApp"^]。
-. mailto：ng-keystone-success@netapp.com [聯絡NetApp]、以一或多個Keystone Flex訂閱授權您的Cloud Manager使用者帳戶。
-. NetApp授權您的帳戶之後、 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-keystone.html#link-a-subscription["連結您的訂閱內容以供Cloud Volumes ONTAP 搭配使用"^]
-. 當您建立Cloud Volumes ONTAP 一套功能完善的系統時、請選取Keystone Flex訂閱充電方法。
-+
-** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-aws.html["在 Cloud Volumes ONTAP AWS 中啟動"^]
-** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-azure.html["在 Cloud Volumes ONTAP Azure 中啟動"^]
-** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-gcp.html["在Cloud Volumes ONTAP Google Cloud上啟動"^]
+瞭解如何開始使用Keystone Flex訂閱：
 
-
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-set-up-licensing-aws.html["在Cloud Volumes ONTAP AWS中設定適用於此功能的授權"^]
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-set-up-licensing-azure.html["在Cloud Volumes ONTAP Azure中設定for NetApp的授權"^]
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-set-up-licensing-google.html["在Cloud Volumes ONTAP Google Cloud中設定適用於此技術的授權"^]
 
 
 
