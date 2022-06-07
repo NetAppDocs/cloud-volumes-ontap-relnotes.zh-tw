@@ -170,9 +170,9 @@
   <!-- Start Page Toolbar -->
   
   <div class="page-nav-toolbar"><div id="version-dropdown-new" class="custom-dropdown" >
-  <div class="custom-dropdown-select unselected" title="Cloud Volumes ONTAP 9.11.0">
+  <div class="custom-dropdown-select unselected" title="Cloud Volumes ONTAP 9.11.1">
     <label>版本</label>
-    <span translate="no" class="notranslate">Cloud Volumes ONTAP 9.11.0</span>
+    <span translate="no" class="notranslate">Cloud Volumes ONTAP 9.11.1</span>
     <img src="/zh-tw/cloud-volumes-ontap-relnotes/images/chevron_up.svg" class="custom-icon chevrondown invisible" />
     <img src="/zh-tw/cloud-volumes-ontap-relnotes/images/chevron_down.svg" class="custom-icon chevronup" />
   </div>
@@ -180,6 +180,13 @@
   <ul class="custom-dropdown-menu"><li>
       
       <a href="https://docs.netapp.com/zh-tw/cloud-volumes-ontap-relnotes/reference-limits-aws.html" target="_self">
+        <span translate="no" class="notranslate"><span>Cloud Volumes ONTAP</span><span class="version"> 9.11.1</span></span>
+      </a>
+                     
+    </li>
+    <li>
+      
+      <a href="https://docs.netapp.com/zh-tw/cloud-volumes-ontap-9110-relnotes/reference-limits-aws.html" target="_self">
         <span translate="no" class="notranslate"><span>Cloud Volumes ONTAP</span><span class="version"> 9.11.0</span></span>
       </a>
                      
@@ -364,35 +371,27 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">繁體中文</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">繁體中文</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-tw/cloud-volumes-ontap-relnotes/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-aws.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/cloud-volumes-ontap-relnotes/reference-limits-aws.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/cloud-volumes-ontap-relnotes/reference-limits-aws.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/cloud-volumes-ontap-relnotes/reference-limits-aws.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/cloud-volumes-ontap-relnotes/reference-limits-aws.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/zh-tw/cloud-volumes-ontap-relnotes/reference-limits-aws.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-aws.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ja-jp/cloud-volumes-ontap-relnotes/reference-limits-aws.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-cn/cloud-volumes-ontap-relnotes/reference-limits-aws.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/cloud-volumes-ontap-relnotes/reference-limits-aws.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -445,10 +444,8 @@
         
         
         
-        <a target="_blank" href="/zh-tw/cloud-volumes-ontap-relnotes/pdfs/fullsite-sidebar/__發行說明Cloud_Volumes_ONTAP.pdf" >
+        <a target="_blank" href="/zh-tw/cloud-volumes-ontap-relnotes/pdfs/fullsite-sidebar/___英文_Cloud_Volumes_ONTAP.pdf" >
           <img src="/zh-tw/cloud-volumes-ontap-relnotes/images/pdf.png" width="16" height="16"/>此文件網站（PDF 格式）</a>
-
-
 
 
 
@@ -601,10 +598,10 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
-  <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="https://docs.netapp.com/us-en/cloud-manager-family">
-        所有Cloud Manager文件
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloud-volumes-ontap-relnotes/index.html">
+</script><div class="prod-nav" id="product-nav">
+  <a target="_self" class="prod-fam-nav" href="https://docs.netapp.com/zh-tw/cloud-manager-family/"><img src="/zh-tw/cloud-volumes-ontap-relnotes/images/left_arrow.png" alt=""><pre>All Cloud Manager documentation</pre></a>
+</div><div class="sidebar-nav-container" id="mysidebardiv">
+  <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloud-volumes-ontap-relnotes/index.html">
         版本資訊首頁
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloud-volumes-ontap-relnotes/reference-new.html">
         新增功能
@@ -683,7 +680,7 @@
         
 
         <li class="n-breadcrumb__list-item">
-          <a href="/zh-tw/cloud-volumes-ontap-relnotes/">Cloud&nbsp;Volumes&nbsp;ONTAP&nbsp;9.11.0&nbsp;release&nbsp;notes</a>
+          <a href="/zh-tw/cloud-volumes-ontap-relnotes/">Cloud&nbsp;Volumes&nbsp;ONTAP&nbsp;9.11.1&nbsp;release&nbsp;notes</a>
         </li>
 
       </ul>
@@ -714,7 +711,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-03 10:03:35 +0000">05/03/2022</time>
+    <time datetime="2022-06-07 20:51:06 +0000">06/07/2022</time>
     
   
 
@@ -1126,7 +1123,7 @@
 <h2 id="aggregate限制">Aggregate限制</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>使用AWS磁碟區做為磁碟、並將其分組為_aggregate。Cloud Volumes ONTAPAggregate可為磁碟區提供儲存設備。</p>
+<p>使用EBS磁碟區做為磁碟、並將其分組為_aggregate。Cloud Volumes ONTAPAggregate可為磁碟區提供儲存設備。</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -1145,12 +1142,30 @@
 <td class="tableblock halign-left valign-top"><p class="tableblock">單一節點：與磁碟限制HA配對相同：節點上有18個<sup>1</sup></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">最大Aggregate大小</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">96 TiB原始容量<sup>2</sup></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">最大Aggregate大小：<sup>2</sup></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>96 TiB原始容量</p>
+</li>
+<li>
+<p>128 TiB原始容量、含彈性磁碟區<sup>3</sup></p>
+</li>
+</ul>
+</div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">每個集合體的磁碟數</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1-6 <sup>3</sup></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">每個Aggregate的磁碟數<sup>4</sup></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>1-6</p>
+</li>
+<li>
+<p>1-8個彈性Volume <sup>3</sup></p>
+</li>
+</ul>
+</div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">每個Aggregate的RAID群組數目上限</p></td>
@@ -1167,7 +1182,10 @@
 <p>無法在HA配對的兩個節點上建立18個Aggregate、因為這樣做會超過資料磁碟限制。</p>
 </li>
 <li>
-<p>Aggregate容量限制是根據組成Aggregate的磁碟而來。此限制不包括用於資料分層的物件儲存設備。</p>
+<p>最大Aggregate大小是根據組成Aggregate的磁碟而來。此限制不包括用於資料分層的物件儲存設備。</p>
+</li>
+<li>
+<p>如果您的組態支援Amazon EBS彈性磁碟區功能、則Aggregate最多可包含8個磁碟、最多可提供128 TiB的容量。使用GP3或IO1磁碟時、Amazon EBS Elastic Volumes功能預設會在_new _ Cloud Volumes ONTAP 版本9.11.0或更新的系統上啟用。 <a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-aws-elastic-volumes.html" target="_blank" rel="noopener">"深入瞭解彈性磁碟區的支援"</a></p>
 </li>
 <li>
 <p>集合體中的所有磁碟大小必須相同。</p>
@@ -1816,4 +1834,5 @@
     </script>
     <script src='/zh-tw/cloud-volumes-ontap-relnotes/js/www-ntap.js'></script>
     <script src='/zh-tw/cloud-volumes-ontap-relnotes/js/tabbed-blocks.js'></script>
+    <script src='/zh-tw/cloud-volumes-ontap-relnotes/js/sidebar.js'></script>
   </body></html>
