@@ -123,14 +123,55 @@ NetApp不支援超過系統容量限制。如果您達到授權容量上限、Cl
 
 
 
+== 儲存VM限制
+
+有些組態可讓您建立更多的儲存VM（SVM）以Cloud Volumes ONTAP 供支援。
+
+這些是測試的限制。雖然理論上可以設定額外的儲存VM、但不受支援。
+
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-managing-svms-gcp.html["瞭解如何建立額外的儲存VM"^]。
+
+[cols="2*"]
+|===
+| 授權類型 | 儲存VM限制 
+
+
+| * Freemium *  a| 
+總共24個儲存VM ^1^
+
+
+
+| *容量型PAYGO或BYOL*^2^  a| 
+總共24個儲存VM ^1^
+
+
+
+| *節點型BYOL*^3^  a| 
+總共24個儲存VM ^1^
+
+
+
+| *基於節點的PAYGO*  a| 
+* 1個儲存VM、用於處理資料
+* 1個儲存VM、用於災難恢復
+
+
+|===
+. 這24個儲存虛擬機器可提供資料、或是設定災難恢復（DR）。
+. 對於容量型授權、額外的儲存虛擬機器不需要額外的授權成本、但每個儲存虛擬機器的最低容量費用為4 TiB。例如、如果您建立兩個儲存VM、每個VM都有2個TiB的已配置容量、則總共會收取8 TiB的費用。
+. 對於節點型BYOL、Cloud Volumes ONTAP 預設情況下、除了第一部隨附的儲存虛擬機器之外、每個額外的_dataServing儲存虛擬機器都需要附加授權。請聯絡您的客戶團隊、以取得儲存VM附加授權。
++
+您設定用於災難恢復（DR）的儲存VM不需要附加授權（免費）、但它們確實會根據儲存VM的限制而計算。例如、如果您有12個資料服務儲存VM和12個儲存VM設定用於災難恢復、則您已經達到極限、無法建立任何其他儲存VM。
+
+
+
+
+
 == 邏輯儲存限制
 
 [cols="22,22,56"]
 |===
 | 邏輯儲存設備 | 參數 | 限制 
-
-
-| *儲存虛擬機器（SVM）* | 最大Cloud Volumes ONTAP 數目（HA配對或單一節點） | 一個資料服務SVM和一個目的地SVM、用於災難恢復。如果來源SVM發生中斷、您可以啟動目的地SVM進行資料存取。一部資料服務SVM橫跨Cloud Volumes ONTAP 整個整個作業系統（HA配對或單一節點）。 
 
 
 .2+| *檔案* | 最大尺寸 | 16 TB 
@@ -139,7 +180,7 @@ NetApp不支援超過系統容量限制。如果您達到授權容量上限、Cl
 | 每個Volume的最大值 | 磁碟區大小視情況而定、高達20億 
 
 
-| * FlexClone Volumes * | 階層式複製深度^2^ | 499年 
+| * FlexClone Volumes * | 階層式複製深度：^12^ | 499年 
 
 
 .3+| *《*》卷* FlexVol | 每個節點的最大值 | 500 
@@ -156,14 +197,6 @@ NetApp不支援超過系統容量限制。如果您達到授權容量上限、Cl
 
 | * Snapshot複本* | 每FlexVol 個速度區塊的最大值 | 1、023 
 |===
-附註：
-
-. Cloud Manager不提供任何SVM災難恢復的設定或協調支援。它也不支援其他SVM上的儲存相關工作。您必須使用System Manager或CLI進行SVM災難恢復。
-+
-** https://library.netapp.com/ecm/ecm_get_file/ECMLP2839856["SVM 災難恢復準備快速指南"^]
-** https://library.netapp.com/ecm/ecm_get_file/ECMLP2839857["SVM Disaster Recovery Express 指南"^]
-
-
 . 階層式複製深度是FlexClone Volume的巢狀階層架構深度上限、可從單FlexVol 一的實體磁碟區建立。
 
 

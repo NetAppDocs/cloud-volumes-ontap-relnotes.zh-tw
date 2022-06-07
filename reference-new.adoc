@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: reference-new.html 
 keywords: 'what"s new, new, features, release notes, enhancements' 
-summary: 包含全新的增強功能。Cloud Volumes ONTAP 
+summary: 包含新的增強功能。Cloud Volumes ONTAP 
 ---
-= 更新功能Cloud Volumes ONTAP
+= 更新內容Cloud Volumes ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,30 +14,91 @@ summary: 包含全新的增強功能。Cloud Volumes ONTAP
 
 
 [role="lead"]
-包含全新的增強功能。Cloud Volumes ONTAP
+更新功能包括更新功能。Cloud Volumes ONTAP
 
 最新版Cloud Manager也會提供其他功能與增強功能。請參閱 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html["Cloud Manager版本資訊"^] 以取得詳細資料。
 
 
 
-== 9.11.0 P1（2022年5月2日）
+== 9.11.1 RC1（2022年6月8日）
 
-目前AWS、Azure和Google Cloud均提供此版本的《解決方案與解決方案Cloud Volumes ONTAP 與解決方案與解決方案與解決方案的相關問題：此版本包含下列增強功能。
-
-
-
-=== 支援AWS的SS3 ONTAP
-
-您現在可以在Cloud Volumes ONTAP AWS中提供來自於支援Microsoft Azure的S3物件儲存設備（已支援Microsoft Azure）。除了傳統的檔案型傳輸協定（例如NFS和SMB）之外、支援S3作為橫向擴充儲存設備的選項。Cloud Volumes ONTAP
-
-請注意下列事項：
-
-* 搭配使用功能的S3的主要用途是ONTAP 一般用途物件儲存區。Cloud Volumes ONTAP
-* 目前、Google Cloud Volumes ONTAP Cloud不支援使用S3傳輸協定。
-* Cloud Manager無法提供ONTAP 任何有關「支援不支援」S3功能的管理功能。
+AWS、Azure和Google Cloud現已提供適用的發行候選版本1。Cloud Volumes ONTAP此版本包含下列新功能與增強功能。
 
 
-https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["瞭解如何在ONTAP 功能區中設定及管理S3物件儲存服務"^]。
+
+=== 效能提升
+
+我們已提升9.11.1或更新版本中新集合體的讀取效能。
+
+
+
+=== 提高儲存效率
+
+從9.11.1版開始、所有啟用儲存效率的新磁碟區都將包含一項稱為溫度敏感儲存效率的新壓縮功能。不再使用前一代壓縮功能。
+
+溫度敏感的儲存效率會根據資料溫度或資料使用頻率來壓縮資料。冷資料或不常使用的資料會以較高的壓縮比率重新壓縮、以提高儲存效率。
+
+
+
+=== AWS中的VPC共享
+
+AWS現在支援搭配VPC共享的支援使用支援的功能組。Cloud Volumes ONTAPVPC共用功能可讓您的組織與其他AWS帳戶共用子網路。網路（VPC、子網路和路由表）位於VPC擁有者帳戶中、而HA組態的EC2執行個體則位於使用共用子網路的參與者帳戶中。
+
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploy-aws-shared-vpc.html["瞭解如何在共用子網路中部署HA配對"^]
+
+
+
+=== 全新AWS區域支援
+
+AWS雅加達地區（ap東南3區）現在支援此功能。Cloud Volumes ONTAP
+
+https://cloud.netapp.com/cloud-volumes-global-regions["檢視Cloud Volumes ONTAP 支援區域的完整清單以供參閱"^]
+
+
+
+=== 全新Azure區域支援
+
+Azure Brazil東南亞地區現已支援此功能。Cloud Volumes ONTAP
+
+https://cloud.netapp.com/cloud-volumes-global-regions["檢視Cloud Volumes ONTAP 支援區域的完整清單以供參閱"^]
+
+
+
+=== Google Cloud支援24個儲存VM
+
+大多數組態現在支援24個儲存VM Cloud Volumes ONTAP 、可在Google Cloud中使用支援。
+
+* link:reference-limits-gcp.html#storage-vm-limits["深入瞭解Google Cloud中的儲存VM限制"]
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-managing-svms-gcp.html["瞭解如何在Cloud Volumes ONTAP Google Cloud中建立資料服務儲存VM以供其使用"^]
+
+
+
+
+=== 新的Google Cloud區域支援
+
+目前在Milan（歐洲-西8）地區支援的是支援的2個HA配對。Cloud Volumes ONTAP
+
+https://cloud.netapp.com/cloud-volumes-global-regions["檢視Cloud Volumes ONTAP 支援區域的完整清單以供參閱"^]
+
+
+
+=== 修改新儲存VM的LIF服務
+
+從本版本開始、如果您在Cloud Volumes ONTAP AWS或Azure的某個更新HA配對上建立新的儲存VM、則需要修改儲存VM的網路服務原則。需要修改服務、因為Cloud Volumes ONTAP 這樣可確保支援功能可將iSCSI LIF用於傳出管理連線。
+
+請注意Cloud Volumes ONTAP 、由於Cloud Manager API會在建立期間為您設定LIF服務、因此不需要在Google Cloud中修改LIF服務。
+
+您需要執行的命令會在下列頁面中指定：
+
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-managing-svms-aws.html["瞭解如何在AWS中建立額外的儲存VM"^]
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-managing-svms-azure.html["瞭解如何在Azure中建立額外的儲存VM"^]
+
+
+
+
+== 全新不受支援ONTAP 的功能
+
+不支援更新於《支援使用者驗證ONTAP 功能的更新功能：Cloud Volumes ONTAP在Cloud Volumes ONTAP 支援的情況下、在支援的系統上啟用多管理員驗證、將會產生不受支援的組態。
 
 
 
@@ -57,13 +118,13 @@ http://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ont
 
 === 支援的升級途徑
 
-您可以從Cloud Volumes ONTAP 9.10.1版升級至版本的版本。Cloud Manager會提示您將合格Cloud Volumes ONTAP 的更新版升級至此版本。
+您可以從Cloud Volumes ONTAP 9.11.0版和9.10.1版升級至版本的版本。Cloud Manager會提示您將合格Cloud Volumes ONTAP 的更新版升級至此版本。
 
 
 
 === 所需版本的Connector
 
-Cloud Manager Connector必須執行3.9.18版或更新版本、才能將現有系統升級至9.11.0版。
+Cloud Manager Connector必須執行3.9.19版或更新版本、才能部署新Cloud Volumes ONTAP 的版本號、並將現有系統升級至9.11.1版。
 
 
 TIP: 連接器的自動升級預設為啟用、因此您應該執行最新版本。

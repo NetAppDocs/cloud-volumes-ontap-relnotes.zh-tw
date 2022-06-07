@@ -38,7 +38,7 @@ AWS可在單一節點系統中使用、也可作為高可用度（HA）節點配
 
 [cols="h,d,d,d,d,d,d"]
 |===
-|  | Freemium | PAYGO瀏覽 | PAYGO標準 | PAYGO Premium | 節點型授權 | 容量型授權 
+|  | Freemium | PAYGO瀏覽 | PAYGO標準 | PAYGO Premium | 節點型BYOL | 容量型授權 
 
 
 | 最大系統容量（磁碟+物件儲存）^1^ | 500 GiB | 2 TiB | 10 TiB | 368TiB ^2^ | 每個授權368TiB ^2^ | 2 PIB ^2^ 
@@ -64,7 +64,7 @@ AWS可在單一節點系統中使用、也可作為高可用度（HA）節點配
 
 === 支援的磁碟大小
 
-在AWS中、Aggregate最多可包含6個相同類型和大小的磁碟。
+在 AWS 中、 Aggregate 最多可包含 6 個大小相同的磁碟。但是如果您的組態支援Amazon EBS彈性Volume功能、則Aggregate最多可包含8個磁碟。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-aws-elastic-volumes.html["深入瞭解彈性磁碟區的支援"^]
 
 [cols="3*"]
 |===

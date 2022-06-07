@@ -426,7 +426,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-managing-sv
 | 每個Volume的最大值 | 磁碟區大小視情況而定、高達20億 
 
 
-| * FlexClone Volumes * | 階層式複製深度^2^ | 499年 
+| * FlexClone Volumes * | 階層式複製深度^1^ | 499年 
 
 
 .3+| *《*》卷* FlexVol | 每個節點的最大值 | 500 
@@ -443,14 +443,6 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-managing-sv
 
 | * Snapshot複本* | 每FlexVol 個速度區塊的最大值 | 1、023 
 |===
-附註：
-
-. Cloud Manager不提供任何SVM災難恢復的設定或協調支援。它也不支援其他SVM上的儲存相關工作。您必須使用System Manager或CLI進行SVM災難恢復。
-+
-** https://library.netapp.com/ecm/ecm_get_file/ECMLP2839856["SVM 災難恢復準備快速指南"^]
-** https://library.netapp.com/ecm/ecm_get_file/ECMLP2839857["SVM Disaster Recovery Express 指南"^]
-
-
 . 階層式複製深度是FlexClone Volume的巢狀階層架構深度上限、可從單FlexVol 一的實體磁碟區建立。
 
 

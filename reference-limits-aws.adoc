@@ -201,7 +201,7 @@ NetApp不支援超過系統容量限制。如果您達到授權容量上限、Cl
 
 == Aggregate限制
 
-使用AWS磁碟區做為磁碟、並將其分組為_aggregate。Cloud Volumes ONTAPAggregate可為磁碟區提供儲存設備。
+使用EBS磁碟區做為磁碟、並將其分組為_aggregate。Cloud Volumes ONTAPAggregate可為磁碟區提供儲存設備。
 
 [cols="2*"]
 |===
@@ -211,10 +211,18 @@ NetApp不支援超過系統容量限制。如果您達到授權容量上限、Cl
 | 最大集合體數 | 單一節點：與磁碟限制HA配對相同：節點上有18個^1^ 
 
 
-| 最大Aggregate大小 | 96 TiB原始容量^2^ 
+| 最大Aggregate大小：^2^  a| 
+* 96 TiB原始容量
+* 128 TiB原始容量、含彈性磁碟區^3^
 
 
-| 每個集合體的磁碟數 | 1-6 ^3^ 
+
+
+| 每個Aggregate的磁碟數^4^  a| 
+* 1-6
+* 1-8個彈性Volume ^3^
+
+
 
 
 | 每個Aggregate的RAID群組數目上限 | 1. 
@@ -222,7 +230,8 @@ NetApp不支援超過系統容量限制。如果您達到授權容量上限、Cl
 附註：
 
 . 無法在HA配對的兩個節點上建立18個Aggregate、因為這樣做會超過資料磁碟限制。
-. Aggregate容量限制是根據組成Aggregate的磁碟而來。此限制不包括用於資料分層的物件儲存設備。
+. 最大Aggregate大小是根據組成Aggregate的磁碟而來。此限制不包括用於資料分層的物件儲存設備。
+. 如果您的組態支援Amazon EBS彈性磁碟區功能、則Aggregate最多可包含8個磁碟、最多可提供128 TiB的容量。使用GP3或IO1磁碟時、Amazon EBS Elastic Volumes功能預設會在_new _ Cloud Volumes ONTAP 版本9.11.0或更新的系統上啟用。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-aws-elastic-volumes.html["深入瞭解彈性磁碟區的支援"^]
 . 集合體中的所有磁碟大小必須相同。
 
 

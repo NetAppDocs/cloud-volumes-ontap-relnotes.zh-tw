@@ -32,7 +32,7 @@ Azure中提供的支援可作為單一節點系統、以及高可用度（HA）�
 
 [cols="h,d,d,d,d,d,d"]
 |===
-|  | Freemium | PAYGO瀏覽 | PAYGO標準 | PAYGO Premium | 節點型授權 | 容量型授權 
+|  | Freemium | PAYGO瀏覽 | PAYGO標準 | PAYGO Premium | 節點型BYOL | 容量型授權 
 
 
 | 最大系統容量（磁碟+物件儲存） | 500 GiB | 2 TiB ^1^ | 10 TiB | 368TiB | 每個授權368TiB | 2 PIB 
@@ -142,7 +142,7 @@ Azure中提供的支援可作為單一節點系統、以及高可用度（HA）�
 
 [cols="h,d,d,d,d,d"]
 |===
-|  | Freemium | PAYGO標準 | PAYGO Premium | 節點型授權 | 容量型授權 
+|  | Freemium | PAYGO標準 | PAYGO Premium | 節點型BYOL | 容量型授權 
 
 
 | 最大系統容量（磁碟+物件儲存） | 500 GiB | 10 TiB | 368TiB | 每個授權368TiB | 2 PIB 
