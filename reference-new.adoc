@@ -20,7 +20,7 @@ summary: 包含新的增強功能。Cloud Volumes ONTAP
 
 
 
-== 9.11.1 RC1（2022年6月8日）
+== 9.11.1 RC1（2022年6月7日）
 
 AWS、Azure和Google Cloud現已提供適用的發行候選版本1。Cloud Volumes ONTAP此版本包含下列新功能與增強功能。
 

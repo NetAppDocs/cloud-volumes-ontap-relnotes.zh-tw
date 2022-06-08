@@ -84,11 +84,9 @@
   <block id="8e54c9dd2c325f6430e1789d91c327ee" category="list-text">E8ds_v4 ^1^</block>
   <block id="5d47d15bb6c95cde595a22f670bc8cdf" category="list-text">E32ds_v4 ^1^</block>
   <block id="a9161f4d77d799baa3a3dc4cfeaefca3" category="list-text">E48ds_v4 ^1^</block>
-  <block id="195512f323b29b79f5b71cceb3a49a7d" category="list-text">E80ids_v4 ^2^</block>
   <block id="3e7433721426ddc5bb6007a1f480b7e0" category="cell">支援的磁碟類型</block>
   <block id="8dbeeeefc901c0dbb39a9c1332aaeeb9" category="cell">優質網頁</block>
   <block id="18ca3c89ae9e8edbe217f2c9b7c6107d" category="inline-link">深入瞭解如何選擇寫入速度</block>
-  <block id="937cb82fad9af153ff18d3ee14caebd5" category="list-text">使用HA配對時、支援這些VM類型的高速寫入速度。Cloud Volumes ONTAP使用單一節點系統時、所有執行個體類型都支援高速寫入。<block ref="18805b87db41583a67ecc2414d022f2b" category="inline-link-rx"></block>。</block>
   <block id="4efc25f6cc7013d95ca2f5ab1dcc3366" category="list-text">建議僅在需要Azure維護控管時才使用此VM。由於價格較高、因此不建議用於任何其他使用案例。</block>
   <block id="d642bc6852e213242f2c21d17b6d3e43" category="list-text">Azure中的HA配對不支援PAYGO Explore。</block>
   <block id="36e4aa065725aff22926f2fed53bc3c7" category="section-title">支援的磁碟大小</block>
@@ -720,7 +718,6 @@
   <block id="caad2a7dc9cfca100a8a4cd9178c5c3c" category="summary">包含新的增強功能。Cloud Volumes ONTAP</block>
   <block id="a7eac8b4a926da262039a402441599c8" category="doc">更新內容Cloud Volumes ONTAP</block>
   <block id="749d592703da3a848a73787c63c1b7b3" category="paragraph">更新功能包括更新功能。Cloud Volumes ONTAP</block>
-  <block id="b86e6dd31ab5551fadfa63d0a04883ae" category="section-title">9.11.1 RC1（2022年6月8日）</block>
   <block id="39034d90f9ffc3ae3d6bfac5d80a47b0" category="paragraph">AWS、Azure和Google Cloud現已提供適用的發行候選版本1。Cloud Volumes ONTAP此版本包含下列新功能與增強功能。</block>
   <block id="0d14c546aac1d41bf632c7d7c3b6bb3d" category="section-title">效能提升</block>
   <block id="a98457b4d59ceca5e3d55d0aa4fc5df9" category="paragraph">我們已提升9.11.1或更新版本中新集合體的讀取效能。</block>
@@ -773,4 +770,8 @@
   <block id="b50289e78d6a423be932389cf178a958" category="inline-link-macro">Google Cloud中的《關於解決此問題的注意事項Cloud Volumes ONTAP</block>
   <block id="c35639ede069036a5d63bb08043fd4f9" category="list-text"><block ref="c35639ede069036a5d63bb08043fd4f9" category="inline-link-macro-rx"></block></block>
   <block id="3fb5fad778ff400a49097ca0bf0b9754" category="paragraph">在 AWS 中、 Aggregate 最多可包含 6 個大小相同的磁碟。但是如果您的組態支援Amazon EBS彈性Volume功能、則Aggregate最多可包含8個磁碟。<block ref="eb2d37c537dc5a49383d4a1aea5db77f" category="inline-link-rx"></block></block>
+  <block id="4dda8e10e8f790376507dc79063b6dcf" category="section-title">9.11.1 RC1（2022年6月7日）</block>
+  <block id="0d8238cb20fb41ede1eb68d45d598c4f" category="list-text">使用單一節點系統時、所有執行個體類型都支援高速寫入。您可以在部署期間或之後的任何時間、從Cloud Manager啟用高速寫入速度。<block ref="18805b87db41583a67ecc2414d022f2b" category="inline-link-rx"></block>。</block>
+  <block id="4e1b6146fa2cb1efc8bff10f1cf7e93c" category="list-text">E80ids_v4 ^1、1^</block>
+  <block id="7ddea5d9f1e01b01ba11b40da7046d95" category="list-text">使用HA配對時、支援這些VM類型的高速寫入速度。Cloud Volumes ONTAP您可以在部署期間或之後的任何時間、從Cloud Manager啟用高速寫入速度。<block ref="18805b87db41583a67ecc2414d022f2b" category="inline-link-rx"></block>。</block>
 </blocks>
