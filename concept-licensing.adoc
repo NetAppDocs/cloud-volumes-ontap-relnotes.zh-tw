@@ -241,6 +241,8 @@ Keystone Flex訂閱支援HA配對。目前單一節點系統不支援此授權�
 
 如果您想要轉換至其他授權方法、可以購買授權、使用Cloud Volumes ONTAP 該授權部署新的一套作業系統、然後將資料複寫到新系統。
 
+請注意、不支援將系統從PAYGO節點授權轉換成BYOL節點授權（反之亦然）。您需要部署新系統、然後將資料複寫到該系統。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html["瞭解如何在PAYGO和BYOL之間切換"^]
+
 
 
 == 最大系統數

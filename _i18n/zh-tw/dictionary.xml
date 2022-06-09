@@ -774,4 +774,8 @@
   <block id="0d8238cb20fb41ede1eb68d45d598c4f" category="list-text">使用單一節點系統時、所有執行個體類型都支援高速寫入。您可以在部署期間或之後的任何時間、從Cloud Manager啟用高速寫入速度。<block ref="18805b87db41583a67ecc2414d022f2b" category="inline-link-rx"></block>。</block>
   <block id="4e1b6146fa2cb1efc8bff10f1cf7e93c" category="list-text">E80ids_v4 ^1、1^</block>
   <block id="7ddea5d9f1e01b01ba11b40da7046d95" category="list-text">使用HA配對時、支援這些VM類型的高速寫入速度。Cloud Volumes ONTAP您可以在部署期間或之後的任何時間、從Cloud Manager啟用高速寫入速度。<block ref="18805b87db41583a67ecc2414d022f2b" category="inline-link-rx"></block>。</block>
+  <block id="5505ffcb759fb1c9c3793b2dd386cd82" category="inline-link">瞭解如何在PAYGO和BYOL之間切換</block>
+  <block id="e1e947c069bd154f04aefec0a6619873" category="paragraph">請注意、不支援將系統從PAYGO節點授權轉換成BYOL節點授權（反之亦然）。您需要部署新系統、然後將資料複寫到該系統。<block ref="c9d55d60961394f2cbacfb1050626915" category="inline-link-rx"></block></block>
+  <block id="75b66e0b3cef735ea985bd79ab9601e2" category="cell">m5dn.4xlarge</block>
+  <block id="bc503c45d950d94391e7685c6585b286" category="cell">m5dn.12xlarge</block>
 </blocks>
