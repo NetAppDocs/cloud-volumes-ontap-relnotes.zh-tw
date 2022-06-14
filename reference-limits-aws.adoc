@@ -60,7 +60,7 @@ NetApp不支援超過系統容量限制。如果您達到授權容量上限、Cl
 
 請注意下列事項：
 
-* 新Cloud Volumes ONTAP 的版本不支援c4、m4和r4執行個體類型。不過、我們仍顯示這些執行個體類型的磁碟限制、因為您可以在其中一種執行個體類型上執行時、將系統升級至9.10.0版本。
+* 此Cloud Volumes ONTAP 版本中的全新版本不支援c4、m4和r4執行個體類型。不過、我們仍顯示這些執行個體類型的磁碟限制、因為您可以在其中一種執行個體類型上執行時、將系統升級至此版本。
 * 下列磁碟限制僅適用於包含使用者資料的磁碟。限制不包括開機磁碟和根磁碟。
 * 您現在可以購買Cloud Volumes ONTAP 多個節點型授權給某個以供使用的解決方案、以分配超過368TiB的容量。單一節點系統或 HA 配對可購買的授權數量不受限制。請注意、磁碟限制可能會讓您無法單獨使用磁碟來達到容量限制。您可以超越磁碟限制 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-data-tiering.html["將非作用中資料分層至物件儲存設備"^]。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html["瞭解如何將額外的系統授權新增Cloud Volumes ONTAP 至功能完善"^]。
 
