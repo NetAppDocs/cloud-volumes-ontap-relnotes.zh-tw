@@ -772,6 +772,6 @@
   <block id="75b66e0b3cef735ea985bd79ab9601e2" category="cell">m5dn.4xlarge</block>
   <block id="bc503c45d950d94391e7685c6585b286" category="cell">m5dn.12xlarge</block>
   <block id="c50e8615eb65e21639a9b12f16b31280" category="list-text">此Cloud Volumes ONTAP 版本中的全新版本不支援c4、m4和r4執行個體類型。不過、我們仍顯示這些執行個體類型的磁碟限制、因為您可以在其中一種執行個體類型上執行時、將系統升級至此版本。</block>
-  <block id="fe133d1f6db8d046e4b328c0d9a967a1" category="paragraph">每個NetApp帳戶最多只能有50個不受使用中授權模式限制的不受限。Cloud Volumes ONTAP</block>
-  <block id="ae5034ae6657395ba1fc2a16d2c55db3" category="paragraph">_system_是HA配對或單一節點系統。例如、如果您有八Cloud Volumes ONTAP 個用作「用作」的「用作」、四個用作單一節點的系統、您的帳戶中總共有12個系統、還有38個額外系統的空間。</block>
+  <block id="3ac6338087c4180b5cbb359584abab3a" category="paragraph">無論使用何種授權模式、每個NetApp帳戶最多只能有20個不受限的功能。Cloud Volumes ONTAP</block>
+  <block id="b730a5e05a41eebeb51f5aee7c746386" category="paragraph">_system_是HA配對或單一節點系統。例如、如果您有兩Cloud Volumes ONTAP 個用作2個用作2個用作2個用作2個用作2個用作2個用作單一節點的系統、則您的帳戶中總共有4個用作16個用作額外系統的空間。</block>
 </blocks>
