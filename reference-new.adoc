@@ -96,6 +96,18 @@ https://cloud.netapp.com/cloud-volumes-global-regions["檢視Cloud Volumes ONTAP
 
 
 
+=== 反勒索軟體
+
+目前支援VMware的支援功能。ONTAP Cloud Volumes ONTAP這項功能使用NAS（NFS和SMB）環境中的工作負載分析、主動偵測可能表示勒索軟體攻擊的異常活動並提出警告。
+
+https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["深入瞭解反勒索軟體"^]
+
+請注意、Cloud Manager並未針對此功能提供任何管理功能。您需要使用System Manager或CLI來啟用反勒索軟體保護。
+
+反勒索軟體可解決與不同的使用案例 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-protecting-ransomware.html["您可透過Cloud Manager啟用的勒索軟體保護功能"^]
+
+
+
 == 全新不受支援ONTAP 的功能
 
 不支援更新於《支援使用者驗證ONTAP 功能的更新功能：Cloud Volumes ONTAP在Cloud Volumes ONTAP 支援的情況下、在支援的系統上啟用多管理員驗證、將會產生不受支援的組態。

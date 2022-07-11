@@ -686,4 +686,11 @@
   <block id="37439fa615a442ec183c1c602f9755f1" category="paragraph">容量型授權的形式為_package_。當您部署Cloud Volumes ONTAP 一套解決方案時、您可以根據業務需求、從多個授權套件中進行選擇。</block>
   <block id="deb56fb5a824215375b16e72749e2aa3" category="inline-link">深入瞭解這些授權選項</block>
   <block id="f3b3e9858be5dbfaf6c39891db3263a2" category="paragraph"><block ref="f3b3e9858be5dbfaf6c39891db3263a2" category="inline-link-rx"></block></block>
+  <block id="346f7f627d1a93bfbf315865554048c6" category="section-title">反勒索軟體</block>
+  <block id="df9ade3904ce4c10cfe2ea1f484d177c" category="paragraph">目前支援VMware的支援功能。ONTAP Cloud Volumes ONTAP這項功能使用NAS（NFS和SMB）環境中的工作負載分析、主動偵測可能表示勒索軟體攻擊的異常活動並提出警告。</block>
+  <block id="1682a2d73db17506ef748746ae0e5b26" category="inline-link">深入瞭解反勒索軟體</block>
+  <block id="2965efaf6a81d93c812190fdf70e8421" category="paragraph"><block ref="2965efaf6a81d93c812190fdf70e8421" category="inline-link-rx"></block></block>
+  <block id="ce6ffc4c3a796f2c5529a32c31151213" category="paragraph">請注意、Cloud Manager並未針對此功能提供任何管理功能。您需要使用System Manager或CLI來啟用反勒索軟體保護。</block>
+  <block id="f710d8a9c5acc6eccad3f0bf89772d55" category="inline-link">您可透過Cloud Manager啟用的勒索軟體保護功能</block>
+  <block id="ef849f76db615e66fabc0f181faeeaa0" category="paragraph">反勒索軟體可解決與不同的使用案例<block ref="bb3f0e167d3bc03dccb553be56950b92" category="inline-link-rx"></block></block>
 </blocks>
