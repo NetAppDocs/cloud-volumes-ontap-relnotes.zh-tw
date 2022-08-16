@@ -309,9 +309,7 @@
   <block id="cabc996760a00c42a2b15b388054d050" category="cell">最多可容納多個授權的系統容量</block>
   <block id="bb49543449782c0f1b87b3ef8f49a6be" category="cell">*單獨磁碟*</block>
   <block id="e3185eb0708df4883935910ebf26f8db" category="cell">*磁碟+資料分層*</block>
-  <block id="7b5a749f9960a67a5125083fa7cf600b" category="cell">928 TiB</block>
   <block id="f94f9afeacfc431720c782db2e1d8809" category="cell">每個授權使用368TiB</block>
-  <block id="b08a88e26e7d3629b4e76b499b53a5be" category="cell">1.95 PIB</block>
   <block id="84581eec82fbf62be31e4721312910b0" category="cell">L8s_v2</block>
   <block id="c51ce410c124a10e0db5e4b97fc2af39" category="cell">13.</block>
   <block id="c717534327e269958ec86746c88f88bf" category="cell">416 TiB</block>
@@ -689,4 +687,5 @@
   <block id="346f7f627d1a93bfbf315865554048c6" category="section-title">反勒索軟體</block>
   <block id="f7a595a5b716a220ebf66ec097a076b9" category="section-title">9.11.1 GA（2022年8月1日）</block>
   <block id="841cdf435f69aa307d11070ce78d7160" category="paragraph">目前已推出《The General Availability》（GA）版Cloud Volumes ONTAP 的《The》（英文）。GA版本包含錯誤修正。</block>
+  <block id="33f66f5b18b24875dca7a81c8f84c5b9" category="cell">896 TiB</block>
 </blocks>

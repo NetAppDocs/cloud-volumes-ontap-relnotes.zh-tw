@@ -113,19 +113,19 @@ NOTE: 對於某些VM類型、您需要數個BYOL授權、才能達到下列系�
 2+|  | *單獨磁碟* | *磁碟+資料分層* | *單獨磁碟* | *磁碟+資料分層* 
 
 
-| DS4_v2 | 29 | 368TiB | 368TiB | 928 TiB | 每個授權使用368TiB 
+| DS4_v2 | 29 | 368TiB | 368TiB | 896 TiB | 每個授權使用368TiB 
 
 
-| DS5_v2 | 61. | 368TiB | 368TiB | 1.95 PIB | 每個授權使用368TiB 
+| DS5_v2 | 61. | 368TiB | 368TiB | 896 TiB | 每個授權使用368TiB 
 
 
-| DS13_v2 | 29 | 368TiB | 368TiB | 928 TiB | 每個授權使用368TiB 
+| DS13_v2 | 29 | 368TiB | 368TiB | 896 TiB | 每個授權使用368TiB 
 
 
-| DS14_v2 | 61. | 368TiB | 368TiB | 1.95 PIB | 每個授權使用368TiB 
+| DS14_v2 | 61. | 368TiB | 368TiB | 896 TiB | 每個授權使用368TiB 
 
 
-| DS15_v2 | 61. | 368TiB | 368TiB | 1.95 PIB | 每個授權使用368TiB 
+| DS15_v2 | 61. | 368TiB | 368TiB | 896 TiB | 每個授權使用368TiB 
 
 
 | L8s_v2 | 13. | 368TiB | 368TiB | 416 TiB | 每個授權使用368TiB 
@@ -137,13 +137,13 @@ NOTE: 對於某些VM類型、您需要數個BYOL授權、才能達到下列系�
 | E8s_v3 | 13. | 368TiB | 368TiB | 416 TiB | 每個授權使用368TiB 
 
 
-| E32s_v3 | 29 | 368TiB | 368TiB | 928 TiB | 每個授權使用368TiB 
+| E32s_v3 | 29 | 368TiB | 368TiB | 896 TiB | 每個授權使用368TiB 
 
 
-| E48s_v3 | 29 | 368TiB | 368TiB | 928 TiB | 每個授權使用368TiB 
+| E48s_v3 | 29 | 368TiB | 368TiB | 896 TiB | 每個授權使用368TiB 
 
 
-| E64is_v3 | 29 | 368TiB | 368TiB | 928 TiB | 每個授權使用368TiB 
+| E64is_v3 | 29 | 368TiB | 368TiB | 896 TiB | 每個授權使用368TiB 
 
 
 | E4ds_v4 | 5. | 160 TiB | 368TiB | 160 TiB | 每個授權使用368TiB 
@@ -152,13 +152,13 @@ NOTE: 對於某些VM類型、您需要數個BYOL授權、才能達到下列系�
 | E8ds_v4 | 13. | 368TiB | 368TiB | 416 TiB | 每個授權使用368TiB 
 
 
-| E32ds_v4 | 29 | 368TiB | 368TiB | 928 TiB | 每個授權使用368TiB 
+| E32ds_v4 | 29 | 368TiB | 368TiB | 896 TiB | 每個授權使用368TiB 
 
 
-| E48ds_v4 | 29 | 368TiB | 368TiB | 928 TiB | 每個授權使用368TiB 
+| E48ds_v4 | 29 | 368TiB | 368TiB | 896 TiB | 每個授權使用368TiB 
 
 
-| E80ids_v4 | 61. | 368TiB | 368TiB | 1.95 PIB | 每個授權使用368TiB 
+| E80ids_v4 | 61. | 368TiB | 368TiB | 896 TiB | 每個授權使用368TiB 
 |===
 
 
@@ -169,19 +169,19 @@ NOTE: 對於某些VM類型、您需要數個BYOL授權、才能達到下列系�
 | VM大小 | 每個節點的實體磁碟數MAX Data | 僅使用磁碟就能達到最大系統容量 | 利用磁碟和資料分層來最大化系統容量 
 
 
-| DS4_v2 | 29 | 928 TiB | 2 PIB 
+| DS4_v2 | 29 | 896 TiB | 2 PIB 
 
 
-| DS5_v2 | 61. | 1.95 PIB | 2 PIB 
+| DS5_v2 | 61. | 896 TiB | 2 PIB 
 
 
-| DS13_v2 | 29 | 928 TiB | 2 PIB 
+| DS13_v2 | 29 | 896 TiB | 2 PIB 
 
 
-| DS14_v2 | 61. | 1.95 PIB | 2 PIB 
+| DS14_v2 | 61. | 896 TiB | 2 PIB 
 
 
-| DS15_v2 | 61. | 1.95 PIB | 2 PIB 
+| DS15_v2 | 61. | 896 TiB | 2 PIB 
 
 
 | L8s_v2 | 13. | 416 TiB | 2 PIB 
@@ -193,13 +193,13 @@ NOTE: 對於某些VM類型、您需要數個BYOL授權、才能達到下列系�
 | E8s_v3 | 13. | 416 TiB | 2 PIB 
 
 
-| E32s_v3 | 29 | 928 TiB | 2 PIB 
+| E32s_v3 | 29 | 896 TiB | 2 PIB 
 
 
-| E48s_v3 | 29 | 928 TiB | 2 PIB 
+| E48s_v3 | 29 | 896 TiB | 2 PIB 
 
 
-| E64is_v3 | 29 | 928 TiB | 2 PIB 
+| E64is_v3 | 29 | 896 TiB | 2 PIB 
 
 
 | E4ds_v4 | 5. | 160 TiB | 2 PIB 
@@ -208,13 +208,13 @@ NOTE: 對於某些VM類型、您需要數個BYOL授權、才能達到下列系�
 | E8ds_v4 | 13. | 416 TiB | 2 PIB 
 
 
-| E32ds_v4 | 29 | 928 TiB | 2 PIB 
+| E32ds_v4 | 29 | 896 TiB | 2 PIB 
 
 
-| E48ds_v4 | 29 | 928 TiB | 2 PIB 
+| E48ds_v4 | 29 | 896 TiB | 2 PIB 
 
 
-| E80ids_v4 | 61. | 1.95 PIB | 2 PIB 
+| E80ids_v4 | 61. | 896 TiB | 2 PIB 
 |===
 
 
