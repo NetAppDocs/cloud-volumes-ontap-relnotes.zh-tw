@@ -92,6 +92,7 @@ NOTE: 由資料一致性決定資料一致性。ONTAP WAFL只ONTAP 有當WAFL �
 
 * Aggregate層級即時重複資料刪除技術
 * Aggregate層級背景重複資料刪除技術
+* 反勒索軟體
 * 磁碟維護中心
 * 磁碟資料抹除
 * 鏡射FabricPool

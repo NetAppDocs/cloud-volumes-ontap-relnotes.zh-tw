@@ -20,6 +20,12 @@ summary: 包含新的增強功能。Cloud Volumes ONTAP
 
 
 
+== 9.11.1 GA（2022年8月1日）
+
+目前已推出《The General Availability》（GA）版Cloud Volumes ONTAP 的《The》（英文）。GA版本包含錯誤修正。
+
+
+
 == 9.11.1 RC1（2022年6月7日）
 
 AWS、Azure和Google Cloud現已提供適用的發行候選版本1。Cloud Volumes ONTAP此版本包含下列新功能與增強功能。
@@ -93,18 +99,6 @@ https://cloud.netapp.com/cloud-volumes-global-regions["檢視Cloud Volumes ONTAP
 * https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-managing-svms-aws.html["瞭解如何在AWS中建立額外的儲存VM"^]
 * https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-managing-svms-azure.html["瞭解如何在Azure中建立額外的儲存VM"^]
 
-
-
-
-=== 反勒索軟體
-
-目前支援VMware的支援功能。ONTAP Cloud Volumes ONTAP這項功能使用NAS（NFS和SMB）環境中的工作負載分析、主動偵測可能表示勒索軟體攻擊的異常活動並提出警告。
-
-https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["深入瞭解反勒索軟體"^]
-
-請注意、Cloud Manager並未針對此功能提供任何管理功能。您需要使用System Manager或CLI來啟用反勒索軟體保護。
-
-反勒索軟體可解決與不同的使用案例 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-protecting-ransomware.html["您可透過Cloud Manager啟用的勒索軟體保護功能"^]
 
 
 
