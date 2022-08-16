@@ -50,22 +50,167 @@ NetApp不支援超過系統容量限制。如果您達到授權容量上限、Cl
 
 
 
+== Aggregate限制
+
+使用Azure儲存設備做為磁碟、並將其分組為_aggregate。Cloud Volumes ONTAPAggregate可為磁碟區提供儲存設備。
+
+[cols="2*"]
+|===
+| 參數 | 限制 
+
+
+| 最大集合體數 | 與磁碟限制相同 
+
+
+| 最大Aggregate大小為^1^ | 384 TiB原始容量、適用於單一節點^2^ 352 TiB原始容量、適用於單一節點、搭配PAYGO 96 TiB原始容量、適用於HA配對 
+
+
+| 每個集合體的磁碟數 | 1-12^3^ 
+
+
+| 每個Aggregate的RAID群組數目上限 | 1. 
+|===
+附註：
+
+. Aggregate容量限制是根據組成Aggregate的磁碟而來。此限制不包括用於資料分層的物件儲存設備。
+. 如果使用節點型授權、則需要兩個BYOL授權才能達到384 TiB。
+. 集合體中的所有磁碟大小必須相同。
+
+
+
+
 == 磁碟和分層限制、依VM大小而定
 
-下列磁碟限制僅適用於包含使用者資料的磁碟。限制不包括根磁碟、核心磁碟和VNVRAM。
+容量限制會因您使用的VM大小、以及您使用的是單一節點系統或HA配對而有所不同。
 
-下表顯示單一磁碟、以及磁碟和冷資料分層至物件儲存設備的VM大小上限。
+下列附註提供您在下表中所見數字的詳細資料：
 
-* 單一節點系統可使用標準HDD託管磁碟、標準SSD託管磁碟和優質SSD託管磁碟、每個磁碟最多32 TiB。支援的磁碟數量會因VM大小而異。
-* HA系統使用優質頁面區塊做為磁碟、每頁區塊最多8個TiB。支援的磁碟數量會因VM大小而異。
+* 磁碟限制僅適用於包含使用者資料的磁碟。
++
+限制不包括根磁碟、核心磁碟和VNVRAM。
+
+* 當單獨使用磁碟、使用磁碟和冷資料分層至物件儲存設備時、會列出最大系統容量。
+* 單一節點系統使用託管磁碟、每個磁碟最多32 TiB。支援的磁碟數量會因VM大小而異。
+* HA配對使用優質頁面區塊做為磁碟、每頁區塊最多8個TiB。支援的磁碟數量會因VM大小而異。
+* 針對具有特定VM大小的單一節點系統所列出的896 TiB磁碟型限制、是_已測試_的限制。
 
 
 
-NOTE: 您可以購買Cloud Volumes ONTAP 多個節點型授權給某個不支援的解決方案、以分配超過3668 TiB的容量。單一節點系統或 HA 配對可購買的授權數量不受限制。請注意、磁碟限制可能會讓您無法單獨使用磁碟來達到容量限制。您可以超越磁碟限制 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-data-tiering.html["將非作用中資料分層至物件儲存設備"^]。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html["瞭解如何將額外的系統授權新增Cloud Volumes ONTAP 至功能完善"^]。
+
+=== 容量型授權限制
+
+下列磁碟限制適用於Cloud Volumes ONTAP 使用容量型授權套件的各個系統。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html["深入瞭Cloud Volumes ONTAP 解功能多樣的授權選項"^]
 
 
 
-=== 具有Premium授權的單一節點
+==== 單一節點
+
+[cols="14,20,31,33"]
+|===
+| VM大小 | 每個節點的實體磁碟數MAX Data | 僅使用磁碟就能達到最大系統容量 | 利用磁碟和資料分層來最大化系統容量 
+
+
+| DS4_v2 | 29 | 896 TiB | 2 PIB 
+
+
+| DS5_v2 | 61. | 896 TiB | 2 PIB 
+
+
+| DS13_v2 | 29 | 896 TiB | 2 PIB 
+
+
+| DS14_v2 | 61. | 896 TiB | 2 PIB 
+
+
+| DS15_v2 | 61. | 896 TiB | 2 PIB 
+
+
+| L8s_v2 | 13. | 416 TiB | 2 PIB 
+
+
+| E4s_v3 | 5. | 160 TiB | 2 PIB 
+
+
+| E8s_v3 | 13. | 416 TiB | 2 PIB 
+
+
+| E32s_v3 | 29 | 896 TiB | 2 PIB 
+
+
+| E48s_v3 | 29 | 896 TiB | 2 PIB 
+
+
+| E64is_v3 | 29 | 896 TiB | 2 PIB 
+
+
+| E4ds_v4 | 5. | 160 TiB | 2 PIB 
+
+
+| E8ds_v4 | 13. | 416 TiB | 2 PIB 
+
+
+| E32ds_v4 | 29 | 896 TiB | 2 PIB 
+
+
+| E48ds_v4 | 29 | 896 TiB | 2 PIB 
+
+
+| E80ids_v4 | 61. | 896 TiB | 2 PIB 
+|===
+
+
+==== HA 配對
+
+[cols="14,20,31,33"]
+|===
+| VM大小 | HA配對的實體磁碟MAX Data | 僅使用磁碟就能達到最大系統容量 | 利用磁碟和資料分層來最大化系統容量 
+
+
+| DS4_v2 | 29 | 232TiB | 2 PIB 
+
+
+| DS5_v2 | 61. | 488TiB | 2 PIB 
+
+
+| DS13_v2 | 29 | 232TiB | 2 PIB 
+
+
+| DS14_v2 | 61. | 488TiB | 2 PIB 
+
+
+| DS15_v2 | 61. | 488TiB | 2 PIB 
+
+
+| E8s_v3 | 13. | 104 TiB | 2 PIB 
+
+
+| E48s_v3 | 29 | 232TiB | 2 PIB 
+
+
+| E8ds_v4 | 13. | 104 TiB | 2 PIB 
+
+
+| E32ds_v4 | 29 | 232TiB | 2 PIB 
+
+
+| E48ds_v4 | 29 | 232TiB | 2 PIB 
+
+
+| E80ids_v4 | 61. | 488TiB | 2 PIB 
+|===
+
+
+=== 節點型授權限制
+
+下列磁碟限制適用於Cloud Volumes ONTAP 使用節點型授權的支援系統、這是前一代授權模式、可讓您依Cloud Volumes ONTAP 節點授權使用。現有客戶仍可使用節點型授權。
+
+如果您使用節點型授權、可以針對Cloud Volumes ONTAP 一個以節點為基礎的系統購買多個節點型授權、以分配超過3668 TiB的容量。
+
+單一節點系統或 HA 配對可購買的授權數量不受限制。請注意、磁碟限制可能會讓您無法單獨使用磁碟來達到容量限制。您可以超越磁碟限制 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-data-tiering.html["將非作用中資料分層至物件儲存設備"^]。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html["瞭解如何將額外的系統授權新增Cloud Volumes ONTAP 至功能完善"^]。
+
+
+
+==== 單一節點搭配PAYGO Premium
 
 [cols="14,20,31,33"]
 |===
@@ -100,10 +245,7 @@ NOTE: 您可以購買Cloud Volumes ONTAP 多個節點型授權給某個不支援
 |===
 
 
-=== 具有節點型授權的單一節點
-
-
-NOTE: 對於某些VM類型、您需要數個BYOL授權、才能達到下列系統容量上限。例如、您需要6個BYOL授權、才能使用DS5_v2達到1.95 PIB。
+==== 單一節點搭配BYOL
 
 [cols="10,18,18,18,18,18"]
 |===
@@ -162,63 +304,7 @@ NOTE: 對於某些VM類型、您需要數個BYOL授權、才能達到下列系�
 |===
 
 
-=== 具有容量型授權的單一節點
-
-[cols="14,20,31,33"]
-|===
-| VM大小 | 每個節點的實體磁碟數MAX Data | 僅使用磁碟就能達到最大系統容量 | 利用磁碟和資料分層來最大化系統容量 
-
-
-| DS4_v2 | 29 | 896 TiB | 2 PIB 
-
-
-| DS5_v2 | 61. | 896 TiB | 2 PIB 
-
-
-| DS13_v2 | 29 | 896 TiB | 2 PIB 
-
-
-| DS14_v2 | 61. | 896 TiB | 2 PIB 
-
-
-| DS15_v2 | 61. | 896 TiB | 2 PIB 
-
-
-| L8s_v2 | 13. | 416 TiB | 2 PIB 
-
-
-| E4s_v3 | 5. | 160 TiB | 2 PIB 
-
-
-| E8s_v3 | 13. | 416 TiB | 2 PIB 
-
-
-| E32s_v3 | 29 | 896 TiB | 2 PIB 
-
-
-| E48s_v3 | 29 | 896 TiB | 2 PIB 
-
-
-| E64is_v3 | 29 | 896 TiB | 2 PIB 
-
-
-| E4ds_v4 | 5. | 160 TiB | 2 PIB 
-
-
-| E8ds_v4 | 13. | 416 TiB | 2 PIB 
-
-
-| E32ds_v4 | 29 | 896 TiB | 2 PIB 
-
-
-| E48ds_v4 | 29 | 896 TiB | 2 PIB 
-
-
-| E80ids_v4 | 61. | 896 TiB | 2 PIB 
-|===
-
-
-=== HA與Premium授權配對
+==== HA與PAYGO Premium配對
 
 [cols="14,20,31,33"]
 |===
@@ -250,7 +336,7 @@ NOTE: 對於某些VM類型、您需要數個BYOL授權、才能達到下列系�
 |===
 
 
-=== HA與節點型授權配對
+==== HA與BYOL配對
 
 [cols="10,18,18,18,18,18"]
 |===
@@ -292,76 +378,6 @@ NOTE: 對於某些VM類型、您需要數個BYOL授權、才能達到下列系�
 
 | E80ids_v4 | 61. | 368TiB | 368TiB | 488TiB | 每個授權使用368TiB 
 |===
-
-
-=== HA與容量型授權配對
-
-[cols="14,20,31,33"]
-|===
-| VM大小 | HA配對的實體磁碟MAX Data | 僅使用磁碟就能達到最大系統容量 | 利用磁碟和資料分層來最大化系統容量 
-
-
-| DS4_v2 | 29 | 232TiB | 2 PIB 
-
-
-| DS5_v2 | 61. | 488TiB | 2 PIB 
-
-
-| DS13_v2 | 29 | 232TiB | 2 PIB 
-
-
-| DS14_v2 | 61. | 488TiB | 2 PIB 
-
-
-| DS15_v2 | 61. | 488TiB | 2 PIB 
-
-
-| E8s_v3 | 13. | 104 TiB | 2 PIB 
-
-
-| E48s_v3 | 29 | 232TiB | 2 PIB 
-
-
-| E8ds_v4 | 13. | 104 TiB | 2 PIB 
-
-
-| E32ds_v4 | 29 | 232TiB | 2 PIB 
-
-
-| E48ds_v4 | 29 | 232TiB | 2 PIB 
-
-
-| E80ids_v4 | 61. | 488TiB | 2 PIB 
-|===
-
-
-== Aggregate限制
-
-使用Azure儲存設備做為磁碟、並將其分組為_aggregate。Cloud Volumes ONTAPAggregate可為磁碟區提供儲存設備。
-
-[cols="2*"]
-|===
-| 參數 | 限制 
-
-
-| 最大集合體數 | 與磁碟限制相同 
-
-
-| 最大Aggregate大小為^1^ | 384 TiB原始容量、適用於單一節點^2^ 352 TiB原始容量、適用於單一節點、搭配PAYGO 96 TiB原始容量、適用於HA配對 
-
-
-| 每個集合體的磁碟數 | 1-12^3^ 
-
-
-| 每個Aggregate的RAID群組數目上限 | 1. 
-|===
-附註：
-
-. Aggregate容量限制是根據組成Aggregate的磁碟而來。此限制不包括用於資料分層的物件儲存設備。
-. 如果使用節點型授權、則需要兩個BYOL授權才能達到384 TiB。
-. 集合體中的所有磁碟大小必須相同。
-
-
 
 
 == 儲存VM限制

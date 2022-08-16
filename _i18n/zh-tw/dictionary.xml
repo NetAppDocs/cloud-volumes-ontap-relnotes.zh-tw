@@ -284,13 +284,7 @@
   <block id="768560d8110ed230b7fde848941af107" category="cell">2 TiB（Explore不支援資料分層）</block>
   <block id="44007958b04e5e15a25a3ca1ee98abeb" category="paragraph">容量限制適用於整個HA配對。不是每個節點。例如、如果您使用Premium授權、則兩個節點之間最多可有368TiB的容量。</block>
   <block id="e6607992aca7a2cd8b89f152b0cf553d" category="section-title">磁碟和分層限制、依VM大小而定</block>
-  <block id="a9b575c3ac8492900fd552582c6fecae" category="paragraph">下列磁碟限制僅適用於包含使用者資料的磁碟。限制不包括根磁碟、核心磁碟和VNVRAM。</block>
-  <block id="295f33d6ece0cb2125433cf6ec678e7e" category="paragraph">下表顯示單一磁碟、以及磁碟和冷資料分層至物件儲存設備的VM大小上限。</block>
-  <block id="f114a72e19307d64279cad76172579f0" category="list-text">單一節點系統可使用標準HDD託管磁碟、標準SSD託管磁碟和優質SSD託管磁碟、每個磁碟最多32 TiB。支援的磁碟數量會因VM大小而異。</block>
-  <block id="bb8cb4958d23b69d96d3891aa7ae598a" category="list-text">HA系統使用優質頁面區塊做為磁碟、每頁區塊最多8個TiB。支援的磁碟數量會因VM大小而異。</block>
   <block id="275e3ef1a302e67e93bcf0f30d566f74" category="inline-link">瞭解如何將額外的系統授權新增Cloud Volumes ONTAP 至功能完善</block>
-  <block id="c40775108b323ba29757ee7d6526594a" category="admonition">您可以購買Cloud Volumes ONTAP 多個節點型授權給某個不支援的解決方案、以分配超過3668 TiB的容量。單一節點系統或 HA 配對可購買的授權數量不受限制。請注意、磁碟限制可能會讓您無法單獨使用磁碟來達到容量限制。您可以超越磁碟限制<block ref="91a4fc4ecb983c2fca7588f26341e223" category="inline-link-rx"></block>。<block ref="cd9ff634efd9a4fe20f170cd618702b5" category="inline-link-rx"></block>。</block>
-  <block id="129e3a061f7870067c1e133ba0a412f2" category="section-title">具有Premium授權的單一節點</block>
   <block id="50c51ed959c686d478aaf3f5e64ce255" category="cell">VM大小</block>
   <block id="1522e1d48d50a8b533ccfa8eeaad6405" category="cell">每個節點的實體磁碟數MAX Data</block>
   <block id="a9b87ab892cc3b768d5fb6b4d85fcdd5" category="cell">僅使用磁碟就能達到最大系統容量</block>
@@ -303,8 +297,6 @@
   <block id="88a30f177822761a0b89ce7abd88a305" category="cell">E32ds_v4</block>
   <block id="958e5e8b2dc959cc24ae1182052f1b03" category="cell">E48ds_v4</block>
   <block id="6b9d51616a5f0637dd2fb237d868c037" category="cell">E80ids_v4</block>
-  <block id="84dbd7aba83fa6e04c6f7c96a1be85f2" category="section-title">具有節點型授權的單一節點</block>
-  <block id="9a14c9013ea629276a361bd58d8e1f28" category="admonition">對於某些VM類型、您需要數個BYOL授權、才能達到下列系統容量上限。例如、您需要6個BYOL授權、才能使用DS5_v2達到1.95 PIB。</block>
   <block id="aaa9a5ed21c4e4c107aab47a353049bc" category="cell">單一授權即可達到最大系統容量</block>
   <block id="cabc996760a00c42a2b15b388054d050" category="cell">最多可容納多個授權的系統容量</block>
   <block id="bb49543449782c0f1b87b3ef8f49a6be" category="cell">*單獨磁碟*</block>
@@ -317,14 +309,10 @@
   <block id="82c5a657ae8662e2146ad882dc2b2d0b" category="cell">160 TiB</block>
   <block id="aafab9b991240605f56b3df780360449" category="cell">E4ds_v4</block>
   <block id="47518ea66849dbbe24f40b9d9b33f828" category="cell">E8ds_v4</block>
-  <block id="918660df9dabb216873a828f8dba357f" category="section-title">具有容量型授權的單一節點</block>
-  <block id="2fe12d2fbca1ad427f800563e85d7942" category="section-title">HA與Premium授權配對</block>
   <block id="7d77a94398a1ae91747e4416328465b2" category="cell">HA配對的實體磁碟MAX Data</block>
   <block id="0a789230ce14d85dfbfef0f49344f939" category="cell">104 TiB</block>
   <block id="53139a86c213c175cf03e2105471a8f1" category="cell">232TiB</block>
-  <block id="5d0440e2b7983c0540ac561d3bd66201" category="section-title">HA與節點型授權配對</block>
   <block id="ee5716fafa3df5e3f684da403a479cf7" category="cell">488TiB</block>
-  <block id="74c7b6190ee0e7fb8e5bb03dd438c3da" category="section-title">HA與容量型授權配對</block>
   <block id="77da8ca35e02ab32c9b48e9f632913bf" category="section-title">Aggregate限制</block>
   <block id="90f7fe115847c067cf4c52892efe18db" category="paragraph">使用Azure儲存設備做為磁碟、並將其分組為_aggregate。Cloud Volumes ONTAPAggregate可為磁碟區提供儲存設備。</block>
   <block id="83f499a540b1323009c200d6f8cc9396" category="cell">參數</block>
@@ -404,7 +392,6 @@
   <block id="ce5ee1bd79a3fbc4ee9fee207a94ef54" category="paragraph">容量限制適用於整個HA配對。不是每個節點。例如、如果您使用Premium授權、則兩個節點之間最多可有368TB的容量。</block>
   <block id="1ddc84b3dc9fe6599d89fd9b7f5c6660" category="paragraph">不、這不需要。HA配對中的資料會在節點之間同步鏡射、以便在Google Cloud發生故障時提供資料。例如、如果您在節點A上購買8 TB磁碟、Cloud Manager也會在節點B上配置8 TB磁碟、用於鏡射資料。雖然已配置16 TB容量、但根據授權上限、僅需8 TB。</block>
   <block id="466cd90b62b5da75ee4bd662add41e7f" category="section-title">磁碟和分層限制</block>
-  <block id="49e0d392d83f24aa1384f18b22975ef6" category="paragraph">下表顯示單一磁碟的最大系統容量、以及磁碟和冷資料分層至物件儲存設備的最大系統容量。磁碟限制僅適用於包含使用者資料的磁碟。限制不包括開機磁碟和根磁碟。</block>
   <block id="08fca9107919e2a3190d5edc75ce7c61" category="cell">最大資料磁碟數</block>
   <block id="73a5b4e1955745ba2e19b7f891caf5fd" category="list-text">124適用於單一節點系統</block>
   <block id="2b7385ac96adbf2201cf7b11333b798c" category="list-text">每個節點123個、適用於HA配對</block>
@@ -413,7 +400,6 @@
   <block id="92d6dc05cca759fe0b05fc952ab8d146" category="cell">僅使用磁碟即可獲得最大系統容量</block>
   <block id="245cf9fb027a40ee8a30bfcbf5a0f859" category="cell">256 TB ^1^</block>
   <block id="fb477a816dd39a57a35e342288ae601b" category="cell">利用磁碟和冷資料分層、將系統容量最大化至Google Cloud Storage儲存庫</block>
-  <block id="1a731420bbc4adfcc3e3c640955180d2" category="cell">視授權而定。請參閱上表。</block>
   <block id="f001a5c220f0213e63339dfe3e66fb03" category="paragraph">此限制是由Google Cloud Platform中的虛擬機器限制所定義。</block>
   <block id="c774172e35ab7294ce80989983a6d47e" category="paragraph">可將Google Cloud Platform磁碟分組為_aggregate。Cloud Volumes ONTAPAggregate可為磁碟區提供儲存設備。</block>
   <block id="78c305f4cc241040025b8466926183c4" category="cell">最大資料集合數^1^</block>
@@ -434,7 +420,6 @@
   <block id="0e1a6eb7eed81777ed9d0610be51df3b" category="paragraph">先前的個別節點授權模式仍適用於已購買授權或正在訂閱市場的現有客戶。</block>
   <block id="19bcaffbe8361f9d452beabc8065f223" category="section-title">容量型授權套件</block>
   <block id="e7cf94fb6f7d5441689859c52b410a98" category="paragraph">容量型授權可讓您針對Cloud Volumes ONTAP 容量的每個TiB付費。授權與您的NetApp帳戶相關聯、只要授權有足夠的容量可用、您就能根據授權向多個系統收取費用。</block>
-  <block id="cf3a2d2c139bf5c9cc87fe714bfff3b1" category="paragraph">請注意下列事項：</block>
   <block id="1f0b82560627b660c6c6958a1df834b8" category="section-title">支援的組態</block>
   <block id="69c3857459c8cf827b42c61c1b02fdd2" category="paragraph">以隨成長付費訂閱為基礎的服務、可為偏好營運成本使用模式的使用者、提供無縫的混合雲體驗、以供預先支付資本支出或租賃之用。</block>
   <block id="c2d000408838a6b2031536d54c067fd9" category="paragraph">充電是根據Cloud Volumes ONTAP 您在Keystone Flex訂閱中一或多對的已認可容量大小而計算。</block>
@@ -443,9 +428,6 @@
   <block id="13e43f7520d8163c6554fc15774d56ed" category="paragraph">在某些組態中、磁碟限制會讓您無法單獨使用磁碟來達到容量限制。在這些情況下、您可以達到容量上限<block ref="91a4fc4ecb983c2fca7588f26341e223" category="inline-link-rx"></block>。如需詳細資料、請參閱下方的容量和磁碟限制。</block>
   <block id="8644b747d80d3144a35c2f7a3eb37c2e" category="paragraph">不、這不需要。AWS HA配對中的資料會在節點之間同步鏡射、以便在發生故障時提供資料。例如、如果您在節點A上購買8個TiB磁碟、Cloud Manager也會在節點B上配置8個TiB磁碟、用於鏡射資料。雖然已配置16個TiB容量、但根據授權上限只計算8個TiB。</block>
   <block id="c029ebf0cab0f40812ebec7c644fef41" category="section-title">EC2執行個體的磁碟和分層限制</block>
-  <block id="5a9c94e941761c15ef227dfa8c3fc6d8" category="paragraph">使用EBS磁碟區做為磁碟、磁碟大小上限為16 TiB。Cloud Volumes ONTAP以下各節顯示EC2執行個體系列的磁碟和分層限制、因為許多EC2執行個體類型具有不同的磁碟限制。單一節點系統與HA配對之間的磁碟限制也不同。</block>
-  <block id="5eb6e090da55ad28bf2f9c1286619ef2" category="list-text">下列磁碟限制僅適用於包含使用者資料的磁碟。限制不包括開機磁碟和根磁碟。</block>
-  <block id="bb1dfd389b14b44028041022a8d2899f" category="list-text">您現在可以購買Cloud Volumes ONTAP 多個節點型授權給某個以供使用的解決方案、以分配超過368TiB的容量。單一節點系統或 HA 配對可購買的授權數量不受限制。請注意、磁碟限制可能會讓您無法單獨使用磁碟來達到容量限制。您可以超越磁碟限制<block ref="91a4fc4ecb983c2fca7588f26341e223" category="inline-link-rx"></block>。<block ref="cd9ff634efd9a4fe20f170cd618702b5" category="inline-link-rx"></block>。</block>
   <block id="d9a17c1c9e8ef6866e4dbeef41c741b2" category="cell">執行個體</block>
   <block id="4f42986706a322f09678a2f25be54dd9" category="cell">每個節點的磁碟數上限</block>
   <block id="92c56680c1760869861a8044ea57048a" category="cell">c5、m5和R5執行個體</block>
@@ -679,7 +661,6 @@
   <block id="7ddea5d9f1e01b01ba11b40da7046d95" category="list-text">使用HA配對時、支援這些VM類型的高速寫入速度。Cloud Volumes ONTAP您可以在部署期間或之後的任何時間、從Cloud Manager啟用高速寫入速度。<block ref="18805b87db41583a67ecc2414d022f2b" category="inline-link-rx"></block>。</block>
   <block id="75b66e0b3cef735ea985bd79ab9601e2" category="cell">m5dn.4xlarge</block>
   <block id="bc503c45d950d94391e7685c6585b286" category="cell">m5dn.12xlarge</block>
-  <block id="c50e8615eb65e21639a9b12f16b31280" category="list-text">此Cloud Volumes ONTAP 版本中的全新版本不支援c4、m4和r4執行個體類型。不過、我們仍顯示這些執行個體類型的磁碟限制、因為您可以在其中一種執行個體類型上執行時、將系統升級至此版本。</block>
   <block id="30af1a6878bac3a7aaed5d0e64e7b511" category="paragraph">提供不同的授權選項、讓您選擇符合需求的消費模式。Cloud Volumes ONTAP</block>
   <block id="37439fa615a442ec183c1c602f9755f1" category="paragraph">容量型授權的形式為_package_。當您部署Cloud Volumes ONTAP 一套解決方案時、您可以根據業務需求、從多個授權套件中進行選擇。</block>
   <block id="deb56fb5a824215375b16e72749e2aa3" category="inline-link">深入瞭解這些授權選項</block>
@@ -688,4 +669,32 @@
   <block id="f7a595a5b716a220ebf66ec097a076b9" category="section-title">9.11.1 GA（2022年8月1日）</block>
   <block id="841cdf435f69aa307d11070ce78d7160" category="paragraph">目前已推出《The General Availability》（GA）版Cloud Volumes ONTAP 的《The》（英文）。GA版本包含錯誤修正。</block>
   <block id="33f66f5b18b24875dca7a81c8f84c5b9" category="cell">896 TiB</block>
+  <block id="a4a5e7bfb7afd26ff6a225ef7681add9" category="paragraph">下表顯示單一磁碟的最大系統容量、以及磁碟和冷資料分層至物件儲存設備的最大系統容量。磁碟限制僅適用於包含使用者資料的磁碟。限制不包括開機磁碟、根磁碟或NVRAM。</block>
+  <block id="aa22c87da31d41edeac2ffbad9e7507d" category="cell">視授權而定。請參閱上述的最大系統容量限制。</block>
+  <block id="4309266475af7c71bb88f9be6f8c3940" category="paragraph">容量限制會因您使用的EC2執行個體類型系列、以及您使用的是單一節點系統或HA配對而有所不同。</block>
+  <block id="b1fb395f7c47ced4c12fc74fad2320b5" category="paragraph">下列附註提供您在下表中所見數字的詳細資料：</block>
+  <block id="3ee4a294c58f9e6c4461dc10d825844c" category="list-text">磁碟限制僅適用於包含使用者資料的磁碟。</block>
+  <block id="e7caa46d6e70a5b96752b4644b9f1527" category="paragraph">限制不包括開機磁碟和根磁碟。</block>
+  <block id="e8ea7579109541b8654ac77df6ec5b21" category="list-text">當單獨使用磁碟、使用磁碟和冷資料分層至物件儲存設備時、會列出最大系統容量。</block>
+  <block id="dd81441aed81dac4d773ef1291a64e00" category="list-text">使用EBS磁碟區做為磁碟、磁碟大小上限為16 TiB。Cloud Volumes ONTAP</block>
+  <block id="6f55661d86c0b385d8b362ed90701d0d" category="section-title">容量型授權限制</block>
+  <block id="54fe37b73954e37cae21db9bbd66c952" category="inline-link">深入瞭Cloud Volumes ONTAP 解功能多樣的授權選項</block>
+  <block id="bdb02d545feb4269f91ba30bafe0b877" category="paragraph">下列磁碟限制適用於Cloud Volumes ONTAP 使用容量型授權套件的各個系統。<block ref="f34dd0069e6a1810319c8488dea69f29" category="inline-link-rx"></block></block>
+  <block id="5aabc9069557be7e4aeff466605cbc75" category="section-title">單一節點</block>
+  <block id="6c3b49ddb811c2d88edee86163680009" category="section-title">節點型授權限制</block>
+  <block id="d017aa906544a3348ee35d75ebb10b72" category="paragraph">下列磁碟限制適用於Cloud Volumes ONTAP 使用節點型授權的支援系統、這是前一代授權模式、可讓您依Cloud Volumes ONTAP 節點授權使用。現有客戶仍可使用節點型授權。</block>
+  <block id="52960fb5a2829740ddef9c61b6015d59" category="list-text">如果您使用節點型授權、可以針對Cloud Volumes ONTAP 一個以節點為基礎的系統購買多個節點型授權、以分配超過3668 TiB的容量。</block>
+  <block id="f64d686366f69524d03c9279a078fb54" category="paragraph">單一節點系統或 HA 配對可購買的授權數量不受限制。請注意、磁碟限制可能會讓您無法單獨使用磁碟來達到容量限制。您可以超越磁碟限制<block ref="91a4fc4ecb983c2fca7588f26341e223" category="inline-link-rx"></block>。<block ref="cd9ff634efd9a4fe20f170cd618702b5" category="inline-link-rx"></block>。</block>
+  <block id="ab3e9017f469fcaf61a0f16670f627f1" category="list-text">此Cloud Volumes ONTAP 版本中的全新版本不支援c4、m4和r4執行個體類型。</block>
+  <block id="adad2ef28b2450525f057d0f5e32ec33" category="paragraph">不過、我們仍顯示這些執行個體類型的磁碟限制、因為您可以在其中一種執行個體類型上執行時、將系統升級至此版本。</block>
+  <block id="fff4bb20e652c529e2e22e76e56ed9b5" category="section-title">單一節點搭配PAYGO Premium</block>
+  <block id="a9698a2172c5fcc72b7ecd7910403955" category="section-title">單一節點搭配BYOL</block>
+  <block id="9dbb7f356b08de585f6ddbe523e4a8d8" category="section-title">HA與PAYGO Premium配對</block>
+  <block id="1bc398eeb632d3ea2f565d86881775d8" category="section-title">HA與BYOL配對</block>
+  <block id="8839c374fd950d105b5836c5400c37e3" category="paragraph">容量限制會因您使用的VM大小、以及您使用的是單一節點系統或HA配對而有所不同。</block>
+  <block id="10e6e33e8d7a64d70c731d40ea252ed8" category="paragraph">下列附註提供您在下表中所見數字的詳細資料：</block>
+  <block id="bbeef84c33f1676ea87c5c7f476795e6" category="paragraph">限制不包括根磁碟、核心磁碟和VNVRAM。</block>
+  <block id="70f278cadf665202f3ebb7a682519f5c" category="list-text">單一節點系統使用託管磁碟、每個磁碟最多32 TiB。支援的磁碟數量會因VM大小而異。</block>
+  <block id="c5fa07957eb90c414f1dadcad7da5df6" category="list-text">HA配對使用優質頁面區塊做為磁碟、每頁區塊最多8個TiB。支援的磁碟數量會因VM大小而異。</block>
+  <block id="0d5277886c056c697a81cb7ba46178fc" category="list-text">針對具有特定VM大小的單一節點系統所列出的896 TiB磁碟型限制、是_已測試_的限制。</block>
 </blocks>
