@@ -697,4 +697,7 @@
   <block id="70f278cadf665202f3ebb7a682519f5c" category="list-text">單一節點系統使用託管磁碟、每個磁碟最多32 TiB。支援的磁碟數量會因VM大小而異。</block>
   <block id="c5fa07957eb90c414f1dadcad7da5df6" category="list-text">HA配對使用優質頁面區塊做為磁碟、每頁區塊最多8個TiB。支援的磁碟數量會因VM大小而異。</block>
   <block id="0d5277886c056c697a81cb7ba46178fc" category="list-text">針對具有特定VM大小的單一節點系統所列出的896 TiB磁碟型限制、是_已測試_的限制。</block>
+  <block id="8a11b7df22322ab2814174e7745c863f" category="inline-link">關於本產品的注意事項ONTAP</block>
+  <block id="a65d010a2b24f9e4a0919b7faf52d022" category="list-text"><block ref="a65d010a2b24f9e4a0919b7faf52d022" category="inline-link-rx"></block></block>
+  <block id="7ff191df90fac0fa94ab5c2b5101a5e9" category="sidebar">所有Cloud Manager文件</block>
 </blocks>
