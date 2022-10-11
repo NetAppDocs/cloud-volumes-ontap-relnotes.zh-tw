@@ -272,7 +272,6 @@
   <block id="b5050f17750ec84285bec219771841c4" category="section-title">Google Private Service Connect限制</block>
   <block id="9fb3c7aadbb59d428d3c01efb5689f4b" category="inline-link">Google Private Service Connect</block>
   <block id="7af98a0e0cd62cd4ddc103341d51fda2" category="inline-link">Cloud Manager API端點</block>
-  <block id="948671a13623cbbc9f65ca511ed257a3" category="paragraph">如果您善用<block ref="e066b15eeebd4e6d571fd7dd588f94f7" category="inline-link-rx"></block> 在您部署Cloud Volumes ONTAP 的VPC中、您需要實作DNS記錄、將流量轉送至所需的<block ref="acf94572d3bfe8bd5bc5166d196eeacc" category="inline-link-rx"></block>。</block>
   <block id="406156e49006d700786c581646d94504" category="paragraph">Private Service Connect目前不支援將Cloud Volumes ONTAP 資料從功能區分層至Google Cloud Storage儲存庫。</block>
   <block id="6a8a2e92f318dbd4f6a8e47b03350d4d" category="summary">在Azure中、由於儲存組態限制、因此可提供可靠的作業。Cloud Volumes ONTAP為獲得最佳效能、請勿將系統設定為最大值。</block>
   <block id="e622ddac1a96836929babb5b993749ba" category="doc">Azure的儲存限制</block>
@@ -700,4 +699,5 @@
   <block id="8a11b7df22322ab2814174e7745c863f" category="inline-link">關於本產品的注意事項ONTAP</block>
   <block id="a65d010a2b24f9e4a0919b7faf52d022" category="list-text"><block ref="a65d010a2b24f9e4a0919b7faf52d022" category="inline-link-rx"></block></block>
   <block id="7ff191df90fac0fa94ab5c2b5101a5e9" category="sidebar">所有Cloud Manager文件</block>
+  <block id="da934d10ecc6d50a861d9470630d4989" category="paragraph">如果您善用<block ref="e066b15eeebd4e6d571fd7dd588f94f7" category="inline-link-rx"></block> 在您部署Cloud Volumes ONTAP 的VPC中、您需要實作DNS記錄、將流量轉送至所需的<block ref="c291f5ab92cbab017e6f29ee8a0edb54" category="inline-link-rx"></block>。</block>
 </blocks>
