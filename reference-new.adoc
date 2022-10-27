@@ -20,11 +20,21 @@ summary: 包含新的增強功能。Cloud Volumes ONTAP
 
 
 
+== 不再支援的c4、m4和r4執行個體（2022年10月28日）
+
+在AWS中Cloud Volumes ONTAP 、不再支援C4、M4和R4 EC2執行個體類型。如果現有系統執行的是c4、m4或r4執行個體類型、則必須變更為c5、m5或R5執行個體系列中的執行個體類型。
+
+link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-change-ec2-instance.html["瞭解如何變更EC2執行個體類型Cloud Volumes ONTAP 以供使用"^]。
+
+請參閱 link:https://mysupport.netapp.com/info/communications/ECMLP2880231.html["NetApp支援"^] 以深入瞭解這些執行個體類型的終止可用度和支援。
+
+
+
 == 9.11.1 P3（2022年10月19日）
 
 如果Cloud Volumes ONTAP 您有執行3.9.22版或更新版本的Connector、現在所有雲端供應商都可以使用9.11.1 P3修補程式。Cloud Manager會提示您將現有系統升級至此修補程式版本。
 
-link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.11.1P3["檢視P3修補程式中修正的錯誤清單"] （需登入 NetApp 支援網站）。
+link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.11.1P3["檢視P3修補程式中修正的錯誤清單"^] （需登入 NetApp 支援網站）。
 
 
 
@@ -150,11 +160,3 @@ TIP: 連接器的自動升級預設為啟用、因此您應該執行最新版本
 * 單一節點系統的升級可讓系統離線長達25分鐘、在此期間I/O會中斷。
 * 升級 HA 配對不中斷營運、而且 I/O 不中斷。在此不中斷營運的升級程序中、會同時升級每個節點、以繼續為用戶端提供 I/O 服務。
 
-
-
-
-=== c4、m4和r4執行個體類型
-
-從9.8版開始、新Cloud Volumes ONTAP 版的更新版不支援C4、M4和R4執行個體類型。如果您現有Cloud Volumes ONTAP 的某個執行於c4、m4或r4執行個體類型上的版本、您仍可升級至此版本。
-
-建議變更為c5、m5或R5執行個體系列中的執行個體類型。
