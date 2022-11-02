@@ -16,7 +16,7 @@ summary: 包含新的增強功能。Cloud Volumes ONTAP
 [role="lead"]
 更新功能包括更新功能。Cloud Volumes ONTAP
 
-最新版Cloud Manager也會提供其他功能與增強功能。請參閱 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html["Cloud Manager版本資訊"^] 以取得詳細資料。
+最新版的BlueXP（前身為Cloud Manager）也引進其他功能與增強功能。請參閱 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html["BlueXP版本說明"^] 以取得詳細資料。
 
 
 
@@ -32,7 +32,7 @@ link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-change
 
 == 9.11.1 P3（2022年10月19日）
 
-如果Cloud Volumes ONTAP 您有執行3.9.22版或更新版本的Connector、現在所有雲端供應商都可以使用9.11.1 P3修補程式。Cloud Manager會提示您將現有系統升級至此修補程式版本。
+如果Cloud Volumes ONTAP 您有執行3.9.22版或更新版本的Connector、現在所有雲端供應商都可以使用9.11.1 P3修補程式。BlueXP會提示您將現有系統升級至此修補程式版本。
 
 link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.11.1P3["檢視P3修補程式中修正的錯誤清單"^] （需登入 NetApp 支援網站）。
 
@@ -110,7 +110,7 @@ https://cloud.netapp.com/cloud-volumes-global-regions["檢視Cloud Volumes ONTAP
 
 從本版本開始、如果您在Cloud Volumes ONTAP AWS或Azure的某個更新HA配對上建立新的儲存VM、則需要修改儲存VM的網路服務原則。需要修改服務、因為Cloud Volumes ONTAP 這樣可確保支援功能可將iSCSI LIF用於傳出管理連線。
 
-請注意Cloud Volumes ONTAP 、由於Cloud Manager API會在建立期間為您設定LIF服務、因此不需要在Google Cloud中修改LIF服務。
+請注意Cloud Volumes ONTAP 、由於BlueXP API會在建立期間為您設定LIF服務、因此不需要在Google Cloud中修改LIF服務。
 
 您需要執行的命令會在下列頁面中指定：
 
@@ -134,21 +134,21 @@ https://cloud.netapp.com/cloud-volumes-global-regions["檢視Cloud Volumes ONTAP
 
 === 如何升級
 
-必須從 Cloud Manager 完成升級。 Cloud Volumes ONTAP您不應 Cloud Volumes ONTAP 使用 System Manager 或 CLI 來升級功能。這樣做可能會影響系統穩定性。
+必須從BlueXP完成升級。Cloud Volumes ONTAP您不應 Cloud Volumes ONTAP 使用 System Manager 或 CLI 來升級功能。這樣做可能會影響系統穩定性。
 
-http://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html["瞭解如何在Cloud Manager通知您的情況下進行升級"^]。
+http://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html["瞭解如何在BlueXP通知您時進行升級"^]。
 
 
 
 === 支援的升級途徑
 
-您可以從Cloud Volumes ONTAP 9.11.0版和9.10.1版升級至版本的版本。Cloud Manager會提示您將合格Cloud Volumes ONTAP 的更新版升級至此版本。
+您可以從Cloud Volumes ONTAP 9.11.0版和9.10.1版升級至版本的版本。BlueXP會提示您將合格Cloud Volumes ONTAP 的更新版升級至此版本。
 
 
 
 === 所需版本的Connector
 
-Cloud Manager Connector必須執行3.9.19版或更新版本、才能部署新Cloud Volumes ONTAP 的版本號、並將現有系統升級至9.11.1版。
+BlueXP Connector必須執行3.9.19版或更新版本、才能部署新Cloud Volumes ONTAP 的版本的更新版本、並將現有系統升級至9.11.1版。
 
 
 TIP: 連接器的自動升級預設為啟用、因此您應該執行最新版本。

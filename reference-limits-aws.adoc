@@ -22,7 +22,7 @@ summary: AWS中的儲存組態設有限制、可提供可靠的作業。Cloud Vo
 
 整個系統的最大容量Cloud Volumes ONTAP 取決於其授權。最大系統容量包括磁碟型儲存設備、以及用於資料分層的物件式儲存設備。
 
-NetApp不支援超過系統容量限制。如果您達到授權容量上限、Cloud Manager會顯示必要行動訊息、不再允許您新增其他磁碟。
+NetApp不支援超過系統容量限制。如果您達到授權容量上限、則BlueXP會顯示必要行動訊息、不再允許您新增其他磁碟。
 
 在某些組態中、磁碟限制會讓您無法單獨使用磁碟來達到容量限制。在這些情況下、您可以達到容量上限 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-data-tiering.html["將非作用中資料分層至物件儲存設備"^]。如需詳細資料、請參閱下方的容量和磁碟限制。
 
@@ -50,7 +50,7 @@ NetApp不支援超過系統容量限制。如果您達到授權容量上限、Cl
 |===
 容量限制適用於整個HA配對。不是每個節點。例如、如果您使用Premium授權、則兩個節點之間最多可有368TiB的容量。
 
-不、這不需要。AWS HA配對中的資料會在節點之間同步鏡射、以便在發生故障時提供資料。例如、如果您在節點A上購買8個TiB磁碟、Cloud Manager也會在節點B上配置8個TiB磁碟、用於鏡射資料。雖然已配置16個TiB容量、但根據授權上限只計算8個TiB。
+不、這不需要。AWS HA配對中的資料會在節點之間同步鏡射、以便在發生故障時提供資料。例如、如果您在節點A上購買8個TiB磁碟、則BlueXP也會在節點B上配置8個TiB磁碟、用於鏡射資料。雖然已配置16個TiB容量、但根據授權上限只計算8個TiB。
 
 
 
@@ -374,7 +374,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-managing-sv
 | *。24xLarge | 50 | 44 | 24 | 12. 
 |===
 . 此數字表示Cloud Volumes ONTAP 在部署及設定完物件後、連接埠e0a上有多少可用的_Remained_私有IP位址。例如、*。2xLarge系統每個網路介面最多可支援15個IP位址。在單一AZ中部署HA配對時、會將5個私有IP位址分配給連接埠e0a。因此、使用*。2xLarge執行個體類型的HA配對、還有10個私有IP位址可供其他儲存VM使用。
-. 這些欄中所列的數字包括Cloud Manager預設所建立的初始儲存VM。例如、如果此欄中列出24個、表示您可以建立23個額外的儲存VM、總共24個。
+. 這些欄中所列的數字、包括了BlueXP預設會建立的初始儲存VM。例如、如果此欄中列出24個、表示您可以建立23個額外的儲存VM、總共24個。
 . 儲存VM的管理LIF為選用功能。管理LIF可連線至SnapCenter 諸如VMware等管理工具。
 +
 因為它需要私有IP位址、所以會限制您可以建立的額外儲存VM數量。唯一的例外是多個AZs中的HA配對。在這種情況下、管理LIF的IP位址是_浮 點IP位址、因此不會計入_Private IP限制。

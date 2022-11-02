@@ -28,6 +28,6 @@ https://cloud.google.com/vpc/docs/packet-mirroring["封包鏡射"^] 必須在部
 
 == Google Private Service Connect限制
 
-如果您善用 https://cloud.google.com/vpc/docs/private-service-connect["Google Private Service Connect"^] 在您部署Cloud Volumes ONTAP 的VPC中、您需要實作DNS記錄、將流量轉送至所需的 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html#outbound-internet-access["Cloud Manager API端點"^]。
+如果您善用 https://cloud.google.com/vpc/docs/private-service-connect["Google Private Service Connect"^] 在您部署Cloud Volumes ONTAP 的VPC中、您需要實作DNS記錄、將流量轉送至所需的 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html#outbound-internet-access["BlueXP API端點"^]。
 
 Private Service Connect目前不支援將Cloud Volumes ONTAP 資料從功能區分層至Google Cloud Storage儲存庫。

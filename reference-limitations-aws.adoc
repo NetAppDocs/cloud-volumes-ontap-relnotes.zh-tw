@@ -37,7 +37,7 @@ C5D和R5D執行個體類型包括本機NVMe儲存設備、Cloud Volumes ONTAP �
 
 * 所有磁碟區都必須停用壓縮、才能充分發揮 Flash Cache 效能的改善效益。
 +
-從Cloud Manager建立磁碟區時、您可以選擇「無儲存效率」、也可以先建立磁碟區、然後再建立 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-vsmg/GUID-8508A4CB-DB43-4D0D-97EB-859F58B29054.html["使用 CLI 停用資料壓縮"^]。
+從BlueXP建立磁碟區時、您可以選擇「無儲存效率」、也可以先建立磁碟區、然後再建立 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-vsmg/GUID-8508A4CB-DB43-4D0D-97EB-859F58B29054.html["使用 CLI 停用資料壓縮"^]。
 
 * 重新開機後的快取重新溫熱功能不支援 Cloud Volumes ONTAP 使用此功能。
 
