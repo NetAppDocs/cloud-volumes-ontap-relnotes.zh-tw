@@ -44,7 +44,7 @@ settings:
   - name: 解決方案ONTAP
     url: "/cloud-volumes-ontap-93-relnotes"
     version-number: '9.3'
-  langs: zh-tw,us-en,ja-jp,zh-cn,ko-kr
+  langs: zh-tw,us-en,ja-jp,zh-cn,ko-kr,fr-fr,de-de
 sidebar:
   entries:
   - title: 版本資訊首頁
