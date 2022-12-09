@@ -28,13 +28,13 @@ AWS、Azure和Google Cloud現已推出《發行候選版本1》Cloud Volumes ONT
 
 === 支援的升級途徑
 
-您可以從Cloud Volumes ONTAP 9.12.0版和9.11.1版升級至版本的版本。BlueXP會提示您將合格Cloud Volumes ONTAP 的更新版升級至此版本。
+您可以從Cloud Volumes ONTAP 9.11.1版升級至更新至版本的版本。BlueXP會提示您將合格Cloud Volumes ONTAP 的更新版升級至此版本。
 
 
 
 === 所需版本的Connector
 
-BlueXP Connector必須執行3.9.23版或更新版本、才能部署新Cloud Volumes ONTAP 的版本號的更新版本號、並將現有系統升級至9.12.1。
+BlueXP Connector必須執行3.9.24版或更新版本、才能部署新Cloud Volumes ONTAP 的版本號的更新版本號、並將現有系統升級至9.12.1。
 
 
 TIP: 連接器的自動升級預設為啟用、因此您應該執行最新版本。

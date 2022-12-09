@@ -486,8 +486,6 @@
   <block id="b1969fa9ebe4dd2003618adb77082978" category="paragraph">某些地區不支援HA配對。</block>
   <block id="d91c9372e1fdf74d651217f1a36e518b" category="inline-link">檢視支援的Azure地區清單</block>
   <block id="1e6996b39daf779b565c50c8411fbc8d" category="paragraph"><block ref="8e36f0f32d75ebd3c7851e726c538544" category="inline-link-rx"></block>。</block>
-  <block id="e4f5b6f59db7bfa0e08c02262ddbd654" category="section-title">CSP合作夥伴無法使用「隨用隨付」</block>
-  <block id="f2ff5834d93c258f0fc4ad6cf6a17942" category="paragraph">如果您是Microsoft Cloud Solution Provider（CSP）合作夥伴、則無法部署Cloud Volumes ONTAP SfExplore、Standard或Premium、因為CSP合作夥伴無法使用隨用付費訂閱。您必須購買授權並部署Cloud Volumes ONTAP BYOL。</block>
   <block id="9141535b8d150812f3cded29f090ad8c" category="summary">Google Cloud支援多Cloud Volumes ONTAP 種支援的支援功能。</block>
   <block id="9e931b1cee40a7346d1f06dd6a75ba8e" category="doc">Google Cloud支援的組態</block>
   <block id="0c11951245f2ef7895ea0fc514386d6e" category="paragraph">在Google Cloud Platform中、可將其作為單一節點系統、並以高可用度（HA）節點配對的形式提供、以提供容錯能力和不中斷營運。Cloud Volumes ONTAP</block>
@@ -554,7 +552,6 @@
   <block id="5bec2c66c2254fff818718bf2d9e8c44" category="cell">*容量型PAYGO或BYOL*^2^</block>
   <block id="8e612b6b306f120390f4c3bd234f9ce8" category="cell">*節點型BYOL*^3^</block>
   <block id="302f571fec3e23b2236f116e51e46721" category="cell">階層式複製深度：^12^</block>
-  <block id="dd3a01ec5d4598a3233e196c00eb9493" category="summary">這些版本說明Cloud Volumes ONTAP 介紹有關更新功能、限制和已知問題的資訊。</block>
   <block id="6fa21a90023c559c7fe8ff0b407c5128" category="paragraph">使用EBS磁碟區做為磁碟、並將其分組為_aggregate。Cloud Volumes ONTAPAggregate可為磁碟區提供儲存設備。</block>
   <block id="440729c4473422c5af58047ed61f9c33" category="cell">最大Aggregate大小：^2^</block>
   <block id="a204f172aa7caebd3b3b2b9d2ec1e132" category="list-text">96 TiB原始容量</block>
@@ -566,10 +563,6 @@
   <block id="70fb554e00e352dd7da6941d99b53751" category="inline-link">深入瞭解彈性磁碟區的支援</block>
   <block id="952bf77691b64be6e1f8cbee69dd8112" category="list-text">如果您的組態支援Amazon EBS彈性磁碟區功能、則Aggregate最多可包含8個磁碟、最多可提供128 TiB的容量。使用GP3或IO1磁碟時、Amazon EBS Elastic Volumes功能預設會在_new _ Cloud Volumes ONTAP 版本9.11.0或更新的系統上啟用。<block ref="eb2d37c537dc5a49383d4a1aea5db77f" category="inline-link-rx"></block></block>
   <block id="dc2065e297a9790d182a555ba250dbda" category="cell">節點型BYOL</block>
-  <block id="33dae6103de96581cabc3ad35cefb829" category="inline-link-macro">AWS中的《關於此問題的資訊Cloud Volumes ONTAP</block>
-  <block id="e595c649a367744544e13f68f54580f9" category="list-text"><block ref="e595c649a367744544e13f68f54580f9" category="inline-link-macro-rx"></block></block>
-  <block id="b50289e78d6a423be932389cf178a958" category="inline-link-macro">Google Cloud中的《關於解決此問題的注意事項Cloud Volumes ONTAP</block>
-  <block id="c35639ede069036a5d63bb08043fd4f9" category="list-text"><block ref="c35639ede069036a5d63bb08043fd4f9" category="inline-link-macro-rx"></block></block>
   <block id="3fb5fad778ff400a49097ca0bf0b9754" category="paragraph">在 AWS 中、 Aggregate 最多可包含 6 個大小相同的磁碟。但是如果您的組態支援Amazon EBS彈性Volume功能、則Aggregate最多可包含8個磁碟。<block ref="eb2d37c537dc5a49383d4a1aea5db77f" category="inline-link-rx"></block></block>
   <block id="75b66e0b3cef735ea985bd79ab9601e2" category="cell">m5dn.4xlarge</block>
   <block id="bc503c45d950d94391e7685c6585b286" category="cell">m5dn.12xlarge</block>
@@ -637,8 +630,6 @@
   <block id="f75e792bf7a4a205f202f29d2fc54c22" category="paragraph">更新功能包括更新功能Cloud Volumes ONTAP 。</block>
   <block id="19eac37ffdb1098ffe690004efa5c07f" category="section-title">9.12.1 RC1（2022年12月8日）</block>
   <block id="081d2affd8ad79dfa3ae0457893e56ac" category="paragraph">AWS、Azure和Google Cloud現已推出《發行候選版本1》Cloud Volumes ONTAP 。此版本包含下列新功能與增強功能。</block>
-  <block id="6eaf244a3a1f0dbb7200277cba925418" category="paragraph">您可以從Cloud Volumes ONTAP 9.12.0版和9.11.1版升級至版本的版本。BlueXP會提示您將合格Cloud Volumes ONTAP 的更新版升級至此版本。</block>
-  <block id="85cd9c4dadede72a2eada15a80fba289" category="paragraph">BlueXP Connector必須執行3.9.23版或更新版本、才能部署新Cloud Volumes ONTAP 的版本號的更新版本號、並將現有系統升級至9.12.1。</block>
   <block id="cca494b1b1d22bc8b5c8a8ecd5367bf8" category="section-title">GCP中的SS3授權ONTAP</block>
   <block id="44f72ae2127b89a470e082ae9f772acf" category="paragraph">在Google Cloud Platform中、執行9.12.1版或更新版本的全新及現有的版本不含更新版本的S3授權Cloud Volumes ONTAP ONTAP 。</block>
   <block id="6958464059ef304c59d06fcb948ccafd" category="inline-link">瞭解如何在ONTAP 功能區中設定及管理S3物件儲存服務</block>
@@ -694,4 +685,11 @@
   <block id="f27b112d1527e5f29f0e8f510d779a5e" category="doc">《》（英文Cloud Volumes ONTAP ）</block>
   <block id="fc9a388cd18c69244f22554de6f0d544" category="paragraph-title">對於AWS中的HA系統、鏡射資料是否會根據容量限制計算？</block>
   <block id="39b49fbe12f6121fd761513c05ddba97" category="paragraph">部分VM類型包括本機NVMe儲存設備、Cloud Volumes ONTAP 這些儲存設備可作為_Flash Cache使用。請注意Flash Cache的下列限制：</block>
+  <block id="e096a8fca5da32609fbb1d7798b0348e" category="paragraph">您可以從Cloud Volumes ONTAP 9.11.1版升級至更新至版本的版本。BlueXP會提示您將合格Cloud Volumes ONTAP 的更新版升級至此版本。</block>
+  <block id="0612637a826e0e5aac35661a09778188" category="paragraph">BlueXP Connector必須執行3.9.24版或更新版本、才能部署新Cloud Volumes ONTAP 的版本號的更新版本號、並將現有系統升級至9.12.1。</block>
+  <block id="f5aba93322e5fd0767b7e9fa839610f1" category="inline-link-macro">AWS中的《關於支援此功能的資訊Cloud Volumes ONTAP</block>
+  <block id="a4a2a5bddea7236f27b0a01d377e37a6" category="list-text"><block ref="a4a2a5bddea7236f27b0a01d377e37a6" category="inline-link-macro-rx"></block></block>
+  <block id="278ce444bf386e0c416c2eb85c339022" category="inline-link-macro">Google Cloud中的《The傳達關於The充當the解決方案的角色的注意事項Cloud Volumes ONTAP （英文）</block>
+  <block id="653a50044a773ecda2e2e9ec6736699c" category="list-text"><block ref="653a50044a773ecda2e2e9ec6736699c" category="inline-link-macro-rx"></block></block>
+  <block id="16b3ee4e5301a5f3f5b55816b3906b83" category="summary">這些版本說明Cloud Volumes ONTAP 介紹有關更新功能、限制和已知問題的資訊。</block>
 </blocks>
