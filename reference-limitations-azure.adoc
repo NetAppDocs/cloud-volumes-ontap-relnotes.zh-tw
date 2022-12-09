@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: reference-limitations-azure.html 
-keywords: limitations, ha, azure, pay-as-you-go, paygo, cloud solution provider, nfsv3 
+keywords: limitations, ha, azure, pay-as-you-go, paygo, cloud solution provider, vm, flash cache 
 summary: 這些已知限制僅適用於Cloud Volumes ONTAP Microsoft Azure中的某些功能。 
 ---
 = Azure的已知限制
@@ -20,7 +20,7 @@ summary: 這些已知限制僅適用於Cloud Volumes ONTAP Microsoft Azure中的
 
 == Flash Cache限制
 
-Standard_L8s_v2 VM類型包含本機NVMe儲存設備、Cloud Volumes ONTAP 此儲存設備用作_Flash Cache。請注意Flash Cache的下列限制：
+部分VM類型包括本機NVMe儲存設備、Cloud Volumes ONTAP 這些儲存設備可作為_Flash Cache使用。請注意Flash Cache的下列限制：
 
 * 所有磁碟區都必須停用壓縮、才能充分發揮 Flash Cache 效能的改善效益。
 +

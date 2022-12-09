@@ -5,7 +5,7 @@ permalink: index.html
 lead: These release notes describe new features, limitations, and known issues for Cloud Volumes ONTAP 9.11.1. 
 summary: 這些版本說明Cloud Volumes ONTAP 介紹有關更新功能、限制和已知問題的資訊。 
 ---
-= 《》（英文）Cloud Volumes ONTAP
+= 《》（英文Cloud Volumes ONTAP ）
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
