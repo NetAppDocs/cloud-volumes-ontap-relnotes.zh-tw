@@ -26,21 +26,6 @@ AWS、Azure和Google Cloud現已推出《發行候選版本1》Cloud Volumes ONT
 
 
 
-=== 支援的升級途徑
-
-您可以從Cloud Volumes ONTAP 9.11.1版升級至更新至版本的版本。BlueXP會提示您將合格Cloud Volumes ONTAP 的更新版升級至此版本。
-
-
-
-=== 所需版本的Connector
-
-BlueXP Connector必須執行3.9.24版或更新版本、才能部署新Cloud Volumes ONTAP 的版本號的更新版本號、並將現有系統升級至9.12.1。
-
-
-TIP: 連接器的自動升級預設為啟用、因此您應該執行最新版本。
-
-
-
 === GCP中的SS3授權ONTAP
 
 在Google Cloud Platform中、執行9.12.1版或更新版本的全新及現有的版本不含更新版本的S3授權Cloud Volumes ONTAP ONTAP 。
@@ -77,7 +62,44 @@ https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["瞭解
 
 
 
-== 不再支援的c4、m4和r4執行個體（2022年10月28日）
+== 升級附註
+
+請閱讀這些附註、深入瞭解升級至此版本的相關資訊。
+
+
+
+=== 如何升級
+
+必須從BlueXP完成升級。Cloud Volumes ONTAP您不應 Cloud Volumes ONTAP 使用 System Manager 或 CLI 來升級功能。這樣做可能會影響系統穩定性。
+
+http://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html["瞭解如何在BlueXP通知您時進行升級"^]。
+
+
+
+=== 支援的升級途徑
+
+您可以從Cloud Volumes ONTAP 9.12.0和9.11.1版本升級至版本的版本。BlueXP會提示您將合格Cloud Volumes ONTAP 的更新版升級至此版本。
+
+
+
+=== 所需版本的Connector
+
+BlueXP Connector必須執行3.9.24版或更新版本、才能部署新Cloud Volumes ONTAP 的版本號的更新版本號、並將現有系統升級至9.12.1。
+
+
+TIP: 連接器的自動升級預設為啟用、因此您應該執行最新版本。
+
+
+
+=== 停機
+
+* 單一節點系統的升級可讓系統離線長達25分鐘、在此期間I/O會中斷。
+* 升級 HA 配對不中斷營運、而且 I/O 不中斷。在此不中斷營運的升級程序中、會同時升級每個節點、以繼續為用戶端提供 I/O 服務。
+
+
+
+
+=== 不再支援c4、m4和r4執行個體
 
 在AWS中Cloud Volumes ONTAP 、不再支援C4、M4和R4 EC2執行個體類型。如果現有系統執行的是c4、m4或r4執行個體類型、則必須變更為c5、m5或R5執行個體系列中的執行個體類型。
 

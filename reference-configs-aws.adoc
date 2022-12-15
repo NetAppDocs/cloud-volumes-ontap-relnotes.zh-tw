@@ -127,7 +127,7 @@ AWS可在單一節點系統中使用、也可作為高可用度（HA）節點配
 | m5.2xLarge | 8. | 32 | 不支援 | 最多10個 | 最多4、750次 | 支援 
 
 
-.21+| *高級版或任何其他授權* | m5n.2xlarge | 8. | 32 | 不支援 | 最多25個 | 最多4、750次 | 支援 
+.22+| *高級版或任何其他授權* | m5n.2xlarge | 8. | 32 | 不支援 | 最多25個 | 最多4、750次 | 支援 
 
 
 | r5.2xlarge | 8. | 64 | 不支援 | 最多10個 | 最多4、750次 | 支援 
@@ -188,6 +188,9 @@ AWS可在單一節點系統中使用、也可作為高可用度（HA）節點配
 
 
 | m5dn.24xlarge | 48 ^4^ | 384.. | 支援 | 100 | 19、000 | 支援 
+
+
+| m6id.32xlarge | 48 ^4^ | 512 | 支援 | 50 | 40、000 | 支援 
 |===
 . 某些執行個體類型包括本機NVMe儲存設備、Cloud Volumes ONTAP 這些儲存設備使用做為_Flash Cache。Flash Cache 可透過即時智慧快取來加速資料存取、快取最近讀取的使用者資料和 NetApp 中繼資料。它適用於隨機讀取密集的工作負載、包括資料庫、電子郵件和檔案服務。所有磁碟區都必須停用壓縮、才能充分發揮 Flash Cache 效能的改善效益。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-flash-cache.html["深入瞭解 Flash Cache"^]。
 . 使用HA配對時、支援大部分執行個體類型的高速寫入速度。Cloud Volumes ONTAP使用單一節點系統時、所有執行個體類型都支援高速寫入。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-write-speed.html["深入瞭解如何選擇寫入速度"^]。

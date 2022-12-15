@@ -598,7 +598,6 @@
   <block id="0d5277886c056c697a81cb7ba46178fc" category="list-text">針對具有特定VM大小的單一節點系統所列出的896 TiB磁碟型限制、是_已測試_的限制。</block>
   <block id="8a11b7df22322ab2814174e7745c863f" category="inline-link">關於本產品的注意事項ONTAP</block>
   <block id="a65d010a2b24f9e4a0919b7faf52d022" category="list-text"><block ref="a65d010a2b24f9e4a0919b7faf52d022" category="inline-link-rx"></block></block>
-  <block id="e7a585efb4ff7fae4274ad6c7457c7c6" category="section-title">不再支援的c4、m4和r4執行個體（2022年10月28日）</block>
   <block id="45468834981b77e3d08a5c6457436141" category="paragraph">在AWS中Cloud Volumes ONTAP 、不再支援C4、M4和R4 EC2執行個體類型。如果現有系統執行的是c4、m4或r4執行個體類型、則必須變更為c5、m5或R5執行個體系列中的執行個體類型。</block>
   <block id="6614eabe1ab14f33107830de1efb584a" category="inline-link-macro">瞭解如何變更EC2執行個體類型Cloud Volumes ONTAP 以供使用</block>
   <block id="f072eddf76dc8c19f3d32a7263fe7931" category="paragraph"><block ref="37cca4b92d12a1904a84ee04c60f6ada" category="inline-link-macro-rx"></block>。</block>
@@ -685,11 +684,22 @@
   <block id="f27b112d1527e5f29f0e8f510d779a5e" category="doc">《》（英文Cloud Volumes ONTAP ）</block>
   <block id="fc9a388cd18c69244f22554de6f0d544" category="paragraph-title">對於AWS中的HA系統、鏡射資料是否會根據容量限制計算？</block>
   <block id="39b49fbe12f6121fd761513c05ddba97" category="paragraph">部分VM類型包括本機NVMe儲存設備、Cloud Volumes ONTAP 這些儲存設備可作為_Flash Cache使用。請注意Flash Cache的下列限制：</block>
-  <block id="e096a8fca5da32609fbb1d7798b0348e" category="paragraph">您可以從Cloud Volumes ONTAP 9.11.1版升級至更新至版本的版本。BlueXP會提示您將合格Cloud Volumes ONTAP 的更新版升級至此版本。</block>
   <block id="0612637a826e0e5aac35661a09778188" category="paragraph">BlueXP Connector必須執行3.9.24版或更新版本、才能部署新Cloud Volumes ONTAP 的版本號的更新版本號、並將現有系統升級至9.12.1。</block>
   <block id="f5aba93322e5fd0767b7e9fa839610f1" category="inline-link-macro">AWS中的《關於支援此功能的資訊Cloud Volumes ONTAP</block>
   <block id="a4a2a5bddea7236f27b0a01d377e37a6" category="list-text"><block ref="a4a2a5bddea7236f27b0a01d377e37a6" category="inline-link-macro-rx"></block></block>
   <block id="278ce444bf386e0c416c2eb85c339022" category="inline-link-macro">Google Cloud中的《The傳達關於The充當the解決方案的角色的注意事項Cloud Volumes ONTAP （英文）</block>
   <block id="653a50044a773ecda2e2e9ec6736699c" category="list-text"><block ref="653a50044a773ecda2e2e9ec6736699c" category="inline-link-macro-rx"></block></block>
   <block id="16b3ee4e5301a5f3f5b55816b3906b83" category="summary">這些版本說明Cloud Volumes ONTAP 介紹有關更新功能、限制和已知問題的資訊。</block>
+  <block id="f59964eb1e1669da7d916b7e136c88bd" category="list-text">m6id.32xlarge</block>
+  <block id="b5cb41a6703cf18b4cecd5a0817f91cf" category="section-title">升級附註</block>
+  <block id="dfb01a7b38cba8284269f37f00622809" category="paragraph">請閱讀這些附註、深入瞭解升級至此版本的相關資訊。</block>
+  <block id="b78b1188c7979365981f7c88049f9366" category="section-title">如何升級</block>
+  <block id="c716eebe2519c2ba4a2e109b59dd8b13" category="inline-link">瞭解如何在BlueXP通知您時進行升級</block>
+  <block id="bd4bd858d3e1a85d30586455b3e9daf2" category="paragraph"><block ref="6a49825bad49c3be284ac7a237bc2a26" category="inline-link-rx"></block>。</block>
+  <block id="69166f59e44b2f0714ce3c4f044faf17" category="paragraph">您可以從Cloud Volumes ONTAP 9.12.0和9.11.1版本升級至版本的版本。BlueXP會提示您將合格Cloud Volumes ONTAP 的更新版升級至此版本。</block>
+  <block id="75026846c1403e202a52bdb027762fbb" category="section-title">停機</block>
+  <block id="9f0f02784feedfa2549a9e3a51cfa315" category="list-text">單一節點系統的升級可讓系統離線長達25分鐘、在此期間I/O會中斷。</block>
+  <block id="00795e3f043d0bab791590ffc0257204" category="list-text">升級 HA 配對不中斷營運、而且 I/O 不中斷。在此不中斷營運的升級程序中、會同時升級每個節點、以繼續為用戶端提供 I/O 服務。</block>
+  <block id="618671ce849d1a8ff524b77c314fe4e2" category="section-title">不再支援c4、m4和r4執行個體</block>
+  <block id="e19784a5420512b2876c7b24680652b5" category="cell">40、000</block>
 </blocks>
