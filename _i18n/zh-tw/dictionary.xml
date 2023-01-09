@@ -12,7 +12,6 @@
   <block id="b73cfe36c7ff7b1b656525a530b23497" category="list-text">目前僅支援通用SSD（gp2）</block>
   <block id="a0cf071b9038a23221cd589c25d7e392" category="section-title">Flash Cache限制</block>
   <block id="032ad17d65f47ce036675718d3986c48" category="paragraph">C5D和R5D執行個體類型包括本機NVMe儲存設備、Cloud Volumes ONTAP 可做為_Flash Cache。請注意下列限制：</block>
-  <block id="341cc964e0c52fec40f9705182116dda" category="list-text">所有磁碟區都必須停用壓縮、才能充分發揮 Flash Cache 效能的改善效益。</block>
   <block id="405cb575e50b611a22ec99d1abb3f202" category="inline-link">使用 CLI 停用資料壓縮</block>
   <block id="444f10b28a63ab25d9664d0647602d07" category="list-text">重新開機後的快取重新溫熱功能不支援 Cloud Volumes ONTAP 使用此功能。</block>
   <block id="c564897ef3b9328940c3edd5bc917926" category="section-title">Amazon CloudWatch回報的誤報</block>
@@ -702,4 +701,5 @@
   <block id="00795e3f043d0bab791590ffc0257204" category="list-text">升級 HA 配對不中斷營運、而且 I/O 不中斷。在此不中斷營運的升級程序中、會同時升級每個節點、以繼續為用戶端提供 I/O 服務。</block>
   <block id="618671ce849d1a8ff524b77c314fe4e2" category="section-title">不再支援c4、m4和r4執行個體</block>
   <block id="e19784a5420512b2876c7b24680652b5" category="cell">40、000</block>
+  <block id="4237e167da34ce4cc54b7915a9ee779a" category="list-text">所有磁碟區都必須停用壓縮功能、才能充分發揮Flash Cache效能提升功能Cloud Volumes ONTAP 、直到更新至VMware版。當您部署或升級Cloud Volumes ONTAP 至盡力9.12.1時、就不需要停用壓縮功能。</block>
 </blocks>

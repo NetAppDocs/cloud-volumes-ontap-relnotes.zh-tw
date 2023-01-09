@@ -35,7 +35,7 @@ summary: 這些已知的限制僅適用於Cloud Volumes ONTAP Amazon Web Service
 
 C5D和R5D執行個體類型包括本機NVMe儲存設備、Cloud Volumes ONTAP 可做為_Flash Cache。請注意下列限制：
 
-* 所有磁碟區都必須停用壓縮、才能充分發揮 Flash Cache 效能的改善效益。
+* 所有磁碟區都必須停用壓縮功能、才能充分發揮Flash Cache效能提升功能Cloud Volumes ONTAP 、直到更新至VMware版。當您部署或升級Cloud Volumes ONTAP 至盡力9.12.1時、就不需要停用壓縮功能。
 +
 從BlueXP建立磁碟區時、您可以選擇「無儲存效率」、也可以先建立磁碟區、然後再建立 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-vsmg/GUID-8508A4CB-DB43-4D0D-97EB-859F58B29054.html["使用 CLI 停用資料壓縮"^]。
 
