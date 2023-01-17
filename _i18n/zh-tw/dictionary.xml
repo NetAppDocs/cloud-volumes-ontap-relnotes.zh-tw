@@ -81,7 +81,6 @@
   <block id="3e7433721426ddc5bb6007a1f480b7e0" category="cell">支援的磁碟類型</block>
   <block id="18ca3c89ae9e8edbe217f2c9b7c6107d" category="inline-link">深入瞭解如何選擇寫入速度</block>
   <block id="4efc25f6cc7013d95ca2f5ab1dcc3366" category="list-text">建議僅在需要Azure維護控管時才使用此VM。由於價格較高、因此不建議用於任何其他使用案例。</block>
-  <block id="d642bc6852e213242f2c21d17b6d3e43" category="list-text">Azure中的HA配對不支援PAYGO Explore。</block>
   <block id="36e4aa065725aff22926f2fed53bc3c7" category="section-title">支援的磁碟大小</block>
   <block id="88d444d836b2ea3ca342f4cc3a6b2b50" category="paragraph">在Azure中、Aggregate最多可包含12個相同類型和大小的磁碟。</block>
   <block id="90d1dad6ac7388ba65631ec0b927dabc" category="paragraph">單一節點系統使用Azure託管磁碟。支援下列磁碟大小：</block>
@@ -648,19 +647,9 @@
   <block id="9d123a356c832621891a3328c128b78b" category="list-text">L8s_v3 ^2^</block>
   <block id="6f487c8743b08c743167da3781c42f57" category="list-text">L16s_v3 ^2、4^</block>
   <block id="2b5c34a51aff2e04df61ba2f74efb07e" category="list-text">L32s_v3 ^2、4^</block>
-  <block id="f1b2cd8f6fdc3940f6e46a9af8ab660c" category="list-text">E8ds_v4 ^7^</block>
-  <block id="9e8e72837438857b91eef056b7a33159" category="list-text">E32ds_v4 ^1、7^</block>
-  <block id="608fa968f2e0b6150691aaaac56fae8c" category="list-text">E48ds_v4 ^1、7^</block>
-  <block id="fc7d40b7239e653daf9a843f12a0f36d" category="list-text">E80ids_v4 ^1、2、7^</block>
-  <block id="18e6a92344e98904f39e86e7eb655faa" category="list-text">L16s_v3 ^1、6、7^</block>
-  <block id="e02f32aa9691d408118de8f182f85e7e" category="list-text">L32s_v3 ^1、6、7^</block>
   <block id="b869cbdadaa9844d32c24de3f4db3242" category="cell">託管磁碟</block>
-  <block id="01269b38d12a6e985a194062817e204c" category="list-text">這些VM可支援在託管磁碟上執行。</block>
-  <block id="6e05c1f5c1b1ffce142a5f3013f9ee93" category="list-text">這些VM類型僅支援共享的託管磁碟部署。所有新的HA部署都使用共享的託管磁碟。先前使用的是分頁Blobs。</block>
   <block id="bdebc137cea9fa36d51bbecef44687cc" category="paragraph">HA配對使用託管磁碟。（在9.12.1版本之前部署的HA配對支援分頁。）</block>
   <block id="2c5ad1776ac4cf950a5e0576f35bf111" category="paragraph">支援下列磁碟大小：</block>
-  <block id="0bd47e4dae550ba8bfd133248f3efde6" category="list-text">16 TiB（僅限託管磁碟）</block>
-  <block id="e976f9591845e426a456344d35bd0caf" category="list-text">32 TiB（僅限託管磁碟）</block>
   <block id="dbe94f36417009d827f76ccf107bd90c" category="section-title">不應使用自動應用程式資源管理解決方案</block>
   <block id="2f9882645b2c32820ad085240bacb763" category="paragraph-title">對於HA、每個節點或整個HA配對的授權容量限制是多少？</block>
   <block id="2d7789be6e6e477491f790d5a3ea60b3" category="cell">384 TiB原始容量、適用於單一節點^2^ 352 TiB原始容量、適用於單一節點、搭配PAYGO 96 TiB原始容量、適用於HA配對、頁面Blob 384 TiB原始容量、適用於HA配對與託管磁碟</block>
@@ -702,4 +691,19 @@
   <block id="618671ce849d1a8ff524b77c314fe4e2" category="section-title">不再支援c4、m4和r4執行個體</block>
   <block id="e19784a5420512b2876c7b24680652b5" category="cell">40、000</block>
   <block id="4237e167da34ce4cc54b7915a9ee779a" category="list-text">所有磁碟區都必須停用壓縮功能、才能充分發揮Flash Cache效能提升功能Cloud Volumes ONTAP 、直到更新至VMware版。當您部署或升級Cloud Volumes ONTAP 至盡力9.12.1時、就不需要停用壓縮功能。</block>
+  <block id="b80fdfea42d505d96700af73261164a3" category="section-title">HA與頁面blob配對</block>
+  <block id="45af86f1009df1b7e7575bd510350625" category="list-text">E32ds_v4 ^1、3^</block>
+  <block id="70f33ddea414a26001d98ec1ee7c49a4" category="list-text">E48ds_v4 ^1、3^</block>
+  <block id="338b010678cca88a9e61c9a5b5db4e85" category="list-text">E80ids_v4 ^1、2、3^</block>
+  <block id="540e57f70019c3eb8d7fb999259fd473" category="cell">頁面</block>
+  <block id="69ff9d2e034a02bd645e9455824ce446" category="list-text">這些VM類型僅支援Cloud Volumes ONTAP 部署不支援的版本。</block>
+  <block id="8c41a0d9e980d7223b4ad7585ce70fa2" category="section-title">HA與共享託管磁碟配對</block>
+  <block id="678bba9079ce79c3806a40a1b6306799" category="list-text">E8ds_v4 ^4^</block>
+  <block id="fd5fff93ea6b0d7a9072274f514573ae" category="list-text">E32ds_v4 ^1、4^</block>
+  <block id="6cddc6e542baa2aaad6e58fdc397ce90" category="list-text">E48ds_v4 ^1、4^</block>
+  <block id="de04224de00bacc811083f3a49af24b0" category="list-text">E80ids_v4 ^1、2、4^</block>
+  <block id="7f556a87aab63796eccbfaafbe789614" category="list-text">L16s_v3 ^1、3^</block>
+  <block id="951f86fa0d8dd0f01062b7d8deb4a4eb" category="list-text">L32s_v3 ^1、3^</block>
+  <block id="72e0d2497593ac6a5fdc024537224aed" category="list-text">這些VM類型僅支援在共享託管磁碟上執行的單一可用度區域組態中的HA配對。</block>
+  <block id="7502ea8e5d477af63195f04d6179ca92" category="list-text">在單一可用度區域中、HA配對支援這些VM類型、以及在共享託管磁碟上執行的多個可用度區域組態。</block>
 </blocks>
