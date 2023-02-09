@@ -642,7 +642,6 @@
   <block id="68367d4408e943b9268a7a6d4314fb0a" category="inline-link-macro">在Cloud Volumes ONTAP Azure中啟動一套功能完善的</block>
   <block id="bb0d42e6fed6d85c4ddc5b2d8c94e08b" category="paragraph">當您在Azure的單一可用度區域中部署新的HA配對時、您現在將使用LRS共享託管磁碟、而非使用分頁式磁碟來儲存。「工作環境」精靈沒有變更。您只需選擇單一可用度區域、即可使用此新組態。如需詳細資訊、請參閱 <block ref="74ff11371741a9669ba3ff027e13cdfb" category="inline-link-macro-rx"></block>。</block>
   <block id="adacae0ffd14e727a49e7808c807ce42" category="section-title">Azure HA位於多個可用度區域、並使用共享的託管磁碟</block>
-  <block id="bfcf5935583a46f9d5f7f5ad4fa31baf" category="paragraph">您現在可以使用Cloud Volumes ONTAP Azure在一個區域內的多個可用度區域來部署一套不間斷HA組態。新組態可防止資料中心故障、並使用Azure區域備援儲存設備（ZRS）共享託管磁碟來維持應用程式可用度。</block>
   <block id="5f04b8451f48f03e36e44aea747e0a8b" category="paragraph">若要使用此新組態、請參閱 <block ref="74ff11371741a9669ba3ff027e13cdfb" category="inline-link-macro-rx"></block>。</block>
   <block id="9d123a356c832621891a3328c128b78b" category="list-text">L8s_v3 ^2^</block>
   <block id="6f487c8743b08c743167da3781c42f57" category="list-text">L16s_v3 ^2、4^</block>
@@ -706,4 +705,9 @@
   <block id="72e0d2497593ac6a5fdc024537224aed" category="list-text">這些VM類型僅支援在共享託管磁碟上執行的單一可用度區域組態中的HA配對。</block>
   <block id="7502ea8e5d477af63195f04d6179ca92" category="list-text">在單一可用度區域中、HA配對支援這些VM類型、以及在共享託管磁碟上執行的多個可用度區域組態。</block>
   <block id="6c895f204de5d4dd4a02c2926e76c998" category="list-text">這些VM類型僅在Cloud Volumes ONTAP 部署不支援的版本中提供支援。</block>
+  <block id="b3d2b2f33046bc452ceeba660d878f97" category="section-title">9.12.1 GA（2023年2月9日）</block>
+  <block id="d7ad70132837e18b99685763f8db95f2" category="paragraph">AWS、Azure和Google Cloud現已推出《通用版本》（GA）版本Cloud Volumes ONTAP 的《支援資訊》（General Availability、GA）。GA版本包含錯誤修正。</block>
+  <block id="901f48339d9d297cd3f32a0be361c057" category="paragraph">您現在可以使用Cloud Volumes ONTAP Azure在一個區域內的多個可用度區域來部署一套不間斷HA組態。新組態可防止資料中心故障、並使用Azure區域備援儲存設備（ZRS）共享託管磁碟來維持應用程式可用度。此功能目前僅適用於美國西部2、西歐、歐洲北部和法國中部地區。</block>
+  <block id="967b9ba2107b00338e92f6eb93ca99d8" category="inline-link-macro">Microsoft Azure文件。</block>
+  <block id="0d66ef11df7c9797df8b9cf7f638438a" category="paragraph">若要深入瞭解受管理磁碟的區域備援儲存設備、請參閱 <block ref="cc9f7b6977bd94adf51c6f83282634a2" category="inline-link-macro-rx"></block></block>
 </blocks>
