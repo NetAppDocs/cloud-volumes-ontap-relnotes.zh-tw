@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: reference-new.html 
 keywords: 'what"s new, new, features, release notes, enhancements' 
-summary: 更新功能包括更新功能Cloud Volumes ONTAP 。 
+summary: 包含全新增強功能的支援功能Cloud Volumes ONTAP 。 
 ---
-= 更新內容Cloud Volumes ONTAP
+= 更新功能Cloud Volumes ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,59 +14,43 @@ summary: 更新功能包括更新功能Cloud Volumes ONTAP 。
 
 
 [role="lead"]
-更新功能包括更新功能Cloud Volumes ONTAP 。
+包含全新增強功能的支援功能Cloud Volumes ONTAP 。
 
 最新版的BlueXP（前身為Cloud Manager）也引進其他功能與增強功能。請參閱 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html["BlueXP版本說明"^] 以取得詳細資料。
 
 
 
-== 9.12.1 GA（2023年2月9日）
+== 9.13.0 GA（2023年3月5日）
 
-AWS、Azure和Google Cloud現已推出《通用版本》（GA）版本Cloud Volumes ONTAP 的《支援資訊》（General Availability、GA）。GA版本包含錯誤修正。
-
-
-
-== 9.12.1 RC1（2022年12月8日）
-
-AWS、Azure和Google Cloud現已推出《發行候選版本1》Cloud Volumes ONTAP 。此版本包含下列新功能與增強功能。
+AWS、Azure和Google Cloud現已推出通用（GA）版本Cloud Volumes ONTAP 的《支援》（General Availability、GA）。此版本包含下列新功能與增強功能。
 
 
 
-=== GCP中的SS3授權ONTAP
+=== Google Cloud的Flash Cache和高速寫入速度
 
-在Google Cloud Platform中、執行9.12.1版或更新版本的全新及現有的版本不含更新版本的S3授權Cloud Volumes ONTAP ONTAP 。
+支援Flash Cache、高速寫入速度、以及高傳輸單位（MTU）8、896位元組、現在Cloud Volumes ONTAP 可用於發行版本為《The》（英文）的特定執行個體。
 
-https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["瞭解如何在ONTAP 功能區中設定及管理S3物件儲存服務"^]
-
-
-
-=== 支援NVMe-TCP Cloud Volumes ONTAP
-
-如果您使用Cloud Volumes ONTAP 的是版本為9.12.1或更新版本、則支援適用於雲端供應商的NVMe-TCP。BlueXP不提供任何適用於NVMe TCP的管理功能。
-
-如需透過ONTAP NVMe設定NVMe的詳細資訊、請參閱 link:https://docs.netapp.com/us-en/ontap/san-admin/configure-svm-nvme-task.html["設定NVMe的儲存VM"^]。
+深入瞭解 link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html["Google Cloud授權支援的組態"^]。
 
 
 
-=== Azure HA位於單一可用度區域中、提供共享的託管磁碟
+=== 在Google Cloud中驗證影像
 
-您現在可以使用Cloud Volumes ONTAP Microsoft Azure本機備援儲存設備（LRS）、在共享的託管磁碟上執行、來部署一套功能完善的HA組態。本機備援儲存設備可在同一區域的單一資料中心內複寫資料三次。
+現在提供增強的安全功能、可驗證Cloud Volumes ONTAP 透過Google Cloud匯出的各種圖片檔案的簽名。
 
-如需HA組態架構和元件的詳細資訊、請參閱 link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-ha-azure.html["Azure 中的高可用度配對"^]。
-
-當您在Azure的單一可用度區域中部署新的HA配對時、您現在將使用LRS共享託管磁碟、而非使用分頁式磁碟來儲存。「工作環境」精靈沒有變更。您只需選擇單一可用度區域、即可使用此新組態。如需詳細資訊、請參閱 link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-azure.html["在Cloud Volumes ONTAP Azure中啟動一套功能完善的"^]。
+link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-gcp-image-verification.html["深入瞭解Google Cloud Image驗證"^]。
 
 
 
-=== Azure HA位於多個可用度區域、並使用共享的託管磁碟
+=== Google Cloud提供新的執行個體支援
 
-您現在可以使用Cloud Volumes ONTAP Azure在一個區域內的多個可用度區域來部署一套不間斷HA組態。新組態可防止資料中心故障、並使用Azure區域備援儲存設備（ZRS）共享託管磁碟來維持應用程式可用度。此功能目前僅適用於美國西部2、西歐、歐洲北部和法國中部地區。
+Freemium、PAYGO Premium、節點型BYOL及容量型授權現在支援兩種新的執行個體類型、可在Cloud Volumes ONTAP Google Cloud中進行單一節點與高可用度部署。
 
-如需HA組態架構和元件的詳細資訊、請參閱 link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-ha-azure.html["Azure 中的高可用度配對"^]。
+* n2-Standard-48
+* n2-Standard-64
 
-若要使用此新組態、請參閱 link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-azure.html["在Cloud Volumes ONTAP Azure中啟動一套功能完善的"^]。
 
-若要深入瞭解受管理磁碟的區域備援儲存設備、請參閱 link:https://learn.microsoft.com/en-us/azure/virtual-machines/disks-redundancy#zone-redundant-storage-for-managed-disks["Microsoft Azure文件。"]
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html["深入瞭解Google Cloud支援的組態"^]。
 
 
 
@@ -80,19 +64,19 @@ https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["瞭解
 
 必須從BlueXP完成升級。Cloud Volumes ONTAP您不應 Cloud Volumes ONTAP 使用 System Manager 或 CLI 來升級功能。這樣做可能會影響系統穩定性。
 
-http://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html["瞭解如何在BlueXP通知您時進行升級"^]。
+link:http://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html["瞭解如何在BlueXP通知您時進行升級"^]。
 
 
 
 === 支援的升級途徑
 
-您可以從Cloud Volumes ONTAP 9.12.0和9.11.1版本升級至版本的版本。BlueXP會提示您將合格Cloud Volumes ONTAP 的更新版升級至此版本。
+您可以從Cloud Volumes ONTAP 9.12.1版升級至版本的支援。BlueXP會提示您將合格Cloud Volumes ONTAP 的更新版升級至此版本。
 
 
 
 === 所需版本的Connector
 
-BlueXP Connector必須執行3.9.24版或更新版本、才能部署新Cloud Volumes ONTAP 的版本號的更新版本號、並將現有系統升級至9.12.1。
+BlueXP Connector必須執行3.9.26版或更新版本、才能部署新Cloud Volumes ONTAP 的版本的更新版本、並將現有系統升級至9.13.0版。
 
 
 TIP: 連接器的自動升級預設為啟用、因此您應該執行最新版本。
@@ -109,7 +93,7 @@ TIP: 連接器的自動升級預設為啟用、因此您應該執行最新版本
 
 === 不再支援c4、m4和r4執行個體
 
-在AWS中Cloud Volumes ONTAP 、不再支援C4、M4和R4 EC2執行個體類型。如果現有系統執行的是c4、m4或r4執行個體類型、則必須變更為c5、m5或R5執行個體系列中的執行個體類型。
+在AWS中Cloud Volumes ONTAP 、不再支援C4、M4和R4 EC2執行個體類型。如果現有的系統執行於c4、m4或r4執行個體類型、則必須變更為c5、m5或R5執行個體系列中的執行個體類型。您必須變更執行個體類型、才能升級至此版本。
 
 link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-change-ec2-instance.html["瞭解如何變更EC2執行個體類型Cloud Volumes ONTAP 以供使用"^]。
 

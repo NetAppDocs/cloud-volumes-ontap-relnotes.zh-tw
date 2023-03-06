@@ -242,7 +242,6 @@
   <block id="09ab988c99cc61af08cebf0d39a00ac5" category="list-text">介面群組</block>
   <block id="ac140a63a61ac75e47b5b4ef17eec52d" category="list-text">內部網路模式LIF容錯移轉</block>
   <block id="1749d12df3df2319d3eee218a277ff83" category="list-text">MetroCluster</block>
-  <block id="8e85765bc3ce726509dc354633dff4d1" category="list-text">Google Cloud中的S3（Azure和AWS支援S3傳輸協定）ONTAP</block>
   <block id="951de4e4bdae5ad5598a048ed6a6f1e3" category="list-text">RAID4、RAID-DP、RAID-TEC 功能（支援RAID0）</block>
   <block id="0ec5130d573357ea4d244f018e39ae85" category="list-text">服務處理器</block>
   <block id="9e13198f9131eed7b39e47425df55fdb" category="list-text">支援一致性與企業模式（僅支援Cloud WORM）SnapLock</block>
@@ -596,7 +595,6 @@
   <block id="0d5277886c056c697a81cb7ba46178fc" category="list-text">針對具有特定VM大小的單一節點系統所列出的896 TiB磁碟型限制、是_已測試_的限制。</block>
   <block id="8a11b7df22322ab2814174e7745c863f" category="inline-link">關於本產品的注意事項ONTAP</block>
   <block id="a65d010a2b24f9e4a0919b7faf52d022" category="list-text"><block ref="a65d010a2b24f9e4a0919b7faf52d022" category="inline-link-rx"></block></block>
-  <block id="45468834981b77e3d08a5c6457436141" category="paragraph">在AWS中Cloud Volumes ONTAP 、不再支援C4、M4和R4 EC2執行個體類型。如果現有系統執行的是c4、m4或r4執行個體類型、則必須變更為c5、m5或R5執行個體系列中的執行個體類型。</block>
   <block id="6614eabe1ab14f33107830de1efb584a" category="inline-link-macro">瞭解如何變更EC2執行個體類型Cloud Volumes ONTAP 以供使用</block>
   <block id="f072eddf76dc8c19f3d32a7263fe7931" category="paragraph"><block ref="37cca4b92d12a1904a84ee04c60f6ada" category="inline-link-macro-rx"></block>。</block>
   <block id="09ea0908fbfc4cde85bf416e35dc55c8" category="inline-link-macro">NetApp支援</block>
@@ -622,27 +620,6 @@
   <block id="bd5465eb0e8cf8f303aee7ea9420c8b1" category="sidebar">BlueXP部落格</block>
   <block id="2819feead2b07762a4465189ab8b2f52" category="paragraph-title">對於HA配對、每個節點或整個HA配對的授權容量限制是多少？</block>
   <block id="7093c2c9844cf46dcd5d50c6d596d244" category="paragraph-title">對於HA配對、鏡射資料是否會根據授權容量限制計算？</block>
-  <block id="86d186ddbc8834521176140c61bb1ecb" category="summary">更新功能包括更新功能Cloud Volumes ONTAP 。</block>
-  <block id="4a7f350e84f13d9c2289d4e589fe2905" category="doc">更新內容Cloud Volumes ONTAP</block>
-  <block id="f75e792bf7a4a205f202f29d2fc54c22" category="paragraph">更新功能包括更新功能Cloud Volumes ONTAP 。</block>
-  <block id="19eac37ffdb1098ffe690004efa5c07f" category="section-title">9.12.1 RC1（2022年12月8日）</block>
-  <block id="081d2affd8ad79dfa3ae0457893e56ac" category="paragraph">AWS、Azure和Google Cloud現已推出《發行候選版本1》Cloud Volumes ONTAP 。此版本包含下列新功能與增強功能。</block>
-  <block id="cca494b1b1d22bc8b5c8a8ecd5367bf8" category="section-title">GCP中的SS3授權ONTAP</block>
-  <block id="44f72ae2127b89a470e082ae9f772acf" category="paragraph">在Google Cloud Platform中、執行9.12.1版或更新版本的全新及現有的版本不含更新版本的S3授權Cloud Volumes ONTAP ONTAP 。</block>
-  <block id="6958464059ef304c59d06fcb948ccafd" category="inline-link">瞭解如何在ONTAP 功能區中設定及管理S3物件儲存服務</block>
-  <block id="3fe75f10a35597997861eca633c30fa7" category="paragraph"><block ref="3fe75f10a35597997861eca633c30fa7" category="inline-link-rx"></block></block>
-  <block id="cc29a82f2be96a8b1c7afa60d5276465" category="section-title">支援NVMe-TCP Cloud Volumes ONTAP</block>
-  <block id="23c4b82f7249c5985875e4b099d8089b" category="paragraph">如果您使用Cloud Volumes ONTAP 的是版本為9.12.1或更新版本、則支援適用於雲端供應商的NVMe-TCP。BlueXP不提供任何適用於NVMe TCP的管理功能。</block>
-  <block id="a441b4ab4a68e599e4c2acbfa61f336e" category="inline-link-macro">設定NVMe的儲存VM</block>
-  <block id="ba257423528dac43c614b4b9b2158c01" category="paragraph">如需透過ONTAP NVMe設定NVMe的詳細資訊、請參閱 <block ref="aa614759af42ba295504d93dd3aa15df" category="inline-link-macro-rx"></block>。</block>
-  <block id="9265bdfbf5fe7a5d98259ecba03ba2b0" category="section-title">Azure HA位於單一可用度區域中、提供共享的託管磁碟</block>
-  <block id="b6c74e2b13b56b7d9c6843e2a6677b0f" category="paragraph">您現在可以使用Cloud Volumes ONTAP Microsoft Azure本機備援儲存設備（LRS）、在共享的託管磁碟上執行、來部署一套功能完善的HA組態。本機備援儲存設備可在同一區域的單一資料中心內複寫資料三次。</block>
-  <block id="ca010532511b0575d0c11648404720a6" category="inline-link-macro">Azure 中的高可用度配對</block>
-  <block id="91d82e4d3a44df903303441448069415" category="paragraph">如需HA組態架構和元件的詳細資訊、請參閱 <block ref="ffe856f9f46b846e98a5d4cebaf6de2d" category="inline-link-macro-rx"></block>。</block>
-  <block id="68367d4408e943b9268a7a6d4314fb0a" category="inline-link-macro">在Cloud Volumes ONTAP Azure中啟動一套功能完善的</block>
-  <block id="bb0d42e6fed6d85c4ddc5b2d8c94e08b" category="paragraph">當您在Azure的單一可用度區域中部署新的HA配對時、您現在將使用LRS共享託管磁碟、而非使用分頁式磁碟來儲存。「工作環境」精靈沒有變更。您只需選擇單一可用度區域、即可使用此新組態。如需詳細資訊、請參閱 <block ref="74ff11371741a9669ba3ff027e13cdfb" category="inline-link-macro-rx"></block>。</block>
-  <block id="adacae0ffd14e727a49e7808c807ce42" category="section-title">Azure HA位於多個可用度區域、並使用共享的託管磁碟</block>
-  <block id="5f04b8451f48f03e36e44aea747e0a8b" category="paragraph">若要使用此新組態、請參閱 <block ref="74ff11371741a9669ba3ff027e13cdfb" category="inline-link-macro-rx"></block>。</block>
   <block id="9d123a356c832621891a3328c128b78b" category="list-text">L8s_v3 ^2^</block>
   <block id="6f487c8743b08c743167da3781c42f57" category="list-text">L16s_v3 ^2、4^</block>
   <block id="2b5c34a51aff2e04df61ba2f74efb07e" category="list-text">L32s_v3 ^2、4^</block>
@@ -668,22 +645,17 @@
   <block id="dad17615a876f17a26615a81b9cd721c" category="example-title">PAYGO Premium：HA可與共享的託管磁碟配對多個可用區域組態</block>
   <block id="6367723c5abb9a6de038561ba69ed33f" category="example-title">BYOL：單一可用度區域中的HA配對與分頁區配對</block>
   <block id="561a766e0af8bbc565f3cd929c900d16" category="example-title">BYOL：HA與共享的託管磁碟配對使用多個可用區域組態</block>
-  <block id="f27b112d1527e5f29f0e8f510d779a5e" category="doc">《》（英文Cloud Volumes ONTAP ）</block>
   <block id="fc9a388cd18c69244f22554de6f0d544" category="paragraph-title">對於AWS中的HA系統、鏡射資料是否會根據容量限制計算？</block>
   <block id="39b49fbe12f6121fd761513c05ddba97" category="paragraph">部分VM類型包括本機NVMe儲存設備、Cloud Volumes ONTAP 這些儲存設備可作為_Flash Cache使用。請注意Flash Cache的下列限制：</block>
-  <block id="0612637a826e0e5aac35661a09778188" category="paragraph">BlueXP Connector必須執行3.9.24版或更新版本、才能部署新Cloud Volumes ONTAP 的版本號的更新版本號、並將現有系統升級至9.12.1。</block>
   <block id="f5aba93322e5fd0767b7e9fa839610f1" category="inline-link-macro">AWS中的《關於支援此功能的資訊Cloud Volumes ONTAP</block>
   <block id="a4a2a5bddea7236f27b0a01d377e37a6" category="list-text"><block ref="a4a2a5bddea7236f27b0a01d377e37a6" category="inline-link-macro-rx"></block></block>
   <block id="278ce444bf386e0c416c2eb85c339022" category="inline-link-macro">Google Cloud中的《The傳達關於The充當the解決方案的角色的注意事項Cloud Volumes ONTAP （英文）</block>
   <block id="653a50044a773ecda2e2e9ec6736699c" category="list-text"><block ref="653a50044a773ecda2e2e9ec6736699c" category="inline-link-macro-rx"></block></block>
-  <block id="16b3ee4e5301a5f3f5b55816b3906b83" category="summary">這些版本說明Cloud Volumes ONTAP 介紹有關更新功能、限制和已知問題的資訊。</block>
   <block id="f59964eb1e1669da7d916b7e136c88bd" category="list-text">m6id.32xlarge</block>
   <block id="b5cb41a6703cf18b4cecd5a0817f91cf" category="section-title">升級附註</block>
   <block id="dfb01a7b38cba8284269f37f00622809" category="paragraph">請閱讀這些附註、深入瞭解升級至此版本的相關資訊。</block>
   <block id="b78b1188c7979365981f7c88049f9366" category="section-title">如何升級</block>
   <block id="c716eebe2519c2ba4a2e109b59dd8b13" category="inline-link">瞭解如何在BlueXP通知您時進行升級</block>
-  <block id="bd4bd858d3e1a85d30586455b3e9daf2" category="paragraph"><block ref="6a49825bad49c3be284ac7a237bc2a26" category="inline-link-rx"></block>。</block>
-  <block id="69166f59e44b2f0714ce3c4f044faf17" category="paragraph">您可以從Cloud Volumes ONTAP 9.12.0和9.11.1版本升級至版本的版本。BlueXP會提示您將合格Cloud Volumes ONTAP 的更新版升級至此版本。</block>
   <block id="75026846c1403e202a52bdb027762fbb" category="section-title">停機</block>
   <block id="9f0f02784feedfa2549a9e3a51cfa315" category="list-text">單一節點系統的升級可讓系統離線長達25分鐘、在此期間I/O會中斷。</block>
   <block id="00795e3f043d0bab791590ffc0257204" category="list-text">升級 HA 配對不中斷營運、而且 I/O 不中斷。在此不中斷營運的升級程序中、會同時升級每個節點、以繼續為用戶端提供 I/O 服務。</block>
@@ -705,9 +677,33 @@
   <block id="72e0d2497593ac6a5fdc024537224aed" category="list-text">這些VM類型僅支援在共享託管磁碟上執行的單一可用度區域組態中的HA配對。</block>
   <block id="7502ea8e5d477af63195f04d6179ca92" category="list-text">在單一可用度區域中、HA配對支援這些VM類型、以及在共享託管磁碟上執行的多個可用度區域組態。</block>
   <block id="6c895f204de5d4dd4a02c2926e76c998" category="list-text">這些VM類型僅在Cloud Volumes ONTAP 部署不支援的版本中提供支援。</block>
-  <block id="b3d2b2f33046bc452ceeba660d878f97" category="section-title">9.12.1 GA（2023年2月9日）</block>
-  <block id="d7ad70132837e18b99685763f8db95f2" category="paragraph">AWS、Azure和Google Cloud現已推出《通用版本》（GA）版本Cloud Volumes ONTAP 的《支援資訊》（General Availability、GA）。GA版本包含錯誤修正。</block>
-  <block id="901f48339d9d297cd3f32a0be361c057" category="paragraph">您現在可以使用Cloud Volumes ONTAP Azure在一個區域內的多個可用度區域來部署一套不間斷HA組態。新組態可防止資料中心故障、並使用Azure區域備援儲存設備（ZRS）共享託管磁碟來維持應用程式可用度。此功能目前僅適用於美國西部2、西歐、歐洲北部和法國中部地區。</block>
-  <block id="967b9ba2107b00338e92f6eb93ca99d8" category="inline-link-macro">Microsoft Azure文件。</block>
-  <block id="0d66ef11df7c9797df8b9cf7f638438a" category="paragraph">若要深入瞭解受管理磁碟的區域備援儲存設備、請參閱 <block ref="cc9f7b6977bd94adf51c6f83282634a2" category="inline-link-macro-rx"></block></block>
+  <block id="a1998150800fd10b93e35cace9e4373f" category="summary">包含全新增強功能的支援功能Cloud Volumes ONTAP 。</block>
+  <block id="3d17e08f201d7b7be36023f1e5ae0588" category="doc">更新功能Cloud Volumes ONTAP</block>
+  <block id="6d35656a75b4490b417ac27bea22133b" category="paragraph">包含全新增強功能的支援功能Cloud Volumes ONTAP 。</block>
+  <block id="d0429a37d66735eb8b3cc4e05bfe725a" category="section-title">9.13.0 GA（2023年3月5日）</block>
+  <block id="08a6d92c67ddca491cb942b3dad79c36" category="paragraph">AWS、Azure和Google Cloud現已推出通用（GA）版本Cloud Volumes ONTAP 的《支援》（General Availability、GA）。此版本包含下列新功能與增強功能。</block>
+  <block id="98f6dc87e7c206ec16da559a2af45beb" category="section-title">Google Cloud的Flash Cache和高速寫入速度</block>
+  <block id="77e5d57bae938bc31208cded57756dc8" category="paragraph">支援Flash Cache、高速寫入速度、以及高傳輸單位（MTU）8、896位元組、現在Cloud Volumes ONTAP 可用於發行版本為《The》（英文）的特定執行個體。</block>
+  <block id="80d41628bf38145af2326ce3d52d8e91" category="inline-link-macro">Google Cloud授權支援的組態</block>
+  <block id="0a623de488b37ca75333d521fccaa559" category="paragraph">深入瞭解 <block ref="cdeafd55498169f22d9d7a55ffee4ff4" category="inline-link-macro-rx"></block>。</block>
+  <block id="a8c4c892aed6484fe804ae459960a806" category="section-title">在Google Cloud中驗證影像</block>
+  <block id="ea34816f3c506620775a84c7a17f65bb" category="paragraph">現在提供增強的安全功能、可驗證Cloud Volumes ONTAP 透過Google Cloud匯出的各種圖片檔案的簽名。</block>
+  <block id="af10bd89b3d2714a711373f227970f8d" category="inline-link-macro">深入瞭解Google Cloud Image驗證</block>
+  <block id="7fd1203256e771eb74f1b349e3dcaea6" category="paragraph"><block ref="cbc507c6f6fef1246987c7525bf37637" category="inline-link-macro-rx"></block>。</block>
+  <block id="1b6ed76b2dfdf777c3f7f69a51b27da8" category="section-title">Google Cloud提供新的執行個體支援</block>
+  <block id="c7614931957b0270f4ee5806224011a7" category="paragraph">Freemium、PAYGO Premium、節點型BYOL及容量型授權現在支援兩種新的執行個體類型、可在Cloud Volumes ONTAP Google Cloud中進行單一節點與高可用度部署。</block>
+  <block id="33031b274bf5d81fbfbd69c1f2ea39a2" category="list-text">n2-Standard-48</block>
+  <block id="7c347fcea29ffaea485ee6128a9d7a06" category="list-text">n2-Standard-64</block>
+  <block id="a4e7d5c6d93cbdfda5947e8b8356e197" category="inline-link-macro">深入瞭解Google Cloud支援的組態</block>
+  <block id="7d79f600f7bce2dc1b1eea8ef36b3477" category="paragraph"><block ref="6581d56e4f9d9829469412aa95295d08" category="inline-link-macro-rx"></block>。</block>
+  <block id="825b72c29694b250600da1a6306f10a9" category="paragraph"><block ref="012ba5bcba73cfdbd01dce1c158d5e6b" category="inline-link-macro-rx"></block>。</block>
+  <block id="3e933a57f8cc8a9465bd8e62bb3ffd3c" category="paragraph">您可以從Cloud Volumes ONTAP 9.12.1版升級至版本的支援。BlueXP會提示您將合格Cloud Volumes ONTAP 的更新版升級至此版本。</block>
+  <block id="7353c6310f3c14fba2d49d2cf95e6f82" category="paragraph">BlueXP Connector必須執行3.9.26版或更新版本、才能部署新Cloud Volumes ONTAP 的版本的更新版本、並將現有系統升級至9.13.0版。</block>
+  <block id="41104125a8a3ef6fe8985ff4df5257be" category="paragraph">在AWS中Cloud Volumes ONTAP 、不再支援C4、M4和R4 EC2執行個體類型。如果現有的系統執行於c4、m4或r4執行個體類型、則必須變更為c5、m5或R5執行個體系列中的執行個體類型。您必須變更執行個體類型、才能升級至此版本。</block>
+  <block id="8e8865183ac138d80e1eac90bc023d09" category="list-text">下列HA配對部署執行個體可從發行版本9.13.0、Cloud Volumes ONTAP _Flash Cache、高速寫入速度及最大傳輸單元（MTU）8、896位元組開始使用：</block>
+  <block id="f23467ff8f84fc95ca2baa4b362c7865" category="inline-link">在Google Cloud上啟動HA配對</block>
+  <block id="7477066216e27af7df839cd63548d9a0" category="paragraph">您可以在部署符合資格的執行個體類型時啟用_Flash Cache和高速寫入速度。若要啟用最大傳輸單位8、896位元組、您必須選擇VPC-1、VPC-2或VPC-3進行部署。MTU越高、網路處理量就越高。如需啟動其中一個部署的詳細資訊、請參閱<block ref="aeb6f5c153b1dc31a05c0c3a25902ee7" category="inline-link-rx"></block>。</block>
+  <block id="13a86b4a06586a14808c627b883e338d" category="admonition">_Flash快取_、高寫入模式和8、896的MTU是功能相依的、無法在設定的執行個體中個別停用。</block>
+  <block id="dc0f989b2f6bd3e7bf961fb6ea788d85" category="summary">這些版本說明Cloud Volumes ONTAP 介紹有關發行版的功能、限制和已知問題。</block>
+  <block id="f53ab0fd2ad9b3e113196ed1a6d6792a" category="doc">《》（英文Cloud Volumes ONTAP ）</block>
 </blocks>

@@ -106,7 +106,6 @@ NOTE: 由資料一致性決定資料一致性。ONTAP WAFL只ONTAP 有當WAFL �
 +
 在Cloud Volumes ONTAP 支援的情況下、在支援的系統上啟用多管理員驗證、將會產生不受支援的組態。
 
-* Google Cloud中的S3（Azure和AWS支援S3傳輸協定）ONTAP
 * RAID4、RAID-DP、RAID-TEC 功能（支援RAID0）
 * 服務處理器
 * 支援一致性與企業模式（僅支援Cloud WORM）SnapLock
