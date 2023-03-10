@@ -684,8 +684,6 @@
   <block id="08a6d92c67ddca491cb942b3dad79c36" category="paragraph">AWS、Azure和Google Cloud現已推出通用（GA）版本Cloud Volumes ONTAP 的《支援》（General Availability、GA）。此版本包含下列新功能與增強功能。</block>
   <block id="98f6dc87e7c206ec16da559a2af45beb" category="section-title">Google Cloud的Flash Cache和高速寫入速度</block>
   <block id="77e5d57bae938bc31208cded57756dc8" category="paragraph">支援Flash Cache、高速寫入速度、以及高傳輸單位（MTU）8、896位元組、現在Cloud Volumes ONTAP 可用於發行版本為《The》（英文）的特定執行個體。</block>
-  <block id="80d41628bf38145af2326ce3d52d8e91" category="inline-link-macro">Google Cloud授權支援的組態</block>
-  <block id="0a623de488b37ca75333d521fccaa559" category="paragraph">深入瞭解 <block ref="cdeafd55498169f22d9d7a55ffee4ff4" category="inline-link-macro-rx"></block>。</block>
   <block id="a8c4c892aed6484fe804ae459960a806" category="section-title">在Google Cloud中驗證影像</block>
   <block id="ea34816f3c506620775a84c7a17f65bb" category="paragraph">現在提供增強的安全功能、可驗證Cloud Volumes ONTAP 透過Google Cloud匯出的各種圖片檔案的簽名。</block>
   <block id="af10bd89b3d2714a711373f227970f8d" category="inline-link-macro">深入瞭解Google Cloud Image驗證</block>
@@ -706,4 +704,8 @@
   <block id="13a86b4a06586a14808c627b883e338d" category="admonition">_Flash快取_、高寫入模式和8、896的MTU是功能相依的、無法在設定的執行個體中個別停用。</block>
   <block id="dc0f989b2f6bd3e7bf961fb6ea788d85" category="summary">這些版本說明Cloud Volumes ONTAP 介紹有關發行版的功能、限制和已知問題。</block>
   <block id="f53ab0fd2ad9b3e113196ed1a6d6792a" category="doc">《》（英文Cloud Volumes ONTAP ）</block>
+  <block id="0bd47e4dae550ba8bfd133248f3efde6" category="list-text">16 TiB（僅限託管磁碟）</block>
+  <block id="e976f9591845e426a456344d35bd0caf" category="list-text">32 TiB（僅限託管磁碟）</block>
+  <block id="32830aa4ef4df4b9d8e47549047e69c8" category="inline-link-macro">Google Cloud授權支援的組態</block>
+  <block id="84be1484c7ac300bd9e0b83a7535caeb" category="paragraph">深入瞭解 <block ref="2e8eda968169518df52bf6fcb01f61cf" category="inline-link-macro-rx"></block>。</block>
 </blocks>
