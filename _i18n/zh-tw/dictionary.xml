@@ -63,7 +63,6 @@
   <block id="2a01d572b1447155c310cabafac3fae9" category="paragraph">附註：</block>
   <block id="24aa50b65a436c4efc843ed62aab1f03" category="list-text">PAYGO Explore不支援資料分層至Azure Blob儲存設備。</block>
   <block id="d59048f21fd887ad520398ce677be586" category="inline-link">深入瞭解</block>
-  <block id="98fffe7875c6770d43b18275f6508460" category="list-text">這種VM類型包括本機NVMe儲存設備、Cloud Volumes ONTAP 這些儲存設備以_Flash Cache的形式使用。Flash Cache 可透過即時智慧快取來加速資料存取、快取最近讀取的使用者資料和 NetApp 中繼資料。它適用於隨機讀取密集的工作負載、包括資料庫、電子郵件和檔案服務。所有磁碟區都必須停用壓縮、才能充分發揮 Flash Cache 效能的改善效益。<block ref="11a0a91823c32739dc802a8a06ed9368" category="inline-link-rx"></block>。</block>
   <block id="11509498a3f1573cdde878f927dc10bd" category="inline-link">超SSD</block>
   <block id="9147ab73e7498660eae7ed2b4b8cca5c" category="list-text">這些VM類型使用<block ref="d656d82278337f3ecf8db6b2a30a45f2" category="inline-link-rx"></block> 適用於VNVRAM、可提供更佳的寫入效能。</block>
   <block id="d2f103c82b43ca5f2da33f93d94bde64" category="paragraph">如果您在部署新Cloud Volumes ONTAP 的支援系統時選擇任何一種VM類型、就無法改用另一種VM類型、也就是_不使用適用於VNVRAM的Ultra SSD。例如、您無法從E8ds_v4變更為E8s_v3、但您可以從E8ds_v4變更為E32ds_v4、因為這兩種VM類型都使用Ultra SSD。</block>
@@ -672,8 +671,6 @@
   <block id="fd5fff93ea6b0d7a9072274f514573ae" category="list-text">E32ds_v4 ^1、4^</block>
   <block id="6cddc6e542baa2aaad6e58fdc397ce90" category="list-text">E48ds_v4 ^1、4^</block>
   <block id="de04224de00bacc811083f3a49af24b0" category="list-text">E80ids_v4 ^1、2、4^</block>
-  <block id="7f556a87aab63796eccbfaafbe789614" category="list-text">L16s_v3 ^1、3^</block>
-  <block id="951f86fa0d8dd0f01062b7d8deb4a4eb" category="list-text">L32s_v3 ^1、3^</block>
   <block id="72e0d2497593ac6a5fdc024537224aed" category="list-text">這些VM類型僅支援在共享託管磁碟上執行的單一可用度區域組態中的HA配對。</block>
   <block id="7502ea8e5d477af63195f04d6179ca92" category="list-text">在單一可用度區域中、HA配對支援這些VM類型、以及在共享託管磁碟上執行的多個可用度區域組態。</block>
   <block id="6c895f204de5d4dd4a02c2926e76c998" category="list-text">這些VM類型僅在Cloud Volumes ONTAP 部署不支援的版本中提供支援。</block>
@@ -708,4 +705,7 @@
   <block id="e976f9591845e426a456344d35bd0caf" category="list-text">32 TiB（僅限託管磁碟）</block>
   <block id="32830aa4ef4df4b9d8e47549047e69c8" category="inline-link-macro">Google Cloud授權支援的組態</block>
   <block id="84be1484c7ac300bd9e0b83a7535caeb" category="paragraph">深入瞭解 <block ref="2e8eda968169518df52bf6fcb01f61cf" category="inline-link-macro-rx"></block>。</block>
+  <block id="0de1a1ee4761fb32fe7c011af9b37f8b" category="list-text">這種VM類型包括本機NVMe儲存設備、Cloud Volumes ONTAP 這些儲存設備以_Flash Cache的形式使用。Flash Cache 可透過即時智慧快取來加速資料存取、快取最近讀取的使用者資料和 NetApp 中繼資料。它適用於隨機讀取密集的工作負載、包括資料庫、電子郵件和檔案服務。<block ref="11a0a91823c32739dc802a8a06ed9368" category="inline-link-rx"></block>。</block>
+  <block id="573ba387c27d105c1e3fd20266d13123" category="list-text">L16s_v3 ^1、3、5^</block>
+  <block id="2bb521d2d5cea05a3b9b29f1cf232c63" category="list-text">L32s_v3 ^1、3、5^</block>
 </blocks>
