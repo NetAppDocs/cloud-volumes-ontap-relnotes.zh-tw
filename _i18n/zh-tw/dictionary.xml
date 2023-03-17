@@ -735,4 +735,6 @@
   <block id="3d376421b02f18f5e4f69d3279960192" category="list-text"><block ref="3d376421b02f18f5e4f69d3279960192" category="inline-link-macro-rx"></block></block>
   <block id="e992336bc44f92f976150dd4f7e620a6" category="list-text"><block ref="e992336bc44f92f976150dd4f7e620a6" category="inline-link-macro-rx"></block></block>
   <block id="fe7d7a50736d47640427625bca62cb36" category="list-text"><block ref="fe7d7a50736d47640427625bca62cb36" category="inline-link-macro-rx"></block></block>
+  <block id="5b420079bca1c870914caa221b31442e" category="inline-link-macro">支援的支援Cloud Volumes ONTAP</block>
+  <block id="ffc57f9ad1eddac8492feb646fd4da6c" category="list-text"><block ref="ffc57f9ad1eddac8492feb646fd4da6c" category="inline-link-macro-rx"></block></block>
 </blocks>

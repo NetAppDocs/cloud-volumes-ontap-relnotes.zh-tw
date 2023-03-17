@@ -16,6 +16,7 @@ summary: 如果您未執行最新Cloud Volumes ONTAP 版的更新版本、則可
 [role="lead"]
 如果您未執行最新Cloud Volumes ONTAP 版的更新版本、則可取得其他版本的文件。您可以使用頁面右上角的版本選取器、或使用下列連結。
 
+* link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["支援的支援Cloud Volumes ONTAP"^]
 * link:https://docs.netapp.com/us-en/cloud-volumes-ontap-9121-relnotes/index.html["零點9.12.1. Cloud Volumes ONTAP"^]
 * link:https://docs.netapp.com/us-en/cloud-volumes-ontap-9120-relnotes/index.html["零件9.12.0 Cloud Volumes ONTAP"^]
 * link:https://docs.netapp.com/us-en/cloud-volumes-ontap-9111-relnotes/index.html["零點9.11.1. Cloud Volumes ONTAP"^]
