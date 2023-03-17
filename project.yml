@@ -60,6 +60,8 @@ sidebar:
     url: "/index.html"
   - title: 新增功能
     url: "/reference-new.html"
+  - title: 其他版本
+    url: "/reference-other-versions.html"
   - title: 授權總覽
     url: "/concept-licensing.html"
   - title: 支援的組態
