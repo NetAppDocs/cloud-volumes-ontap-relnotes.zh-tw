@@ -673,7 +673,6 @@
   <block id="de04224de00bacc811083f3a49af24b0" category="list-text">E80ids_v4 ^1、2、4^</block>
   <block id="72e0d2497593ac6a5fdc024537224aed" category="list-text">這些VM類型僅支援在共享託管磁碟上執行的單一可用度區域組態中的HA配對。</block>
   <block id="7502ea8e5d477af63195f04d6179ca92" category="list-text">在單一可用度區域中、HA配對支援這些VM類型、以及在共享託管磁碟上執行的多個可用度區域組態。</block>
-  <block id="6c895f204de5d4dd4a02c2926e76c998" category="list-text">這些VM類型僅在Cloud Volumes ONTAP 部署不支援的版本中提供支援。</block>
   <block id="a1998150800fd10b93e35cace9e4373f" category="summary">包含全新增強功能的支援功能Cloud Volumes ONTAP 。</block>
   <block id="3d17e08f201d7b7be36023f1e5ae0588" category="doc">更新功能Cloud Volumes ONTAP</block>
   <block id="6d35656a75b4490b417ac27bea22133b" category="paragraph">包含全新增強功能的支援功能Cloud Volumes ONTAP 。</block>
@@ -708,33 +707,5 @@
   <block id="0de1a1ee4761fb32fe7c011af9b37f8b" category="list-text">這種VM類型包括本機NVMe儲存設備、Cloud Volumes ONTAP 這些儲存設備以_Flash Cache的形式使用。Flash Cache 可透過即時智慧快取來加速資料存取、快取最近讀取的使用者資料和 NetApp 中繼資料。它適用於隨機讀取密集的工作負載、包括資料庫、電子郵件和檔案服務。<block ref="11a0a91823c32739dc802a8a06ed9368" category="inline-link-rx"></block>。</block>
   <block id="573ba387c27d105c1e3fd20266d13123" category="list-text">L16s_v3 ^1、3、5^</block>
   <block id="2bb521d2d5cea05a3b9b29f1cf232c63" category="list-text">L32s_v3 ^1、3、5^</block>
-  <block id="8ba7e9fc95ff683b40e7c59130ea44da" category="doc">其他版本</block>
-  <block id="ce82054d211a2682af67bf1effd48d55" category="paragraph">如果您未執行最新Cloud Volumes ONTAP 版的更新版本、則可取得其他版本的文件。您可以使用頁面右上角的版本選取器、或使用下列連結。</block>
-  <block id="dba89da91170934734e847dcfe4ad5d0" category="inline-link-macro">零點9.12.1. Cloud Volumes ONTAP</block>
-  <block id="bf748f930fa11e46773ff6f7b815e480" category="inline-link-macro">零件9.12.0 Cloud Volumes ONTAP</block>
-  <block id="daa1014700acb24b76e93296bfc813fb" category="inline-link-macro">零點9.11.1. Cloud Volumes ONTAP</block>
-  <block id="44521137c9499dbef6a006058d0d9127" category="inline-link-macro">版本9.11.0 Cloud Volumes ONTAP</block>
-  <block id="793e5668f96fd622a2b0f0f5b056d9f1" category="inline-link-macro">零點9.10.1 Cloud Volumes ONTAP</block>
-  <block id="1217a2d42a5d039798ff2ec7be351708" category="inline-link-macro">零點9.10.0 Cloud Volumes ONTAP</block>
-  <block id="910d8975bd41857a0103e9a8657ea7d9" category="inline-link-macro">部分9.9.1 Cloud Volumes ONTAP</block>
-  <block id="4e9e74671f654c298cca727d225f4898" category="inline-link-macro">版本9.9.0 Cloud Volumes ONTAP</block>
-  <block id="7f35dccb22aab2847136ffc356c63e42" category="inline-link-macro">部分9.8 Cloud Volumes ONTAP</block>
-  <block id="03e0174a91af96fe57614937684f7818" category="inline-link-macro">更新Cloud Volumes ONTAP</block>
-  <block id="633977a9055fad0cd244a0d95fb64954" category="inline-link-macro">部分9.6 Cloud Volumes ONTAP</block>
-  <block id="ec01856b06871c06577cf1f7ecb0233d" category="inline-link-macro">版本9.5 Cloud Volumes ONTAP</block>
-  <block id="cf82f9e4739ede759d30a8797b555e57" category="summary">如果您未執行最新Cloud Volumes ONTAP 版的更新版本、則可取得其他版本的文件。您可以使用頁面右上角的版本選取器、或使用下列連結尋找其他版本。</block>
-  <block id="3ac40836ad3536cc759ef18271bc0922" category="list-text"><block ref="3ac40836ad3536cc759ef18271bc0922" category="inline-link-macro-rx"></block></block>
-  <block id="e710019c8a65cbe763d8832d6d873b8a" category="list-text"><block ref="e710019c8a65cbe763d8832d6d873b8a" category="inline-link-macro-rx"></block></block>
-  <block id="c61af9d3a5afdd8afd3b453a1942eacc" category="list-text"><block ref="c61af9d3a5afdd8afd3b453a1942eacc" category="inline-link-macro-rx"></block></block>
-  <block id="57082e6493ab7c2f3066e5da7735b4cd" category="list-text"><block ref="57082e6493ab7c2f3066e5da7735b4cd" category="inline-link-macro-rx"></block></block>
-  <block id="d84582cb5835fe6898898ac96668b577" category="list-text"><block ref="d84582cb5835fe6898898ac96668b577" category="inline-link-macro-rx"></block></block>
-  <block id="cdfa895364ba73a7480299fbd2abf768" category="list-text"><block ref="cdfa895364ba73a7480299fbd2abf768" category="inline-link-macro-rx"></block></block>
-  <block id="045396c0efbee7a85a64e9e19858889a" category="list-text"><block ref="045396c0efbee7a85a64e9e19858889a" category="inline-link-macro-rx"></block></block>
-  <block id="6e55816615578526bc71bec825d071f6" category="list-text"><block ref="6e55816615578526bc71bec825d071f6" category="inline-link-macro-rx"></block></block>
-  <block id="5f5bc9c2582ffc743a15e2e4c4d8f82b" category="list-text"><block ref="5f5bc9c2582ffc743a15e2e4c4d8f82b" category="inline-link-macro-rx"></block></block>
-  <block id="3d376421b02f18f5e4f69d3279960192" category="list-text"><block ref="3d376421b02f18f5e4f69d3279960192" category="inline-link-macro-rx"></block></block>
-  <block id="e992336bc44f92f976150dd4f7e620a6" category="list-text"><block ref="e992336bc44f92f976150dd4f7e620a6" category="inline-link-macro-rx"></block></block>
-  <block id="fe7d7a50736d47640427625bca62cb36" category="list-text"><block ref="fe7d7a50736d47640427625bca62cb36" category="inline-link-macro-rx"></block></block>
-  <block id="5b420079bca1c870914caa221b31442e" category="inline-link-macro">支援的支援Cloud Volumes ONTAP</block>
-  <block id="ffc57f9ad1eddac8492feb646fd4da6c" category="list-text"><block ref="ffc57f9ad1eddac8492feb646fd4da6c" category="inline-link-macro-rx"></block></block>
+  <block id="bcc4564bd7fc660f5dd5b39219b9775f" category="list-text">這些VM僅支援Cloud Volumes ONTAP 部署不支援使用支援的版本。有了這些VM類型、您可以將現有的頁面配置從Cloud Volumes ONTAP 版本資訊的版本9.11.1升級至9.12.1.您無法使用Cloud Volumes ONTAP 更新版本的更新版本執行新的頁面配置。</block>
 </blocks>

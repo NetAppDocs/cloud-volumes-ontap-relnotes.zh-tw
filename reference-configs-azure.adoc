@@ -223,7 +223,7 @@ Azure中提供的支援可作為單一節點系統、以及高可用度（HA）�
 
 . 使用HA配對時、支援這些VM類型的高速寫入速度。Cloud Volumes ONTAP您可以在部署期間或之後的任何時間、從BlueXP啟用高速寫入速度。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-write-speed.html["深入瞭解如何選擇寫入速度"^]。
 . 建議僅在需要Azure維護控管時才使用此VM。由於價格較高、因此不建議用於任何其他使用案例。
-. 這些VM類型僅在Cloud Volumes ONTAP 部署不支援的版本中提供支援。
+. 這些VM僅支援Cloud Volumes ONTAP 部署不支援使用支援的版本。有了這些VM類型、您可以將現有的頁面配置從Cloud Volumes ONTAP 版本資訊的版本9.11.1升級至9.12.1.您無法使用Cloud Volumes ONTAP 更新版本的更新版本執行新的頁面配置。
 
 
 
