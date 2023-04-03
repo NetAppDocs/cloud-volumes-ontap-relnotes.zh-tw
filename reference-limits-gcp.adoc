@@ -235,3 +235,10 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-managing-sv
 
 | * PortSets* | 每個節點的最大值 | 256 
 |===
+
+
+== 不支援立即儲存恢復的部分Cloud Volumes ONTAP
+
+節點重新開機後、合作夥伴必須先同步資料、才能退回儲存設備。重新同步資料所需的時間取決於節點當機時用戶端寫入的資料量、以及恢復期間的資料寫入速度。
+
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-ha-google-cloud.html["瞭解 Cloud Volumes ONTAP HA 配對在 Google Cloud 中的儲存功能如何運作"^]。
