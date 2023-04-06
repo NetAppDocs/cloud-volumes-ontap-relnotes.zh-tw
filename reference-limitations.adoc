@@ -37,19 +37,6 @@ NOTE: 由資料一致性決定資料一致性。ONTAP WAFL只ONTAP 有當WAFL �
 
 
 
-== 中國地區的支援
-
-支援中國地區的下列項目。Cloud Volumes ONTAP
-
-* 支援AWS中國地區的支援區域為支援區域9.6。Cloud Volumes ONTAP
-* 支援單一節點系統。
-* 支援直接向NetApp購買的授權。
-
-
-不支援所有其他位置、版本、組態和授權。
-
-
-
 == 支援保留和隨需VM執行個體Cloud Volumes ONTAP
 
 可在雲端供應商的保留或隨需VM執行個體上執行。Cloud Volumes ONTAP不支援其他類型的VM執行個體。
