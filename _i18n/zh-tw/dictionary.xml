@@ -216,12 +216,6 @@
   <block id="71674eaa07f12640df0ea0be77ecd9ac" category="inline-link">瞭解如何使用Cloud Backup Service 此功能來備份及還原ONTAP 還原不知道的資料</block>
   <block id="e81db3857b1943249df996fe0b3ed679" category="paragraph"><block ref="935fff627382fb455a98804a9e37d559" category="inline-link-rx"></block>。</block>
   <block id="3d880dec2575e676954faf6a6a218972" category="admonition">由資料一致性決定資料一致性。ONTAP WAFL只ONTAP 有當WAFL 機時、才能靜止不動的檔案系統來進行一致的備份。</block>
-  <block id="d302a39827e370146d2861389e98e60c" category="section-title">中國地區的支援</block>
-  <block id="da059bd73f7531380888607adbbd03aa" category="paragraph">支援中國地區的下列項目。Cloud Volumes ONTAP</block>
-  <block id="cbf02fb0cb394b4b19fb0788f9b62554" category="list-text">支援AWS中國地區的支援區域為支援區域9.6。Cloud Volumes ONTAP</block>
-  <block id="fcf30aaa0348521d4d4752992c9db378" category="list-text">支援單一節點系統。</block>
-  <block id="80a79e3e92d4834ae8746d205e83c105" category="list-text">支援直接向NetApp購買的授權。</block>
-  <block id="a5a1e4029969159a5f8fdeddd3fb7e1b" category="paragraph">不支援所有其他位置、版本、組態和授權。</block>
   <block id="38220a2514a2fcb218be440c035b4175" category="section-title">支援保留和隨需VM執行個體Cloud Volumes ONTAP</block>
   <block id="8ce602039d8c7d53c95e1f62b1d83ef0" category="paragraph">可在雲端供應商的保留或隨需VM執行個體上執行。Cloud Volumes ONTAP不支援其他類型的VM執行個體。</block>
   <block id="f9492a63b4f60679d003c1e9c0ebbb18" category="paragraph">自動應用程式資源管理解決方案不應管理Cloud Volumes ONTAP 功能完善的系統。否則可能會變更不受支援的組態。例如、解決方案Cloud Volumes ONTAP 可能會變更為不受支援的VM執行個體類型。</block>
@@ -611,7 +605,6 @@
   <block id="9889b7a9df56580016f59ccd942fb1d1" category="inline-link">BlueXP版本說明</block>
   <block id="7b266e39bb1d33ceb7866245509e3615" category="paragraph">最新版的BlueXP（前身為Cloud Manager）也引進其他功能與增強功能。請參閱<block ref="6872c7556ed1cb501f7ddf52354e86ee" category="inline-link-rx"></block> 以取得詳細資料。</block>
   <block id="fde45fa5cd70a93e88151b83aa348f12" category="inline-link">BlueXP API端點</block>
-  <block id="e86e72989c257fb5c6ba8da24c2c7c48" category="paragraph">如果您善用<block ref="e066b15eeebd4e6d571fd7dd588f94f7" category="inline-link-rx"></block> 在您部署Cloud Volumes ONTAP 的VPC中、您需要實作DNS記錄、將流量轉送至所需的<block ref="85f106dabc925307c90ceeec8d21a18f" category="inline-link-rx"></block>。</block>
   <block id="40aa449308d0af16355f19e61ffe344b" category="paragraph">不、這不需要。HA配對中的資料會在節點之間同步鏡射、以便在Google Cloud發生故障時提供資料。例如、如果您在節點A上購買8 TB磁碟、則BlueXP也會在節點B上配置8 TB磁碟、用於鏡射資料。雖然已配置16 TB容量、但根據授權上限、僅需8 TB。</block>
   <block id="07daff7fe86cfb582b0c246d7cefb754" category="list-text">使用單一節點系統時、所有執行個體類型都支援高速寫入。您可以在部署期間或之後的任何時間、從BlueXP啟用高速寫入速度。<block ref="18805b87db41583a67ecc2414d022f2b" category="inline-link-rx"></block>。</block>
   <block id="6098d03c49b315476cd9c4d4eb330395" category="list-text">使用HA配對時、支援這些VM類型的高速寫入速度。Cloud Volumes ONTAP您可以在部署期間或之後的任何時間、從BlueXP啟用高速寫入速度。<block ref="18805b87db41583a67ecc2414d022f2b" category="inline-link-rx"></block>。</block>
@@ -710,4 +703,5 @@
   <block id="bcc4564bd7fc660f5dd5b39219b9775f" category="list-text">這些VM僅支援Cloud Volumes ONTAP 部署不支援使用支援的版本。有了這些VM類型、您可以將現有的頁面配置從Cloud Volumes ONTAP 版本資訊的版本9.11.1升級至9.12.1.您無法使用Cloud Volumes ONTAP 更新版本的更新版本執行新的頁面配置。</block>
   <block id="7b9e5415e02ff7ad5eaae61345740517" category="inline-link">瞭解 Cloud Volumes ONTAP HA 配對在 Google Cloud 中的儲存功能如何運作</block>
   <block id="e14f9eb0a41dc045a4d5568d18e8170e" category="paragraph"><block ref="50d9731ce0bfc8e3757cc819b5895c1f" category="inline-link-rx"></block>。</block>
+  <block id="1201140e917505446359a76c53a69515" category="paragraph">如果您善用<block ref="e066b15eeebd4e6d571fd7dd588f94f7" category="inline-link-rx"></block> 在您部署Cloud Volumes ONTAP 的VPC中、您需要實作DNS記錄、將流量轉送至所需的<block ref="c007aa246e3c48e1ccfa24499d50b4d8" category="inline-link-rx"></block>。</block>
 </blocks>
