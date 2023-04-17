@@ -613,8 +613,6 @@
   <block id="2819feead2b07762a4465189ab8b2f52" category="paragraph-title">對於HA配對、每個節點或整個HA配對的授權容量限制是多少？</block>
   <block id="7093c2c9844cf46dcd5d50c6d596d244" category="paragraph-title">對於HA配對、鏡射資料是否會根據授權容量限制計算？</block>
   <block id="9d123a356c832621891a3328c128b78b" category="list-text">L8s_v3 ^2^</block>
-  <block id="6f487c8743b08c743167da3781c42f57" category="list-text">L16s_v3 ^2、4^</block>
-  <block id="2b5c34a51aff2e04df61ba2f74efb07e" category="list-text">L32s_v3 ^2、4^</block>
   <block id="b869cbdadaa9844d32c24de3f4db3242" category="cell">託管磁碟</block>
   <block id="bdebc137cea9fa36d51bbecef44687cc" category="paragraph">HA配對使用託管磁碟。（在9.12.1版本之前部署的HA配對支援分頁。）</block>
   <block id="2c5ad1776ac4cf950a5e0576f35bf111" category="paragraph">支援下列磁碟大小：</block>
@@ -704,4 +702,6 @@
   <block id="7b9e5415e02ff7ad5eaae61345740517" category="inline-link">瞭解 Cloud Volumes ONTAP HA 配對在 Google Cloud 中的儲存功能如何運作</block>
   <block id="e14f9eb0a41dc045a4d5568d18e8170e" category="paragraph"><block ref="50d9731ce0bfc8e3757cc819b5895c1f" category="inline-link-rx"></block>。</block>
   <block id="1201140e917505446359a76c53a69515" category="paragraph">如果您善用<block ref="e066b15eeebd4e6d571fd7dd588f94f7" category="inline-link-rx"></block> 在您部署Cloud Volumes ONTAP 的VPC中、您需要實作DNS記錄、將流量轉送至所需的<block ref="c007aa246e3c48e1ccfa24499d50b4d8" category="inline-link-rx"></block>。</block>
+  <block id="1b604734bf53595ed7c7d204bb25e549" category="list-text">L16s_v3 ^2^</block>
+  <block id="645c4fc55b2cf93995a9e487870102f5" category="list-text">L32s_v3 ^2^</block>
 </blocks>
