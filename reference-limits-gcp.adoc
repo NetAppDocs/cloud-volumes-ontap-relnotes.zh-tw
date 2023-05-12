@@ -24,7 +24,7 @@ summary: 在Google Cloud中、由於儲存組態限制、可提供可靠的作�
 
 NetApp不支援超過系統容量限制。如果您達到授權容量上限、則BlueXP會顯示必要行動訊息、不再允許您新增其他磁碟。
 
-在某些組態中、磁碟限制會讓您無法單獨使用磁碟來達到容量限制。您可以達到容量上限 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-data-tiering.html["將非作用中資料分層至物件儲存設備"^]。如需詳細資料、請參閱下列磁碟限制。
+在某些組態中、磁碟限制會讓您無法單獨使用磁碟來達到容量限制。您可以達到容量上限 https://["將非作用中資料分層至物件儲存設備"^]。如需詳細資料、請參閱下列磁碟限制。
 
 [cols="25,75"]
 |===
@@ -123,7 +123,7 @@ NetApp不支援超過系統容量限制。如果您達到授權容量上限、�
 
 這些是測試的限制。雖然理論上可以設定額外的儲存VM、但不受支援。
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-managing-svms-gcp.html["瞭解如何建立額外的儲存VM"^]。
+https://["瞭解如何建立額外的儲存VM"^]。
 
 [cols="2*"]
 |===
@@ -241,4 +241,4 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-managing-sv
 
 節點重新開機後、合作夥伴必須先同步資料、才能退回儲存設備。重新同步資料所需的時間取決於節點當機時用戶端寫入的資料量、以及恢復期間的資料寫入速度。
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-ha-google-cloud.html["瞭解 Cloud Volumes ONTAP HA 配對在 Google Cloud 中的儲存功能如何運作"^]。
+https://["瞭解 Cloud Volumes ONTAP HA 配對在 Google Cloud 中的儲存功能如何運作"^]。

@@ -30,7 +30,7 @@ summary: 已知限制指出本產品版本不支援的平台、裝置或功能�
 
 您不應將雲端供應商的快照作為Cloud Volumes ONTAP 還原資料的備份與恢復計畫的一部分。您應該一律使用ONTAP 「不間斷快照複本」或第三方備份解決方案來備份及還原Cloud Volumes ONTAP 以「支援」為主的資料。
 
-https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["瞭解如何使用Cloud Backup Service 此功能來備份及還原ONTAP 還原不知道的資料"^]。
+https://["瞭解如何使用 BlueXP 備份與還原來備份及還原 ONTAP 資料"^]。
 
 
 NOTE: 由資料一致性決定資料一致性。ONTAP WAFL只ONTAP 有當WAFL 機時、才能靜止不動的檔案系統來進行一致的備份。

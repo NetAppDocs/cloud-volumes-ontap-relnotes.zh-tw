@@ -37,7 +37,7 @@ C5D和R5D執行個體類型包括本機NVMe儲存設備、Cloud Volumes ONTAP �
 
 * 所有磁碟區都必須停用壓縮功能、才能充分發揮Flash Cache效能提升功能Cloud Volumes ONTAP 、直到更新至VMware版。當您部署或升級Cloud Volumes ONTAP 至盡力9.12.1時、就不需要停用壓縮功能。
 +
-從BlueXP建立磁碟區時、您可以選擇「無儲存效率」、也可以先建立磁碟區、然後再建立 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-vsmg/GUID-8508A4CB-DB43-4D0D-97EB-859F58B29054.html["使用 CLI 停用資料壓縮"^]。
+從BlueXP建立磁碟區時、您可以選擇「無儲存效率」、也可以先建立磁碟區、然後再建立 http://["使用 CLI 停用資料壓縮"^]。
 
 * 重新開機後的快取重新溫熱功能不支援 Cloud Volumes ONTAP 使用此功能。
 
@@ -46,7 +46,7 @@ C5D和R5D執行個體類型包括本機NVMe儲存設備、Cloud Volumes ONTAP �
 
 == Amazon CloudWatch回報的誤報
 
-當閒置時、不釋放CPU Cloud Volumes ONTAP https://aws.amazon.com/cloudwatch/["Amazon CloudWatch"^] 可針對EC2執行個體回報高CPU警告、因為它能看到100%的使用率。您可以忽略此警報。使用「flex統計 資料」命令可顯示CPU的實際使用量。ONTAP
+當閒置時、不釋放CPU Cloud Volumes ONTAP https://["Amazon CloudWatch"^] 可針對EC2執行個體回報高CPU警告、因為它能看到100%的使用率。您可以忽略此警報。使用「flex統計 資料」命令可顯示CPU的實際使用量。ONTAP
 
 
 
@@ -54,4 +54,4 @@ C5D和R5D執行個體類型包括本機NVMe儲存設備、Cloud Volumes ONTAP �
 
 節點重新開機後、合作夥伴必須先同步資料、才能退回儲存設備。重新同步資料所需的時間取決於節點當機時用戶端寫入的資料量、以及恢復期間的資料寫入速度。
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-ha.html["瞭解儲存設備如何在Cloud Volumes ONTAP AWS上執行的一套功能不只是一套"^]。
+https://["瞭解儲存設備如何在Cloud Volumes ONTAP AWS上執行的一套功能不只是一套"^]。
