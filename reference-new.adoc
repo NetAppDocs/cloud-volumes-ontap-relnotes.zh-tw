@@ -16,7 +16,7 @@ summary: 包含全新增強功能的支援功能Cloud Volumes ONTAP 。
 [role="lead"]
 包含全新增強功能的支援功能Cloud Volumes ONTAP 。
 
-最新版的BlueXP也會提供其他功能和增強功能。請參閱 https://["BlueXP版本說明"^] 以取得詳細資料。
+最新版的BlueXP也會提供其他功能和增強功能。請參閱 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html["BlueXP版本說明"^] 以取得詳細資料。
 
 
 

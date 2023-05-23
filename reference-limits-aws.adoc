@@ -24,7 +24,7 @@ summary: AWS中的儲存組態設有限制、可提供可靠的作業。Cloud Vo
 
 NetApp不支援超過系統容量限制。如果您達到授權容量上限、則BlueXP會顯示必要行動訊息、不再允許您新增其他磁碟。
 
-在某些組態中、磁碟限制會讓您無法單獨使用磁碟來達到容量限制。在這些情況下、您可以達到容量上限 https://["將非作用中資料分層至物件儲存設備"^]。如需詳細資料、請參閱下方的容量和磁碟限制。
+在某些組態中、磁碟限制會讓您無法單獨使用磁碟來達到容量限制。在這些情況下、您可以達到容量上限 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-data-tiering.html["將非作用中資料分層至物件儲存設備"^]。如需詳細資料、請參閱下方的容量和磁碟限制。
 
 [cols="25,75"]
 |===
@@ -88,7 +88,7 @@ NetApp不支援超過系統容量限制。如果您達到授權容量上限、�
 
 . 無法在HA配對的兩個節點上建立18個Aggregate、因為這樣做會超過資料磁碟限制。
 . 最大Aggregate大小是根據組成Aggregate的磁碟而來。此限制不包括用於資料分層的物件儲存設備。
-. 如果您的組態支援Amazon EBS彈性磁碟區功能、則Aggregate最多可包含8個磁碟、最多可提供128 TiB的容量。使用GP3或IO1磁碟時、Amazon EBS Elastic Volumes功能預設會在_new _ Cloud Volumes ONTAP 版本9.11.0或更新的系統上啟用。 https://["深入瞭解彈性磁碟區的支援"^]
+. 如果您的組態支援Amazon EBS彈性磁碟區功能、則Aggregate最多可包含8個磁碟、最多可提供128 TiB的容量。使用GP3或IO1磁碟時、Amazon EBS Elastic Volumes功能預設會在_new _ Cloud Volumes ONTAP 版本9.11.0或更新的系統上啟用。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-aws-elastic-volumes.html["深入瞭解彈性磁碟區的支援"^]
 . 集合體中的所有磁碟大小必須相同。
 
 
@@ -112,7 +112,7 @@ NetApp不支援超過系統容量限制。如果您達到授權容量上限、�
 
 === 容量型授權限制
 
-下列磁碟限制適用於Cloud Volumes ONTAP 使用容量型授權套件的各個系統。 https://["深入瞭Cloud Volumes ONTAP 解功能多樣的授權選項"^]
+下列磁碟限制適用於Cloud Volumes ONTAP 使用容量型授權套件的各個系統。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html["深入瞭Cloud Volumes ONTAP 解功能多樣的授權選項"^]
 
 
 
@@ -164,7 +164,7 @@ NetApp不支援超過系統容量限制。如果您達到授權容量上限、�
 
 * 如果您使用節點型授權、可以針對Cloud Volumes ONTAP 一個以節點為基礎的系統購買多個節點型授權、以分配超過3668 TiB的容量。
 +
-單一節點系統或 HA 配對可購買的授權數量不受限制。請注意、磁碟限制可能會讓您無法單獨使用磁碟來達到容量限制。您可以超越磁碟限制 https://["將非作用中資料分層至物件儲存設備"^]。 https://["瞭解如何將額外的系統授權新增Cloud Volumes ONTAP 至功能完善"^]。
+單一節點系統或 HA 配對可購買的授權數量不受限制。請注意、磁碟限制可能會讓您無法單獨使用磁碟來達到容量限制。您可以超越磁碟限制 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-data-tiering.html["將非作用中資料分層至物件儲存設備"^]。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html["瞭解如何將額外的系統授權新增Cloud Volumes ONTAP 至功能完善"^]。
 
 
 
@@ -268,7 +268,7 @@ NetApp不支援超過系統容量限制。如果您達到授權容量上限、�
 
 有些組態可讓您建立更多的儲存VM（SVM）以Cloud Volumes ONTAP 供支援。
 
-https://["瞭解如何建立額外的儲存VM"^]。
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-managing-svms-aws.html["瞭解如何建立額外的儲存VM"^]。
 
 [cols="40,60"]
 |===
