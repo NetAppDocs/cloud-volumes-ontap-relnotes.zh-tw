@@ -34,4 +34,4 @@ Keystone Flex 訂閱:: 以隨成長付費訂閱為基礎的服務、可為偏好
 
 先前的個別節點授權模式仍適用於已購買授權或正在訂閱市場的現有客戶。
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html["深入瞭解這些授權選項"^]
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html["深入瞭解這些授權選項"^]

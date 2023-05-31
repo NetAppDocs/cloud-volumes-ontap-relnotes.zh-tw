@@ -83,7 +83,7 @@ Google Cloud支援多Cloud Volumes ONTAP 種支援的支援功能。
 |===
 附註：
 
-. 磁碟限制可防止您單獨使用磁碟、達到最大系統容量限制。您可以達到容量上限 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-data-tiering.html["將非作用中資料分層至物件儲存設備"^]。
+. 磁碟限制可防止您單獨使用磁碟、達到最大系統容量限制。您可以達到容量上限 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["將非作用中資料分層至物件儲存設備"^]。
 +
 link:reference-limits-gcp.html["深入瞭解Google Cloud的磁碟限制"]。
 
@@ -103,7 +103,7 @@ link:reference-limits-gcp.html["深入瞭解Google Cloud的磁碟限制"]。
 ** n2-Standard-48
 ** n2-Standard-64
 +
-您可以在部署符合資格的執行個體類型時啟用_Flash Cache和高速寫入速度。若要啟用最大傳輸單位8、896位元組、您必須選擇VPC-1、VPC-2或VPC-3進行部署。MTU越高、網路處理量就越高。如需啟動其中一個部署的詳細資訊、請參閱 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-gcp.html#launching-an-ha-pair-in-google-cloud["在Google Cloud上啟動HA配對"]。
+您可以在部署符合資格的執行個體類型時啟用_Flash Cache和高速寫入速度。若要啟用最大傳輸單位8、896位元組、您必須選擇VPC-1、VPC-2或VPC-3進行部署。MTU越高、網路處理量就越高。如需啟動其中一個部署的詳細資訊、請參閱 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-gcp.html#launching-an-ha-pair-in-google-cloud["在Google Cloud上啟動HA配對"]。
 
 +
 

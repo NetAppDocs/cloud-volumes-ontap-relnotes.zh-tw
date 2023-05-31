@@ -54,4 +54,4 @@ C5D和R5D執行個體類型包括本機NVMe儲存設備、Cloud Volumes ONTAP �
 
 節點重新開機後、合作夥伴必須先同步資料、才能退回儲存設備。重新同步資料所需的時間取決於節點當機時用戶端寫入的資料量、以及恢復期間的資料寫入速度。
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-ha.html["瞭解儲存設備如何在Cloud Volumes ONTAP AWS上執行的一套功能不只是一套"^]。
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-ha.html["瞭解儲存設備如何在Cloud Volumes ONTAP AWS上執行的一套功能不只是一套"^]。
