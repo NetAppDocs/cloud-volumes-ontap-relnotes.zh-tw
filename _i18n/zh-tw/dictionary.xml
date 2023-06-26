@@ -72,10 +72,6 @@
   <block id="e7089e61c962cfdae0de5b1d0748b6f2" category="list-text">可在雲端供應商的保留或隨需VM執行個體上執行。Cloud Volumes ONTAP不支援使用其他VM執行個體類型的解決方案。</block>
   <block id="b049fcbe8198301adc6bf87634a02845" category="section-title">HA 配對</block>
   <block id="2eacfdd792ca3ab121472c95654b43ec" category="paragraph">在Cloud Volumes ONTAP Azure中部署以HA配對形式部署的時、您可以從下列組態中進行選擇。</block>
-  <block id="2cdb7e570d475b109f07d648d27eec58" category="list-text">DS5_v2 ^1^</block>
-  <block id="5631d6c294c4b6398535b6dd0c9a2475" category="list-text">DS14_v2 ^1^</block>
-  <block id="1c593d3ddd7d37cba983231fd6abdd9d" category="list-text">DS15_v2 ^1^</block>
-  <block id="0b9dfa1d6e582593bcd75a94bfaa5add" category="list-text">E48s_v3 ^1^</block>
   <block id="3e7433721426ddc5bb6007a1f480b7e0" category="cell">支援的磁碟類型</block>
   <block id="18ca3c89ae9e8edbe217f2c9b7c6107d" category="inline-link">深入瞭解如何選擇寫入速度</block>
   <block id="4efc25f6cc7013d95ca2f5ab1dcc3366" category="list-text">建議僅在需要Azure維護控管時才使用此VM。由於價格較高、因此不建議用於任何其他使用案例。</block>
@@ -629,11 +625,6 @@
   <block id="618671ce849d1a8ff524b77c314fe4e2" category="section-title">不再支援c4、m4和r4執行個體</block>
   <block id="e19784a5420512b2876c7b24680652b5" category="cell">40、000</block>
   <block id="4237e167da34ce4cc54b7915a9ee779a" category="list-text">所有磁碟區都必須停用壓縮功能、才能充分發揮Flash Cache效能提升功能Cloud Volumes ONTAP 、直到更新至VMware版。當您部署或升級Cloud Volumes ONTAP 至盡力9.12.1時、就不需要停用壓縮功能。</block>
-  <block id="b80fdfea42d505d96700af73261164a3" category="section-title">HA與頁面blob配對</block>
-  <block id="45af86f1009df1b7e7575bd510350625" category="list-text">E32ds_v4 ^1、3^</block>
-  <block id="70f33ddea414a26001d98ec1ee7c49a4" category="list-text">E48ds_v4 ^1、3^</block>
-  <block id="338b010678cca88a9e61c9a5b5db4e85" category="list-text">E80ids_v4 ^1、2、3^</block>
-  <block id="540e57f70019c3eb8d7fb999259fd473" category="cell">頁面</block>
   <block id="8c41a0d9e980d7223b4ad7585ce70fa2" category="section-title">HA與共享託管磁碟配對</block>
   <block id="678bba9079ce79c3806a40a1b6306799" category="list-text">E8ds_v4 ^4^</block>
   <block id="fd5fff93ea6b0d7a9072274f514573ae" category="list-text">E32ds_v4 ^1、4^</block>
@@ -641,37 +632,14 @@
   <block id="de04224de00bacc811083f3a49af24b0" category="list-text">E80ids_v4 ^1、2、4^</block>
   <block id="72e0d2497593ac6a5fdc024537224aed" category="list-text">這些VM類型僅支援在共享託管磁碟上執行的單一可用度區域組態中的HA配對。</block>
   <block id="7502ea8e5d477af63195f04d6179ca92" category="list-text">在單一可用度區域中、HA配對支援這些VM類型、以及在共享託管磁碟上執行的多個可用度區域組態。</block>
-  <block id="a1998150800fd10b93e35cace9e4373f" category="summary">包含全新增強功能的支援功能Cloud Volumes ONTAP 。</block>
-  <block id="3d17e08f201d7b7be36023f1e5ae0588" category="doc">更新功能Cloud Volumes ONTAP</block>
-  <block id="6d35656a75b4490b417ac27bea22133b" category="paragraph">包含全新增強功能的支援功能Cloud Volumes ONTAP 。</block>
-  <block id="d0429a37d66735eb8b3cc4e05bfe725a" category="section-title">9.13.0 GA（2023年3月5日）</block>
-  <block id="08a6d92c67ddca491cb942b3dad79c36" category="paragraph">AWS、Azure和Google Cloud現已推出通用（GA）版本Cloud Volumes ONTAP 的《支援》（General Availability、GA）。此版本包含下列新功能與增強功能。</block>
-  <block id="98f6dc87e7c206ec16da559a2af45beb" category="section-title">Google Cloud的Flash Cache和高速寫入速度</block>
-  <block id="77e5d57bae938bc31208cded57756dc8" category="paragraph">支援Flash Cache、高速寫入速度、以及高傳輸單位（MTU）8、896位元組、現在Cloud Volumes ONTAP 可用於發行版本為《The》（英文）的特定執行個體。</block>
-  <block id="a8c4c892aed6484fe804ae459960a806" category="section-title">在Google Cloud中驗證影像</block>
-  <block id="ea34816f3c506620775a84c7a17f65bb" category="paragraph">現在提供增強的安全功能、可驗證Cloud Volumes ONTAP 透過Google Cloud匯出的各種圖片檔案的簽名。</block>
-  <block id="af10bd89b3d2714a711373f227970f8d" category="inline-link-macro">深入瞭解Google Cloud Image驗證</block>
-  <block id="1b6ed76b2dfdf777c3f7f69a51b27da8" category="section-title">Google Cloud提供新的執行個體支援</block>
-  <block id="c7614931957b0270f4ee5806224011a7" category="paragraph">Freemium、PAYGO Premium、節點型BYOL及容量型授權現在支援兩種新的執行個體類型、可在Cloud Volumes ONTAP Google Cloud中進行單一節點與高可用度部署。</block>
   <block id="33031b274bf5d81fbfbd69c1f2ea39a2" category="list-text">n2-Standard-48</block>
   <block id="7c347fcea29ffaea485ee6128a9d7a06" category="list-text">n2-Standard-64</block>
-  <block id="a4e7d5c6d93cbdfda5947e8b8356e197" category="inline-link-macro">深入瞭解Google Cloud支援的組態</block>
-  <block id="7d79f600f7bce2dc1b1eea8ef36b3477" category="paragraph"><block ref="6581d56e4f9d9829469412aa95295d08" category="inline-link-macro-rx"></block>。</block>
-  <block id="3e933a57f8cc8a9465bd8e62bb3ffd3c" category="paragraph">您可以從Cloud Volumes ONTAP 9.12.1版升級至版本的支援。BlueXP會提示您將合格Cloud Volumes ONTAP 的更新版升級至此版本。</block>
-  <block id="7353c6310f3c14fba2d49d2cf95e6f82" category="paragraph">BlueXP Connector必須執行3.9.26版或更新版本、才能部署新Cloud Volumes ONTAP 的版本的更新版本、並將現有系統升級至9.13.0版。</block>
   <block id="41104125a8a3ef6fe8985ff4df5257be" category="paragraph">在AWS中Cloud Volumes ONTAP 、不再支援C4、M4和R4 EC2執行個體類型。如果現有的系統執行於c4、m4或r4執行個體類型、則必須變更為c5、m5或R5執行個體系列中的執行個體類型。您必須變更執行個體類型、才能升級至此版本。</block>
   <block id="8e8865183ac138d80e1eac90bc023d09" category="list-text">下列HA配對部署執行個體可從發行版本9.13.0、Cloud Volumes ONTAP _Flash Cache、高速寫入速度及最大傳輸單元（MTU）8、896位元組開始使用：</block>
   <block id="f23467ff8f84fc95ca2baa4b362c7865" category="inline-link">在Google Cloud上啟動HA配對</block>
   <block id="13a86b4a06586a14808c627b883e338d" category="admonition">_Flash快取_、高寫入模式和8、896的MTU是功能相依的、無法在設定的執行個體中個別停用。</block>
-  <block id="dc0f989b2f6bd3e7bf961fb6ea788d85" category="summary">這些版本說明Cloud Volumes ONTAP 介紹有關發行版的功能、限制和已知問題。</block>
-  <block id="f53ab0fd2ad9b3e113196ed1a6d6792a" category="doc">《》（英文Cloud Volumes ONTAP ）</block>
   <block id="0bd47e4dae550ba8bfd133248f3efde6" category="list-text">16 TiB（僅限託管磁碟）</block>
   <block id="e976f9591845e426a456344d35bd0caf" category="list-text">32 TiB（僅限託管磁碟）</block>
-  <block id="32830aa4ef4df4b9d8e47549047e69c8" category="inline-link-macro">Google Cloud授權支援的組態</block>
-  <block id="84be1484c7ac300bd9e0b83a7535caeb" category="paragraph">深入瞭解 <block ref="2e8eda968169518df52bf6fcb01f61cf" category="inline-link-macro-rx"></block>。</block>
-  <block id="573ba387c27d105c1e3fd20266d13123" category="list-text">L16s_v3 ^1、3、5^</block>
-  <block id="2bb521d2d5cea05a3b9b29f1cf232c63" category="list-text">L32s_v3 ^1、3、5^</block>
-  <block id="bcc4564bd7fc660f5dd5b39219b9775f" category="list-text">這些VM僅支援Cloud Volumes ONTAP 部署不支援使用支援的版本。有了這些VM類型、您可以將現有的頁面配置從Cloud Volumes ONTAP 版本資訊的版本9.11.1升級至9.12.1.您無法使用Cloud Volumes ONTAP 更新版本的更新版本執行新的頁面配置。</block>
   <block id="7b9e5415e02ff7ad5eaae61345740517" category="inline-link">瞭解 Cloud Volumes ONTAP HA 配對在 Google Cloud 中的儲存功能如何運作</block>
   <block id="1b604734bf53595ed7c7d204bb25e549" category="list-text">L16s_v3 ^2^</block>
   <block id="645c4fc55b2cf93995a9e487870102f5" category="list-text">L32s_v3 ^2^</block>
@@ -698,10 +666,22 @@
   <block id="100e0e5b58741c034dadba013998e8b8" category="list-text">如果您的組態支援Amazon EBS彈性磁碟區功能、則Aggregate最多可包含8個磁碟、最多可提供128 TiB的容量。使用GP3或IO1磁碟時、Amazon EBS Elastic Volumes功能預設會在_new _ Cloud Volumes ONTAP 版本9.11.0或更新的系統上啟用。<block ref="d6d48ea3644fd45f9f7ff8f4c8d4ae57" category="inline-link-rx"></block></block>
   <block id="c0ad13124302d4d047c0f916a6418182" category="paragraph"><block ref="cc3941262f254d1055804ecddca39dec" category="inline-link-rx"></block>。</block>
   <block id="4bdb15bfe1bad472d818dc31e8f53185" category="paragraph">最新版的BlueXP也會提供其他功能和增強功能。請參閱<block ref="c7887e85c6060ae2594d873a0f2ae025" category="inline-link-rx"></block> 以取得詳細資料。</block>
-  <block id="ee595b8456f355e35d1bb9a3bdf2fd2e" category="paragraph"><block ref="2011e01ee8a79d4bf660fe2d1770d263" category="inline-link-macro-rx"></block>。</block>
   <block id="a92c2d98e174fb58a9af451a8c3413f9" category="paragraph"><block ref="8271d50d033781f1596acf863334de58" category="inline-link-macro-rx"></block>。</block>
   <block id="34b2f4eab827285a262b1781e672e882" category="paragraph"><block ref="3f0e03f473a215943c109dc7746cdb60" category="inline-link-macro-rx"></block>。</block>
   <block id="3959237302934c658e49cff52293a2a5" category="list-text">這種VM類型包括本機NVMe儲存設備、Cloud Volumes ONTAP 這些儲存設備以_Flash Cache的形式使用。Flash Cache 可透過即時智慧快取來加速資料存取、快取最近讀取的使用者資料和 NetApp 中繼資料。它適用於隨機讀取密集的工作負載、包括資料庫、電子郵件和檔案服務。<block ref="b6abeaa384c5670d0721bcc6323011fc" category="inline-link-rx"></block>。</block>
   <block id="9655d27d34aaf491a4183d57c0530647" category="list-text">使用單一節點系統時、所有執行個體類型都支援高速寫入。您可以在部署期間或之後的任何時間、從BlueXP啟用高速寫入速度。<block ref="721fe5ee3bbc3d8295d8615ed77ff9be" category="inline-link-rx"></block>。</block>
   <block id="44ed637222e5d571deff68351343db0d" category="list-text">使用HA配對時、支援這些VM類型的高速寫入速度。Cloud Volumes ONTAP您可以在部署期間或之後的任何時間、從BlueXP啟用高速寫入速度。<block ref="721fe5ee3bbc3d8295d8615ed77ff9be" category="inline-link-rx"></block>。</block>
+  <block id="7e250845f86eeaaaf4e55296f483f4ee" category="summary">Cloud Volumes ONTAP 9.13.1 包含新的增強功能。</block>
+  <block id="59d68d1abaff04001d7f138b569d66a1" category="doc">Cloud Volumes ONTAP 9.13.1 的新功能</block>
+  <block id="0775e0f9165c68236ce80a5eeaf622d2" category="paragraph">Cloud Volumes ONTAP 9.13.1 包含新的增強功能。</block>
+  <block id="9c8c9e4dac5a2be78e81d66cbffd75af" category="section-title">9.13.1 RC1 （ 2023 年 6 月 26 日）</block>
+  <block id="73f86a5ebfc8edf0e36c8ad6bb22e282" category="paragraph">Cloud Volumes ONTAP 9.13.1 的 Release Candidate 1 現已在 AWS 、 Azure 和 Google Cloud 中推出。此版本包含下列功能。</block>
+  <block id="9a8603c7a44b001d1d10919fc28a94cc" category="paragraph">您可以從 9.12.1 版和 9.13.0 版升級至 Cloud Volumes ONTAP 9.13.1 版。BlueXP會提示您將合格Cloud Volumes ONTAP 的更新版升級至此版本。</block>
+  <block id="15a36f3b57148762c2209c3b7df4f648" category="paragraph">BlueXP Connector 必須執行 3.9.26 版或更新版本、才能部署新的 Cloud Volumes ONTAP 9.13.1 系統、並將現有系統升級至 9.13.1 版。</block>
+  <block id="b07f6144410a8635e8ae505b186322a5" category="summary">這些版本資訊說明 Cloud Volumes ONTAP 9.13.1 的新功能、限制和已知問題。</block>
+  <block id="a69b1618b78e74242413945e92315e51" category="doc">Cloud Volumes ONTAP 9.13.1 版本資訊</block>
+  <block id="5f47eaf30741e1b189cb3927920a050e" category="list-text">L48s_v3 ^2^</block>
+  <block id="5d77e4246523d19041d8aaab83469a88" category="list-text">L64s_v3 ^2^</block>
+  <block id="f8f16d462023635d23922013c582281d" category="list-text">L16s_v3 ^1 、 4 、 5^</block>
+  <block id="5c5847596a7ce3d290253dfcdcfc153c" category="list-text">L32s_v3 ^1 、 4 、 5^</block>
 </blocks>

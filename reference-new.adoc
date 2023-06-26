@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: reference-new.html 
 keywords: 'what"s new, new, features, release notes, enhancements' 
-summary: 包含全新增強功能的支援功能Cloud Volumes ONTAP 。 
+summary: Cloud Volumes ONTAP 9.13.1 包含新的增強功能。 
 ---
-= 更新功能Cloud Volumes ONTAP
+= Cloud Volumes ONTAP 9.13.1 的新功能
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,43 +14,15 @@ summary: 包含全新增強功能的支援功能Cloud Volumes ONTAP 。
 
 
 [role="lead"]
-包含全新增強功能的支援功能Cloud Volumes ONTAP 。
+Cloud Volumes ONTAP 9.13.1 包含新的增強功能。
 
 最新版的BlueXP也會提供其他功能和增強功能。請參閱 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["BlueXP版本說明"^] 以取得詳細資料。
 
 
 
-== 9.13.0 GA（2023年3月5日）
+== 9.13.1 RC1 （ 2023 年 6 月 26 日）
 
-AWS、Azure和Google Cloud現已推出通用（GA）版本Cloud Volumes ONTAP 的《支援》（General Availability、GA）。此版本包含下列新功能與增強功能。
-
-
-
-=== Google Cloud的Flash Cache和高速寫入速度
-
-支援Flash Cache、高速寫入速度、以及高傳輸單位（MTU）8、896位元組、現在Cloud Volumes ONTAP 可用於發行版本為《The》（英文）的特定執行個體。
-
-深入瞭解 link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html["Google Cloud授權支援的組態"^]。
-
-
-
-=== 在Google Cloud中驗證影像
-
-現在提供增強的安全功能、可驗證Cloud Volumes ONTAP 透過Google Cloud匯出的各種圖片檔案的簽名。
-
-link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-gcp-image-verification.html["深入瞭解Google Cloud Image驗證"^]。
-
-
-
-=== Google Cloud提供新的執行個體支援
-
-Freemium、PAYGO Premium、節點型BYOL及容量型授權現在支援兩種新的執行個體類型、可在Cloud Volumes ONTAP Google Cloud中進行單一節點與高可用度部署。
-
-* n2-Standard-48
-* n2-Standard-64
-
-
-link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html["深入瞭解Google Cloud支援的組態"^]。
+Cloud Volumes ONTAP 9.13.1 的 Release Candidate 1 現已在 AWS 、 Azure 和 Google Cloud 中推出。此版本包含下列功能。
 
 
 
@@ -70,13 +42,13 @@ link:http://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap
 
 === 支援的升級途徑
 
-您可以從Cloud Volumes ONTAP 9.12.1版升級至版本的支援。BlueXP會提示您將合格Cloud Volumes ONTAP 的更新版升級至此版本。
+您可以從 9.12.1 版和 9.13.0 版升級至 Cloud Volumes ONTAP 9.13.1 版。BlueXP會提示您將合格Cloud Volumes ONTAP 的更新版升級至此版本。
 
 
 
 === 所需版本的Connector
 
-BlueXP Connector必須執行3.9.26版或更新版本、才能部署新Cloud Volumes ONTAP 的版本的更新版本、並將現有系統升級至9.13.0版。
+BlueXP Connector 必須執行 3.9.26 版或更新版本、才能部署新的 Cloud Volumes ONTAP 9.13.1 系統、並將現有系統升級至 9.13.1 版。
 
 
 TIP: 連接器的自動升級預設為啟用、因此您應該執行最新版本。
