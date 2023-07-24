@@ -22,7 +22,7 @@ Cloud Volumes ONTAP 9.13.1 包含新的增強功能。
 
 == 9.13.1 RC1 （ 2023 年 6 月 26 日）
 
-Cloud Volumes ONTAP 9.13.1 的 Release Candidate 1 現已在 AWS 、 Azure 和 Google Cloud 中推出。此版本包含下列功能。
+Cloud Volumes ONTAP 9.13.1 的 Release Candidate 1 現已在 AWS 、 Azure 和 Google Cloud 中推出。
 
 
 

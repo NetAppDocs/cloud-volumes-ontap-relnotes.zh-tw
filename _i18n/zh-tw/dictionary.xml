@@ -539,7 +539,6 @@
   <block id="30af1a6878bac3a7aaed5d0e64e7b511" category="paragraph">提供不同的授權選項、讓您選擇符合需求的消費模式。Cloud Volumes ONTAP</block>
   <block id="37439fa615a442ec183c1c602f9755f1" category="paragraph">容量型授權的形式為_package_。當您部署Cloud Volumes ONTAP 一套解決方案時、您可以根據業務需求、從多個授權套件中進行選擇。</block>
   <block id="deb56fb5a824215375b16e72749e2aa3" category="inline-link">深入瞭解這些授權選項</block>
-  <block id="346f7f627d1a93bfbf315865554048c6" category="section-title">反勒索軟體</block>
   <block id="33f66f5b18b24875dca7a81c8f84c5b9" category="cell">896 TiB</block>
   <block id="a4a5e7bfb7afd26ff6a225ef7681add9" category="paragraph">下表顯示單一磁碟的最大系統容量、以及磁碟和冷資料分層至物件儲存設備的最大系統容量。磁碟限制僅適用於包含使用者資料的磁碟。限制不包括開機磁碟、根磁碟或NVRAM。</block>
   <block id="aa22c87da31d41edeac2ffbad9e7507d" category="cell">視授權而定。請參閱上述的最大系統容量限制。</block>
@@ -675,7 +674,6 @@
   <block id="59d68d1abaff04001d7f138b569d66a1" category="doc">Cloud Volumes ONTAP 9.13.1 的新功能</block>
   <block id="0775e0f9165c68236ce80a5eeaf622d2" category="paragraph">Cloud Volumes ONTAP 9.13.1 包含新的增強功能。</block>
   <block id="9c8c9e4dac5a2be78e81d66cbffd75af" category="section-title">9.13.1 RC1 （ 2023 年 6 月 26 日）</block>
-  <block id="73f86a5ebfc8edf0e36c8ad6bb22e282" category="paragraph">Cloud Volumes ONTAP 9.13.1 的 Release Candidate 1 現已在 AWS 、 Azure 和 Google Cloud 中推出。此版本包含下列功能。</block>
   <block id="9a8603c7a44b001d1d10919fc28a94cc" category="paragraph">您可以從 9.12.1 版和 9.13.0 版升級至 Cloud Volumes ONTAP 9.13.1 版。BlueXP會提示您將合格Cloud Volumes ONTAP 的更新版升級至此版本。</block>
   <block id="15a36f3b57148762c2209c3b7df4f648" category="paragraph">BlueXP Connector 必須執行 3.9.26 版或更新版本、才能部署新的 Cloud Volumes ONTAP 9.13.1 系統、並將現有系統升級至 9.13.1 版。</block>
   <block id="b07f6144410a8635e8ae505b186322a5" category="summary">這些版本資訊說明 Cloud Volumes ONTAP 9.13.1 的新功能、限制和已知問題。</block>
@@ -684,4 +682,5 @@
   <block id="5d77e4246523d19041d8aaab83469a88" category="list-text">L64s_v3 ^2^</block>
   <block id="f8f16d462023635d23922013c582281d" category="list-text">L16s_v3 ^1 、 4 、 5^</block>
   <block id="5c5847596a7ce3d290253dfcdcfc153c" category="list-text">L32s_v3 ^1 、 4 、 5^</block>
+  <block id="808eec7c541e73ef6110de5392ddc8b5" category="paragraph">Cloud Volumes ONTAP 9.13.1 的 Release Candidate 1 現已在 AWS 、 Azure 和 Google Cloud 中推出。</block>
 </blocks>
