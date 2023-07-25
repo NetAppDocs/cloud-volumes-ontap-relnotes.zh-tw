@@ -471,7 +471,6 @@
   <block id="88ba83f191bd27de24492d3f347d8add" category="list-text">n2-Standard-4</block>
   <block id="056d5ee0191954b71fbb1a0eec04a22a" category="list-text">n2-Standard-8.</block>
   <block id="8f66358785ed8f4d9a356630a4ee515c" category="list-text">n2-Standard-32</block>
-  <block id="8fb6e38745600f700e7342cdd70e43f5" category="cell">分區式持續磁碟（SSD、平衡式和標準）</block>
   <block id="f30cabe0a77d16d16cf1ef723d8eb186" category="inline-link-macro">深入瞭解Google Cloud的磁碟限制</block>
   <block id="a93742b808592a2ce1b1926f98f391eb" category="paragraph"><block ref="46bbc0e4d7a811f26e46cbb2c2ad7173" category="inline-link-macro-rx"></block>。</block>
   <block id="b4c4a8c75337dc28089aec3e79ae943c" category="list-text">PAYGO Explore不支援將資料分層至Google Cloud Storage。</block>
@@ -683,4 +682,6 @@
   <block id="f8f16d462023635d23922013c582281d" category="list-text">L16s_v3 ^1 、 4 、 5^</block>
   <block id="5c5847596a7ce3d290253dfcdcfc153c" category="list-text">L32s_v3 ^1 、 4 、 5^</block>
   <block id="808eec7c541e73ef6110de5392ddc8b5" category="paragraph">Cloud Volumes ONTAP 9.13.1 的 Release Candidate 1 現已在 AWS 、 Azure 和 Google Cloud 中推出。</block>
+  <block id="8363a389e0c602867cfdadb32a0bb680" category="cell">平衡式持續磁碟 ^4^ 、效能（ SSD ）持續磁碟 ^4^ 和標準（ HDD ）持續磁碟。</block>
+  <block id="3ef8b2478ab52b4e7c7dd18d32c5bf06" category="list-text">使用平衡式持續磁碟和效能（ SSD ）持續磁碟時、會啟用增強的寫入效能。</block>
 </blocks>
