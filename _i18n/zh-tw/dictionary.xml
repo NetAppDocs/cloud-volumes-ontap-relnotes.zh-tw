@@ -684,4 +684,6 @@
   <block id="808eec7c541e73ef6110de5392ddc8b5" category="paragraph">Cloud Volumes ONTAP 9.13.1 的 Release Candidate 1 現已在 AWS 、 Azure 和 Google Cloud 中推出。</block>
   <block id="8363a389e0c602867cfdadb32a0bb680" category="cell">平衡式持續磁碟 ^4^ 、效能（ SSD ）持續磁碟 ^4^ 和標準（ HDD ）持續磁碟。</block>
   <block id="3ef8b2478ab52b4e7c7dd18d32c5bf06" category="list-text">使用平衡式持續磁碟和效能（ SSD ）持續磁碟時、會啟用增強的寫入效能。</block>
+  <block id="3265c73fa992103b2a4f8d03470586ac" category="section-title">9.13.1 GA （ 2023 年 7 月 26 日）</block>
+  <block id="b5d2ebb75a812f3d5c8fc5e62ce5a672" category="paragraph">Cloud Volumes ONTAP 9.13.1 的一般可用度版本現已在 AWS 、 Azure 和 Google Cloud 中推出。</block>
 </blocks>
