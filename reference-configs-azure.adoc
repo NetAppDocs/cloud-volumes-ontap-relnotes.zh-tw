@@ -146,7 +146,7 @@ Azure中提供的支援可作為單一節點系統、以及高可用度（HA）�
 . 使用SSD時可啟用增強的寫入效能。
 . 如需Azure地區支援、請參閱 https://cloud.netapp.com/cloud-volumes-global-regions["Cloud Volumes全球區域"^]。
 . 可在雲端供應商的保留或隨需VM執行個體上執行。Cloud Volumes ONTAP不支援使用其他VM執行個體類型的解決方案。
-. SN 僅支援標準 SSD 、 HDD 和 Premium SSD 的 LRS 託管磁碟。
+. 單一節點部署僅支援標準 SSD 、 HDD 和 Premium SSD 的本機備援儲存設備（ LRS ）託管磁碟。
 
 
 

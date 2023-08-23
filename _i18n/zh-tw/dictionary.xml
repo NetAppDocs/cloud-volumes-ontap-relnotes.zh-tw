@@ -682,7 +682,6 @@
   <block id="3ef8b2478ab52b4e7c7dd18d32c5bf06" category="list-text">使用平衡式持續磁碟和效能（ SSD ）持續磁碟時、會啟用增強的寫入效能。</block>
   <block id="3265c73fa992103b2a4f8d03470586ac" category="section-title">9.13.1 GA （ 2023 年 7 月 26 日）</block>
   <block id="b5d2ebb75a812f3d5c8fc5e62ce5a672" category="paragraph">Cloud Volumes ONTAP 9.13.1 的一般可用度版本現已在 AWS 、 Azure 和 Google Cloud 中推出。</block>
-  <block id="42ad73f7e38d2eef461b87cc0851e191" category="list-text">SN 僅支援標準 SSD 、 HDD 和 Premium SSD 的 LRS 託管磁碟。</block>
   <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
   <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
   <block id="f99aa604031e5049799e73b5c3748a98" category="inline-link-macro"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
@@ -691,4 +690,5 @@
   <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
   <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
+  <block id="f358bc744fba7780236855c1c4777b38" category="list-text">單一節點部署僅支援標準 SSD 、 HDD 和 Premium SSD 的本機備援儲存設備（ LRS ）託管磁碟。</block>
 </blocks>
