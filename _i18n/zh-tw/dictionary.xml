@@ -691,4 +691,8 @@
   <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
   <block id="f358bc744fba7780236855c1c4777b38" category="list-text">單一節點部署僅支援標準 SSD 、 HDD 和 Premium SSD 的本機備援儲存設備（ LRS ）託管磁碟。</block>
+  <block id="2bf4a4b22f921c225f089ec2954ee9e8" category="list-text">L48s_v3 ^1 、 4 、 5^</block>
+  <block id="c130660d20dd5cec8fbf6045fb61af08" category="list-text">L64s_v3 ^1 、 4 、 5^</block>
+  <block id="c7316b16841dc002d14d45c38a750287" category="cell">L48s_v3</block>
+  <block id="b9f4aa39433f5232d4ce50f2a9a3c403" category="cell">L64s_v3</block>
 </blocks>
