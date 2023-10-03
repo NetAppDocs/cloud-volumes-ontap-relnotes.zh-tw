@@ -510,8 +510,6 @@
   <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">部落格社群</block>
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp社群</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">雲端網路研討會</block>
-  <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="sidebar">Cloud Volumes ONTAP</block>
-  <block id="dea335c9c6f638eb584011e253ad6ca1" category="sidebar">解決方案ONTAP</block>
   <block id="79561dd1a4e00a3e05c0d892a01e77bf" category="list-text">n2-Standard-16</block>
   <block id="cb93ad4589e6e6834d2627d2ef8c8456" category="list-text">多管理員驗證</block>
   <block id="88e362071d1f2ba61570f62aacd1c1c5" category="paragraph">在Cloud Volumes ONTAP 支援的情況下、在支援的系統上啟用多管理員驗證、將會產生不受支援的組態。</block>
@@ -575,7 +573,6 @@
   <block id="9889b7a9df56580016f59ccd942fb1d1" category="inline-link">BlueXP版本說明</block>
   <block id="fde45fa5cd70a93e88151b83aa348f12" category="inline-link">BlueXP API端點</block>
   <block id="40aa449308d0af16355f19e61ffe344b" category="paragraph">不、這不需要。HA配對中的資料會在節點之間同步鏡射、以便在Google Cloud發生故障時提供資料。例如、如果您在節點A上購買8 TB磁碟、則BlueXP也會在節點B上配置8 TB磁碟、用於鏡射資料。雖然已配置16 TB容量、但根據授權上限、僅需8 TB。</block>
-  <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">所有BlueXP文件</block>
   <block id="bd5465eb0e8cf8f303aee7ea9420c8b1" category="sidebar">BlueXP部落格</block>
   <block id="2819feead2b07762a4465189ab8b2f52" category="paragraph-title">對於HA配對、每個節點或整個HA配對的授權容量限制是多少？</block>
   <block id="7093c2c9844cf46dcd5d50c6d596d244" category="paragraph-title">對於HA配對、鏡射資料是否會根據授權容量限制計算？</block>
@@ -604,10 +601,6 @@
   <block id="561a766e0af8bbc565f3cd929c900d16" category="example-title">BYOL：HA與共享的託管磁碟配對使用多個可用區域組態</block>
   <block id="fc9a388cd18c69244f22554de6f0d544" category="paragraph-title">對於AWS中的HA系統、鏡射資料是否會根據容量限制計算？</block>
   <block id="39b49fbe12f6121fd761513c05ddba97" category="paragraph">部分VM類型包括本機NVMe儲存設備、Cloud Volumes ONTAP 這些儲存設備可作為_Flash Cache使用。請注意Flash Cache的下列限制：</block>
-  <block id="f5aba93322e5fd0767b7e9fa839610f1" category="inline-link-macro">AWS中的《關於支援此功能的資訊Cloud Volumes ONTAP</block>
-  <block id="a4a2a5bddea7236f27b0a01d377e37a6" category="list-text"><block ref="a4a2a5bddea7236f27b0a01d377e37a6" category="inline-link-macro-rx"></block></block>
-  <block id="278ce444bf386e0c416c2eb85c339022" category="inline-link-macro">Google Cloud中的《The傳達關於The充當the解決方案的角色的注意事項Cloud Volumes ONTAP （英文）</block>
-  <block id="653a50044a773ecda2e2e9ec6736699c" category="list-text"><block ref="653a50044a773ecda2e2e9ec6736699c" category="inline-link-macro-rx"></block></block>
   <block id="f59964eb1e1669da7d916b7e136c88bd" category="list-text">m6id.32xlarge</block>
   <block id="b5cb41a6703cf18b4cecd5a0817f91cf" category="section-title">升級附註</block>
   <block id="dfb01a7b38cba8284269f37f00622809" category="paragraph">請閱讀這些附註、深入瞭解升級至此版本的相關資訊。</block>
@@ -665,23 +658,12 @@
   <block id="3959237302934c658e49cff52293a2a5" category="list-text">這種VM類型包括本機NVMe儲存設備、Cloud Volumes ONTAP 這些儲存設備以_Flash Cache的形式使用。Flash Cache 可透過即時智慧快取來加速資料存取、快取最近讀取的使用者資料和 NetApp 中繼資料。它適用於隨機讀取密集的工作負載、包括資料庫、電子郵件和檔案服務。<block ref="b6abeaa384c5670d0721bcc6323011fc" category="inline-link-rx"></block>。</block>
   <block id="9655d27d34aaf491a4183d57c0530647" category="list-text">使用單一節點系統時、所有執行個體類型都支援高速寫入。您可以在部署期間或之後的任何時間、從BlueXP啟用高速寫入速度。<block ref="721fe5ee3bbc3d8295d8615ed77ff9be" category="inline-link-rx"></block>。</block>
   <block id="44ed637222e5d571deff68351343db0d" category="list-text">使用HA配對時、支援這些VM類型的高速寫入速度。Cloud Volumes ONTAP您可以在部署期間或之後的任何時間、從BlueXP啟用高速寫入速度。<block ref="721fe5ee3bbc3d8295d8615ed77ff9be" category="inline-link-rx"></block>。</block>
-  <block id="7e250845f86eeaaaf4e55296f483f4ee" category="summary">Cloud Volumes ONTAP 9.13.1 包含新的增強功能。</block>
-  <block id="59d68d1abaff04001d7f138b569d66a1" category="doc">Cloud Volumes ONTAP 9.13.1 的新功能</block>
-  <block id="0775e0f9165c68236ce80a5eeaf622d2" category="paragraph">Cloud Volumes ONTAP 9.13.1 包含新的增強功能。</block>
-  <block id="9c8c9e4dac5a2be78e81d66cbffd75af" category="section-title">9.13.1 RC1 （ 2023 年 6 月 26 日）</block>
-  <block id="9a8603c7a44b001d1d10919fc28a94cc" category="paragraph">您可以從 9.12.1 版和 9.13.0 版升級至 Cloud Volumes ONTAP 9.13.1 版。BlueXP會提示您將合格Cloud Volumes ONTAP 的更新版升級至此版本。</block>
-  <block id="15a36f3b57148762c2209c3b7df4f648" category="paragraph">BlueXP Connector 必須執行 3.9.26 版或更新版本、才能部署新的 Cloud Volumes ONTAP 9.13.1 系統、並將現有系統升級至 9.13.1 版。</block>
-  <block id="b07f6144410a8635e8ae505b186322a5" category="summary">這些版本資訊說明 Cloud Volumes ONTAP 9.13.1 的新功能、限制和已知問題。</block>
-  <block id="a69b1618b78e74242413945e92315e51" category="doc">Cloud Volumes ONTAP 9.13.1 版本資訊</block>
   <block id="5f47eaf30741e1b189cb3927920a050e" category="list-text">L48s_v3 ^2^</block>
   <block id="5d77e4246523d19041d8aaab83469a88" category="list-text">L64s_v3 ^2^</block>
   <block id="f8f16d462023635d23922013c582281d" category="list-text">L16s_v3 ^1 、 4 、 5^</block>
   <block id="5c5847596a7ce3d290253dfcdcfc153c" category="list-text">L32s_v3 ^1 、 4 、 5^</block>
-  <block id="808eec7c541e73ef6110de5392ddc8b5" category="paragraph">Cloud Volumes ONTAP 9.13.1 的 Release Candidate 1 現已在 AWS 、 Azure 和 Google Cloud 中推出。</block>
   <block id="8363a389e0c602867cfdadb32a0bb680" category="cell">平衡式持續磁碟 ^4^ 、效能（ SSD ）持續磁碟 ^4^ 和標準（ HDD ）持續磁碟。</block>
   <block id="3ef8b2478ab52b4e7c7dd18d32c5bf06" category="list-text">使用平衡式持續磁碟和效能（ SSD ）持續磁碟時、會啟用增強的寫入效能。</block>
-  <block id="3265c73fa992103b2a4f8d03470586ac" category="section-title">9.13.1 GA （ 2023 年 7 月 26 日）</block>
-  <block id="b5d2ebb75a812f3d5c8fc5e62ce5a672" category="paragraph">Cloud Volumes ONTAP 9.13.1 的一般可用度版本現已在 AWS 、 Azure 和 Google Cloud 中推出。</block>
   <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
   <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
   <block id="f99aa604031e5049799e73b5c3748a98" category="inline-link-macro"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
@@ -695,4 +677,21 @@
   <block id="c130660d20dd5cec8fbf6045fb61af08" category="list-text">L64s_v3 ^1 、 4 、 5^</block>
   <block id="c7316b16841dc002d14d45c38a750287" category="cell">L48s_v3</block>
   <block id="b9f4aa39433f5232d4ce50f2a9a3c403" category="cell">L64s_v3</block>
+  <block id="17ed68bac4a851f70f23adb17408c559" category="summary">Cloud Volumes ONTAP 9.14.0 包含全新增強功能。</block>
+  <block id="2f9a9e2e9643d34c7f7f1936f399ae83" category="doc">Cloud Volumes ONTAP 9.14.0 的新增功能</block>
+  <block id="831c51dbf72b967842c4f8c35b68775a" category="paragraph">Cloud Volumes ONTAP 9.14.0 包含全新增強功能。</block>
+  <block id="054019ec227eca9ca771ad54dc96be1d" category="section-title">9.14.0 （ 2023 年 9 月 29 日）</block>
+  <block id="23fccc87959a2c4683bbaf760d6391f9" category="paragraph">Cloud Volumes ONTAP 9.14.0 的一般可用度（ GA ）版本現已在 AWS 、 Azure 和 Google Cloud 中推出。此版本包含下列新功能與增強功能。</block>
+  <block id="e8cc4fb6a76ec45c4753f6fa889f1a55" category="section-title">Azure 中的 SnapMirror 流量分隔</block>
+  <block id="7c1a4429723a32e5741845cf6c26964d" category="paragraph">現在您可以將 SnapMirror 複寫流量與資料和管理流量隔離。這項新功能可讓您利用無法路由傳送至現有子網路的額外子網路來分隔 SnapMirror 複寫流量、以供資料和管理流量使用。</block>
+  <block id="fc24325d1a2e9e1bafd6f254f53818cc" category="inline-link-macro">分離 Azure 中的 SnapMirror 流量</block>
+  <block id="af7ed382ad038fd00a8e8cd85149ee8f" category="paragraph">深入瞭解如何操作 <block ref="c2e17ab17ee4e8b3c5063ff09339d01c" category="inline-link-macro-rx"></block>。</block>
+  <block id="de12dfc5ec75a2eca151fb8bd975bf68" category="paragraph">您可以從 9.13.1 版本升級至 Cloud Volumes ONTAP 9.14.0 。BlueXP會提示您將合格Cloud Volumes ONTAP 的更新版升級至此版本。</block>
+  <block id="cb6034e9fe897f10028a1cffdb218a93" category="paragraph">BlueXP Connector 必須執行 3.9.27 版或更新版本、才能部署新的 Cloud Volumes ONTAP 9.14.0 系統、並將現有系統升級至 9.14.0 。</block>
+  <block id="83855cac4cd9fe299365bd61fece6bb1" category="inline-link-macro">AWS 中 Cloud Volumes ONTAP 9.14.0 中介人注意事項</block>
+  <block id="d3c10a06f4967c50eb334c137f0fea04" category="list-text"><block ref="d3c10a06f4967c50eb334c137f0fea04" category="inline-link-macro-rx"></block></block>
+  <block id="372c9b488802576d68e99603944c4566" category="inline-link-macro">Google Cloud 中 Cloud Volumes ONTAP 9.14.0 中介人注意事項</block>
+  <block id="ade4280527084cf81b8c35333fab8226" category="list-text"><block ref="ade4280527084cf81b8c35333fab8226" category="inline-link-macro-rx"></block></block>
+  <block id="373d3eec6a8460edd6d29008332349e5" category="summary">這些版本資訊說明 Cloud Volumes ONTAP 9.14.0 的新功能、限制及已知問題。</block>
+  <block id="c3264a0692eaa18730a5ddad32b43884" category="doc">Cloud Volumes ONTAP 9.14.0 版本資訊</block>
 </blocks>
