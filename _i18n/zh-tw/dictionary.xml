@@ -578,8 +578,6 @@
   <block id="7093c2c9844cf46dcd5d50c6d596d244" category="paragraph-title">對於HA配對、鏡射資料是否會根據授權容量限制計算？</block>
   <block id="9d123a356c832621891a3328c128b78b" category="list-text">L8s_v3 ^2^</block>
   <block id="b869cbdadaa9844d32c24de3f4db3242" category="cell">託管磁碟</block>
-  <block id="bdebc137cea9fa36d51bbecef44687cc" category="paragraph">HA配對使用託管磁碟。（在9.12.1版本之前部署的HA配對支援分頁。）</block>
-  <block id="2c5ad1776ac4cf950a5e0576f35bf111" category="paragraph">支援下列磁碟大小：</block>
   <block id="dbe94f36417009d827f76ccf107bd90c" category="section-title">不應使用自動應用程式資源管理解決方案</block>
   <block id="2f9882645b2c32820ad085240bacb763" category="paragraph-title">對於HA、每個節點或整個HA配對的授權容量限制是多少？</block>
   <block id="2d7789be6e6e477491f790d5a3ea60b3" category="cell">384 TiB原始容量、適用於單一節點^2^ 352 TiB原始容量、適用於單一節點、搭配PAYGO 96 TiB原始容量、適用於HA配對、頁面Blob 384 TiB原始容量、適用於HA配對與託管磁碟</block>
@@ -694,4 +692,7 @@
   <block id="ade4280527084cf81b8c35333fab8226" category="list-text"><block ref="ade4280527084cf81b8c35333fab8226" category="inline-link-macro-rx"></block></block>
   <block id="373d3eec6a8460edd6d29008332349e5" category="summary">這些版本資訊說明 Cloud Volumes ONTAP 9.14.0 的新功能、限制及已知問題。</block>
   <block id="c3264a0692eaa18730a5ddad32b43884" category="doc">Cloud Volumes ONTAP 9.14.0 版本資訊</block>
+  <block id="474efe63e96f6b9f1c2d9f2e851888a1" category="paragraph">HA 配對使用 Azure 託管磁碟。支援下列磁碟類型和大小。</block>
+  <block id="a5cd8e75bf9d20c9038f3cf45ff950e3" category="paragraph">（在9.12.1版本之前部署的HA配對支援分頁。）</block>
+  <block id="fe77d7482327c65392eb365d35d8bd99" category="paragraph">* 優質 SSSSD *</block>
 </blocks>
