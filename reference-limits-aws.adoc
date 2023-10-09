@@ -43,7 +43,7 @@ NetApp不支援超過系統容量限制。如果您達到授權容量上限、�
 | PAYGO Premium | 368TiB 
 
 
-| 節點型授權 | 每個授權368TiB 
+| 節點型授權 | 2 PIB （需要多個授權） 
 
 
 | 容量型授權 | 2 PIB 
@@ -162,11 +162,9 @@ NetApp不支援超過系統容量限制。如果您達到授權容量上限、�
 
 下列磁碟限制適用於Cloud Volumes ONTAP 使用節點型授權的支援系統、這是前一代授權模式、可讓您依Cloud Volumes ONTAP 節點授權使用。現有客戶仍可使用節點型授權。
 
-* 如果您使用節點型授權、可以針對Cloud Volumes ONTAP 一個以節點為基礎的系統購買多個節點型授權、以分配超過3668 TiB的容量。
-+
-單一節點系統或 HA 配對可購買的授權數量不受限制。請注意、磁碟限制可能會讓您無法單獨使用磁碟來達到容量限制。您可以超越磁碟限制 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["將非作用中資料分層至物件儲存設備"^]。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html["瞭解如何將額外的系統授權新增Cloud Volumes ONTAP 至功能完善"^]。
+您可以為 Cloud Volumes ONTAP BYOL 單一節點或 HA 配對系統購買多個節點型授權、以分配超過 368 TiB 的容量、最多可分配 2 PIB 的最大測試和支援系統容量限制。請注意、磁碟限制可能會讓您無法單獨使用磁碟來達到容量限制。您可以超越磁碟限制 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["將非作用中資料分層至物件儲存設備"^]。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html["瞭解如何將額外的系統授權新增Cloud Volumes ONTAP 至功能完善"^]。雖然 Cloud Volumes ONTAP 支援最多 2 個 PIB 的最大測試和支援系統容量、但超過 2 個 PIB 限制會導致系統組態不受支援。
 
-
+AWS Secret Cloud 和 Top Secret Cloud 地區支援從 Cloud Volumes ONTAP 9.12.1 開始購買多個節點型授權。
 
 
 
@@ -202,14 +200,14 @@ NetApp不支援超過系統容量限制。如果您達到授權容量上限、�
 2+|  | *單獨磁碟* | *磁碟+資料分層* | *單獨磁碟* | *磁碟+資料分層* 
 
 
-| c5、m5和R5執行個體 | 21 ^1^ | 336 TiB | 368TiB | 336 TiB | 每個授權使用368TiB 
+| c5、m5和R5執行個體 | 21 ^1^ | 336 TiB | 368TiB | 336 TiB | 2 PIB 
 
 
  a| 
 * m5dn.24xlarge
 * m6id.32xlarge
 
-| 19 ^2^ | 304. TiB | 368TiB | 304. TiB | 每個授權使用368TiB 
+| 19 ^2^ | 304. TiB | 368TiB | 304. TiB | 2 PIB 
 |===
 . 21個資料磁碟是_new _部署Cloud Volumes ONTAP 的限制。如果您升級使用9.7版或更早版本所建立的系統、系統將繼續支援22個磁碟。由於從9.8版開始新增核心磁碟、因此在使用這些執行個體類型的新系統上可減少一張資料磁碟。
 . 此執行個體類型的本機NVMe磁碟數量比其他執行個體類型多、這表示支援的資料磁碟數量較少。
@@ -249,14 +247,14 @@ NetApp不支援超過系統容量限制。如果您達到授權容量上限、�
 2+|  | *單獨磁碟* | *磁碟+資料分層* | *單獨磁碟* | *磁碟+資料分層* 
 
 
-| c5、m5和R5執行個體 | 18 ^1^ | 288 TiB | 368TiB | 288 TiB | 每個授權使用368TiB 
+| c5、m5和R5執行個體 | 18 ^1^ | 288 TiB | 368TiB | 288 TiB | 2 PIB 
 
 
  a| 
 * m5dn.24xlarge
 * m6id.32xlarge
 
-| 16 ^2^ | 256 TiB | 368TiB | 256 TiB | 每個授權使用368TiB 
+| 16 ^2^ | 256 TiB | 368TiB | 256 TiB | 2 PIB 
 |===
 . 18個資料磁碟是_new _部署Cloud Volumes ONTAP 的限制。如果您升級使用9.7版或更早版本所建立的系統、系統將繼續支援19個磁碟。由於從9.8版開始新增核心磁碟、因此在使用這些執行個體類型的新系統上可減少一張資料磁碟。
 . 此執行個體類型的本機NVMe磁碟數量比其他執行個體類型多、這表示支援的資料磁碟數量較少。

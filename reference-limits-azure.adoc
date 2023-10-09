@@ -41,7 +41,7 @@ NetApp不支援超過系統容量限制。如果您達到授權容量上限、�
 | PAYGO Premium | 368TiB 
 
 
-| 節點型授權 | 每個授權368TiB 
+| 節點型授權 | 2 PIB （需要多個授權） 
 
 
 | 容量型授權 | 2 PIB 
@@ -275,9 +275,7 @@ NetApp不支援超過系統容量限制。如果您達到授權容量上限、�
 
 下列磁碟限制適用於Cloud Volumes ONTAP 使用節點型授權的支援系統、這是前一代授權模式、可讓您依Cloud Volumes ONTAP 節點授權使用。現有客戶仍可使用節點型授權。
 
-如果您使用節點型授權、可以針對Cloud Volumes ONTAP 一個以節點為基礎的系統購買多個節點型授權、以分配超過3668 TiB的容量。
-
-單一節點系統或 HA 配對可購買的授權數量不受限制。請注意、磁碟限制可能會讓您無法單獨使用磁碟來達到容量限制。您可以超越磁碟限制 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["將非作用中資料分層至物件儲存設備"^]。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html["瞭解如何將額外的系統授權新增Cloud Volumes ONTAP 至功能完善"^]。
+您可以為 Cloud Volumes ONTAP BYOL 單一節點或 HA 配對系統購買多個節點型授權、以分配超過 368 TiB 的容量、最多可分配 2 PIB 的最大測試和支援系統容量限制。請注意、磁碟限制可能會讓您無法單獨使用磁碟來達到容量限制。您可以超越磁碟限制 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["將非作用中資料分層至物件儲存設備"^]。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html["瞭解如何將額外的系統授權新增Cloud Volumes ONTAP 至功能完善"^]。雖然 Cloud Volumes ONTAP 支援最多 2 個 PIB 的最大測試和支援系統容量、但超過 2 個 PIB 限制會導致系統組態不受支援。
 
 
 
@@ -331,52 +329,52 @@ NetApp不支援超過系統容量限制。如果您達到授權容量上限、�
 2+|  | *單獨磁碟* | *磁碟+資料分層* | *單獨磁碟* | *磁碟+資料分層* 
 
 
-| DS4_v2 | 29 | 368TiB | 368TiB | 896 TiB | 每個授權使用368TiB 
+| DS4_v2 | 29 | 368TiB | 368TiB | 896 TiB | 2 PIB 
 
 
-| DS5_v2 | 61. | 368TiB | 368TiB | 896 TiB | 每個授權使用368TiB 
+| DS5_v2 | 61. | 368TiB | 368TiB | 896 TiB | 2 PIB 
 
 
-| DS13_v2 | 29 | 368TiB | 368TiB | 896 TiB | 每個授權使用368TiB 
+| DS13_v2 | 29 | 368TiB | 368TiB | 896 TiB | 2 PIB 
 
 
-| DS14_v2 | 61. | 368TiB | 368TiB | 896 TiB | 每個授權使用368TiB 
+| DS14_v2 | 61. | 368TiB | 368TiB | 896 TiB | 2 PIB 
 
 
-| DS15_v2 | 61. | 368TiB | 368TiB | 896 TiB | 每個授權使用368TiB 
+| DS15_v2 | 61. | 368TiB | 368TiB | 896 TiB | 2 PIB 
 
 
-| L8s_v2 | 13. | 368TiB | 368TiB | 416 TiB | 每個授權使用368TiB 
+| L8s_v2 | 13. | 368TiB | 368TiB | 416 TiB | 2 PIB 
 
 
-| E4s_v3 | 5. | 160 TiB | 368TiB | 160 TiB | 每個授權使用368TiB 
+| E4s_v3 | 5. | 160 TiB | 368TiB | 160 TiB | 2 PIB 
 
 
-| E8s_v3 | 13. | 368TiB | 368TiB | 416 TiB | 每個授權使用368TiB 
+| E8s_v3 | 13. | 368TiB | 368TiB | 416 TiB | 2 PIB 
 
 
-| E32s_v3 | 29 | 368TiB | 368TiB | 896 TiB | 每個授權使用368TiB 
+| E32s_v3 | 29 | 368TiB | 368TiB | 896 TiB | 2 PIB 
 
 
-| E48s_v3 | 29 | 368TiB | 368TiB | 896 TiB | 每個授權使用368TiB 
+| E48s_v3 | 29 | 368TiB | 368TiB | 896 TiB | 2 PIB 
 
 
-| E64is_v3 | 29 | 368TiB | 368TiB | 896 TiB | 每個授權使用368TiB 
+| E64is_v3 | 29 | 368TiB | 368TiB | 896 TiB | 2 PIB 
 
 
-| E4ds_v4 | 5. | 160 TiB | 368TiB | 160 TiB | 每個授權使用368TiB 
+| E4ds_v4 | 5. | 160 TiB | 368TiB | 160 TiB | 2 PIB 
 
 
-| E8ds_v4 | 13. | 368TiB | 368TiB | 416 TiB | 每個授權使用368TiB 
+| E8ds_v4 | 13. | 368TiB | 368TiB | 416 TiB | 2 PIB 
 
 
-| E32ds_v4 | 29 | 368TiB | 368TiB | 896 TiB | 每個授權使用368TiB 
+| E32ds_v4 | 29 | 368TiB | 368TiB | 896 TiB | 2 PIB 
 
 
-| E48ds_v4 | 29 | 368TiB | 368TiB | 896 TiB | 每個授權使用368TiB 
+| E48ds_v4 | 29 | 368TiB | 368TiB | 896 TiB | 2 PIB 
 
 
-| E80ids_v4 | 61. | 368TiB | 368TiB | 896 TiB | 每個授權使用368TiB 
+| E80ids_v4 | 61. | 368TiB | 368TiB | 896 TiB | 2 PIB 
 |===
 ====
 
@@ -445,37 +443,37 @@ HA配對有兩種組態類型：頁面blob和多個可用度區域。每個組�
 2+|  | *單獨磁碟* | *磁碟+資料分層* | *單獨磁碟* | *磁碟+資料分層* 
 
 
-| DS4_v2 | 29 | 232TiB | 368TiB | 232TiB | 每個授權使用368TiB 
+| DS4_v2 | 29 | 232TiB | 368TiB | 232TiB | 2 PIB 
 
 
-| DS5_v2 | 61. | 368TiB | 368TiB | 488TiB | 每個授權使用368TiB 
+| DS5_v2 | 61. | 368TiB | 368TiB | 488TiB | 2 PIB 
 
 
-| DS13_v2 | 29 | 232TiB | 368TiB | 232TiB | 每個授權使用368TiB 
+| DS13_v2 | 29 | 232TiB | 368TiB | 232TiB | 2 PIB 
 
 
-| DS14_v2 | 61. | 368TiB | 368TiB | 488TiB | 每個授權使用368TiB 
+| DS14_v2 | 61. | 368TiB | 368TiB | 488TiB | 2 PIB 
 
 
-| DS15_v2 | 61. | 368TiB | 368TiB | 488TiB | 每個授權使用368TiB 
+| DS15_v2 | 61. | 368TiB | 368TiB | 488TiB | 2 PIB 
 
 
-| E8s_v3 | 13. | 104 TiB | 368TiB | 104 TiB | 每個授權使用368TiB 
+| E8s_v3 | 13. | 104 TiB | 368TiB | 104 TiB | 2 PIB 
 
 
-| E48s_v3 | 29 | 232TiB | 368TiB | 232TiB | 每個授權使用368TiB 
+| E48s_v3 | 29 | 232TiB | 368TiB | 232TiB | 2 PIB 
 
 
-| E8ds_v4 | 13. | 104 TiB | 368TiB | 104 TiB | 每個授權使用368TiB 
+| E8ds_v4 | 13. | 104 TiB | 368TiB | 104 TiB | 2 PIB 
 
 
-| E32ds_v4 | 29 | 232TiB | 368TiB | 232TiB | 每個授權使用368TiB 
+| E32ds_v4 | 29 | 232TiB | 368TiB | 232TiB | 2 PIB 
 
 
-| E48ds_v4 | 29 | 232TiB | 368TiB | 232TiB | 每個授權使用368TiB 
+| E48ds_v4 | 29 | 232TiB | 368TiB | 232TiB | 2 PIB 
 
 
-| E80ids_v4 | 61. | 368TiB | 368TiB | 488TiB | 每個授權使用368TiB 
+| E80ids_v4 | 61. | 368TiB | 368TiB | 488TiB | 2 PIB 
 |===
 ====
 .BYOL：HA與共享的託管磁碟配對使用多個可用區域組態
@@ -489,16 +487,16 @@ HA配對有兩種組態類型：頁面blob和多個可用度區域。每個組�
 2+|  | *單獨磁碟* | *磁碟+資料分層* | *單獨磁碟* | *磁碟+資料分層* 
 
 
-| E8ds_v4 | 12. | 368TiB | 368TiB | 368TiB | 每個授權使用368TiB 
+| E8ds_v4 | 12. | 368TiB | 368TiB | 368TiB | 2 PIB 
 
 
-| E32ds_v4 | 28.28 | 368TiB | 368TiB | 368TiB | 每個授權使用368TiB 
+| E32ds_v4 | 28.28 | 368TiB | 368TiB | 368TiB | 2 PIB 
 
 
-| E48ds_v4 | 28.28 | 368TiB | 368TiB | 368TiB | 每個授權使用368TiB 
+| E48ds_v4 | 28.28 | 368TiB | 368TiB | 368TiB | 2 PIB 
 
 
-| E80ids_v4 | 28.28 | 368TiB | 368TiB | 368TiB | 每個授權使用368TiB 
+| E80ids_v4 | 28.28 | 368TiB | 368TiB | 368TiB | 2 PIB 
 |===
 ====
 

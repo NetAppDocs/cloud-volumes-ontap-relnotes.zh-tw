@@ -263,7 +263,6 @@
   <block id="cabc996760a00c42a2b15b388054d050" category="cell">最多可容納多個授權的系統容量</block>
   <block id="bb49543449782c0f1b87b3ef8f49a6be" category="cell">*單獨磁碟*</block>
   <block id="e3185eb0708df4883935910ebf26f8db" category="cell">*磁碟+資料分層*</block>
-  <block id="f94f9afeacfc431720c782db2e1d8809" category="cell">每個授權使用368TiB</block>
   <block id="84581eec82fbf62be31e4721312910b0" category="cell">L8s_v2</block>
   <block id="c51ce410c124a10e0db5e4b97fc2af39" category="cell">13.</block>
   <block id="c717534327e269958ec86746c88f88bf" category="cell">416 TiB</block>
@@ -546,7 +545,6 @@
   <block id="5aabc9069557be7e4aeff466605cbc75" category="section-title">單一節點</block>
   <block id="6c3b49ddb811c2d88edee86163680009" category="section-title">節點型授權限制</block>
   <block id="d017aa906544a3348ee35d75ebb10b72" category="paragraph">下列磁碟限制適用於Cloud Volumes ONTAP 使用節點型授權的支援系統、這是前一代授權模式、可讓您依Cloud Volumes ONTAP 節點授權使用。現有客戶仍可使用節點型授權。</block>
-  <block id="52960fb5a2829740ddef9c61b6015d59" category="list-text">如果您使用節點型授權、可以針對Cloud Volumes ONTAP 一個以節點為基礎的系統購買多個節點型授權、以分配超過3668 TiB的容量。</block>
   <block id="fff4bb20e652c529e2e22e76e56ed9b5" category="section-title">單一節點搭配PAYGO Premium</block>
   <block id="a9698a2172c5fcc72b7ecd7910403955" category="section-title">單一節點搭配BYOL</block>
   <block id="9dbb7f356b08de585f6ddbe523e4a8d8" category="section-title">HA與PAYGO Premium配對</block>
@@ -638,7 +636,6 @@
   <block id="9df4ca2adcfbf390d35edbeb52928a78" category="list-text">某些執行個體類型包括本機NVMe儲存設備、Cloud Volumes ONTAP 這些儲存設備使用做為_Flash Cache。Flash Cache 可透過即時智慧快取來加速資料存取、快取最近讀取的使用者資料和 NetApp 中繼資料。它適用於隨機讀取密集的工作負載、包括資料庫、電子郵件和檔案服務。所有磁碟區都必須停用壓縮、才能充分發揮 Flash Cache 效能的改善效益。<block ref="da56a164195bbdee72f1dfc4ea53669d" category="inline-link-rx"></block>。</block>
   <block id="ce4956d12fe22f1b1243720ce22651e0" category="list-text">使用HA配對時、支援大部分執行個體類型的高速寫入速度。Cloud Volumes ONTAP使用單一節點系統時、所有執行個體類型都支援高速寫入。<block ref="721fe5ee3bbc3d8295d8615ed77ff9be" category="inline-link-rx"></block>。</block>
   <block id="f6dcc1a079544e36390b698b6f59bf4e" category="paragraph">下列磁碟限制適用於Cloud Volumes ONTAP 使用容量型授權套件的各個系統。<block ref="360eefdcdd22adda63e8597e9466029a" category="inline-link-rx"></block></block>
-  <block id="05c9b06fc32318d0689c553219a9d496" category="paragraph">單一節點系統或 HA 配對可購買的授權數量不受限制。請注意、磁碟限制可能會讓您無法單獨使用磁碟來達到容量限制。您可以超越磁碟限制<block ref="aea0958203307daa433f894622f3e640" category="inline-link-rx"></block>。<block ref="ca37ce4dde5616ef242d545490c7e6ee" category="inline-link-rx"></block>。</block>
   <block id="fc8746b925f8923889b77841242bf054" category="paragraph"><block ref="771bd01d5b66ba0bcb76d734267dc8bb" category="inline-link-rx"></block>。</block>
   <block id="ae90a2e4532cb9b615489b63c36e2383" category="paragraph"><block ref="dca5658ae26fff987979f5de0a83e9fd" category="inline-link-rx"></block>。</block>
   <block id="efb78221b5926bd89d824f8dec9a7ed2" category="list-text">磁碟限制可防止您單獨使用磁碟、達到最大系統容量限制。您可以達到容量上限<block ref="aea0958203307daa433f894622f3e640" category="inline-link-rx"></block>。</block>
@@ -695,4 +692,7 @@
   <block id="474efe63e96f6b9f1c2d9f2e851888a1" category="paragraph">HA 配對使用 Azure 託管磁碟。支援下列磁碟類型和大小。</block>
   <block id="a5cd8e75bf9d20c9038f3cf45ff950e3" category="paragraph">（在9.12.1版本之前部署的HA配對支援分頁。）</block>
   <block id="fe77d7482327c65392eb365d35d8bd99" category="paragraph">* 優質 SSSSD *</block>
+  <block id="fd164e9cb2bc1ac5405cabfe451663f7" category="cell">2 PIB （需要多個授權）</block>
+  <block id="2dbd9a217bce4c7ba4ef467f57d6875c" category="paragraph">您可以為 Cloud Volumes ONTAP BYOL 單一節點或 HA 配對系統購買多個節點型授權、以分配超過 368 TiB 的容量、最多可分配 2 PIB 的最大測試和支援系統容量限制。請注意、磁碟限制可能會讓您無法單獨使用磁碟來達到容量限制。您可以超越磁碟限制<block ref="aea0958203307daa433f894622f3e640" category="inline-link-rx"></block>。<block ref="ca37ce4dde5616ef242d545490c7e6ee" category="inline-link-rx"></block>。雖然 Cloud Volumes ONTAP 支援最多 2 個 PIB 的最大測試和支援系統容量、但超過 2 個 PIB 限制會導致系統組態不受支援。</block>
+  <block id="de9d6749570efc87e63811b5947fc250" category="paragraph">AWS Secret Cloud 和 Top Secret Cloud 地區支援從 Cloud Volumes ONTAP 9.12.1 開始購買多個節點型授權。</block>
 </blocks>
