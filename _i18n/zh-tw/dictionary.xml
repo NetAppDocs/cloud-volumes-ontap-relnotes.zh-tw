@@ -695,4 +695,15 @@
   <block id="fd164e9cb2bc1ac5405cabfe451663f7" category="cell">2 PIB （需要多個授權）</block>
   <block id="2dbd9a217bce4c7ba4ef467f57d6875c" category="paragraph">您可以為 Cloud Volumes ONTAP BYOL 單一節點或 HA 配對系統購買多個節點型授權、以分配超過 368 TiB 的容量、最多可分配 2 PIB 的最大測試和支援系統容量限制。請注意、磁碟限制可能會讓您無法單獨使用磁碟來達到容量限制。您可以超越磁碟限制<block ref="aea0958203307daa433f894622f3e640" category="inline-link-rx"></block>。<block ref="ca37ce4dde5616ef242d545490c7e6ee" category="inline-link-rx"></block>。雖然 Cloud Volumes ONTAP 支援最多 2 個 PIB 的最大測試和支援系統容量、但超過 2 個 PIB 限制會導致系統組態不受支援。</block>
   <block id="de9d6749570efc87e63811b5947fc250" category="paragraph">AWS Secret Cloud 和 Top Secret Cloud 地區支援從 Cloud Volumes ONTAP 9.12.1 開始購買多個節點型授權。</block>
+  <block id="b80fdfea42d505d96700af73261164a3" category="section-title">HA與頁面blob配對</block>
+  <block id="2cdb7e570d475b109f07d648d27eec58" category="list-text">DS5_v2 ^1^</block>
+  <block id="5631d6c294c4b6398535b6dd0c9a2475" category="list-text">DS14_v2 ^1^</block>
+  <block id="1c593d3ddd7d37cba983231fd6abdd9d" category="list-text">DS15_v2 ^1^</block>
+  <block id="0b9dfa1d6e582593bcd75a94bfaa5add" category="list-text">E48s_v3 ^1^</block>
+  <block id="45af86f1009df1b7e7575bd510350625" category="list-text">E32ds_v4 ^1、3^</block>
+  <block id="70f33ddea414a26001d98ec1ee7c49a4" category="list-text">E48ds_v4 ^1 、 3^</block>
+  <block id="338b010678cca88a9e61c9a5b5db4e85" category="list-text">E80ids_v4 ^1、2、3^</block>
+  <block id="540e57f70019c3eb8d7fb999259fd473" category="cell">頁面</block>
+  <block id="6098d03c49b315476cd9c4d4eb330395" category="list-text">使用HA配對時、支援這些VM類型的高速寫入速度。Cloud Volumes ONTAP您可以在部署期間或之後的任何時間、從BlueXP啟用高速寫入速度。<block ref="18805b87db41583a67ecc2414d022f2b" category="inline-link-rx"></block>。</block>
+  <block id="bcc4564bd7fc660f5dd5b39219b9775f" category="list-text">這些VM僅支援Cloud Volumes ONTAP 部署不支援使用支援的版本。有了這些VM類型、您可以將現有的頁面配置從Cloud Volumes ONTAP 版本資訊的版本9.11.1升級至9.12.1.您無法使用Cloud Volumes ONTAP 更新版本的更新版本執行新的頁面配置。</block>
 </blocks>
