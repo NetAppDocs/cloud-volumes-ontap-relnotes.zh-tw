@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: reference-new.html 
 keywords: 'what"s new, new, features, release notes, enhancements' 
-summary: Cloud Volumes ONTAP 9.14.0 包含全新增強功能。 
+summary: Cloud Volumes ONTAP 9.14.1 包含新的增強功能。 
 ---
-= Cloud Volumes ONTAP 9.14.0 的新增功能
+= Cloud Volumes ONTAP 9.14.1 的新功能
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,31 +14,15 @@ summary: Cloud Volumes ONTAP 9.14.0 包含全新增強功能。
 
 
 [role="lead"]
-Cloud Volumes ONTAP 9.14.0 包含全新增強功能。
+Cloud Volumes ONTAP 9.14.1 包含新的增強功能。
 
 最新版的BlueXP也會提供其他功能和增強功能。請參閱 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["BlueXP版本說明"^] 以取得詳細資料。
 
 
 
-== 9.14.0 P1 （ 2023 年 11 月 10 日）
+== 9.14.1 RC1 （ 2023 年 12 月 6 日）
 
-如果您有執行 3.9.27 版或更新版本的 Connector 、則所有雲端供應商都可以使用 9.14.0 P1 修補程式 Cloud Volumes ONTAP 。BlueXP會提示您將現有系統升級至此修補程式版本。
-
-link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.14.0P1["檢視 P1 修補程式中修正的錯誤清單"^] （需登入 NetApp 支援網站）。
-
-
-
-== 9.14.0 （ 2023 年 9 月 29 日）
-
-Cloud Volumes ONTAP 9.14.0 的一般可用度（ GA ）版本現已在 AWS 、 Azure 和 Google Cloud 中推出。此版本包含下列新功能與增強功能。
-
-
-
-=== Azure 中的 SnapMirror 流量分隔
-
-現在您可以將 SnapMirror 複寫流量與資料和管理流量隔離。這項新功能可讓您利用無法路由傳送至現有子網路的額外子網路來分隔 SnapMirror 複寫流量、以供資料和管理流量使用。
-
-深入瞭解如何操作 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-segregate-snapmirror-azure.html["分離 Azure 中的 SnapMirror 流量"^]。
+Cloud Volumes ONTAP 9.14.1 的 Release Candidate 1 現已在 AWS 、 Azure 和 Google Cloud 中推出。
 
 
 
@@ -58,13 +42,13 @@ link:http://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap
 
 === 支援的升級途徑
 
-您可以從 9.13.1 版本升級至 Cloud Volumes ONTAP 9.14.0 。BlueXP會提示您將合格Cloud Volumes ONTAP 的更新版升級至此版本。
+您可以從 9.13.1 和 9.14.0 版本升級至 Cloud Volumes ONTAP 9.14.1 。BlueXP會提示您將合格Cloud Volumes ONTAP 的更新版升級至此版本。
 
 
 
 === 所需版本的Connector
 
-BlueXP Connector 必須執行 3.9.27 版或更新版本、才能部署新的 Cloud Volumes ONTAP 9.14.0 系統、並將現有系統升級至 9.14.0 。
+BlueXP Connector 必須執行 3.9.27 版或更新版本、才能部署新的 Cloud Volumes ONTAP 9.14.1 系統、並將現有系統升級至 9.14.1 。
 
 
 TIP: 連接器的自動升級預設為啟用、因此您應該執行最新版本。
