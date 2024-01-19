@@ -168,7 +168,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-managing-svms-gcp.
 | 邏輯儲存設備 | 參數 | 限制 
 
 
-.2+| *檔案* | 最大尺寸 | 16 TB 
+.2+| *檔案* | 最大大小 ^2^ | 128 TB 
 
 
 | 每個Volume的最大值 | 磁碟區大小視情況而定、高達20億 
@@ -183,7 +183,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-managing-svms-gcp.
 | 最小尺寸 | 20 MB 
 
 
-| 最大尺寸 | 100 TB 
+| 最大大小 ^3^ | 300 TiB 
 
 
 | * qtree * | 每FlexVol 個速度區塊的最大值 | 4、995 
@@ -192,6 +192,13 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-managing-svms-gcp.
 | * Snapshot複本* | 每FlexVol 個速度區塊的最大值 | 1、023 
 |===
 . 階層式複製深度是FlexClone Volume的巢狀階層架構深度上限、可從單FlexVol 一的實體磁碟區建立。
+. 從 ONTAP 9.12.1P2 開始、上限為 128 TB 。在 ONTAP 9.11.1 及更早版本中、上限為 16 TB 。
+. 使用下列工具和最低版本、可建立最多 300 TiB 的 FlexVol Volume ：
++
+** 從 Cloud Volumes ONTAP 9.12.1 P2 和 9.13.0 P2 開始、系統管理員和 ONTAP CLI
+** BlueXP 從 Cloud Volumes ONTAP 9.13.1 開始
+
+
 
 
 

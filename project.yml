@@ -85,46 +85,6 @@ sidebar:
     url: "/reference-provider-integrations.html"
   - title: 法律聲明
     url: "/legal-notices.html"
-homepage:
-  tiles:
-  - title: 開始使用
-    links:
-    - title: 新增功能
-      url: reference-new.html
-    - title: 授權總覽
-      url: concept-licensing.html
-  - title: Amazon Web Services
-    links:
-    - title: 支援的組態
-      url: reference-configs-aws.html
-    - title: 儲存限制
-      url: reference-limits-aws.html
-    - title: 限制
-      url: reference-limitations-aws.html
-  - title: Google Cloud
-    links:
-    - title: 支援的組態
-      url: reference-configs-gcp.html
-    - title: 儲存限制
-      url: reference-limits-gcp.html
-    - title: 限制
-      url: reference-limitations-gcp.html
-  - title: Microsoft Azure
-    links:
-    - title: 支援的組態
-      url: reference-configs-azure.html
-    - title: 儲存限制
-      url: reference-limits-azure.html
-    - title: 限制
-      url: reference-limitations-azure.html
-  - title: 部落格社群
-    links:
-    - title: NetApp社群
-      url: https://community.netapp.com/t5/Cloud-Data-Services/ct-p/CDS
-    - title: BlueXP部落格
-      url: https://cloud.netapp.com/blog
-    - title: 雲端網路研討會
-      url: https://cloud.netapp.com/events
 product-family:
   name: BlueXP
   repo: bluexp-family
