@@ -156,6 +156,24 @@ NetApp不支援超過系統容量限制。如果您達到授權容量上限、�
 | E80ids_v4 | 61. | 896 TiB | 2 PIB 
 
 
+| E4ds_v5 | 5. | 160 TiB | 2 PIB 
+
+
+| E8ds_v5 | 13. | 416 TiB | 2 PIB 
+
+
+| E20ds_v5 | 29 | 896 TiB | 2 PIB 
+
+
+| E32ds_v5 | 29 | 896 TiB | 2 PIB 
+
+
+| E48ds_v5 | 29 | 896 TiB | 2 PIB 
+
+
+| E64ds_v5 | 29 | 896 TiB | 2 PIB 
+
+
 | L8s_v3 | 12. | 384 TiB | 2 PIB 
 
 
@@ -232,6 +250,21 @@ NetApp不支援超過系統容量限制。如果您達到授權容量上限、�
 | E80ids_v4 | 28.28 | 896 TiB | 2 PIB 
 
 
+| E8ds_v5 | 12. | 384 TiB | 2 PIB 
+
+
+| E20ds_v5 | 28.28 | 896 TiB | 2 PIB 
+
+
+| E32ds_v5 | 28.28 | 896 TiB | 2 PIB 
+
+
+| E48ds_v5 | 28.28 | 896 TiB | 2 PIB 
+
+
+| E64ds_v5 | 28.28 | 896 TiB | 2 PIB 
+
+
 | L16s_v3 | 28.28 | 896 TiB | 2 PIB 
 
 
@@ -262,6 +295,21 @@ NetApp不支援超過系統容量限制。如果您達到授權容量上限、�
 
 
 | E80ids_v4 | 28.28 | 896 TiB | 2 PIB 
+
+
+| E8ds_v5 | 12. | 384 TiB | 2 PIB 
+
+
+| E20ds_v5 | 28.28 | 896 TiB | 2 PIB 
+
+
+| E32ds_v5 | 28.28 | 896 TiB | 2 PIB 
+
+
+| E48ds_v5 | 28.28 | 896 TiB | 2 PIB 
+
+
+| E64ds_v5 | 28.28 | 896 TiB | 2 PIB 
 
 
 | L16s_v3 | 28.28 | 896 TiB | 2 PIB 
@@ -322,6 +370,18 @@ NetApp不支援超過系統容量限制。如果您達到授權容量上限、�
 
 
 | E80ids_v4 | 61. | 368TiB | 368TiB 
+
+
+| E20ds_v5 | 29 | 896 TiB | 2 PIB 
+
+
+| E32ds_v5 | 29 | 896 TiB | 2 PIB 
+
+
+| E48ds_v5 | 29 | 896 TiB | 2 PIB 
+
+
+| E64ds_v5 | 29 | 896 TiB | 2 PIB 
 |===
 ====
 .單一節點搭配BYOL
@@ -381,6 +441,24 @@ NetApp不支援超過系統容量限制。如果您達到授權容量上限、�
 
 
 | E80ids_v4 | 61. | 368TiB | 368TiB | 896 TiB | 2 PIB 
+
+
+| E4ds_v5 | 5. | 160 TiB | 368TiB | 160 TiB | 2 PIB 
+
+
+| E8ds_v5 | 13. | 368TiB | 368TiB | 416 TiB | 2 PIB 
+
+
+| E20ds_v5 | 29 | 368TiB | 368TiB | 896 TiB | 2 PIB 
+
+
+| E32ds_v5 | 29 | 368TiB | 368TiB | 896 TiB | 2 PIB 
+
+
+| E48ds_v5 | 29 | 368TiB | 368TiB | 896 TiB | 2 PIB 
+
+
+| E64ds_v5 | 29 | 368TiB | 368TiB | 896 TiB | 2 PIB 
 |===
 ====
 
@@ -436,6 +514,18 @@ HA配對有兩種組態類型：頁面blob和多個可用度區域。每個組�
 
 
 | E80ids_v4 | 28.28 | 368TiB | 368TiB 
+
+
+| E20ds_v5 | 28.28 | 896 TiB | 2 PIB 
+
+
+| E32ds_v5 | 28.28 | 896 TiB | 2 PIB 
+
+
+| E48ds_v5 | 28.28 | 896 TiB | 2 PIB 
+
+
+| E64ds_v5 | 28.28 | 896 TiB | 2 PIB 
 |===
 ====
 .BYOL：單一可用度區域中的HA配對與分頁區配對
@@ -503,6 +593,21 @@ HA配對有兩種組態類型：頁面blob和多個可用度區域。每個組�
 
 
 | E80ids_v4 | 28.28 | 368TiB | 368TiB | 368TiB | 2 PIB 
+
+
+| E8ds_v5 | 12. | 368TiB | 368TiB | 368TiB | 2 PIB 
+
+
+| E20ds_v5 | 28.28 | 368TiB | 368TiB | 368TiB | 2 PIB 
+
+
+| E32ds_v5 | 28.28 | 368TiB | 368TiB | 368TiB | 2 PIB 
+
+
+| E48ds_v5 | 28.28 | 368TiB | 368TiB | 368TiB | 2 PIB 
+
+
+| E64ds_v5 | 28.28 | 368TiB | 368TiB | 368TiB | 2 PIB 
 |===
 ====
 

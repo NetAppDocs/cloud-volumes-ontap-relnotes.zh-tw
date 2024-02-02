@@ -24,6 +24,8 @@ Azure中提供的支援可作為單一節點系統、以及高可用度（HA）�
 
 不支援將單一節點系統升級為HA配對。如果您想在單一節點系統和HA配對之間切換、則需要部署新系統、並將資料從現有系統複寫到新系統。
 
+可在雲端供應商的保留或隨需VM執行個體上執行。Cloud Volumes ONTAP不支援使用其他VM執行個體類型的解決方案。
+
 
 
 === 單一節點系統
@@ -49,11 +51,17 @@ Azure中提供的支援可作為單一節點系統、以及高可用度（HA）�
 * E32s_v3 ^3^
 * E48s_v3 ^3^
 * E64is_v3 ^3^
-* E4ds_v4 ^3^
-* E8ds_v4 ^3^
+* E4ds_v4
+* E8ds_v4
 * E32ds_v4 ^3^
 * E48ds_v4 ^3^
 * E80ids_v4 ^3^
+* E4ds_v5
+* E8ds_v5
+* E20s_v5 ^3^
+* E32ds_v5 ^3^
+* E48ds_v5 ^3^
+* E64ds_v5 ^3^
 * L8s_v3 ^2^
 * L16s_v3 ^2^
 * L32s_v3 ^2^
@@ -85,12 +93,14 @@ Azure中提供的支援可作為單一節點系統、以及高可用度（HA）�
  a| 
 * E4s_v3
 * E4ds_v4 ^3^
+* E4ds_v5
 
  a| 
 * DS4_v2
 * DS13_v2
 * E8s_v3
 * E8ds_v4 ^3^
+* E8ds_v5
 * L8s_v3 ^2^
 
  a| 
@@ -103,6 +113,10 @@ Azure中提供的支援可作為單一節點系統、以及高可用度（HA）�
 * E32ds_v4 ^3^
 * E48ds_v4 ^3^
 * E80ids_v4 ^3^
+* E20ds_v5
+* E32ds_v5
+* E48ds_v5
+* E64ds_v5
 
  a| 
 * DS4_v2
@@ -120,6 +134,12 @@ Azure中提供的支援可作為單一節點系統、以及高可用度（HA）�
 * E32ds_v4 ^3^
 * E48ds_v4 ^3^
 * E80ids_v4 ^3^
+* E4ds_v5
+* E8ds_v5
+* E20ds_v5
+* E32ds_v5
+* E48ds_v5
+* E64ds_v5
 * L8s_v3 ^2^
 * L16s_v3 ^2^
 * L32s_v3 ^2^
@@ -137,16 +157,9 @@ Azure中提供的支援可作為單一節點系統、以及高可用度（HA）�
 . 這種VM類型包括本機NVMe儲存設備、Cloud Volumes ONTAP 這些儲存設備以_Flash Cache的形式使用。Flash Cache 可透過即時智慧快取來加速資料存取、快取最近讀取的使用者資料和 NetApp 中繼資料。它適用於隨機讀取密集的工作負載、包括資料庫、電子郵件和檔案服務。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-flash-cache.html["深入瞭解"^]。
 . 這些VM類型使用 https://docs.microsoft.com/en-us/azure/virtual-machines/windows/disks-enable-ultra-ssd["超SSD"^] 適用於VNVRAM、可提供更佳的寫入效能。
 +
-如果您在部署新Cloud Volumes ONTAP 的支援系統時選擇任何一種VM類型、就無法改用另一種VM類型、也就是_不使用適用於VNVRAM的Ultra SSD。例如、您無法從E8ds_v4變更為E8s_v3、但您可以從E8ds_v4變更為E32ds_v4、因為這兩種VM類型都使用Ultra SSD。
-
-+
-相反地、如果您Cloud Volumes ONTAP 使用任何其他VM類型來部署支援功能、您將無法變更為使用Ultra SSD來執行VNVRAM的VM類型。例如、您無法從E8s_v3變更為E8ds_v4。
+如果您在部署新Cloud Volumes ONTAP 的支援系統時選擇任何一種VM類型、就無法改用另一種VM類型、也就是_不使用適用於VNVRAM的Ultra SSD。相反地、如果您Cloud Volumes ONTAP 使用任何其他VM類型來部署支援功能、您將無法變更為使用Ultra SSD來執行VNVRAM的VM類型。
 
 . 使用單一節點系統時、所有執行個體類型都支援高速寫入。您可以在部署期間或之後的任何時間、從BlueXP啟用高速寫入速度。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-write-speed.html["深入瞭解如何選擇寫入速度"^]。
-. 使用SSD時可啟用增強的寫入效能。
-. 如需Azure地區支援、請參閱 https://cloud.netapp.com/cloud-volumes-global-regions["Cloud Volumes全球區域"^]。
-. 可在雲端供應商的保留或隨需VM執行個體上執行。Cloud Volumes ONTAP不支援使用其他VM執行個體類型的解決方案。
-. 單一節點部署僅支援標準 SSD 、 HDD 和 Premium SSD 的本機備援儲存設備（ LRS ）託管磁碟。
 
 
 
@@ -179,6 +192,11 @@ Azure中提供的支援可作為單一節點系統、以及高可用度（HA）�
 * E32ds_v4 ^1、3^
 * E48ds_v4 ^1 、 3^
 * E80ids_v4 ^1、2、3^
+* E8ds_v5
+* E20s_v5 ^1^
+* E32ds_v5 ^1^
+* E48ds_v5 ^1^
+* E64ds_v5 ^1^
 
  a| 
 * DS4_v2
@@ -192,12 +210,18 @@ Azure中提供的支援可作為單一節點系統、以及高可用度（HA）�
 * E32ds_v4 ^1、3^
 * E48ds_v4 ^1 、 3^
 * E80ids_v4 ^1、2、3^
+* E8ds_v5
+* E20s_v5 ^1^
+* E32ds_v5 ^1^
+* E48ds_v5 ^1^
+* E64ds_v5 ^1^
 
  a| 
 * DS4_v2
 * DS13_v2
 * E8s_v3
 * E8ds_v4 ^3^
+* E8ds_v5
 
  a| 
 * DS5_v2 ^1^
@@ -207,6 +231,10 @@ Azure中提供的支援可作為單一節點系統、以及高可用度（HA）�
 * E32ds_v4 ^1、3^
 * E48ds_v4 ^1 、 3^
 * E80ids_v4 ^1、2、3^
+* E20ds_v5
+* E32ds_v5
+* E48ds_v5
+* E64ds_v5
 
  a| 
 * DS4_v2
@@ -220,6 +248,12 @@ Azure中提供的支援可作為單一節點系統、以及高可用度（HA）�
 * E32ds_v4 ^1、3^
 * E48ds_v4 ^1 、 3^
 * E80ids_v4 ^1、2、3^
+* E4ds_v5
+* E8ds_v5
+* E20ds_v5
+* E32ds_v5
+* E48ds_v5
+* E64ds_v5
 
 
 
@@ -252,6 +286,11 @@ Azure中提供的支援可作為單一節點系統、以及高可用度（HA）�
 * E32ds_v4 ^1、4^
 * E48ds_v4 ^1、4^
 * E80ids_v4 ^1、2、4^
+* E8ds_v5
+* E20s_v5 ^1^
+* E32ds_v5 ^1^
+* E48ds_v5 ^1^
+* E64ds_v5 ^1^
 * L16s_v3 ^1 、 4 、 5^
 * L32s_v3 ^1 、 4 、 5^
 * L48s_v3 ^1 、 4 、 5^
@@ -262,6 +301,11 @@ Azure中提供的支援可作為單一節點系統、以及高可用度（HA）�
 * E32ds_v4 ^1、4^
 * E48ds_v4 ^1、4^
 * E80ids_v4 ^1、2、4^
+* E8ds_v5
+* E20s_v5 ^1^
+* E32ds_v5 ^1^
+* E48ds_v5 ^1^
+* E64ds_v5 ^1^
 * L16s_v3 ^1 、 4 、 5^
 * L32s_v3 ^1 、 4 、 5^
 * L48s_v3 ^1 、 4 、 5^
@@ -269,11 +313,16 @@ Azure中提供的支援可作為單一節點系統、以及高可用度（HA）�
 
  a| 
 * E8ds_v4 ^4^
+* E8ds_v5
 
  a| 
 * E32ds_v4 ^1、4^
 * E48ds_v4 ^1、4^
 * E80ids_v4 ^1、2、4^
+* E20s_v5 ^1^
+* E32ds_v5 ^1^
+* E48ds_v5 ^1^
+* E64ds_v5 ^1^
 * L16s_v3 ^1 、 4 、 5^
 * L32s_v3 ^1 、 4 、 5^
 * L48s_v3 ^1 、 4 、 5^
@@ -284,6 +333,12 @@ Azure中提供的支援可作為單一節點系統、以及高可用度（HA）�
 * E32ds_v4 ^1、4^
 * E48ds_v4 ^1、4^
 * E80ids_v4 ^1、2、4^
+* E4ds_v5
+* E8ds_v5
+* E20s_v5 ^1^
+* E32ds_v5 ^1^
+* E48ds_v5 ^1^
+* E64ds_v5 ^1^
 * L16s_v3 ^1 、 4 、 5^
 * L32s_v3 ^1 、 4 、 5^
 * L48s_v3 ^1 、 4 、 5^
@@ -299,7 +354,7 @@ Azure中提供的支援可作為單一節點系統、以及高可用度（HA）�
 . 使用HA配對時、支援這些VM類型的高速寫入速度。Cloud Volumes ONTAP您可以在部署期間或之後的任何時間、從BlueXP啟用高速寫入速度。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-write-speed.html["深入瞭解如何選擇寫入速度"^]。
 . 建議僅在需要Azure維護控管時才使用此VM。由於價格較高、因此不建議用於任何其他使用案例。
 . 這些VM類型僅支援在共享託管磁碟上執行的單一可用度區域組態中的HA配對。
-. 在單一可用度區域中、HA配對支援這些VM類型、以及在共享託管磁碟上執行的多個可用度區域組態。對於 LS_v3 VM 類型、 ONTAP 9.13.1 版開始提供多個可用性區域支援。
+. 在單一可用度區域中、HA配對支援這些VM類型、以及在共享託管磁碟上執行的多個可用度區域組態。對於 LS_v3 VM 類型、 ONTAP 9.13.1 版開始提供多個可用性區域支援。對於 Eds_v5 VM 類型、多個可用性區域支援從 ONTAP 9.14.1 RC1 版開始。
 . 這種VM類型包括本機NVMe儲存設備、Cloud Volumes ONTAP 這些儲存設備以_Flash Cache的形式使用。Flash Cache 可透過即時智慧快取來加速資料存取、快取最近讀取的使用者資料和 NetApp 中繼資料。它適用於隨機讀取密集的工作負載、包括資料庫、電子郵件和檔案服務。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-flash-cache.html["深入瞭解"^]。
 
 
@@ -369,3 +424,9 @@ HA 配對使用 Azure 託管磁碟。支援下列磁碟類型和大小。
 * 16 TiB（僅限託管磁碟）
 * 32 TiB（僅限託管磁碟）
 
+
+
+
+== 支援的地區
+
+如需Azure地區支援、請參閱 https://cloud.netapp.com/cloud-volumes-global-regions["Cloud Volumes全球區域"^]。

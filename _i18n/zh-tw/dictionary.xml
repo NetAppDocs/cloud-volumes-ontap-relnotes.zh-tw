@@ -64,9 +64,6 @@
   <block id="d59048f21fd887ad520398ce677be586" category="inline-link">深入瞭解</block>
   <block id="11509498a3f1573cdde878f927dc10bd" category="inline-link">超SSD</block>
   <block id="9147ab73e7498660eae7ed2b4b8cca5c" category="list-text">這些VM類型使用<block ref="d656d82278337f3ecf8db6b2a30a45f2" category="inline-link-rx"></block> 適用於VNVRAM、可提供更佳的寫入效能。</block>
-  <block id="d2f103c82b43ca5f2da33f93d94bde64" category="paragraph">如果您在部署新Cloud Volumes ONTAP 的支援系統時選擇任何一種VM類型、就無法改用另一種VM類型、也就是_不使用適用於VNVRAM的Ultra SSD。例如、您無法從E8ds_v4變更為E8s_v3、但您可以從E8ds_v4變更為E32ds_v4、因為這兩種VM類型都使用Ultra SSD。</block>
-  <block id="c0f95d0d2e06eba7eb0522dabf1c9d76" category="paragraph">相反地、如果您Cloud Volumes ONTAP 使用任何其他VM類型來部署支援功能、您將無法變更為使用Ultra SSD來執行VNVRAM的VM類型。例如、您無法從E8s_v3變更為E8ds_v4。</block>
-  <block id="5063d3259058d90bbca06465957626d7" category="list-text">使用SSD時可啟用增強的寫入效能。</block>
   <block id="a3f8304ab1695053d71855c60f8abf63" category="inline-link">Cloud Volumes全球區域</block>
   <block id="7c7627c6477255acb2239bd1be90f346" category="list-text">如需Azure地區支援、請參閱<block ref="2b6a522631c3b3b8afac5466195e108a" category="inline-link-rx"></block>。</block>
   <block id="e7089e61c962cfdae0de5b1d0748b6f2" category="list-text">可在雲端供應商的保留或隨需VM執行個體上執行。Cloud Volumes ONTAP不支援使用其他VM執行個體類型的解決方案。</block>
@@ -654,7 +651,6 @@
   <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
   <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
-  <block id="f358bc744fba7780236855c1c4777b38" category="list-text">單一節點部署僅支援標準 SSD 、 HDD 和 Premium SSD 的本機備援儲存設備（ LRS ）託管磁碟。</block>
   <block id="c7316b16841dc002d14d45c38a750287" category="cell">L48s_v3</block>
   <block id="b9f4aa39433f5232d4ce50f2a9a3c403" category="cell">L64s_v3</block>
   <block id="83855cac4cd9fe299365bd61fece6bb1" category="inline-link-macro">AWS 中 Cloud Volumes ONTAP 9.14.0 中介人注意事項</block>
@@ -691,7 +687,6 @@
   <block id="5c5847596a7ce3d290253dfcdcfc153c" category="list-text">L32s_v3 ^1 、 4 、 5^</block>
   <block id="2bf4a4b22f921c225f089ec2954ee9e8" category="list-text">L48s_v3 ^1 、 4 、 5^</block>
   <block id="c130660d20dd5cec8fbf6045fb61af08" category="list-text">L64s_v3 ^1 、 4 、 5^</block>
-  <block id="885a1d815cf042f25bd0893361642b6e" category="list-text">在單一可用度區域中、HA配對支援這些VM類型、以及在共享託管磁碟上執行的多個可用度區域組態。對於 LS_v3 VM 類型、 ONTAP 9.13.1 版開始提供多個可用性區域支援。</block>
   <block id="64063abe39aac990beb215f4e4df9f92" category="cell">最大大小 ^2^</block>
   <block id="d0bb632fcdb31cf3c729c1c59f826d4f" category="cell">128 TB</block>
   <block id="95f8ab07e6196c13df81b9123cb42b19" category="cell">最大大小 ^3^</block>
@@ -700,4 +695,20 @@
   <block id="44693df7930e7e6d7bb4f466625bc372" category="list-text">使用下列工具和最低版本、可建立最多 300 TiB 的 FlexVol Volume ：</block>
   <block id="5680c249ee040de9c43f982996ed2a24" category="list-text">從 Cloud Volumes ONTAP 9.12.1 P2 和 9.13.0 P2 開始、系統管理員和 ONTAP CLI</block>
   <block id="68c68c70121e1d9364223bb9fded83b0" category="list-text">BlueXP 從 Cloud Volumes ONTAP 9.13.1 開始</block>
+  <block id="0ce1565dc58071deb098bde3e5a6a4b6" category="cell">E4ds_v5</block>
+  <block id="625fbc51242c48d9e17a8b8b2fe6e5c7" category="cell">E8ds_v5</block>
+  <block id="f88888fbc8a693671b869eaeffac30c7" category="cell">E20ds_v5</block>
+  <block id="708880d509c52585ca0500cd17ef2166" category="cell">E32ds_v5</block>
+  <block id="843cc0b63b36e79d0bdf4097a1b84b6a" category="cell">E48ds_v5</block>
+  <block id="6ec5cb856eb24c85cf7368cdfd11627f" category="cell">E64ds_v5</block>
+  <block id="b6790e9906c52994b7483168ff273d22" category="list-text">E20s_v5 ^3^</block>
+  <block id="24dbf97d0023e83cab10de240d1d2054" category="list-text">E32ds_v5 ^3^</block>
+  <block id="b911e2432937ce8e1c8ac00664872f8b" category="list-text">E48ds_v5 ^3^</block>
+  <block id="6f223a60d36f80343c253128f00e82ce" category="list-text">E64ds_v5 ^3^</block>
+  <block id="b29992b09572a94f43a61f1b5fd810e9" category="paragraph">如果您在部署新Cloud Volumes ONTAP 的支援系統時選擇任何一種VM類型、就無法改用另一種VM類型、也就是_不使用適用於VNVRAM的Ultra SSD。相反地、如果您Cloud Volumes ONTAP 使用任何其他VM類型來部署支援功能、您將無法變更為使用Ultra SSD來執行VNVRAM的VM類型。</block>
+  <block id="c0cc08e6c7e64a5531dd51afd8a3ed6e" category="list-text">E20s_v5 ^1^</block>
+  <block id="e002cc59f5a826e5838dde797b6a9f2b" category="list-text">E32ds_v5 ^1^</block>
+  <block id="c0147218881d0d0fb9dddce993d7c08c" category="list-text">E48ds_v5 ^1^</block>
+  <block id="d071b0d9481cad34966de3c7caf72b29" category="list-text">E64ds_v5 ^1^</block>
+  <block id="c3e43237d47ac4f8f0c184c56276c958" category="list-text">在單一可用度區域中、HA配對支援這些VM類型、以及在共享託管磁碟上執行的多個可用度區域組態。對於 LS_v3 VM 類型、 ONTAP 9.13.1 版開始提供多個可用性區域支援。對於 Eds_v5 VM 類型、多個可用性區域支援從 ONTAP 9.14.1 RC1 版開始。</block>
 </blocks>
