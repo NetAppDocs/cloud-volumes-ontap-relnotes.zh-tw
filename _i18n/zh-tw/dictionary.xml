@@ -711,4 +711,6 @@
   <block id="c0147218881d0d0fb9dddce993d7c08c" category="list-text">E48ds_v5 ^1^</block>
   <block id="d071b0d9481cad34966de3c7caf72b29" category="list-text">E64ds_v5 ^1^</block>
   <block id="c3e43237d47ac4f8f0c184c56276c958" category="list-text">在單一可用度區域中、HA配對支援這些VM類型、以及在共享託管磁碟上執行的多個可用度區域組態。對於 LS_v3 VM 類型、 ONTAP 9.13.1 版開始提供多個可用性區域支援。對於 Eds_v5 VM 類型、多個可用性區域支援從 ONTAP 9.14.1 RC1 版開始。</block>
+  <block id="fa399104e53f295813fa209a617a3bfe" category="list-text">E20ds_v5 ^3^</block>
+  <block id="6c390ecab52e3e5345764abdf66b4a13" category="list-text">E20ds_v5 ^1^</block>
 </blocks>
