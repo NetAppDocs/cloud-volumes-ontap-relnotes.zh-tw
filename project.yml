@@ -7,6 +7,7 @@ settings:
   prod:
     pdf_enabled: true
     harmony_enabled: false
+  rss_page: whats-new.html
   versions:
   - version-number: 9.14.1
     url: "/cloud-volumes-ontap-relnotes"

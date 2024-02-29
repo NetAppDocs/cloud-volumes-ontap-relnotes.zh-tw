@@ -38,10 +38,10 @@ AWS可在單一節點系統中使用、也可作為高可用度（HA）節點配
 
 [cols="h,d,d,d,d,d,d"]
 |===
-|  | Freemium | PAYGO瀏覽 | PAYGO標準 | PAYGO Premium | 節點型BYOL | 容量型授權 
+|  | Freemium | 容量型授權 | PAYGO瀏覽 | PAYGO標準 | PAYGO Premium | 節點型BYOL 
 
 
-| 最大系統容量（磁碟+物件儲存）^1^ | 500 GiB | 2 TiB | 10 TiB | 368TiB ^2^ | 每個授權368TiB ^2^ | 2 PIB ^2^ 
+| 最大系統容量（磁碟+物件儲存）^1^ | 500 GiB | 2 PIB ^2^ | 2 TiB | 10 TiB | 368TiB ^2^ | 每個授權368TiB ^2^ 
 
 
 | 支援的磁碟類型  a| 

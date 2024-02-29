@@ -26,7 +26,6 @@
   <block id="9f1dc929787c1a2d05667987a87c083b" category="paragraph">Azure中提供的支援可作為單一節點系統、以及高可用度（HA）節點配對、以提供容錯能力和不中斷營運。Cloud Volumes ONTAP</block>
   <block id="ffe182d798fac96ff130cb1500052036" category="paragraph">不支援將單一節點系統升級為HA配對。如果您想在單一節點系統和HA配對之間切換、則需要部署新系統、並將資料從現有系統複寫到新系統。</block>
   <block id="078325cc35a9c8c9290e445f32bd1855" category="section-title">單一節點系統</block>
-  <block id="c817f6adbd40857622b1c5875284dccf" category="paragraph">當您在Cloud Volumes ONTAP Azure中部署以單節點系統的方式部署時、可以從下列組態中進行選擇：</block>
   <block id="d41d8cd98f00b204e9800998ecf8427e" category="cell"></block>
   <block id="d8fe59d93325a956d9b5fd3e85bb96d8" category="cell">Freemium</block>
   <block id="671e8254c7b0d121dddb0c891a704d08" category="cell">PAYGO瀏覽</block>
@@ -342,7 +341,6 @@
   <block id="5f807342ab46838a576d3111827add1c" category="cell">2 TB（Explore不支援資料分層）</block>
   <block id="1191f788083da9194f8eef9400d10898" category="cell">10 TB</block>
   <block id="86eaddcad9cef8a014b014a3ad2afb9c" category="cell">3668 TB</block>
-  <block id="38797647ee0806ca5a6dba902f03f6e0" category="cell">每個授權368TB</block>
   <block id="ce5ee1bd79a3fbc4ee9fee207a94ef54" category="paragraph">容量限制適用於整個HA配對。不是每個節點。例如、如果您使用Premium授權、則兩個節點之間最多可有368TB的容量。</block>
   <block id="466cd90b62b5da75ee4bd662add41e7f" category="section-title">磁碟和分層限制</block>
   <block id="08fca9107919e2a3190d5edc75ce7c61" category="cell">最大資料磁碟數</block>
@@ -452,7 +450,6 @@
   <block id="1e6996b39daf779b565c50c8411fbc8d" category="paragraph"><block ref="8e36f0f32d75ebd3c7851e726c538544" category="inline-link-rx"></block>。</block>
   <block id="9141535b8d150812f3cded29f090ad8c" category="summary">Google Cloud支援多Cloud Volumes ONTAP 種支援的支援功能。</block>
   <block id="9e931b1cee40a7346d1f06dd6a75ba8e" category="doc">Google Cloud支援的組態</block>
-  <block id="0c11951245f2ef7895ea0fc514386d6e" category="paragraph">在Google Cloud Platform中、可將其作為單一節點系統、並以高可用度（HA）節點配對的形式提供、以提供容錯能力和不中斷營運。Cloud Volumes ONTAP</block>
   <block id="12fe559ef81ce645ef1aee77885e1827" category="paragraph">不支援將單一節點系統升級為HA配對。如果您想在單一節點系統和HA配對之間切換、則需要部署新系統、並將資料從現有系統複寫到新系統。</block>
   <block id="8c0495bb0212f48146ab592de8a205d9" category="cell">2 TB ^2^</block>
   <block id="c217f1a10b2c84178d69b991f9ca2a8d" category="cell">支援的機器類型^3^</block>
@@ -466,7 +463,6 @@
   <block id="b4c4a8c75337dc28089aec3e79ae943c" category="list-text">PAYGO Explore不支援將資料分層至Google Cloud Storage。</block>
   <block id="46e869bc0f7a5fcdc09df010e1f48b25" category="list-text">全新Cloud Volumes ONTAP 的功能不再支援custom 4-16384機器類型。</block>
   <block id="0e3cb01898d99d0091e2a6f5a7572390" category="paragraph">如果您在此機器類型上執行現有的系統、您可以繼續使用、但我們建議您切換至n2-Standard-4機器類型。</block>
-  <block id="7093754c2bc2f151c7deef337385971a" category="list-text">如需Google Cloud Platform區域支援、請參閱<block ref="2b6a522631c3b3b8afac5466195e108a" category="inline-link-rx"></block>。</block>
   <block id="d29bff99e1f1d5529824e9017672d630" category="paragraph">在Google Cloud中、Aggregate最多可包含6個相同類型和大小的磁碟。支援下列磁碟大小：</block>
   <block id="dcfebc6fbca2c5316f55c914e6593d2d" category="list-text">100 GB</block>
   <block id="70f79b00cb7649d94d473895d6c540d2" category="list-text">1 TB</block>
@@ -705,12 +701,20 @@
   <block id="24dbf97d0023e83cab10de240d1d2054" category="list-text">E32ds_v5 ^3^</block>
   <block id="b911e2432937ce8e1c8ac00664872f8b" category="list-text">E48ds_v5 ^3^</block>
   <block id="6f223a60d36f80343c253128f00e82ce" category="list-text">E64ds_v5 ^3^</block>
-  <block id="b29992b09572a94f43a61f1b5fd810e9" category="paragraph">如果您在部署新Cloud Volumes ONTAP 的支援系統時選擇任何一種VM類型、就無法改用另一種VM類型、也就是_不使用適用於VNVRAM的Ultra SSD。相反地、如果您Cloud Volumes ONTAP 使用任何其他VM類型來部署支援功能、您將無法變更為使用Ultra SSD來執行VNVRAM的VM類型。</block>
   <block id="c0cc08e6c7e64a5531dd51afd8a3ed6e" category="list-text">E20s_v5 ^1^</block>
   <block id="e002cc59f5a826e5838dde797b6a9f2b" category="list-text">E32ds_v5 ^1^</block>
   <block id="c0147218881d0d0fb9dddce993d7c08c" category="list-text">E48ds_v5 ^1^</block>
   <block id="d071b0d9481cad34966de3c7caf72b29" category="list-text">E64ds_v5 ^1^</block>
   <block id="c3e43237d47ac4f8f0c184c56276c958" category="list-text">在單一可用度區域中、HA配對支援這些VM類型、以及在共享託管磁碟上執行的多個可用度區域組態。對於 LS_v3 VM 類型、 ONTAP 9.13.1 版開始提供多個可用性區域支援。對於 Eds_v5 VM 類型、多個可用性區域支援從 ONTAP 9.14.1 RC1 版開始。</block>
-  <block id="fa399104e53f295813fa209a617a3bfe" category="list-text">E20ds_v5 ^3^</block>
   <block id="6c390ecab52e3e5345764abdf66b4a13" category="list-text">E20ds_v5 ^1^</block>
+  <block id="ea724697af39ce2b490b5643777ed273" category="paragraph">Cloud Volumes ONTAP 可在 Google Cloud 中作為單一節點系統使用、也可作為高可用度（ HA ）節點配對、以提供容錯能力和不中斷營運的功能。</block>
+  <block id="f52ead6bbf1fb1c871d206603e5a2347" category="open-title">容量型授權</block>
+  <block id="6e539d2ea7d82ed0e31c450e64ff8c04" category="cell">最佳化</block>
+  <block id="82fc13b1b2688039a14feb2fc8785cad" category="cell">容量型授權（ Essentials 、 Professional 和 Edge Cache ）</block>
+  <block id="d56bf07ec8cd4e9f29339d605ffef95c" category="open-title">節點型授權</block>
+  <block id="b338d2a3e5b2fa0602cf93fe49c51138" category="paragraph">如需 Google Cloud 地區支援、請參閱<block ref="2b6a522631c3b3b8afac5466195e108a" category="inline-link-rx"></block>。</block>
+  <block id="bde67b5966889851166e3f5c7b09ff05" category="paragraph">在 Azure 中將 Cloud Volumes ONTAP 部署為單一節點系統時、您可以選擇下列容量型或節點型授權組態。</block>
+  <block id="d2f103c82b43ca5f2da33f93d94bde64" category="paragraph">如果您在部署新Cloud Volumes ONTAP 的支援系統時選擇任何一種VM類型、就無法改用另一種VM類型、也就是_不使用適用於VNVRAM的Ultra SSD。例如、您無法從E8ds_v4變更為E8s_v3、但您可以從E8ds_v4變更為E32ds_v4、因為這兩種VM類型都使用Ultra SSD。</block>
+  <block id="c0f95d0d2e06eba7eb0522dabf1c9d76" category="paragraph">相反地、如果您Cloud Volumes ONTAP 使用任何其他VM類型來部署支援功能、您將無法變更為使用Ultra SSD來執行VNVRAM的VM類型。例如、您無法從E8s_v3變更為E8ds_v4。</block>
+  <block id="5063d3259058d90bbca06465957626d7" category="list-text">使用SSD時可啟用增強的寫入效能。</block>
 </blocks>
