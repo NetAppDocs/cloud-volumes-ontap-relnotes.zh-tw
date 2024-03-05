@@ -717,4 +717,6 @@
   <block id="d2f103c82b43ca5f2da33f93d94bde64" category="paragraph">如果您在部署新Cloud Volumes ONTAP 的支援系統時選擇任何一種VM類型、就無法改用另一種VM類型、也就是_不使用適用於VNVRAM的Ultra SSD。例如、您無法從E8ds_v4變更為E8s_v3、但您可以從E8ds_v4變更為E32ds_v4、因為這兩種VM類型都使用Ultra SSD。</block>
   <block id="c0f95d0d2e06eba7eb0522dabf1c9d76" category="paragraph">相反地、如果您Cloud Volumes ONTAP 使用任何其他VM類型來部署支援功能、您將無法變更為使用Ultra SSD來執行VNVRAM的VM類型。例如、您無法從E8s_v3變更為E8ds_v4。</block>
   <block id="5063d3259058d90bbca06465957626d7" category="list-text">使用SSD時可啟用增強的寫入效能。</block>
+  <block id="d1558822f85e59c70aa33c6ac2678132" category="section-title">9.14.1 GA （ 2024 年 3 月 5 日）</block>
+  <block id="10715dcbdc97f5e0e1debf8bac3a4ba4" category="paragraph">Cloud Volumes ONTAP 9.14.1 一般可用度版本現已在 AWS 、 Azure 和 Google Cloud 中推出。</block>
 </blocks>
