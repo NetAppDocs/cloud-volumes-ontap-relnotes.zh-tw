@@ -697,11 +697,9 @@
   <block id="708880d509c52585ca0500cd17ef2166" category="cell">E32ds_v5</block>
   <block id="843cc0b63b36e79d0bdf4097a1b84b6a" category="cell">E48ds_v5</block>
   <block id="6ec5cb856eb24c85cf7368cdfd11627f" category="cell">E64ds_v5</block>
-  <block id="b6790e9906c52994b7483168ff273d22" category="list-text">E20s_v5 ^3^</block>
   <block id="24dbf97d0023e83cab10de240d1d2054" category="list-text">E32ds_v5 ^3^</block>
   <block id="b911e2432937ce8e1c8ac00664872f8b" category="list-text">E48ds_v5 ^3^</block>
   <block id="6f223a60d36f80343c253128f00e82ce" category="list-text">E64ds_v5 ^3^</block>
-  <block id="c0cc08e6c7e64a5531dd51afd8a3ed6e" category="list-text">E20s_v5 ^1^</block>
   <block id="e002cc59f5a826e5838dde797b6a9f2b" category="list-text">E32ds_v5 ^1^</block>
   <block id="c0147218881d0d0fb9dddce993d7c08c" category="list-text">E48ds_v5 ^1^</block>
   <block id="d071b0d9481cad34966de3c7caf72b29" category="list-text">E64ds_v5 ^1^</block>
@@ -719,4 +717,5 @@
   <block id="5063d3259058d90bbca06465957626d7" category="list-text">使用SSD時可啟用增強的寫入效能。</block>
   <block id="d1558822f85e59c70aa33c6ac2678132" category="section-title">9.14.1 GA （ 2024 年 3 月 5 日）</block>
   <block id="10715dcbdc97f5e0e1debf8bac3a4ba4" category="paragraph">Cloud Volumes ONTAP 9.14.1 一般可用度版本現已在 AWS 、 Azure 和 Google Cloud 中推出。</block>
+  <block id="fa399104e53f295813fa209a617a3bfe" category="list-text">E20ds_v5 ^3^</block>
 </blocks>
