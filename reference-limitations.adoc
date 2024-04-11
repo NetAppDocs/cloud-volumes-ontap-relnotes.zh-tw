@@ -88,6 +88,9 @@ NOTE: 由資料一致性決定資料一致性。ONTAP WAFL只ONTAP 有當WAFL �
 從Cloud Volumes ONTAP 雲端供應商的主控台變更支援的支援功能組態、會導致不受支援的組態設定。任何對BlueXP所建立及管理的支援資源所做的變更Cloud Volumes ONTAP 、都會影響系統穩定性和BlueXP管理系統的能力。
 
 
+NOTE: 初始部署後、支援修改用於 Cloud Volumes ONTAP 資源的 Azure Subscription 名稱。
+
+
 
 == 磁碟和集合體必須從BlueXP進行管理
 
