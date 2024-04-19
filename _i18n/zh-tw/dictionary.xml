@@ -733,4 +733,8 @@
   <block id="a9380d77cd3c45a5f15f09b231323443" category="inline-link">檢視 P1 修補程式中修正的錯誤清單</block>
   <block id="62715934d07ed630b9c606bc666abad5" category="paragraph"><block ref="ae4674889e9a15806f2ba04f7b499642" category="inline-link-rx"></block> （需登入 NetApp 支援網站）。</block>
   <block id="43556f17551d900e8a2cd6d933da722d" category="admonition">初始部署後、支援修改用於 Cloud Volumes ONTAP 資源的 Azure Subscription 名稱。</block>
+  <block id="09c468ad8c70fae44d482bf0d2aa0f97" category="section-title">9.14.1 P2 （ 2024 年 4 月 18 日）</block>
+  <block id="595490a543bba780b40f8b48736870a0" category="paragraph">所有雲端供應商現在均可使用 Cloud Volumes ONTAP 9.14.1 P2 修補程式。BlueXP會提示您將現有系統升級至此修補程式版本。</block>
+  <block id="ce5d0c77f167b881391469fc27895727" category="inline-link">檢視 P2 修補程式中修正的錯誤清單</block>
+  <block id="fe80ff34632bdc174d0d3a2e265b5e0c" category="paragraph"><block ref="25faf8057d466be20595f224ab406816" category="inline-link-rx"></block> （需登入 NetApp 支援網站）。</block>
 </blocks>
