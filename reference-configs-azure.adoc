@@ -231,6 +231,9 @@ Azure中提供的支援可作為單一節點系統、以及高可用度（HA）�
 
 ==== HA與頁面blob配對
 
+
+NOTE: 您可以將下列組態與 Azure 中現有的 Cloud Volumes ONTAP HA 頁面 BLOB 部署搭配使用。新部署不支援網頁瀏覽器。
+
 [role="tabbed-block"]
 ====
 .容量型授權

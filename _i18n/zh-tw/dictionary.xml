@@ -472,8 +472,6 @@
   <block id="1222cf807490df82fd7e0146eb6798c1" category="paragraph">當維護時段公佈時、目標節點的合作夥伴節點將執行接管。維護完成後、系統會啟動一個恢復功能。恢復之後、HA配對應該會恢復正常狀態。如果沒有發生這種情況、請聯絡NetApp支援部門以尋求協助。請注意、維護事件一次針對HA配對中的其中一個VM、通常兩個節點都會在相對短的時間內鎖定。</block>
   <block id="1355c3042f61af06b4a61506de6e8ad1" category="paragraph">使用Cloud Volumes ONTAP 非持續可用CIFS共用的CIFS/SMB用戶端、在發生接管時、以及工作階段所使用的集合體被賦予Aggregate主節點時、都會發生工作階段遺失的情況。這是CIFS/SMB傳輸協定本身所造成的限制。客戶可能希望使用第三方產品、以避免接管和恢復可能產生的問題。如需進一步協助、請聯絡NetApp支援部門。</block>
   <block id="c4d6a904ef528003bf03bc2e65cffd26" category="section-title">支援的升級途徑</block>
-  <block id="402e8d971886b1604e4de74c0058dc71" category="section-title">所需版本的Connector</block>
-  <block id="cc85911ae6bc3b2540142e310528310b" category="admonition">連接器的自動升級預設為啟用、因此您應該執行最新版本。</block>
   <block id="da38098873cb3db962a9491ab33ff93d" category="sidebar">版本資訊首頁</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新增功能</block>
   <block id="4847e034bb0a55fcbc8a3380d6a3ab80" category="sidebar">AWS</block>
@@ -662,15 +660,6 @@
   <block id="540e57f70019c3eb8d7fb999259fd473" category="cell">頁面</block>
   <block id="6098d03c49b315476cd9c4d4eb330395" category="list-text">使用HA配對時、支援這些VM類型的高速寫入速度。Cloud Volumes ONTAP您可以在部署期間或之後的任何時間、從BlueXP啟用高速寫入速度。<block ref="18805b87db41583a67ecc2414d022f2b" category="inline-link-rx"></block>。</block>
   <block id="bcc4564bd7fc660f5dd5b39219b9775f" category="list-text">這些VM僅支援Cloud Volumes ONTAP 部署不支援使用支援的版本。有了這些VM類型、您可以將現有的頁面配置從Cloud Volumes ONTAP 版本資訊的版本9.11.1升級至9.12.1.您無法使用Cloud Volumes ONTAP 更新版本的更新版本執行新的頁面配置。</block>
-  <block id="fd03e656adaf90d76d9f033d590bdd69" category="summary">這些版本資訊說明 Cloud Volumes ONTAP 9.14.1 的新功能、限制和已知問題。</block>
-  <block id="3f93d29b3f8dc957c8b9ced853857b76" category="doc">Cloud Volumes ONTAP 9.14.1 版本資訊</block>
-  <block id="ac49adbb868ecf707179d04fceda2832" category="summary">Cloud Volumes ONTAP 9.14.1 包含新的增強功能。</block>
-  <block id="6fd75df88e7a8fb6a734b8841088b891" category="doc">Cloud Volumes ONTAP 9.14.1 的新功能</block>
-  <block id="8e6d22a522445e96c6b1493b0bb48d22" category="paragraph">Cloud Volumes ONTAP 9.14.1 包含新的增強功能。</block>
-  <block id="a5cb6650acb9d98dcbbf608aa3a4fba0" category="section-title">9.14.1 RC1 （ 2023 年 12 月 6 日）</block>
-  <block id="08c5c3a5955675754c56665896b714d2" category="paragraph">Cloud Volumes ONTAP 9.14.1 的 Release Candidate 1 現已在 AWS 、 Azure 和 Google Cloud 中推出。</block>
-  <block id="0ba3961acf8d8dd9d18bfabbbbc00cc5" category="paragraph">您可以從 9.13.1 和 9.14.0 版本升級至 Cloud Volumes ONTAP 9.14.1 。BlueXP會提示您將合格Cloud Volumes ONTAP 的更新版升級至此版本。</block>
-  <block id="c61efd7d56545088713b3c7d2e07cadd" category="paragraph">BlueXP Connector 必須執行 3.9.27 版或更新版本、才能部署新的 Cloud Volumes ONTAP 9.14.1 系統、並將現有系統升級至 9.14.1 。</block>
   <block id="f8f16d462023635d23922013c582281d" category="list-text">L16s_v3 ^1 、 4 、 5^</block>
   <block id="5c5847596a7ce3d290253dfcdcfc153c" category="list-text">L32s_v3 ^1 、 4 、 5^</block>
   <block id="2bf4a4b22f921c225f089ec2954ee9e8" category="list-text">L48s_v3 ^1 、 4 、 5^</block>
@@ -707,8 +696,6 @@
   <block id="d2f103c82b43ca5f2da33f93d94bde64" category="paragraph">如果您在部署新Cloud Volumes ONTAP 的支援系統時選擇任何一種VM類型、就無法改用另一種VM類型、也就是_不使用適用於VNVRAM的Ultra SSD。例如、您無法從E8ds_v4變更為E8s_v3、但您可以從E8ds_v4變更為E32ds_v4、因為這兩種VM類型都使用Ultra SSD。</block>
   <block id="c0f95d0d2e06eba7eb0522dabf1c9d76" category="paragraph">相反地、如果您Cloud Volumes ONTAP 使用任何其他VM類型來部署支援功能、您將無法變更為使用Ultra SSD來執行VNVRAM的VM類型。例如、您無法從E8s_v3變更為E8ds_v4。</block>
   <block id="5063d3259058d90bbca06465957626d7" category="list-text">使用SSD時可啟用增強的寫入效能。</block>
-  <block id="d1558822f85e59c70aa33c6ac2678132" category="section-title">9.14.1 GA （ 2024 年 3 月 5 日）</block>
-  <block id="10715dcbdc97f5e0e1debf8bac3a4ba4" category="paragraph">Cloud Volumes ONTAP 9.14.1 一般可用度版本現已在 AWS 、 Azure 和 Google Cloud 中推出。</block>
   <block id="fa399104e53f295813fa209a617a3bfe" category="list-text">E20ds_v5 ^3^</block>
   <block id="c077185ce5ae625437649ce1dbad7a15" category="section-title">Cloud Volumes ONTAP 僅支援保留和隨需 VM 執行個體</block>
   <block id="876f1172cd6d0607aa7ef915b2e202b5" category="section-title">第三方代理程式和延伸功能的限制</block>
@@ -721,15 +708,7 @@
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp社群</block>
   <block id="bd5465eb0e8cf8f303aee7ea9420c8b1" category="sidebar">BlueXP部落格</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">雲端網路研討會</block>
-  <block id="aaab5cb712b0e4d29126565b92a93c7e" category="section-title">9.14.1 P1 （ 2024 年 4 月 1 日）</block>
-  <block id="569a9a2a6db2c8239fa51b37ad08f488" category="paragraph">所有雲端供應商現在均可使用 Cloud Volumes ONTAP 9.14.1 P1 修補程式。BlueXP會提示您將現有系統升級至此修補程式版本。</block>
-  <block id="a9380d77cd3c45a5f15f09b231323443" category="inline-link">檢視 P1 修補程式中修正的錯誤清單</block>
-  <block id="62715934d07ed630b9c606bc666abad5" category="paragraph"><block ref="ae4674889e9a15806f2ba04f7b499642" category="inline-link-rx"></block> （需登入 NetApp 支援網站）。</block>
   <block id="43556f17551d900e8a2cd6d933da722d" category="admonition">初始部署後、支援修改用於 Cloud Volumes ONTAP 資源的 Azure Subscription 名稱。</block>
-  <block id="09c468ad8c70fae44d482bf0d2aa0f97" category="section-title">9.14.1 P2 （ 2024 年 4 月 18 日）</block>
-  <block id="595490a543bba780b40f8b48736870a0" category="paragraph">所有雲端供應商現在均可使用 Cloud Volumes ONTAP 9.14.1 P2 修補程式。BlueXP會提示您將現有系統升級至此修補程式版本。</block>
-  <block id="ce5d0c77f167b881391469fc27895727" category="inline-link">檢視 P2 修補程式中修正的錯誤清單</block>
-  <block id="fe80ff34632bdc174d0d3a2e265b5e0c" category="paragraph"><block ref="25faf8057d466be20595f224ab406816" category="inline-link-rx"></block> （需登入 NetApp 支援網站）。</block>
   <block id="5d47d15bb6c95cde595a22f670bc8cdf" category="list-text">E32ds_v4 ^1^</block>
   <block id="a9161f4d77d799baa3a3dc4cfeaefca3" category="list-text">E48ds_v4 ^1^</block>
   <block id="4e1b6146fa2cb1efc8bff10f1cf7e93c" category="list-text">E80ids_v4 ^1、1^</block>
@@ -755,4 +734,22 @@
   <block id="5eaba9c26c7009842affe7562eb137d3" category="inline-link-macro">您應該參閱 AWS 、以取得本機區域中支援的 EC2 執行個體類型的最新完整詳細資料</block>
   <block id="0b1bcd721d49fbe0a3ff4bd80dfcd83f" category="list-text">下列 EC2 執行個體類型系列支援 AWS 本機區域、大小為 xlarge 到 4xlarge ： M5 、 C5 、 C5d 、 R5 和 R5d 。 <block ref="3d9029b658475a88eed4e09e15fa8cce" category="inline-link-macro-rx"></block>。</block>
   <block id="4133f4256c016927cb270503c43adeb6" category="paragraph">AWS 本機區域中的這些執行個體類型不支援高寫入速度。</block>
+  <block id="910e1bdd6baebdae0421711258065197" category="admonition">您可以將下列組態與 Azure 中現有的 Cloud Volumes ONTAP HA 頁面 BLOB 部署搭配使用。新部署不支援網頁瀏覽器。</block>
+  <block id="c7fba39244cea9bed6ebdf20c533b1ec" category="summary">Cloud Volumes ONTAP 9.15.0 包含新的增強功能。</block>
+  <block id="08801b736495375cdbb6bcb3a1212883" category="doc">Cloud Volumes ONTAP 9.15.0 的新增功能</block>
+  <block id="92910f0385055eeb4ce1fb8f6cab0845" category="paragraph">Cloud Volumes ONTAP 9.15.0 包含新的增強功能。</block>
+  <block id="275f84b2f13f6be7ad2b4bcf479ba8b2" category="section-title">9.15.0 P1 （ 2024 年 6 月 10 日）</block>
+  <block id="9245869e5fee8bd2bb00d26ef6cbb8d0" category="paragraph">Cloud Volumes ONTAP 9.15.0 P1 現已在 AWS 、 Azure 和 Google Cloud 中推出。P1 版本可用於部署和升級。</block>
+  <block id="8b41c40998a7affc19c72d81b0d005da" category="paragraph">此版本包含新功能和增強功能。</block>
+  <block id="a4400979defd36b9aabb5e7db96ad29b" category="section-title">Azure 中的影像驗證</block>
+  <block id="a27a8bf2f715cc5e3614b0faa5cf0a9d" category="paragraph">增強的安全功能現在可用於驗證透過 Azure 匯出的 Cloud Volumes ONTAP 映像檔案的簽名。</block>
+  <block id="b8abb7c7caaa735ae906cc2808f5f968" category="inline-link-macro">深入瞭解 Azure 影像驗證</block>
+  <block id="99e39190aff1f0a0b65999be97e8be06" category="paragraph">如需詳細資訊、請參閱 <block ref="cf7f85437fd22de8906b5dfc23f9072e" category="inline-link-macro-rx"></block>。</block>
+  <block id="0c617f2eafd2c49f96214ff1591f9e72" category="section-title">Azure 頁面 Blobs 不再支援新的高可用度配對部署</block>
+  <block id="78791f347f204b6cdb496be6a39521d3" category="paragraph">從 Cloud Volumes ONTAP 9.15.0 P1 開始、新的高可用度配對部署不再支援 Azure 頁面 Blobs 。如果您目前在現有的高可用度配對部署中使用 Azure 頁面 Blobs 、您可以在 Edsv4 系列 VM 和 Edsv5 系列 VM 中移轉至較新的 VM 執行個體類型。</block>
+  <block id="11c433da09cca9cd7d57ed81e1cd6310" category="inline-link-macro">深入瞭解 Azure 支援的組態</block>
+  <block id="32fc2dbe6ce23818c00cefccab1d6097" category="paragraph"><block ref="ecdad61fcd8abefb7dbc2e5c682b6e1d" category="inline-link-macro-rx"></block>。</block>
+  <block id="af9688d5cde98d7a041489576710fac7" category="paragraph">您可以從 9.14.1 版本升級至 Cloud Volumes ONTAP 9.15.0 。BlueXP會提示您將合格Cloud Volumes ONTAP 的更新版升級至此版本。</block>
+  <block id="8e47e9575e2300fd877f61160058d7c0" category="sidebar">這些版本資訊說明 Cloud Volumes ONTAP 9.15.0 的新功能、限制和已知問題。</block>
+  <block id="3aecd779578c661d895e83c1e9e7274c" category="sidebar">Cloud Volumes ONTAP 9.15.0 版本資訊</block>
 </blocks>
