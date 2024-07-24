@@ -114,7 +114,6 @@
   <block id="a1834fbcd2847d469ef79f5526dcee65" category="inline-link">您應該參閱AWS以取得EC2執行個體類型的最新完整詳細資料</block>
   <block id="98ade5346ada08656e0c7b517b695d0f" category="paragraph">每Cloud Volumes ONTAP 個支援不同EC2執行個體類型的支援。為了方便起見、下表顯示每種支援執行個體類型的vCPU、RAM和頻寬。<block ref="7fe5ce03f92ccda8dcb0aa0fab836a1f" category="inline-link-rx"></block>。</block>
   <block id="c7d741925ef81824617c6a2975104e27" category="inline-link">NetApp 技術報告 4383 ： Cloud Volumes ONTAP 運用應用程式工作負載、將 Amazon Web Services 中的功能特性化</block>
-  <block id="5070622feb6e4e88eeee7983bad01de6" category="paragraph">下表所示的頻寬與每個執行個體類型的AWS記錄限制相符。這些限制並不完全符合Cloud Volumes ONTAP 本公司所能提供的功能。如需預期效能、請參閱<block ref="21181a62240b2a52719451cc8d855312" category="inline-link-rx"></block>。</block>
   <block id="794df3791a8c800841516007427a2aa3" category="cell">授權</block>
   <block id="4a7243646d30fc1e81eca2df9826cc03" category="cell">支援的執行個體</block>
   <block id="5d56dbd20d9ee1ab8a722ff12e331953" category="cell">VCPU</block>
@@ -752,4 +751,5 @@
   <block id="af9688d5cde98d7a041489576710fac7" category="paragraph">您可以從 9.14.1 版本升級至 Cloud Volumes ONTAP 9.15.0 。BlueXP會提示您將合格Cloud Volumes ONTAP 的更新版升級至此版本。</block>
   <block id="8e47e9575e2300fd877f61160058d7c0" category="sidebar">這些版本資訊說明 Cloud Volumes ONTAP 9.15.0 的新功能、限制和已知問題。</block>
   <block id="3aecd779578c661d895e83c1e9e7274c" category="sidebar">Cloud Volumes ONTAP 9.15.0 版本資訊</block>
+  <block id="b710bbf07a9ba1fa06f2e6f4e77a42db" category="paragraph">下表所示的頻寬與每個執行個體類型的AWS記錄限制相符。這些限制並不完全符合Cloud Volumes ONTAP 本公司所能提供的功能。如需預期效能、請<block ref="c23654021de34c23e6d408104aa3bf49" category="inline-link-rx"></block>參閱。</block>
 </blocks>
