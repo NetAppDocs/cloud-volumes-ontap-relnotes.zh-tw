@@ -752,4 +752,8 @@
   <block id="8e47e9575e2300fd877f61160058d7c0" category="sidebar">這些版本資訊說明 Cloud Volumes ONTAP 9.15.0 的新功能、限制和已知問題。</block>
   <block id="3aecd779578c661d895e83c1e9e7274c" category="sidebar">Cloud Volumes ONTAP 9.15.0 版本資訊</block>
   <block id="b710bbf07a9ba1fa06f2e6f4e77a42db" category="paragraph">下表所示的頻寬與每個執行個體類型的AWS記錄限制相符。這些限制並不完全符合Cloud Volumes ONTAP 本公司所能提供的功能。如需預期效能、請<block ref="c23654021de34c23e6d408104aa3bf49" category="inline-link-rx"></block>參閱。</block>
+  <block id="4ae87c63691b9744168b73d7af816a77" category="section-title">9.15.0 P2 （ 2024 年 8 月 8 日）</block>
+  <block id="301c7c8cfee4f653db163dd0917e061c" category="paragraph">所有雲端供應商現在都可以使用 Cloud Volumes ONTAP 9.15.0 P2 修補程式。BlueXP會提示您將現有系統升級至此修補程式版本。</block>
+  <block id="ce5d0c77f167b881391469fc27895727" category="inline-link">檢視 P2 修補程式中修正的錯誤清單</block>
+  <block id="3fc252ec43144c8dd78602ca6c7fe60e" category="paragraph"><block ref="75f3c2aa534462e69fc54717adcc7a98" category="inline-link-rx"></block> （需要登入 NetApp 支援網站）。</block>
 </blocks>
