@@ -40,7 +40,7 @@ Azure中提供的支援可作為單一節點系統、以及高可用度（HA）�
 --
 [cols="h,d,d,d"]
 |===
-|  | Freemium | 最佳化 | 容量型授權（ Essentials 、 Professional 和 Edge Cache ） 
+|  | Freemium | 最佳化 | 容量型授權（ Essentials 與 Professional ） 
 
 
 | 最大系統容量（磁碟+物件儲存） | 500 GiB | 2 PIB | 2 PIB 
@@ -121,6 +121,9 @@ Azure中提供的支援可作為單一節點系統、以及高可用度（HA）�
 
 . PAYGO Explore不支援資料分層至Azure Blob儲存設備。
 . 這種VM類型包括本機NVMe儲存設備、Cloud Volumes ONTAP 這些儲存設備以_Flash Cache的形式使用。Flash Cache 可透過即時智慧快取來加速資料存取、快取最近讀取的使用者資料和 NetApp 中繼資料。它適用於隨機讀取密集的工作負載、包括資料庫、電子郵件和檔案服務。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-flash-cache.html["深入瞭解"^]。
++
+在 Azure 上設定 Flash Cache 所需的最低 ONTAP 版本為 9.13.1 GA 。
+
 . 這些VM類型使用 https://docs.microsoft.com/en-us/azure/virtual-machines/windows/disks-enable-ultra-ssd["超SSD"^] 適用於VNVRAM、可提供更佳的寫入效能。
 +
 如果您在部署新Cloud Volumes ONTAP 的支援系統時選擇任何一種VM類型、就無法改用另一種VM類型、也就是_不使用適用於VNVRAM的Ultra SSD。例如、您無法從E8ds_v4變更為E8s_v3、但您可以從E8ds_v4變更為E32ds_v4、因為這兩種VM類型都使用Ultra SSD。
@@ -240,7 +243,7 @@ NOTE: 您可以將下列組態與 Azure 中現有的 Cloud Volumes ONTAP HA 頁�
 --
 [cols="h,d,d,d"]
 |===
-|  | Freemium | 最佳化 | 容量型授權（ Essentials 、 Professional 和 Edge Cache ） 
+|  | Freemium | 最佳化 | 容量型授權（ Essentials 與 Professional ） 
 
 
 | 最大系統容量（磁碟+物件儲存） | 500 GiB | 2 PIB | 2 PIB 
@@ -377,7 +380,7 @@ NOTE: 您可以將下列組態與 Azure 中現有的 Cloud Volumes ONTAP HA 頁�
 --
 [cols="h,d,d,d"]
 |===
-|  | Freemium | 最佳化 | 容量型授權（ Essentials 、 Professional 和 Edge Cache ） 
+|  | Freemium | 最佳化 | 容量型授權（ Essentials 與 Professional ） 
 
 
 | 最大系統容量（磁碟+物件儲存） | 500 GiB | 2 PIB | 2 PIB 

@@ -568,7 +568,6 @@
   <block id="6367723c5abb9a6de038561ba69ed33f" category="example-title">BYOL：單一可用度區域中的HA配對與分頁區配對</block>
   <block id="561a766e0af8bbc565f3cd929c900d16" category="example-title">BYOL：HA與共享的託管磁碟配對使用多個可用區域組態</block>
   <block id="fc9a388cd18c69244f22554de6f0d544" category="paragraph-title">對於AWS中的HA系統、鏡射資料是否會根據容量限制計算？</block>
-  <block id="39b49fbe12f6121fd761513c05ddba97" category="paragraph">部分VM類型包括本機NVMe儲存設備、Cloud Volumes ONTAP 這些儲存設備可作為_Flash Cache使用。請注意Flash Cache的下列限制：</block>
   <block id="f59964eb1e1669da7d916b7e136c88bd" category="list-text">m6id.32xlarge</block>
   <block id="b5cb41a6703cf18b4cecd5a0817f91cf" category="section-title">升級附註</block>
   <block id="dfb01a7b38cba8284269f37f00622809" category="paragraph">請閱讀這些附註、深入瞭解升級至此版本的相關資訊。</block>
@@ -688,7 +687,6 @@
   <block id="ea724697af39ce2b490b5643777ed273" category="paragraph">Cloud Volumes ONTAP 可在 Google Cloud 中作為單一節點系統使用、也可作為高可用度（ HA ）節點配對、以提供容錯能力和不中斷營運的功能。</block>
   <block id="f52ead6bbf1fb1c871d206603e5a2347" category="open-title">容量型授權</block>
   <block id="6e539d2ea7d82ed0e31c450e64ff8c04" category="cell">最佳化</block>
-  <block id="82fc13b1b2688039a14feb2fc8785cad" category="cell">容量型授權（ Essentials 、 Professional 和 Edge Cache ）</block>
   <block id="d56bf07ec8cd4e9f29339d605ffef95c" category="open-title">節點型授權</block>
   <block id="b338d2a3e5b2fa0602cf93fe49c51138" category="paragraph">如需 Google Cloud 地區支援、請參閱<block ref="2b6a522631c3b3b8afac5466195e108a" category="inline-link-rx"></block>。</block>
   <block id="bde67b5966889851166e3f5c7b09ff05" category="paragraph">在 Azure 中將 Cloud Volumes ONTAP 部署為單一節點系統時、您可以選擇下列容量型或節點型授權組態。</block>
@@ -756,4 +754,9 @@
   <block id="301c7c8cfee4f653db163dd0917e061c" category="paragraph">所有雲端供應商現在都可以使用 Cloud Volumes ONTAP 9.15.0 P2 修補程式。BlueXP會提示您將現有系統升級至此修補程式版本。</block>
   <block id="ce5d0c77f167b881391469fc27895727" category="inline-link">檢視 P2 修補程式中修正的錯誤清單</block>
   <block id="3fc252ec43144c8dd78602ca6c7fe60e" category="paragraph"><block ref="75f3c2aa534462e69fc54717adcc7a98" category="inline-link-rx"></block> （需要登入 NetApp 支援網站）。</block>
+  <block id="32d6fe93ba69b4395a45277c1885f29f" category="cell">容量型授權（ Essentials 與 Professional ）</block>
+  <block id="7ac4ad805c5f62c422ac040e484787d7" category="paragraph">在 Azure 上設定 Flash Cache 所需的最低 ONTAP 版本為 9.13.1 GA 。</block>
+  <block id="fb68df6302dcf52c3640cda14ef6c3e2" category="list-text">從 Cloud Volumes ONTAP 9.13.0 開始、 _Flash Caches_ 、高寫入速度、以及高達 8 、 896 位元組的最大傳輸單元（ MTU ）、可用於下列 HA 配對部署執行個體：</block>
+  <block id="0ef515bdf91048074b68adb0d7ce587e" category="paragraph">Cloud Volumes ONTAP 在某些 VM 類型中使用本機 NVMe 儲存設備做為 _Flash Caches_ 。請注意此限制：</block>
+  <block id="7616922b4f9b85f327fb9c04518fc90f" category="list-text">不支援重新開機後的快取重新暖機。</block>
 </blocks>
