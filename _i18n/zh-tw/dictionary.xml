@@ -738,35 +738,40 @@
   <block id="c225bb599d95ae48865f5a5a99751d6d" category="inline-link-macro">Google Cloud 中 Cloud Volumes ONTAP 9.15.1 中介人注意事項</block>
   <block id="8d3eb6c7422d9d7fe8285d43bec57d37" category="list-text"><block ref="8d3eb6c7422d9d7fe8285d43bec57d37" category="inline-link-macro-rx"></block></block>
   <block id="3feaeead4352aa22a5e23895ca44ad6f" category="cell">標準 HDD 託管磁碟、標準 SSD 託管磁碟、優質 SSD 託管磁碟、以及優質 SSD v2 託管磁碟。</block>
-  <block id="f34e593f4dda0ab627f7a62029e82a1a" category="paragraph">如果您在部署新Cloud Volumes ONTAP 的支援系統時選擇任何一種VM類型、就無法改用另一種VM類型、也就是_不使用適用於VNVRAM的Ultra SSD。例如、您無法從E8ds_v4變更為E8s_v3、但您可以從E8ds_v4變更為E32ds_v4、因為這兩種VM類型都使用Ultra SSD。同樣地、當您部署新的 Cloud Volumes ONTAP 系統時、您無法將 VM 類型變更為 _ 不 _ 支援 Premium SSD v2 託管磁碟。</block>
   <block id="fbd5af992908b9931b0ae311f285c7d5" category="summary">Cloud Volumes ONTAP 9.15.1 包含新的增強功能。</block>
   <block id="83a60efee029f00eebfd929bdfd93b02" category="doc">Cloud Volumes ONTAP 9.15.1 的新增功能</block>
   <block id="b4c1aa9082f0d8e4483e610ea5ab6d33" category="paragraph">Cloud Volumes ONTAP 9.15.1 包含新的增強功能。</block>
   <block id="aa4ce9e7e0e2db885cfae0432f23eb02" category="section-title">9.15.1 GA （ 2024 年 8 月 22 日）</block>
-  <block id="776ca3f689b01a1c056067512185cd34" category="paragraph">Cloud Volumes ONTAP 9.15.1 GA 現已在 AWS 、 Azure 和 Google Cloud 中推出。GA 版本可用於部署和升級。此版本包含下列新功能與增強功能。</block>
   <block id="bc7175e423f6e0afd8f8a6b587844b59" category="section-title">支援 Azure 上的 Premium SSD v2 託管磁碟</block>
   <block id="5b0ca394a998f1788658ece8c00dd5d2" category="paragraph">Azure 上的 Cloud Volumes ONTAP 系統現在支援 Premium SSD v2 託管磁碟。相較於 Premium SSD 託管磁碟、這些優質磁碟可為單一節點和高可用度（ HA ）配對提供更高的效能、並以更低的成本提供更低的延遲。與其他託管磁碟一樣、最大磁碟大小為 32 TiB 。可設定優質 SSD v2 託管磁碟的效能（容量、處理量和 IOPS ）、讓工作負載符合成本效益、同時滿足不斷變動的效能需求。</block>
   <block id="20bb913d178725401e1f129f9cd78e9e" category="inline-link">瞭解 Azure 儲存設備</block>
-  <block id="0c9b033761741e7095a8d1bfb0da6304" category="paragraph"><block ref="b59c69fce966b6ba60a6774d4343de96" category="inline-link-rx"></block>。</block>
   <block id="892d55f6f43d490c5ac28471f96de68a" category="section-title">在 Azure 上的單一可用性區域中部署 HA 配對</block>
-  <block id="47682b8a4aabe64f4b0715a6d6c5b431" category="paragraph">從 Cloud Volumes ONTAP 9.15.1 開始、您可以在 Azure 上的單一可用性區域（ AZs ）中、以 HA 模式部署虛擬機器（ VM ）執行個體。與先前的非分區部署不同、 Cloud Volumes ONTAP 9.15.1 使用 Microsoft 虛擬機器擴充集、以靈活協調模式部署所有資源、包括在同一個 AZ 內獨立的故障網域、以確保最佳可用度。</block>
-  <block id="38dcec2e270a003b76d28db7df9fcbb3" category="inline-link">瞭解 Azure 中的高可用度配對</block>
-  <block id="ad079f1950bcd6f1dc9b0da6c93caa11" category="paragraph"><block ref="f518cf6fbcbc18f0f69e2270304a3bb9" category="inline-link-rx"></block>。</block>
   <block id="5f6ae050f79947b402a5730d141e65ee" category="section-title">支援虛擬機器擴充集、以統一化所有 Azure HA 類型</block>
-  <block id="85cf8a29d1fb742b8feb4e50d776436e" category="paragraph">Cloud Volumes ONTAP 9.15.1 利用 Azure 上彈性協調模式中的虛擬機器擴充集、在單一可用性區域中部署虛擬機器（ VM ）執行個體、以實現高可用度（ HA ）配對。</block>
-  <block id="b368f302cd95fd657c5b89ae6ed7d352" category="paragraph">此部署模式依預設會使用 Premium SSD v2 託管磁碟。當符合下列條件時、它涵蓋 HA 模式、 Pageblob 、本機備援儲存（ LRS ）、區域備援儲存（ ZRS ）或多區域、以及 LRS 區域（單一 AZ ）的所有風格：</block>
   <block id="6326d313b843fff1d57ed50ec7c000f1" category="list-text">Cloud Volumes ONTAP 版本為 9.15.1 或更新版本。</block>
   <block id="840f8de5c9f54f772062c77429778e38" category="inline-link">Microsoft Azure 網站：依地區提供的產品</block>
-  <block id="fd7c8b210845b6835720e8398b335dce" category="list-text">該區域支援以彈性協調模式進行虛擬機器擴充集。如需支援區域的相關資訊、請<block ref="4cad7f2a2d9c49229b747bad0a9e56da" category="inline-link-rx"></block>參閱。</block>
-  <block id="6aa5f36ae7ac4ee786cacf13cbbb981f" category="list-text">區域中所選的區域支援靈活協調模式中的虛擬機器擴充集。</block>
-  <block id="c785b61f2bfc2a0a28110dd4da201a48" category="list-text">訂閱已註冊 Microsoft<block ref="fdfb47698b60e554acc8cff3a6065992" prefix=" " category="inline-code"></block> 功能。</block>
   <block id="68367d4408e943b9268a7a6d4314fb0a" category="inline-link">在Cloud Volumes ONTAP Azure中啟動一套功能完善的</block>
-  <block id="e9e34ff3ab97c79b3c316c17375f6ff1" category="inline-link">為單一可用性區域啟用 VMOrchestratorZonalMultiFD</block>
-  <block id="67d86fb895fd2dadf6a098a0d4cbcf84" category="paragraph">若要深入瞭解、請參閱<block ref="21ec87e6eb67935050d7d05994bd62be" category="inline-link-rx"></block>和<block ref="800e13b1242ee8997b4b8c600fd26f10" category="inline-link-rx"></block>。</block>
-  <block id="6ed999af427a3e626f879a4018500deb" category="paragraph">若未符合上述任一條件、先前的 LRS 非分區部署即會生效。</block>
   <block id="8587098b07c4e4a23dccafd754dbc676" category="section-title">升級注意事項：</block>
   <block id="a30c58b20b60e5ffb9d932cee170af9a" category="paragraph">您可以從 9.15.0 和 9.14.1 版本升級至 Cloud Volumes ONTAP 9.15.1 。BlueXP會提示您將合格Cloud Volumes ONTAP 的更新版升級至此版本。</block>
   <block id="8679be60a45e6f155a93161b9a8c5d43" category="sidebar">這些版本資訊說明 Cloud Volumes ONTAP 1 的新功能、限制和已知問題。</block>
   <block id="c32d4655f35315d6cd7ab368b1f0a6de" category="sidebar">Cloud Volumes ONTAP 9.15.1 版本資訊</block>
   <block id="9b74e463f9eba3d7b2490736bd408da0" category="sidebar">這些版本資訊說明 Cloud Volumes ONTAP 9.15.1 的新功能、限制及已知問題。</block>
+  <block id="28440751cbe2a16368822f02f298a2f4" category="inline-link">HA單一可用度區域組態與共享的託管磁碟</block>
+  <block id="e2a0553d4c47017042ca1689993f9c8b" category="paragraph">如果您在部署新Cloud Volumes ONTAP 的支援系統時選擇任何一種VM類型、就無法改用另一種VM類型、也就是_不使用適用於VNVRAM的Ultra SSD。例如、您無法從E8ds_v4變更為E8s_v3、但您可以從E8ds_v4變更為E32ds_v4、因為這兩種VM類型都使用Ultra SSD。同樣地、當您部署新的 Cloud Volumes ONTAP 系統時、您無法將 VM 類型變更為 _ 不 _ 支援 Premium SSD v2 託管磁碟。若要深入瞭解 Premium SSD v2 託管磁碟的支援組態<block ref="6fd1548aedf3667cd5a4b1b43bc16181" category="inline-link-rx"></block>、請參閱。</block>
+  <block id="9d85572128910a61c3211c3fcb021921" category="section-title">9.15.1 P1 （ 2024 年 9 月 3 日）</block>
+  <block id="0af97325f311859f8c8335d28a3d334c" category="paragraph">所有雲端供應商現在都可以使用 Cloud Volumes ONTAP 9.15.1 P1 修補程式。BlueXP會提示您將現有系統升級至此修補程式版本。</block>
+  <block id="a9380d77cd3c45a5f15f09b231323443" category="inline-link-macro">檢視 P1 修補程式中修正的錯誤清單</block>
+  <block id="26913715f6472de0e1115ad17f6b6bc8" category="paragraph"><block ref="0551aa4e2b5bd361ee5fdb2414ba928f" category="inline-link-macro-rx"></block> （需要登入 NetApp 支援網站）。</block>
+  <block id="dfb5c8ec2223bd8a6413a4362da62637" category="paragraph">Cloud Volumes ONTAP 9.15.1 GA 現已在 AWS 、 Azure 和 Google Cloud 中推出。GA 版本可用於部署和升級。</block>
+  <block id="3e6d47920aca39db44843a3add6a6655" category="paragraph">本版本包含 Azure 的下列功能與增強功能。請繼續閱讀、深入瞭解支援這些新功能的特定組態。</block>
+  <block id="1aa9c656bf03d8824495d5c1ad3b6bda" category="paragraph"><block ref="b89aaee931541f273298fee7632a9cbf" category="inline-link-rx"></block>。</block>
+  <block id="80b122992ec0ea80dc356ea01fdddcb4" category="paragraph">從 Cloud Volumes ONTAP 9.15.1 開始、您可以在 Azure 的單一可用性區域（ AZs ）中、以 HA 模式部署虛擬機器（ VM ）執行個體。與先前的非分區部署不同、 Cloud Volumes ONTAP 9.15.1 使用 Microsoft 虛擬機器擴充集、以靈活協調模式部署所有資源、包括在同一個 AZ 內獨立的故障網域、以確保最佳可用度。根據預設、當符合下列條件時、此部署模式會使用 Premium SSD v2 託管磁碟：</block>
+  <block id="3d58e19a0ad059c068ea94850f7f07b3" category="list-text">所選區域和區域支援 Premium SSD v2 託管磁碟。如需支援區域的相關資訊、請<block ref="4cad7f2a2d9c49229b747bad0a9e56da" category="inline-link-rx"></block>參閱。若要瞭解如何新增、請參閱<block ref="21ec87e6eb67935050d7d05994bd62be" category="inline-link-rx"></block>。</block>
+  <block id="ba9b674ef918293b2811c2896cb57927" category="inline-link">瞭解如何為單一可用性區域啟用 VMOrchestratorZonalMultiFD</block>
+  <block id="ddcdfb16338cb24a868b379c7937a3f9" category="list-text">訂閱已註冊 Microsoft<block ref="fdfb47698b60e554acc8cff3a6065992" prefix=" " category="inline-code"></block> 功能。<block ref="37dbbe0007aba28a7312f0bdc995d21b" category="inline-link-rx"></block>。</block>
+  <block id="4c948eb331f4d29ab3fd543fd04028c3" category="paragraph">如果未符合上述任一條件、則適用於本機備援儲存設備（ LRS ）的先前非分區部署模式即會生效。</block>
+  <block id="569a86e1494e035e7de656acda258ef0" category="paragraph">Cloud Volumes ONTAP 9.15.1 利用 Azure 上彈性協調模式中的虛擬機器擴充集、在單一可用性區域中部署虛擬機器（ VM ）執行個體、以實現高可用度（ HA ）配對。它涵蓋 HA 模式、 Pageblob 、 LRS 、區域備援儲存（ ZRS ）或多區域、以及 LRS 區域（單一 AZ ）的所有風格。</block>
+  <block id="fcb7516396bf1d9722f3e765d3004427" category="inline-link">Microsoft Azure 文件： Virtual Machine Scale Set 文件</block>
+  <block id="b4273b358a9e522bb090b6bbb65e080f" category="list-text"><block ref="b4273b358a9e522bb090b6bbb65e080f" category="inline-link-rx"></block></block>
+  <block id="0bd904c1b3763b65f2cc9d002f6a74e1" category="inline-link">瞭解 Azure 中的高可用度配對</block>
+  <block id="0a60745fecbc79115b1e58a81d31e5cf" category="list-text"><block ref="80b3c96e29f809092ae7660c3123c5c7" category="inline-link-rx"></block>。</block>
 </blocks>

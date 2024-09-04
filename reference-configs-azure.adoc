@@ -126,7 +126,7 @@ Azure中提供的支援可作為單一節點系統、以及高可用度（HA）�
 
 . 這些VM類型使用 https://docs.microsoft.com/en-us/azure/virtual-machines/windows/disks-enable-ultra-ssd["超SSD"^] 適用於VNVRAM、可提供更佳的寫入效能。
 +
-如果您在部署新Cloud Volumes ONTAP 的支援系統時選擇任何一種VM類型、就無法改用另一種VM類型、也就是_不使用適用於VNVRAM的Ultra SSD。例如、您無法從E8ds_v4變更為E8s_v3、但您可以從E8ds_v4變更為E32ds_v4、因為這兩種VM類型都使用Ultra SSD。同樣地、當您部署新的 Cloud Volumes ONTAP 系統時、您無法將 VM 類型變更為 _ 不 _ 支援 Premium SSD v2 託管磁碟。
+如果您在部署新Cloud Volumes ONTAP 的支援系統時選擇任何一種VM類型、就無法改用另一種VM類型、也就是_不使用適用於VNVRAM的Ultra SSD。例如、您無法從E8ds_v4變更為E8s_v3、但您可以從E8ds_v4變更為E32ds_v4、因為這兩種VM類型都使用Ultra SSD。同樣地、當您部署新的 Cloud Volumes ONTAP 系統時、您無法將 VM 類型變更為 _ 不 _ 支援 Premium SSD v2 託管磁碟。若要深入瞭解 Premium SSD v2 託管磁碟的支援組態 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-ha-azure.html#ha-single-availability-zone-configuration-with-shared-managed-disks["HA單一可用度區域組態與共享的託管磁碟"^]、請參閱。
 
 +
 相反地、如果您Cloud Volumes ONTAP 使用任何其他VM類型來部署支援功能、您將無法變更為使用Ultra SSD來執行VNVRAM的VM類型。例如、您無法從E8s_v3變更為E8ds_v4。
