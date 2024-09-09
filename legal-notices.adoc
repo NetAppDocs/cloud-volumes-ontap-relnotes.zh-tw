@@ -47,7 +47,6 @@ link:https://www.netapp.com/company/legal/privacy-policy/["https://www.netapp.co
 
 通知檔案提供有關 NetApp 軟體所使用之協力廠商版權與授權的資訊。
 
-* link:media/notice-aws.pdf["AWS 中 Cloud Volumes ONTAP 9.15.1 中介人注意事項"^]
-* link:media/notice-google-cloud.pdf["Google Cloud 中 Cloud Volumes ONTAP 9.15.1 中介人注意事項"^]
+* link:media/notice-cvo.pdf["Cloud Volumes ONTAP 9.15.1 注意事項"^]
 * https://docs.netapp.com/us-en/ontap/reference_legal_notices.html#open-source["關於本產品的注意事項ONTAP"^]
 
