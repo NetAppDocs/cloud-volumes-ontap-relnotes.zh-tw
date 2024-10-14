@@ -772,4 +772,8 @@
   <block id="524d94964962cd77e130e880d66b6c97" category="inline-link-macro">Cloud Volumes ONTAP 9.15.1 注意事項</block>
   <block id="69b9c8f99d9f922a1b39668eb1ca9f2d" category="list-text"><block ref="69b9c8f99d9f922a1b39668eb1ca9f2d" category="inline-link-macro-rx"></block></block>
   <block id="2e87e8a578558ca3febcb42e546e1af4" category="paragraph">Cloud Volumes ONTAP 9.15.1 利用 Azure 上彈性協調模式中的虛擬機器擴充集、在單一可用性區域中部署虛擬機器（ VM ）執行個體、以實現高可用度（ HA ）配對。它涵蓋 HA 模式、頁面 blob 、 LRS 、區域備援儲存（ ZRS ）或多區域、以及 LRS 區域（單一 AZ ）的所有風格。</block>
+  <block id="a05cf03e897f4068b5177ef70c7cf347" category="section-title">9.15.1 P2 （ 2024 年 10 月 14 日）</block>
+  <block id="8d4440801f529fd94fa4b15d11c84ac0" category="paragraph">所有雲端供應商現在都可以使用 Cloud Volumes ONTAP 9.15.1 P2 修補程式。BlueXP會提示您將現有系統升級至此修補程式版本。</block>
+  <block id="ce5d0c77f167b881391469fc27895727" category="inline-link-macro">檢視 P2 修補程式中修正的錯誤清單</block>
+  <block id="46a5c1839a6c9667da9a201d204a30d8" category="paragraph"><block ref="8043c70c5f9f22a2d553b5b35821b45f" category="inline-link-macro-rx"></block> （需要登入 NetApp 支援網站）。</block>
 </blocks>
