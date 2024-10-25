@@ -52,7 +52,7 @@ AWS可在單一節點系統中使用、也可作為高可用度（HA）節點配
 
 
 
-| 冷資料分層至S3 6+| 支援 
+| 冷資料分層至S3 2+| 支援 | 不支援 3+| 支援 
 |===
 . 對於HA配對、容量限制是針對整個HA配對。不是每個節點。例如、如果您使用Premium授權、則兩個節點之間最多可有368TiB的容量。
 . 在某些組態中、磁碟限制會讓您無法單獨使用磁碟來達到容量限制。在這些情況下、您可以達到容量上限 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["將非作用中資料分層至物件儲存設備"^]。如需磁碟限制的相關資訊、請參閱 link:reference-limits-aws.html["儲存限制"]。
