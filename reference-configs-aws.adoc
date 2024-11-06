@@ -36,12 +36,54 @@ AWS可在單一節點系統中使用、也可作為高可用度（HA）節點配
 
 每個授權都支援不同的最大系統容量。最大系統容量包括磁碟型儲存設備、以及用於資料分層的物件式儲存設備。NetApp不支援超過此限制。
 
-[cols="h,d,d,d,d,d,d"]
+[role="tabbed-block"]
+====
+.容量型授權
+--
+[cols="h,d,d"]
 |===
-|  | Freemium | 容量型授權 | PAYGO瀏覽 | PAYGO標準 | PAYGO Premium | 節點型BYOL 
+|  | Freemium | 容量型授權 
 
 
-| 最大系統容量（磁碟+物件儲存）^1^ | 500 GiB | 2 PIB ^2^ | 2 TiB | 10 TiB | 368TiB ^2^ | 每個授權368TiB ^2^ 
+ a| 
+* 最大系統容量 * （磁碟 + 物件儲存） ^1^
+| 500 GiB | 2 PIB ^2^ 
+
+
+ a| 
+* 支援的磁碟類型 *
+ a| 
+* 通用 SSD （ GP3 和 gp2 ） ^3^,^5^
+* 已配置的IOPS SSD（IO1）^3^
+* 處理量最佳化的HDD（ST1）^4^
+
+
+
+
+ a| 
+* 冷資料分層至 S3 *
+ a| 
+支援
+
+|===
+附註：
+
+. 對於HA配對、容量限制是針對整個HA配對。不是每個節點。例如、如果您使用Premium授權、則兩個節點之間最多可有368TiB的容量。
+. 在某些組態中、磁碟限制會讓您無法單獨使用磁碟來達到容量限制。在這些情況下、您可以達到容量上限 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["將非作用中資料分層至物件儲存設備"^]。如需磁碟限制的相關資訊、請參閱 link:reference-limits-aws.html["儲存限制"]。
+. 使用 SSD 搭配所有 Cloud Volumes ONTAP 組態時、會啟用增強的寫入效能。
+. 使用處理量最佳化的HDD（ST1）時、不建議將資料分層至物件儲存設備。
+. AWS 本機區域僅支援通用 SSD （ gp2 ）磁碟類型。
+
+
+--
+.節點型授權
+--
+[cols="h,d,d,d,d"]
+|===
+|  | PAYGO瀏覽 | PAYGO標準 | PAYGO Premium | 節點型BYOL 
+
+
+| 最大系統容量（磁碟+物件儲存） | 2 TiB | 10 TiB | 368TiB ^2^ | 每個授權368TiB ^2^ 
 
 
 | 支援的磁碟類型  a| 
@@ -52,8 +94,10 @@ AWS可在單一節點系統中使用、也可作為高可用度（HA）節點配
 
 
 
-| 冷資料分層至S3 2+| 支援 | 不支援 3+| 支援 
+| 冷資料分層至S3 | 不支援 3+| 支援 
 |===
+附註：
+
 . 對於HA配對、容量限制是針對整個HA配對。不是每個節點。例如、如果您使用Premium授權、則兩個節點之間最多可有368TiB的容量。
 . 在某些組態中、磁碟限制會讓您無法單獨使用磁碟來達到容量限制。在這些情況下、您可以達到容量上限 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["將非作用中資料分層至物件儲存設備"^]。如需磁碟限制的相關資訊、請參閱 link:reference-limits-aws.html["儲存限制"]。
 . 除了Cloud Volumes ONTAP PAYGO Explore之外、使用SSD搭配所有的支援功能組態時、都會啟用增強的寫入效能。
@@ -61,6 +105,8 @@ AWS可在單一節點系統中使用、也可作為高可用度（HA）節點配
 . AWS 本機區域僅支援通用 SSD （ gp2 ）磁碟類型。
 
 
+--
+====
 
 
 === 支援的磁碟大小

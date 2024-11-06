@@ -92,7 +92,6 @@
   <block id="721f444864f7f20b038565facc11ed77" category="paragraph">支援多種EBS磁碟類型、以及S3物件儲存、以利資料分層。Cloud Volumes ONTAP最大儲存容量取決於您選擇的授權。</block>
   <block id="e17c7f98af970809162c4395474988ad" category="section-title">依授權提供儲存支援</block>
   <block id="c5a27c05ad608efda7a7a192ee480209" category="paragraph">每個授權都支援不同的最大系統容量。最大系統容量包括磁碟型儲存設備、以及用於資料分層的物件式儲存設備。NetApp不支援超過此限制。</block>
-  <block id="2a3273b13e4da5a861913a955ede7809" category="cell">最大系統容量（磁碟+物件儲存）^1^</block>
   <block id="705c8901d15869a7116491b156af6fbe" category="cell">368TiB ^2^</block>
   <block id="6e9a8a2df40afea5890a6ea81b2df2b2" category="cell">每個授權368TiB ^2^</block>
   <block id="71235138fc0c3fda4c8fc946f34c4367" category="cell">2 PIB ^2^</block>
@@ -743,9 +742,7 @@
   <block id="6326d313b843fff1d57ed50ec7c000f1" category="list-text">Cloud Volumes ONTAP 版本為 9.15.1 或更新版本。</block>
   <block id="840f8de5c9f54f772062c77429778e38" category="inline-link">Microsoft Azure 網站：依地區提供的產品</block>
   <block id="68367d4408e943b9268a7a6d4314fb0a" category="inline-link">在Cloud Volumes ONTAP Azure中啟動一套功能完善的</block>
-  <block id="8587098b07c4e4a23dccafd754dbc676" category="section-title">升級注意事項：</block>
   <block id="a30c58b20b60e5ffb9d932cee170af9a" category="paragraph">您可以從 9.15.0 和 9.14.1 版本升級至 Cloud Volumes ONTAP 9.15.1 。BlueXP會提示您將合格Cloud Volumes ONTAP 的更新版升級至此版本。</block>
-  <block id="8679be60a45e6f155a93161b9a8c5d43" category="sidebar">這些版本資訊說明 Cloud Volumes ONTAP 1 的新功能、限制和已知問題。</block>
   <block id="c32d4655f35315d6cd7ab368b1f0a6de" category="sidebar">Cloud Volumes ONTAP 9.15.1 版本資訊</block>
   <block id="9b74e463f9eba3d7b2490736bd408da0" category="sidebar">這些版本資訊說明 Cloud Volumes ONTAP 9.15.1 的新功能、限制及已知問題。</block>
   <block id="28440751cbe2a16368822f02f298a2f4" category="inline-link">HA單一可用度區域組態與共享的託管磁碟</block>
@@ -784,4 +781,9 @@
   <block id="c3e5d9aa8817ef74e74e8cd55f39570f" category="paragraph">所有雲端供應商現在都可以使用 Cloud Volumes ONTAP 9.15.1 P3 修補程式。BlueXP會提示您將現有系統升級至此修補程式版本。</block>
   <block id="4c7cf73669136d536c96ca7317eb5ceb" category="inline-link-macro">檢視 P3 修補程式中修正的錯誤清單</block>
   <block id="fae48ca93c7d21429a4d9efb8dbde929" category="paragraph"><block ref="03a97087fa51b558b394583b2ec67707" category="inline-link-macro-rx"></block> （需要登入 NetApp 支援網站）。</block>
+  <block id="29aaeb333a41db01888c537148053c70" category="paragraph">* 最大系統容量 * （磁碟 + 物件儲存） ^1^</block>
+  <block id="06cf24f6f7b06cb3d2778a1a70e9ff2f" category="paragraph">* 支援的磁碟類型 *</block>
+  <block id="17943cfde2a5e23c7925dc95a8dde6a4" category="paragraph">* 冷資料分層至 S3 *</block>
+  <block id="640897782baa10cc7d259d38d703b275" category="list-text">使用 SSD 搭配所有 Cloud Volumes ONTAP 組態時、會啟用增強的寫入效能。</block>
+  <block id="b5cb41a6703cf18b4cecd5a0817f91cf" category="section-title">升級附註</block>
 </blocks>
