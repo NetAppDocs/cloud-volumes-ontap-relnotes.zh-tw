@@ -20,6 +20,14 @@ Cloud Volumes ONTAP 9.15.1 包含新的增強功能。
 
 
 
+== 9.15.1 P4 （ 2024 年 11 月 25 日）
+
+所有雲端供應商現在都可以使用 Cloud Volumes ONTAP 9.15.1 P4 修補程式。BlueXP會提示您將現有系統升級至此修補程式版本。
+
+link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.15.1P4["檢視 P4 修補程式中修正的錯誤清單"^] （需要登入 NetApp 支援網站）。
+
+
+
 == 9.15.1 P3 （ 2024 年 10 月 29 日）
 
 所有雲端供應商現在都可以使用 Cloud Volumes ONTAP 9.15.1 P3 修補程式。BlueXP會提示您將現有系統升級至此修補程式版本。
@@ -80,6 +88,16 @@ Cloud Volumes ONTAP 9.15.1 利用 Azure 上彈性協調模式中的虛擬機器�
 * https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/["Microsoft Azure 文件： Virtual Machine Scale Set 文件"^]
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-ha-azure.html["瞭解 Azure 中的高可用度配對"^]。
 
+
+
+
+=== 支援 FlexCache 回寫
+
+從 Cloud Volumes ONTAP 9.15.1 開始，支援 FlexCache 回寫作為在快取寫入的替代作業模式。
+
+有關此功能的詳細信息，請參閱 ONTAP 文檔 https://docs.netapp.com/us-en/ontap/flexcache-writeback/flexcache-write-back-overview.html["FlexCache 回寫概述"^]。
+
+有關 BlueXP  如何管理 FlexCache 卷的信息，請參閱 https://docs.netapp.com/us-en/bluexp-volume-caching/index.html["BlueXP  Volume 快取文件"^]。
 
 
 

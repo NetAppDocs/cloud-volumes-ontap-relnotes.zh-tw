@@ -468,7 +468,6 @@
   <block id="1222cf807490df82fd7e0146eb6798c1" category="paragraph">當維護時段公佈時、目標節點的合作夥伴節點將執行接管。維護完成後、系統會啟動一個恢復功能。恢復之後、HA配對應該會恢復正常狀態。如果沒有發生這種情況、請聯絡NetApp支援部門以尋求協助。請注意、維護事件一次針對HA配對中的其中一個VM、通常兩個節點都會在相對短的時間內鎖定。</block>
   <block id="1355c3042f61af06b4a61506de6e8ad1" category="paragraph">使用Cloud Volumes ONTAP 非持續可用CIFS共用的CIFS/SMB用戶端、在發生接管時、以及工作階段所使用的集合體被賦予Aggregate主節點時、都會發生工作階段遺失的情況。這是CIFS/SMB傳輸協定本身所造成的限制。客戶可能希望使用第三方產品、以避免接管和恢復可能產生的問題。如需進一步協助、請聯絡NetApp支援部門。</block>
   <block id="c4d6a904ef528003bf03bc2e65cffd26" category="section-title">支援的升級途徑</block>
-  <block id="da38098873cb3db962a9491ab33ff93d" category="sidebar">版本資訊首頁</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新增功能</block>
   <block id="4847e034bb0a55fcbc8a3380d6a3ab80" category="sidebar">AWS</block>
   <block id="3a580f142203677f1f0bc30898f63f53" category="sidebar">Azure</block>
@@ -498,7 +497,6 @@
   <block id="dc2065e297a9790d182a555ba250dbda" category="cell">節點型BYOL</block>
   <block id="75b66e0b3cef735ea985bd79ab9601e2" category="cell">m5dn.4xlarge</block>
   <block id="bc503c45d950d94391e7685c6585b286" category="cell">m5dn.12xlarge</block>
-  <block id="30af1a6878bac3a7aaed5d0e64e7b511" category="paragraph">提供不同的授權選項、讓您選擇符合需求的消費模式。Cloud Volumes ONTAP</block>
   <block id="37439fa615a442ec183c1c602f9755f1" category="paragraph">容量型授權的形式為_package_。當您部署Cloud Volumes ONTAP 一套解決方案時、您可以根據業務需求、從多個授權套件中進行選擇。</block>
   <block id="deb56fb5a824215375b16e72749e2aa3" category="inline-link">深入瞭解這些授權選項</block>
   <block id="33f66f5b18b24875dca7a81c8f84c5b9" category="cell">896 TiB</block>
@@ -743,7 +741,6 @@
   <block id="840f8de5c9f54f772062c77429778e38" category="inline-link">Microsoft Azure 網站：依地區提供的產品</block>
   <block id="68367d4408e943b9268a7a6d4314fb0a" category="inline-link">在Cloud Volumes ONTAP Azure中啟動一套功能完善的</block>
   <block id="a30c58b20b60e5ffb9d932cee170af9a" category="paragraph">您可以從 9.15.0 和 9.14.1 版本升級至 Cloud Volumes ONTAP 9.15.1 。BlueXP會提示您將合格Cloud Volumes ONTAP 的更新版升級至此版本。</block>
-  <block id="c32d4655f35315d6cd7ab368b1f0a6de" category="sidebar">Cloud Volumes ONTAP 9.15.1 版本資訊</block>
   <block id="9b74e463f9eba3d7b2490736bd408da0" category="sidebar">這些版本資訊說明 Cloud Volumes ONTAP 9.15.1 的新功能、限制及已知問題。</block>
   <block id="28440751cbe2a16368822f02f298a2f4" category="inline-link">HA單一可用度區域組態與共享的託管磁碟</block>
   <block id="e2a0553d4c47017042ca1689993f9c8b" category="paragraph">如果您在部署新Cloud Volumes ONTAP 的支援系統時選擇任何一種VM類型、就無法改用另一種VM類型、也就是_不使用適用於VNVRAM的Ultra SSD。例如、您無法從E8ds_v4變更為E8s_v3、但您可以從E8ds_v4變更為E32ds_v4、因為這兩種VM類型都使用Ultra SSD。同樣地、當您部署新的 Cloud Volumes ONTAP 系統時、您無法將 VM 類型變更為 _ 不 _ 支援 Premium SSD v2 託管磁碟。若要深入瞭解 Premium SSD v2 託管磁碟的支援組態<block ref="6fd1548aedf3667cd5a4b1b43bc16181" category="inline-link-rx"></block>、請參閱。</block>
@@ -786,4 +783,19 @@
   <block id="17943cfde2a5e23c7925dc95a8dde6a4" category="paragraph">* 冷資料分層至 S3 *</block>
   <block id="640897782baa10cc7d259d38d703b275" category="list-text">使用 SSD 搭配所有 Cloud Volumes ONTAP 組態時、會啟用增強的寫入效能。</block>
   <block id="b5cb41a6703cf18b4cecd5a0817f91cf" category="section-title">升級附註</block>
+  <block id="6b32e99bddf60938239aabe092cb4c16" category="paragraph">有多種授權選項可供Cloud Volumes ONTAP 選擇。每個選項都能讓您選擇符合需求的消費模式。</block>
+  <block id="27fe4eb3edbaff8f250e2d51f7462681" category="inline-link">套件</block>
+  <block id="13dba612a4f942a80cbc82c5f678d57c" category="inline-link">更多關於容量型授權的資訊</block>
+  <block id="d994821c78c4538d3406d1baa52bc470" category="paragraph"><block ref="55cb08b70ffaa99b7ec18860c0180e14" category="inline-link-rx"></block> <block ref="7c9574dfed81dad53ed1c2acf3a874b5" category="inline-link-rx"></block></block>
+  <block id="c3cf4ee6dc24f388844547c270dcc62a" category="section-title">9.15.1 P4 （ 2024 年 11 月 25 日）</block>
+  <block id="70801cc1e406ee3c5d3829c09f39d8cc" category="paragraph">所有雲端供應商現在都可以使用 Cloud Volumes ONTAP 9.15.1 P4 修補程式。BlueXP會提示您將現有系統升級至此修補程式版本。</block>
+  <block id="cae74b75cb879fa6011c4bc1e9acafed" category="inline-link-macro">檢視 P4 修補程式中修正的錯誤清單</block>
+  <block id="427f5af74d1c3371844f5ceb79ac74ea" category="paragraph"><block ref="d5d8d8f3e8dad9e51774bb89e5c4d87f" category="inline-link-macro-rx"></block> （需要登入 NetApp 支援網站）。</block>
+  <block id="349b79620c55ff0a99622dc458417341" category="section-title">支援 FlexCache 回寫</block>
+  <block id="7bab27e59a8093f7f1f9f208560906b5" category="paragraph">從 Cloud Volumes ONTAP 9.15.1 開始，支援 FlexCache 回寫作為在快取寫入的替代作業模式。</block>
+  <block id="145c5d02a1872aab28d9aee2ee7b1adb" category="inline-link">FlexCache 回寫概述</block>
+  <block id="e9847573f516d487b3b41696529ea9ac" category="paragraph">有關此功能的詳細信息，請參閱 ONTAP 文檔<block ref="f66b7fc45c4e32762d53ba0f27132a8b" category="inline-link-rx"></block>。</block>
+  <block id="34756beb20b44cc3e732425639fae228" category="inline-link">BlueXP  Volume 快取文件</block>
+  <block id="fadeb5a0a5453e49f671ad12a304756a" category="paragraph">有關 BlueXP  如何管理 FlexCache 卷的信息，請參閱<block ref="4df7bdb090af4efb3896a25128ffcee3" category="inline-link-rx"></block>。</block>
+  <block id="9136e486881930be99a49d333eddb2ba" category="sidebar">Cloud Volumes ONTAP 9.15.1 版本資訊</block>
 </blocks>

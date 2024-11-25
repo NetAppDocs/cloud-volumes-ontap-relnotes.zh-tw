@@ -14,7 +14,7 @@ summary: 有多種授權選項可供Cloud Volumes ONTAP 選擇。每個選項都
 
 
 [role="lead"]
-提供不同的授權選項、讓您選擇符合需求的消費模式。Cloud Volumes ONTAP
+有多種授權選項可供Cloud Volumes ONTAP 選擇。每個選項都能讓您選擇符合需求的消費模式。
 
 下列授權選項適用於新客戶。
 
@@ -24,6 +24,10 @@ summary: 有多種授權選項可供Cloud Volumes ONTAP 選擇。每個選項都
 容量型授權的形式為_package_。當您部署Cloud Volumes ONTAP 一套解決方案時、您可以根據業務需求、從多個授權套件中進行選擇。
 
 --
+
+
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#packages["套件"^] https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing-charging.html["更多關於容量型授權的資訊"^]
+
 Keystone Flex 訂閱:: 以隨成長付費訂閱為基礎的服務、可為偏好營運成本使用模式的使用者、提供無縫的混合雲體驗、以供預先支付資本支出或租賃之用。
 +
 --
