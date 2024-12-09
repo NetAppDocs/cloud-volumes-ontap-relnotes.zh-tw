@@ -47,16 +47,16 @@ Azure中提供的支援可作為單一節點系統、以及高可用度（HA）�
 
 
 | 支援的虛擬機器類型  a| 
-* DS4_v2
-* DS5_v2
-* DS13_v2
-* DS14_v2
-* DS15_v2
-* E4s_v3
-* E8s_v3
-* E32s_v3 ^3^
-* E48s_v3 ^3^
-* E64is_v3 ^3^
+* DS4_v2 ^1^
+* DS5_v2 ^1^
+* DS13_v2 ^1^
+* DS14_v2 ^1^
+* DS15_v2 ^1^
+* E4s_v3 ^1^
+* E8s_v3 ^1^
+* E32s_v3 ^1 、 3^
+* E48s_v3 ^1 、 3^
+* E64is_v3 ^1 、 3^
 * E4ds_v4
 * E8ds_v4
 * E32ds_v4 ^3^
@@ -75,26 +75,26 @@ Azure中提供的支援可作為單一節點系統、以及高可用度（HA）�
 * L64s_v3 ^2^
 
  a| 
-* DS4_v2
-* DS13_v2
-* E4s_v3
-* E8s_v3
+* DS4_v2 ^1^
+* DS13_v2 ^1^
+* E4s_v3 ^1^
+* E8s_v3 ^1^
 * E4ds_v4 ^3^
 * E8ds_v4 ^3^
 * E4ds_v5
 * E8ds_v5
 
  a| 
-* DS4_v2
-* DS5_v2
-* DS13_v2
-* DS14_v2
-* DS15_v2
-* E4s_v3
-* E8s_v3
-* E32s_v3 ^3^
-* E48s_v3 ^3^
-* E64is_v3 ^3^
+* DS4_v2 ^1^
+* DS5_v2 ^1^
+* DS13_v2 ^1^
+* DS14_v2 ^1^
+* DS15_v2 ^1^
+* E4s_v3 ^1^
+* E8s_v3 ^1^
+* E32s_v3 ^1 、 3^
+* E48s_v3 ^1 、 3^
+* E64is_v3 ^1 、 3^
 * E4ds_v4 ^3^
 * E8ds_v4 ^3^
 * E32ds_v4 ^3^
@@ -119,20 +119,19 @@ Azure中提供的支援可作為單一節點系統、以及高可用度（HA）�
 |===
 附註：
 
-. PAYGO Explore不支援資料分層至Azure Blob儲存設備。
-. 這種VM類型包括本機NVMe儲存設備、Cloud Volumes ONTAP 這些儲存設備以_Flash Cache的形式使用。Flash Cache 可透過即時智慧快取來加速資料存取、快取最近讀取的使用者資料和 NetApp 中繼資料。它適用於隨機讀取密集的工作負載、包括資料庫、電子郵件和檔案服務。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-flash-cache.html["深入瞭解"^]。
+. ^1^ 在 Azure 中部署新的 Cloud Volumes ONTAP 執行個體時， DS_v2 和 ES_v3 機器系列不再可供 BlueXP  選擇。這些系列將僅保留在舊的現有系統中，並提供支援。Azure 僅支援 9.12.1 版的 Cloud Volumes ONTAP 新部署。建議您切換至 ES_v4 或任何其他與 Cloud Volumes ONTAP 9.12.1 及更新版本相容的系列。不過， DS_v2 和 ES_v3 系列機器將可用於透過 API 進行的新部署。
+. ^2^ 此 VM 類型包含本機 NVMe 儲存設備， Cloud Volumes ONTAP 使用此儲存設備做為 _Flash Caches_ 。Flash Cache 可透過即時智慧快取來加速資料存取、快取最近讀取的使用者資料和 NetApp 中繼資料。它能有效處理隨機讀取密集的工作負載、包括資料庫、電子郵件和檔案服務。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-flash-cache.html["深入瞭解"^]。
 +
 在 Azure 上設定 Flash Cache 所需的最低 ONTAP 版本為 9.13.1 GA 。
 
-. 這些VM類型使用 https://docs.microsoft.com/en-us/azure/virtual-machines/windows/disks-enable-ultra-ssd["超SSD"^] 適用於VNVRAM、可提供更佳的寫入效能。
+. ^3^ 這些 VM 類型使用用於 VNVRAM 的， https://docs.microsoft.com/en-us/azure/virtual-machines/windows/disks-enable-ultra-ssd["超SSD"^]可提供更好的寫入效能。
 +
 如果您在部署新Cloud Volumes ONTAP 的支援系統時選擇任何一種VM類型、就無法改用另一種VM類型、也就是_不使用適用於VNVRAM的Ultra SSD。例如、您無法從E8ds_v4變更為E8s_v3、但您可以從E8ds_v4變更為E32ds_v4、因為這兩種VM類型都使用Ultra SSD。同樣地、當您部署新的 Cloud Volumes ONTAP 系統時、您無法將 VM 類型變更為 _ 不 _ 支援 Premium SSD v2 託管磁碟。若要深入瞭解 Premium SSD v2 託管磁碟的支援組態 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-ha-azure.html#ha-single-availability-zone-configuration-with-shared-managed-disks["HA單一可用度區域組態與共享的託管磁碟"^]、請參閱。
 
 +
 相反地、如果您Cloud Volumes ONTAP 使用任何其他VM類型來部署支援功能、您將無法變更為使用Ultra SSD來執行VNVRAM的VM類型。例如、您無法從E8s_v3變更為E8ds_v4。
 
-. 使用單一節點系統時、所有執行個體類型都支援高速寫入。您可以在部署期間或之後的任何時間、從BlueXP啟用高速寫入速度。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-write-speed.html["深入瞭解如何選擇寫入速度"^]。
-. 使用SSD時可啟用增強的寫入效能。
+. ^4^ 使用單一節點系統時，所有執行個體類型都支援高寫入速度。您可以在部署期間或之後的任何時間、從 BlueXP  啟用高速寫入速度。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-write-speed.html["深入瞭解如何選擇寫入速度"^]。使用SSD時可啟用增強的寫入效能。
 
 
 --
@@ -143,29 +142,29 @@ Azure中提供的支援可作為單一節點系統、以及高可用度（HA）�
 |  | PAYGO瀏覽 | PAYGO標準 | PAYGO Premium | 節點型BYOL 
 
 
-| 最大系統容量（磁碟+物件儲存） | 2 TiB ^1^ | 10 TiB | 368TiB | 每個授權368TiB 
+| 最大系統容量（磁碟+物件儲存） | 2 TiB ^5^ | 10 TiB | 368TiB | 每個授權368TiB 
 
 
 | 支援的虛擬機器類型  a| 
-* E4s_v3
+* E4s_v3 ^1^
 * E4ds_v4 ^3^
 * E4ds_v5
 
  a| 
-* DS4_v2
-* DS13_v2
-* E8s_v3
+* DS4_v2 ^1^
+* DS13_v2 ^1^
+* E8s_v3 ^1^
 * E8ds_v4 ^3^
 * E8ds_v5
 * L8s_v3 ^2^
 
  a| 
-* DS5_v2
-* DS14_v2
-* DS15_v2
-* E32s_v3 ^3^
-* E48s_v3 ^3^
-* E64is_v3 ^3^
+* DS5_v2 ^1^
+* DS14_v2 ^1^
+* DS15_v2 ^1^
+* E32s_v3 ^1 、 3^
+* E48s_v3 ^1 、 3^
+* E64is_v3 ^1 、 3^
 * E32ds_v4 ^3^
 * E48ds_v4 ^3^
 * E80ids_v4 ^3^
@@ -175,16 +174,16 @@ Azure中提供的支援可作為單一節點系統、以及高可用度（HA）�
 * E64ds_v5 ^3^
 
  a| 
-* DS4_v2
-* DS5_v2
-* DS13_v2
-* DS14_v2
-* DS15_v2
-* E4s_v3
-* E8s_v3
-* E32s_v3 ^3^
-* E48s_v3 ^3^
-* E64is_v3 ^3^
+* DS4_v2 ^1^
+* DS5_v2 ^1^
+* DS13_v2 ^1^
+* DS14_v2 ^1^
+* DS15_v2 ^1^
+* E4s_v3 ^1^
+* E8s_v3 ^1^
+* E32s_v3 ^1 、 3^
+* E48s_v3 ^1 、 3^
+* E64is_v3 ^1 、 3^
 * E4ds_v4 ^3^
 * E8ds_v4 ^3^
 * E32ds_v4 ^3^
@@ -209,17 +208,17 @@ Azure中提供的支援可作為單一節點系統、以及高可用度（HA）�
 |===
 附註：
 
-. PAYGO Explore不支援資料分層至Azure Blob儲存設備。
-. 這種VM類型包括本機NVMe儲存設備、Cloud Volumes ONTAP 這些儲存設備以_Flash Cache的形式使用。Flash Cache 可透過即時智慧快取來加速資料存取、快取最近讀取的使用者資料和 NetApp 中繼資料。它適用於隨機讀取密集的工作負載、包括資料庫、電子郵件和檔案服務。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-flash-cache.html["深入瞭解"^]。
-. 這些VM類型使用 https://docs.microsoft.com/en-us/azure/virtual-machines/windows/disks-enable-ultra-ssd["超SSD"^] 適用於VNVRAM、可提供更佳的寫入效能。
+. ^1^ 在 Azure 中部署新的 Cloud Volumes ONTAP 執行個體時， DS_v2 和 ES_v3 機器系列不再可供 BlueXP  選擇。這些系列將僅保留在舊的現有系統中，並提供支援。Azure 僅支援 9.12.1 版的 Cloud Volumes ONTAP 新部署。建議您切換至 ES_v4 或任何其他與 Cloud Volumes ONTAP 9.12.1 及更新版本相容的系列。不過， DS_v2 和 ES_v3 系列機器將可用於透過 API 進行的新部署。
+. ^2^ 此 VM 類型包含本機 NVMe 儲存設備， Cloud Volumes ONTAP 使用此儲存設備做為 _Flash Caches_ 。Flash Cache 可透過即時智慧快取來加速資料存取、快取最近讀取的使用者資料和 NetApp 中繼資料。它能有效處理隨機讀取密集的工作負載、包括資料庫、電子郵件和檔案服務。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-flash-cache.html["深入瞭解"^]。
+. ^3^ 這些 VM 類型使用用於 VNVRAM 的， https://docs.microsoft.com/en-us/azure/virtual-machines/windows/disks-enable-ultra-ssd["超SSD"^]可提供更好的寫入效能。
 +
 如果您在部署新Cloud Volumes ONTAP 的支援系統時選擇任何一種VM類型、就無法改用另一種VM類型、也就是_不使用適用於VNVRAM的Ultra SSD。例如、您無法從E8ds_v4變更為E8s_v3、但您可以從E8ds_v4變更為E32ds_v4、因為這兩種VM類型都使用Ultra SSD。
 
 +
 相反地、如果您Cloud Volumes ONTAP 使用任何其他VM類型來部署支援功能、您將無法變更為使用Ultra SSD來執行VNVRAM的VM類型。例如、您無法從E8s_v3變更為E8ds_v4。
 
-. 使用單一節點系統時、所有執行個體類型都支援高速寫入。您可以在部署期間或之後的任何時間、從BlueXP啟用高速寫入速度。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-write-speed.html["深入瞭解如何選擇寫入速度"^]。
-. 使用SSD時可啟用增強的寫入效能。
+. ^4^ 使用單一節點系統時，所有執行個體類型都支援高寫入速度。您可以在部署期間或之後的任何時間、從 BlueXP  啟用高速寫入速度。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-write-speed.html["深入瞭解如何選擇寫入速度"^]。使用SSD時可啟用增強的寫入效能。
+. PAYGO Explore 不支援 ^5^Data 分層至 Azure Blob 儲存設備。
 
 
 --
@@ -234,8 +233,10 @@ Azure中提供的支援可作為單一節點系統、以及高可用度（HA）�
 
 ==== HA與頁面blob配對
 
+您可以將下列組態與 Azure 中現有的 Cloud Volumes ONTAP HA 頁面 BLOB 部署搭配使用。
 
-NOTE: 您可以將下列組態與 Azure 中現有的 Cloud Volumes ONTAP HA 頁面 BLOB 部署搭配使用。新部署不支援網頁瀏覽器。
+
+NOTE: Azure 頁面 Blobs 不支援任何新部署。
 
 [role="tabbed-block"]
 ====

@@ -48,7 +48,7 @@ settings:
     url: "/cloud-volumes-ontap-94-relnotes"
   - version-number: '9.3'
     url: "/cloud-volumes-ontap-93-relnotes"
-  langs: zh-tw,us-en,ja-jp,ko-kr,zh-cn,de-de,es-es,fr-fr,it-it
+  langs: zh-tw,us-en,de-de,es-es,fr-fr,it-it,pt-br,ja-jp,ko-kr,zh-cn
 sidebar:
   entries:
   - title: Cloud Volumes ONTAP 9.15.1 版本資訊
