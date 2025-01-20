@@ -20,6 +20,22 @@ Cloud Volumes ONTAP 9.15.1 包含新的增強功能。
 
 
 
+== 9.15.1 P6 （ 2025 年 1 月 20 日）
+
+所有雲端供應商現在都可以使用 Cloud Volumes ONTAP 9.15.1 P6 修補程式。BlueXP會提示您將現有系統升級至此修補程式版本。
+
+link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.15.1P6["檢視 P6 修補程式中修正的錯誤清單"^] （需要登入 NetApp 支援網站）。
+
+
+
+== 9.15.1 5 （ 2025 年 1 月 20 日）
+
+所有雲端供應商現在都可以使用 Cloud Volumes ONTAP 9.15.1 P5 修補程式。BlueXP會提示您將現有系統升級至此修補程式版本。
+
+link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.15.1P5["檢視 P5 修補程式中修正的錯誤清單"^] （需要登入 NetApp 支援網站）。
+
+
+
 == 9.15.1 P4 （ 2024 年 11 月 25 日）
 
 所有雲端供應商現在都可以使用 Cloud Volumes ONTAP 9.15.1 P4 修補程式。BlueXP會提示您將現有系統升級至此修補程式版本。
