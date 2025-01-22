@@ -816,4 +816,6 @@
   <block id="65e2877203eeb473a40f78bda7e6d3b4" category="paragraph">所有雲端供應商現在都可以使用 Cloud Volumes ONTAP 9.15.1 P5 修補程式。BlueXP會提示您將現有系統升級至此修補程式版本。</block>
   <block id="e890150484086859b9a5078abe9c6f20" category="inline-link-macro">檢視 P5 修補程式中修正的錯誤清單</block>
   <block id="294d0a8af93eae96d1bba19b5a5f69c4" category="paragraph"><block ref="df0857167980a53ee1e89853022218d5" category="inline-link-macro-rx"></block> （需要登入 NetApp 支援網站）。</block>
+  <block id="c3647f40e3574e0e6f49e20c19135bfa" category="section-title">使用 Azure VM 延伸功能的限制</block>
+  <block id="9d167ed7d52d81da8d83590ec3b5a4af" category="paragraph">Cloud Volumes ONTAP 不支援部署中的 Azure 虛擬機器（ VM ）延伸功能和 VM 應用程式。在 Azure 中使用 Cloud Volumes ONTAP 搭配 VM 延伸功能會導致作業延遲， NetApp 建議您避免這些延遲。</block>
 </blocks>
