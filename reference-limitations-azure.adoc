@@ -37,4 +37,4 @@ Cloud Volumes ONTAP 在某些 VM 類型中使用本機 NVMe 儲存設備做為 _
 
 某些地區不支援HA配對。
 
-https://cloud.netapp.com/cloud-volumes-global-regions["檢視支援的Azure地區清單"^]。
+https://bluexp.netapp.com/cloud-volumes-global-regions["檢視支援的Azure地區清單"^]。

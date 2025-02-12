@@ -256,4 +256,4 @@ AWS 本機區域中的這些執行個體類型不支援高寫入速度。
 
 == 支援的地區
 
-如需AWS區域支援、請參閱 https://cloud.netapp.com/cloud-volumes-global-regions["Cloud Volumes全球區域"^]。
+如需 AWS 區域支援 https://bluexp.netapp.com/cloud-volumes-global-regions["Cloud Volumes全球區域"^]、請參閱。

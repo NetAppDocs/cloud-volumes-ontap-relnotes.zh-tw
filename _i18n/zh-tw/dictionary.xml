@@ -58,7 +58,6 @@
   <block id="d59048f21fd887ad520398ce677be586" category="inline-link">深入瞭解</block>
   <block id="11509498a3f1573cdde878f927dc10bd" category="inline-link">超SSD</block>
   <block id="a3f8304ab1695053d71855c60f8abf63" category="inline-link">Cloud Volumes全球區域</block>
-  <block id="7c7627c6477255acb2239bd1be90f346" category="list-text">如需Azure地區支援、請參閱<block ref="2b6a522631c3b3b8afac5466195e108a" category="inline-link-rx"></block>。</block>
   <block id="e7089e61c962cfdae0de5b1d0748b6f2" category="list-text">可在雲端供應商的保留或隨需VM執行個體上執行。Cloud Volumes ONTAP不支援使用其他VM執行個體類型的解決方案。</block>
   <block id="b049fcbe8198301adc6bf87634a02845" category="section-title">HA 配對</block>
   <block id="2eacfdd792ca3ab121472c95654b43ec" category="paragraph">在Cloud Volumes ONTAP Azure中部署以HA配對形式部署的時、您可以從下列組態中進行選擇。</block>
@@ -171,7 +170,6 @@
   <block id="9de28fbf6817cd511eb799f9575b611d" category="list-text">當您選擇EC2執行個體類型時、可以指定它是共用執行個體或專屬執行個體。</block>
   <block id="afea36f2c9999a231c58b7e9dcf3b16e" category="list-text">可在保留或隨需EC2執行個體上執行。Cloud Volumes ONTAP不支援使用其他執行個體類型的解決方案。</block>
   <block id="8c4b25218155a1fdb972f4169855d04f" category="section-title">支援的地區</block>
-  <block id="4375839c669e051e5f2a8de11ba0c5d0" category="paragraph">如需AWS區域支援、請參閱<block ref="2b6a522631c3b3b8afac5466195e108a" category="inline-link-rx"></block>。</block>
   <block id="34515f1d88b10d0db0a78eba6c533394" category="summary">已知問題可識別可能導致您無法成功使用本產品版本的問題。</block>
   <block id="95dc0391ce7b396d7dd5622284e8fc3e" category="doc">已知問題</block>
   <block id="514c35ac615c3426962d39f27b71014b" category="paragraph">本版本Cloud Volumes ONTAP 中沒有任何特定於此版本的已知問題。</block>
@@ -431,7 +429,6 @@
   <block id="0066e8873a17823db601b98ebbc37dd2" category="section-title">HA 限制</block>
   <block id="b1969fa9ebe4dd2003618adb77082978" category="paragraph">某些地區不支援HA配對。</block>
   <block id="d91c9372e1fdf74d651217f1a36e518b" category="inline-link">檢視支援的Azure地區清單</block>
-  <block id="1e6996b39daf779b565c50c8411fbc8d" category="paragraph"><block ref="8e36f0f32d75ebd3c7851e726c538544" category="inline-link-rx"></block>。</block>
   <block id="9141535b8d150812f3cded29f090ad8c" category="summary">Google Cloud支援多Cloud Volumes ONTAP 種支援的支援功能。</block>
   <block id="9e931b1cee40a7346d1f06dd6a75ba8e" category="doc">Google Cloud支援的組態</block>
   <block id="12fe559ef81ce645ef1aee77885e1827" category="paragraph">不支援將單一節點系統升級為HA配對。如果您想在單一節點系統和HA配對之間切換、則需要部署新系統、並將資料從現有系統複寫到新系統。</block>
@@ -666,7 +663,6 @@
   <block id="f52ead6bbf1fb1c871d206603e5a2347" category="open-title">容量型授權</block>
   <block id="6e539d2ea7d82ed0e31c450e64ff8c04" category="cell">最佳化</block>
   <block id="d56bf07ec8cd4e9f29339d605ffef95c" category="open-title">節點型授權</block>
-  <block id="b338d2a3e5b2fa0602cf93fe49c51138" category="paragraph">如需 Google Cloud 地區支援、請參閱<block ref="2b6a522631c3b3b8afac5466195e108a" category="inline-link-rx"></block>。</block>
   <block id="bde67b5966889851166e3f5c7b09ff05" category="paragraph">在 Azure 中將 Cloud Volumes ONTAP 部署為單一節點系統時、您可以選擇下列容量型或節點型授權組態。</block>
   <block id="d2f103c82b43ca5f2da33f93d94bde64" category="paragraph">如果您在部署新Cloud Volumes ONTAP 的支援系統時選擇任何一種VM類型、就無法改用另一種VM類型、也就是_不使用適用於VNVRAM的Ultra SSD。例如、您無法從E8ds_v4變更為E8s_v3、但您可以從E8ds_v4變更為E32ds_v4、因為這兩種VM類型都使用Ultra SSD。</block>
   <block id="c0f95d0d2e06eba7eb0522dabf1c9d76" category="paragraph">相反地、如果您Cloud Volumes ONTAP 使用任何其他VM類型來部署支援功能、您將無法變更為使用Ultra SSD來執行VNVRAM的VM類型。例如、您無法從E8s_v3變更為E8ds_v4。</block>
@@ -818,4 +814,8 @@
   <block id="294d0a8af93eae96d1bba19b5a5f69c4" category="paragraph"><block ref="df0857167980a53ee1e89853022218d5" category="inline-link-macro-rx"></block> （需要登入 NetApp 支援網站）。</block>
   <block id="c3647f40e3574e0e6f49e20c19135bfa" category="section-title">使用 Azure VM 延伸功能的限制</block>
   <block id="9d167ed7d52d81da8d83590ec3b5a4af" category="paragraph">Cloud Volumes ONTAP 不支援部署中的 Azure 虛擬機器（ VM ）延伸功能和 VM 應用程式。在 Azure 中使用 Cloud Volumes ONTAP 搭配 VM 延伸功能會導致作業延遲， NetApp 建議您避免這些延遲。</block>
+  <block id="0890aa708cef7529c2bd35cb7d2895df" category="paragraph">如需 AWS 區域支援<block ref="e55b14db85f4d4837890e415926626e0" category="inline-link-rx"></block>、請參閱。</block>
+  <block id="f0de068c81c765820aca0fa8fe017396" category="paragraph">如需 Azure 區域支援<block ref="e55b14db85f4d4837890e415926626e0" category="inline-link-rx"></block>、請參閱。</block>
+  <block id="9b986795dc6a434c7339bfecbd5e5c8b" category="paragraph">如需 Google Cloud 地區支援<block ref="e55b14db85f4d4837890e415926626e0" category="inline-link-rx"></block>、請參閱。</block>
+  <block id="d798d4963d0ac509a1bda5483d9b9a52" category="paragraph"><block ref="5a94f18247116693735ff13d8eeaa964" category="inline-link-rx"></block>。</block>
 </blocks>

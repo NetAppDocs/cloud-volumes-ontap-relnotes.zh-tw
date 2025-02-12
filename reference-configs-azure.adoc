@@ -566,4 +566,4 @@ HA 配對使用 Azure 託管磁碟。支援下列磁碟類型和大小。
 
 == 支援的地區
 
-如需Azure地區支援、請參閱 https://cloud.netapp.com/cloud-volumes-global-regions["Cloud Volumes全球區域"^]。
+如需 Azure 區域支援 https://bluexp.netapp.com/cloud-volumes-global-regions["Cloud Volumes全球區域"^]、請參閱。
