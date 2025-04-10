@@ -4,7 +4,7 @@ permalink: reference-limitations-azure.html
 keywords: limitations, ha, azure, pay-as-you-go, paygo, cloud solution provider, vm, flash cache 
 summary: 這些已知限制僅適用於Cloud Volumes ONTAP Microsoft Azure中的某些功能。 
 ---
-= Azure的已知限制
+= Azure 中 Cloud Volumes ONTAP 的已知限制
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -4,7 +4,7 @@ permalink: reference-configs-aws.html
 keywords: ec2, instance, type, explore, standard, premium, byol, capacity, maximum, virtual machine, Cloud Volumes ONTAP, supported, configurations, sizes, disks, networking, bandwidth, professional package 
 summary: AWS支援多Cloud Volumes ONTAP 種支援的支援功能。 
 ---
-= AWS支援的組態
+= 支援的AWS組態Cloud Volumes ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -72,7 +72,7 @@ AWS可在單一節點系統中使用、也可作為高可用度（HA）節點配
 . 在某些組態中、磁碟限制會讓您無法單獨使用磁碟來達到容量限制。在這些情況下、您可以達到容量上限 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["將非作用中資料分層至物件儲存設備"^]。如需磁碟限制的相關資訊、請參閱 link:reference-limits-aws.html["儲存限制"]。
 . 使用 SSD 搭配所有 Cloud Volumes ONTAP 組態時、會啟用增強的寫入效能。
 . 使用處理量最佳化的HDD（ST1）時、不建議將資料分層至物件儲存設備。
-. AWS 本機區域僅支援通用 SSD （ gp2 ）磁碟類型。
+. AWS 本機區域中的 Cloud Volumes ONTAP 組態僅支援通用 SSD （ gp2 ）磁碟類型。
 
 
 --
@@ -102,7 +102,7 @@ AWS可在單一節點系統中使用、也可作為高可用度（HA）節點配
 . 在某些組態中、磁碟限制會讓您無法單獨使用磁碟來達到容量限制。在這些情況下、您可以達到容量上限 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["將非作用中資料分層至物件儲存設備"^]。如需磁碟限制的相關資訊、請參閱 link:reference-limits-aws.html["儲存限制"]。
 . 除了Cloud Volumes ONTAP PAYGO Explore之外、使用SSD搭配所有的支援功能組態時、都會啟用增強的寫入效能。
 . 使用處理量最佳化的HDD（ST1）時、不建議將資料分層至物件儲存設備。
-. AWS 本機區域僅支援通用 SSD （ gp2 ）磁碟類型。
+. AWS 本機區域中的 Cloud Volumes ONTAP 組態僅支援通用 SSD （ gp2 ）磁碟類型。
 
 
 --

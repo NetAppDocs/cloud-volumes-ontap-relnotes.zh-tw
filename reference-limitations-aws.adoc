@@ -4,7 +4,7 @@ permalink: reference-limitations-aws.html
 keywords: limitations, aws, amazon web services, flashe cache, alarms, cloudwatch, giveback, govcloud, c2s, aws outpost, outposts 
 summary: 這些已知的限制僅適用於Cloud Volumes ONTAP Amazon Web Services中的某些功能。 
 ---
-= AWS的已知限制
+= AWS 中 Cloud Volumes ONTAP 的已知限制
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

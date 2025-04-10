@@ -4,7 +4,7 @@ permalink: reference-provider-integrations.html
 keywords: maintenance event, azure maintenance event, cloud provider, issues, support 
 summary: 本頁說明NetApp如何與雲端供應商合作、以解決可能發生的問題。 
 ---
-= 雲端供應商整合
+= 與 Cloud Volumes ONTAP 雲端供應商協同作業
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 本頁說明NetApp如何與雲端供應商合作、以解決可能發�
 
 
 [role="lead"]
-本頁說明NetApp如何與雲端供應商合作、以解決可能發生的問題。
+瞭解 NetApp 如何與雲端供應商合作解決潛在問題。
 
 
 

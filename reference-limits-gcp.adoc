@@ -4,7 +4,7 @@ permalink: reference-limits-gcp.html
 keywords: limits, maximum, storage, aggregates, disks, volumes, capacity, luns, size, storage virtual machine, SVM 
 summary: 在Google Cloud中、由於儲存組態限制、可提供可靠的作業。Cloud Volumes ONTAP為獲得最佳效能、請勿將系統設定為最大值。 
 ---
-= Google Cloud的儲存限制
+= Google Cloud 中 Cloud Volumes ONTAP 的儲存限制
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

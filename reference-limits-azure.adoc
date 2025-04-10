@@ -4,7 +4,7 @@ permalink: reference-limits-azure.html
 keywords: limits, maximum, storage, aggregates, disks, volumes, capacity, luns, size, storage virtual machine, SVM, page blobs, ebs, managed disks 
 summary: 在Azure中、由於儲存組態限制、因此可提供可靠的作業。Cloud Volumes ONTAP為獲得最佳效能、請勿將系統設定為最大值。 
 ---
-= Azure的儲存限制
+= Azure的Cloud Volumes ONTAP 儲存限制
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
