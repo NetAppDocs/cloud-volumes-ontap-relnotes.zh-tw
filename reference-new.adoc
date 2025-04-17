@@ -20,6 +20,22 @@ Cloud Volumes ONTAP 9.16.1 包含新的增強功能。
 
 
 
+== 9.16.1 P2 （ 2025 年 4 月 17 日）
+
+現在可以在 Azure 和 Google Cloud 中部署和升級適用於 Cloud Volumes ONTAP 的 9.16.1 P2 修補程式。不過，此版本無法在 AWS 中進行部署和升級。BlueXP會提示您將現有系統升級至此修補程式版本。
+
+link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.16.1P2["檢視 P2 修補程式中修正的錯誤清單"^] （需要登入 NetApp 支援網站）。
+
+
+
+== 9.16.1 P1 （ 2025 年 4 月 17 日）
+
+現在可以在 Azure 和 Google Cloud 中部署和升級 Cloud Volumes ONTAP 的 9.16.1 P1 修補程式。不過，此版本無法在 AWS 中進行部署和升級。BlueXP會提示您將現有系統升級至此修補程式版本。
+
+link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.16.1P1["檢視 P1 修補程式中修正的錯誤清單"^] （需要登入 NetApp 支援網站）。
+
+
+
 == 9.16.1 GA （ 2025 年 3 月 6 日）
 
 您現在可以使用 Cloud Volumes ONTAP 9.16.1 一般可用度版本，在 Azure 和 Google Cloud 中進行部署和升級。不過，此版本無法在 AWS 中進行部署和升級。
