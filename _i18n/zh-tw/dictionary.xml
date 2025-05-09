@@ -416,8 +416,6 @@
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知檔案提供有關 NetApp 軟體所使用之協力廠商版權與授權的資訊。</block>
   <block id="7bb35241d1246d5dc87cb9e61c1efc05" category="summary">這些已知限制僅適用於Cloud Volumes ONTAP Microsoft Azure中的某些功能。</block>
   <block id="4e9780ecc95f5dbfb27e64e3ded5cd85" category="paragraph">下列已知限制僅適用於Cloud Volumes ONTAP Microsoft Azure中的功能。請務必同時檢閱 <block ref="edcf15b4d9d7d1e018ccca7ce112dd3e" category="inline-link-macro-rx"></block>。</block>
-  <block id="0066e8873a17823db601b98ebbc37dd2" category="section-title">HA 限制</block>
-  <block id="b1969fa9ebe4dd2003618adb77082978" category="paragraph">某些地區不支援HA配對。</block>
   <block id="d91c9372e1fdf74d651217f1a36e518b" category="inline-link">檢視支援的Azure地區清單</block>
   <block id="9141535b8d150812f3cded29f090ad8c" category="summary">Google Cloud支援多Cloud Volumes ONTAP 種支援的支援功能。</block>
   <block id="12fe559ef81ce645ef1aee77885e1827" category="paragraph">不支援將單一節點系統升級為HA配對。如果您想在單一節點系統和HA配對之間切換、則需要部署新系統、並將資料從現有系統複寫到新系統。</block>
@@ -781,4 +779,10 @@
   <block id="3b3592b54b76bb5d60a585ffacea4e61" category="paragraph">現在可以在 Azure 和 Google Cloud 中部署和升級 Cloud Volumes ONTAP 的 9.16.1 P1 修補程式。不過，此版本無法在 AWS 中進行部署和升級。BlueXP會提示您將現有系統升級至此修補程式版本。</block>
   <block id="a9380d77cd3c45a5f15f09b231323443" category="inline-link-macro">檢視 P1 修補程式中修正的錯誤清單</block>
   <block id="664e6349e84880f6407173721fad810a" category="paragraph"><block ref="e1914bcb543b75972205a0cc76dbb433" category="inline-link-macro-rx"></block> （需要登入 NetApp 支援網站）。</block>
+  <block id="77d9dd558dce394d624e008a5015c43e" category="section-title">高可用度部署的限制</block>
+  <block id="47e6c824f3fe7a0a707fd6f94c2b0d5e" category="paragraph">某些地區不支援高可用度（ HA ）配對。</block>
+  <block id="e62fa1e447749b7b88523431cfe1cb23" category="section-title">在單一可用性區域中部署 HA 的限制</block>
+  <block id="76d43d0c7a6d0d101562acb873375c45" category="inline-link">在 Azure 的單一可用性區域中部署 HA 配對</block>
+  <block id="d8bb5ee8ceb2ff0c0fd5de1a5d8db6ea" category="paragraph">從 Cloud Volumes ONTAP 9.15.1 開始、您可以在 Azure 的單一可用性區域（ AZs ）中、以 HA 模式部署虛擬機器（ VM ）執行個體。如需支援此功能的條件資訊，請<block ref="70422bd689a7303399dff3dd5e571c65" category="inline-link-rx"></block>參閱。</block>
+  <block id="4ed7f8d6ce44fa053592b73fcd8be5e3" category="paragraph">如果 Cloud Volumes ONTAP 版本早於 9.15.1 ，或不符合上述任何條件，則使用可用度集的先前部署模式即會生效。這僅適用於 HA 組態。</block>
 </blocks>
