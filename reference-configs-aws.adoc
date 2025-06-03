@@ -72,7 +72,7 @@ AWS可在單一節點系統中使用、也可作為高可用度（HA）節點配
 . 在某些組態中、磁碟限制會讓您無法單獨使用磁碟來達到容量限制。在這些情況下、您可以達到容量上限 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["將非作用中資料分層至物件儲存設備"^]。如需磁碟限制的相關資訊、請參閱 link:reference-limits-aws.html["儲存限制"]。
 . 使用 SSD 搭配所有 Cloud Volumes ONTAP 組態時、會啟用增強的寫入效能。
 . 使用處理量最佳化的HDD（ST1）時、不建議將資料分層至物件儲存設備。
-. AWS 本機區域中的 Cloud Volumes ONTAP 組態僅支援通用 SSD （ gp2 ）磁碟類型。
+. AWS 本機區域中的 Cloud Volumes ONTAP 組態僅支援通用 SSD （ gp2 ）磁碟類型。AWS 本機區域中的 Cloud Volumes ONTAP 不支援其他磁碟類型。
 
 
 --
@@ -250,6 +250,21 @@ AWS可在單一節點系統中使用、也可作為高可用度（HA）節點配
 +
 AWS 本機區域中的這些執行個體類型不支援高寫入速度。
 
+
+
+
+
+=== 不再支援c4、m4和r4執行個體
+
+Cloud Volumes ONTAP 不再支援 AWS 中的 c4、m4 和 r4 EC2 執行個體類型。如果您的系統在 c4、m4 或 r4 執行個體上執行，請變更為 c5、m5 或 r5 實例。您必須變更執行個體類型、才能升級至此版本。
+
+link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-change-ec2-instance.html["瞭解如何變更EC2執行個體類型Cloud Volumes ONTAP 以供使用"^]。
+
+如需詳細資訊、請參閱：
+
+* https://kb.netapp.com/Cloud/Cloud_Volumes_ONTAP/Converting_an_AWS_Xen_CVO_instance_to_Nitro_KVM["知識庫 (KB) 文章：將 AWS Xen CVO 執行個體轉換為 Nitro KVM"^]
+* https://kb.netapp.com/Cloud/Cloud_Volumes_ONTAP/Unable_to_change_the_instance_type_from_r4_to_r5_with_disk_count_error["知識庫文章：無法將實例類型從 r4 變更為 r5，且出現磁碟數量錯誤"^]
+* link:https://mysupport.netapp.com/info/communications/ECMLP2880231.html["詳細了解這些執行個體類型的可用性和支援終止情況"^]
 
 
 

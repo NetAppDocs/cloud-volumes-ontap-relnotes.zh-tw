@@ -164,6 +164,12 @@ NOTE: _Flash快取_、高寫入模式和8、896的MTU是功能相依的、無法
 
 --
 ====
+有關特定機器類型的更多信息，請參閱 Google Cloud 文件：
+
+* https://cloud.google.com/compute/docs/general-purpose-machines#n1_machines["n1系列通用機型"^]
+* https://cloud.google.com/compute/docs/general-purpose-machines#n2_series["N2系列通用機型"^]
+
+
 
 
 == 支援的磁碟大小

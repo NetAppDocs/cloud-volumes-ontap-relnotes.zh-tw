@@ -78,13 +78,3 @@ NOTE: 對於 AWS ，系統不會提示您進行此升級。AWS 不支援升級�
 * 單一節點系統的升級可讓系統離線長達25分鐘、在此期間I/O會中斷。
 * 升級 HA 配對不會中斷營運， I/O 也不會中斷。在此不中斷升級程序期間，每個節點都會一起升級，以繼續為用戶端提供 I/O 服務。
 
-
-
-
-=== 不再支援c4、m4和r4執行個體
-
-在AWS中Cloud Volumes ONTAP 、不再支援C4、M4和R4 EC2執行個體類型。如果現有的系統執行於c4、m4或r4執行個體類型、則必須變更為c5、m5或R5執行個體系列中的執行個體類型。您必須變更執行個體類型、才能升級至此版本。
-
-link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-change-ec2-instance.html["瞭解如何變更EC2執行個體類型Cloud Volumes ONTAP 以供使用"^]。
-
-請參閱 link:https://mysupport.netapp.com/info/communications/ECMLP2880231.html["NetApp支援"^] 以深入瞭解這些執行個體類型的終止可用度和支援。
