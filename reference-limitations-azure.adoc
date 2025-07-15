@@ -20,7 +20,7 @@ summary: 這些已知限制僅適用於Cloud Volumes ONTAP Microsoft Azure中的
 
 == 使用 Azure VM 延伸功能的限制
 
-Cloud Volumes ONTAP 不支援部署中的 Azure 虛擬機器（ VM ）延伸功能和 VM 應用程式。在 Azure 中使用 Cloud Volumes ONTAP 搭配 VM 延伸功能會導致作業延遲， NetApp 建議您避免這些延遲。
+Cloud Volumes ONTAP不支援 Azure 虛擬機器 (VM) 擴展，因為它們會延遲操作。部署Cloud Volumes ONTAP後， BlueXP會定期停用 VM 擴充。如果您已在工作環境中安裝了這些擴展，請聯絡 Microsoft Azure 支援以停用或刪除它們。
 
 
 

@@ -32,7 +32,7 @@ Cloud Volumes ONTAP 可在 Google Cloud 中作為單一節點系統使用、也�
 --
 [cols="h,d,d,d"]
 |===
-|  | Freemium | 最佳化 | 容量型授權（ Essentials 與 Professional ） 
+|  | Freemium | 已優化^4^ | 容量型授權（ Essentials 與 Professional ） 
 
 
 | 最大系統容量（磁碟+物件儲存） | 500 GiB | 2 PIB | 2 PIB 
@@ -91,7 +91,7 @@ link:reference-limits-gcp.html["深入瞭解Google Cloud的磁碟限制"]。
 您可以在部署符合資格的執行個體類型時啟用_Flash Cache和高速寫入速度。若要啟用最大傳輸單位8、896位元組、您必須選擇VPC-1、VPC-2或VPC-3進行部署。MTU越高、網路處理量就越高。如需啟動其中一個部署的詳細資訊、請參閱 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-gcp.html#launching-an-ha-pair-in-google-cloud["在Google Cloud上啟動HA配對"]。
 
 
-NOTE: _Flash快取_、高寫入模式和8、896的MTU是功能相依的、無法在設定的執行個體中個別停用。
+NOTE: _Flash快取_、高寫入模式和8、896的MTU是功能相依的、無法在設定的執行個體中個別停用。。^4^ 從 2025 年 7 月 1 日起， Cloud Volumes ONTAP Optimized 授權將被棄用，並且將不再可在 Google Cloud 市場中購買或續訂以進行即用即付 (PAYGO) 訂閱。如需相關資訊、請 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["更新功能 Cloud Volumes ONTAP"^]參閱。
 
 --
 .節點型授權
