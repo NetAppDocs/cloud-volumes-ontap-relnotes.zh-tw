@@ -44,6 +44,10 @@ summary: 已知限制指出本產品版本不支援的平台、裝置或功能�
 * 支援一致性與企業模式（僅支援Cloud WORM）SnapLock
 * SnapMirror同步
 * VLAN
+* SMB 持續可用性 (CA)
++
+https://kb.netapp.com/on-prem/ontap/da/NAS/NAS-KBs/What_are_SMB_Continuous_Availability_CA_Shares["持續可用的 SMB 共享"^]不支援無中斷運作。
+
 
 
 
