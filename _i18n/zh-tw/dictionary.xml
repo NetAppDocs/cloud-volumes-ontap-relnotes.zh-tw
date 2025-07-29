@@ -821,4 +821,8 @@
   <block id="b469f24f7b40dd39d564f20b26834f51" category="paragraph"><block ref="8c32a537fad73fe139f927507d338c47" category="inline-link-rx"></block>不支援無中斷運作。</block>
   <block id="a658c03927efcbcb7170fb429c8a9408" category="paragraph">使用Cloud Volumes ONTAP非連續可用 CIFS 共享的 CIFS/SMB 用戶端在發生接管時以及會話所使用的聚合交還給聚合的主節點時，都會遇到會話遺失的情況。這是 CIFS/SMB 協定本身的限制。您可以使用經批准的第三方產品來避免接管和交還導致的問題。如需進一步協助，請聯絡NetApp支援。</block>
   <block id="c04ba4ba4463685b70d448688626a589" category="admonition"><block ref="8c32a537fad73fe139f927507d338c47" category="inline-link-rx"></block> Cloud Volumes ONTAP不支援無中斷操作。</block>
+  <block id="804568356abbd917c2b16399c1d74469" category="section-title">9.16.1 P5（2025 年 7 月 28 日）</block>
+  <block id="b18cddec63bbac4d331412b33193f19d" category="paragraph">9.16.1 P5 修補程式現已可在 Azure 和 Google Cloud 中為Cloud Volumes ONTAP部署和升級。但此版本暫不支援在 AWS 中部署和升級。 BlueXPBlueXP提示您將現有系統升級至此修補程式版本。</block>
+  <block id="e890150484086859b9a5078abe9c6f20" category="inline-link-macro">查看 P5 補丁修復的錯誤列表</block>
+  <block id="594276b7568f8909a2e4145873978b46" category="paragraph"><block ref="be3338d2845a087c634560014a857fc0" category="inline-link-macro-rx"></block> （需要登入NetApp支援站點）。</block>
 </blocks>
