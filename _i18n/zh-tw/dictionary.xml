@@ -636,7 +636,6 @@
   <block id="6c390ecab52e3e5345764abdf66b4a13" category="list-text">E20ds_v5 ^1^</block>
   <block id="ea724697af39ce2b490b5643777ed273" category="paragraph">Cloud Volumes ONTAP 可在 Google Cloud 中作為單一節點系統使用、也可作為高可用度（ HA ）節點配對、以提供容錯能力和不中斷營運的功能。</block>
   <block id="f52ead6bbf1fb1c871d206603e5a2347" category="open-title">容量型授權</block>
-  <block id="6e539d2ea7d82ed0e31c450e64ff8c04" category="cell">最佳化</block>
   <block id="d56bf07ec8cd4e9f29339d605ffef95c" category="open-title">節點型授權</block>
   <block id="bde67b5966889851166e3f5c7b09ff05" category="paragraph">在 Azure 中將 Cloud Volumes ONTAP 部署為單一節點系統時、您可以選擇下列容量型或節點型授權組態。</block>
   <block id="d2f103c82b43ca5f2da33f93d94bde64" category="paragraph">如果您在部署新Cloud Volumes ONTAP 的支援系統時選擇任何一種VM類型、就無法改用另一種VM類型、也就是_不使用適用於VNVRAM的Ultra SSD。例如、您無法從E8ds_v4變更為E8s_v3、但您可以從E8ds_v4變更為E32ds_v4、因為這兩種VM類型都使用Ultra SSD。</block>
@@ -813,7 +812,6 @@
   <block id="549504876cb29a5866aca5cf3802fe6d" category="list-text">^4^ 這些 VM 類型支援在共用託管磁碟上執行的單一可用區和多可用區配置中的 HA 對。對於 LS_v3 VM 類型、 ONTAP 9.13.1 版開始提供多個可用性區域支援。對於 Eds_v5 VM 類型、多個可用性區域支援從 ONTAP 9.14.1 RC1 版開始。</block>
   <block id="4e2d7e12a50a6543c1e295c672343668" category="cell">已優化^4^</block>
   <block id="dd47c5ffc608943bbe951c1bc249e4a3" category="inline-link">更新功能 Cloud Volumes ONTAP</block>
-  <block id="6d0094db764c8adadbabb02e37cfc44d" category="admonition">_Flash快取_、高寫入模式和8、896的MTU是功能相依的、無法在設定的執行個體中個別停用。。^4^ 從 2025 年 7 月 1 日起， Cloud Volumes ONTAP Optimized 授權將被棄用，並且將不再可在 Google Cloud 市場中購買或續訂以進行即用即付 (PAYGO) 訂閱。如需相關資訊、請<block ref="1080c8772df7208f65fb600e0d40b155" category="inline-link-rx"></block>參閱。</block>
   <block id="1eb96c178e7f735868c3e0db46da5177" category="paragraph">Cloud Volumes ONTAP不支援 Azure 虛擬機器 (VM) 擴展，因為它們會影響BlueXP管理作業。在部署期間， BlueXP會阻止在您的虛擬機器上安裝任何擴充功能。如果您現有的Cloud Volumes ONTAP虛擬機器上已安裝擴展， NetApp強烈建議您聯絡 Microsoft Azure 支援部門將其刪除。</block>
   <block id="816bcc0866a6fd49370b7a416001b4e9" category="paragraph">從 2025 年 7 月 14 日開始，如果在您的Cloud Volumes ONTAP VM 上偵測到 VM 擴展， NetApp將在BlueXP中通知您並發送電子郵件。</block>
   <block id="48a1881670db273e8743aa5bc3c47be1" category="list-text">SMB 持續可用性 (CA)</block>
@@ -825,4 +823,11 @@
   <block id="b18cddec63bbac4d331412b33193f19d" category="paragraph">9.16.1 P5 修補程式現已可在 Azure 和 Google Cloud 中為Cloud Volumes ONTAP部署和升級。但此版本暫不支援在 AWS 中部署和升級。 BlueXPBlueXP提示您將現有系統升級至此修補程式版本。</block>
   <block id="e890150484086859b9a5078abe9c6f20" category="inline-link-macro">查看 P5 補丁修復的錯誤列表</block>
   <block id="594276b7568f8909a2e4145873978b46" category="paragraph"><block ref="be3338d2845a087c634560014a857fc0" category="inline-link-macro-rx"></block> （需要登入NetApp支援站點）。</block>
+  <block id="849836109f5a7c7779b41aa322a0b75f" category="cell">已優化^5^</block>
+  <block id="9def883103b7b964dcbb0993e3f8a065" category="inline-link">優化許可證的可用性終止</block>
+  <block id="84f2cfe539c789603fba39917f99f628" category="list-text">^5^ 從 2025 年 8 月 11 日開始， Cloud Volumes ONTAP優化授權將被棄用，並且將不再可在 Azure 市場中購買或續訂以進行即用即付 (PAYGO) 訂閱。有關更多信息，請參閱<block ref="43fcd9c2498ef205b9218293a558faae" category="inline-link-rx"></block> 。</block>
+  <block id="1423917d8d89129ae623d919645b3100" category="list-text">^4^ 從 2025 年 8 月 11 日開始， Cloud Volumes ONTAP優化授權將被棄用，並且將不再可在 Azure 市場中以即用即付 (PAYGO) 訂閱的方式購買或續訂。有關更多信息，請參閱<block ref="43fcd9c2498ef205b9218293a558faae" category="inline-link-rx"></block> 。</block>
+  <block id="004557d03a688223801f3c9351c02ee9" category="cell">已優化^7^</block>
+  <block id="8642a53dd7d0662eb87089fce9268665" category="list-text">^7^ 自 2025 年 8 月 11 日起， Cloud Volumes ONTAP優化授權將被棄用，並且將不再可在 Azure 市場中以即用即付 (PAYGO) 訂閱的方式購買或續訂。有關更多信息，請參閱<block ref="1080c8772df7208f65fb600e0d40b155" category="inline-link-rx"></block> 。</block>
+  <block id="a11297aa85d33243a4a5a316eb075590" category="list-text">^4^ 自 2025 年 8 月 11 日起， Cloud Volumes ONTAP Optimized 授權將被棄用，並且將不再可在 Google Cloud 市場中以即用即付 (PAYGO) 訂閱的方式購買或續訂。有關信息，請參閱<block ref="1080c8772df7208f65fb600e0d40b155" category="inline-link-rx"></block>。</block>
 </blocks>
