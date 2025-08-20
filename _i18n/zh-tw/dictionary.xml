@@ -83,7 +83,6 @@
   <block id="c5a27c05ad608efda7a7a192ee480209" category="paragraph">每個授權都支援不同的最大系統容量。最大系統容量包括磁碟型儲存設備、以及用於資料分層的物件式儲存設備。NetApp不支援超過此限制。</block>
   <block id="705c8901d15869a7116491b156af6fbe" category="cell">368TiB ^2^</block>
   <block id="6e9a8a2df40afea5890a6ea81b2df2b2" category="cell">每個授權368TiB ^2^</block>
-  <block id="71235138fc0c3fda4c8fc946f34c4367" category="cell">2 PIB ^2^</block>
   <block id="6cd4ae2aba2a092cf2052266e4fcdc94" category="list-text">已配置的IOPS SSD（IO1）^3^</block>
   <block id="320a1bc96a642b93ac47eb0838fbf1ff" category="list-text">處理量最佳化的HDD（ST1）^4^</block>
   <block id="1f742543feb3ee22b577a40afbb960a2" category="cell">冷資料分層至S3</block>
@@ -261,7 +260,6 @@
   <block id="a40e4d3ab198f5d9c9e23e409e7abae3" category="list-text">集合體中的所有磁碟大小必須相同。</block>
   <block id="a95e3bd264855a83a2c90be11b509673" category="section-title">儲存VM限制</block>
   <block id="3327bf895c2d31f9b328aa44c7400786" category="paragraph">有些組態可讓您建立更多的儲存VM（SVM）以Cloud Volumes ONTAP 供支援。</block>
-  <block id="73cbcc5508ae5bff313fecfcc6e16834" category="paragraph">這些是測試的限制。雖然理論上可以設定額外的儲存VM、但不受支援。</block>
   <block id="10a824a307a3ec9647d72cf1842c2254" category="inline-link">瞭解如何建立額外的儲存VM</block>
   <block id="82060d81b7ce43c57280e879899f9a2c" category="cell">授權類型</block>
   <block id="2b32b0b2d0f29c87c701d113a9b7814c" category="cell">儲存VM限制</block>
@@ -367,7 +365,6 @@
   <block id="6f4922f45568161a8cdf4ad2299f6d23" category="cell">18</block>
   <block id="d165ee52657df0e131ad67ed84783dfb" category="cell">16^1^</block>
   <block id="84e0bd7c947290d306ef975cf8082911" category="cell">單一節點：與磁碟限制HA配對相同：節點上有18個^1^</block>
-  <block id="fa1fa971d1018dcdfc6e158b981c33cb" category="list-text">無法在HA配對的兩個節點上建立18個Aggregate、因為這樣做會超過資料磁碟限制。</block>
   <block id="4a17a3c856fd1f9d634bfd17f1c2f886" category="list-text">此限制可能較低、視您使用的EC2執行個體類型而定。每個執行個體的限制列於下節。</block>
   <block id="3bf6fac8bc39cb7e3c1edfe9268b14b0" category="section-title">依EC2執行個體類型限制儲存VM</block>
   <block id="a5b344442a7f99e2e79adb073bfb1038" category="paragraph">建立額外的儲存VM時、您需要將私有IP位址分配給連接埠e0a。下表列出每個介面的私有IP數量上限、Cloud Volumes ONTAP 以及部署完使用費率後、連接埠e0a上可用的IP位址數量。可用IP位址的數量、直接影響該組態的儲存VM數量上限。</block>
@@ -465,7 +462,6 @@
   <block id="b7d71850fd138e6cd477a1887cc244f3" category="cell">每個Aggregate的磁碟數^4^</block>
   <block id="449daf85c71a9f8eb7c666134b1d9b95" category="list-text">1-6</block>
   <block id="734bf70b1c522fd659b58c67d2c015e9" category="list-text">1-8個彈性Volume ^3^</block>
-  <block id="4d7bfec0bd52de6919125094b75ca0d4" category="list-text">最大Aggregate大小是根據組成Aggregate的磁碟而來。此限制不包括用於資料分層的物件儲存設備。</block>
   <block id="70fb554e00e352dd7da6941d99b53751" category="inline-link">深入瞭解彈性磁碟區的支援</block>
   <block id="dc2065e297a9790d182a555ba250dbda" category="cell">節點型BYOL</block>
   <block id="75b66e0b3cef735ea985bd79ab9601e2" category="cell">m5dn.4xlarge</block>
@@ -481,17 +477,13 @@
   <block id="e7caa46d6e70a5b96752b4644b9f1527" category="paragraph">限制不包括開機磁碟和根磁碟。</block>
   <block id="e8ea7579109541b8654ac77df6ec5b21" category="list-text">當單獨使用磁碟、使用磁碟和冷資料分層至物件儲存設備時、會列出最大系統容量。</block>
   <block id="dd81441aed81dac4d773ef1291a64e00" category="list-text">使用EBS磁碟區做為磁碟、磁碟大小上限為16 TiB。Cloud Volumes ONTAP</block>
-  <block id="6f55661d86c0b385d8b362ed90701d0d" category="section-title">容量型授權限制</block>
   <block id="54fe37b73954e37cae21db9bbd66c952" category="inline-link">深入瞭Cloud Volumes ONTAP 解功能多樣的授權選項</block>
   <block id="5aabc9069557be7e4aeff466605cbc75" category="section-title">單一節點</block>
-  <block id="6c3b49ddb811c2d88edee86163680009" category="section-title">節點型授權限制</block>
   <block id="d017aa906544a3348ee35d75ebb10b72" category="paragraph">下列磁碟限制適用於Cloud Volumes ONTAP 使用節點型授權的支援系統、這是前一代授權模式、可讓您依Cloud Volumes ONTAP 節點授權使用。現有客戶仍可使用節點型授權。</block>
   <block id="fff4bb20e652c529e2e22e76e56ed9b5" category="section-title">單一節點搭配PAYGO Premium</block>
   <block id="a9698a2172c5fcc72b7ecd7910403955" category="section-title">單一節點搭配BYOL</block>
   <block id="9dbb7f356b08de585f6ddbe523e4a8d8" category="section-title">HA與PAYGO Premium配對</block>
   <block id="1bc398eeb632d3ea2f565d86881775d8" category="section-title">HA與BYOL配對</block>
-  <block id="8839c374fd950d105b5836c5400c37e3" category="paragraph">容量限制會因您使用的VM大小、以及您使用的是單一節點系統或HA配對而有所不同。</block>
-  <block id="10e6e33e8d7a64d70c731d40ea252ed8" category="paragraph">下列附註提供您在下表中所見數字的詳細資料：</block>
   <block id="bbeef84c33f1676ea87c5c7f476795e6" category="paragraph">限制不包括根磁碟、核心磁碟和VNVRAM。</block>
   <block id="0d5277886c056c697a81cb7ba46178fc" category="list-text">針對具有特定VM大小的單一節點系統所列出的896 TiB磁碟型限制、是_已測試_的限制。</block>
   <block id="8a11b7df22322ab2814174e7745c863f" category="inline-link">關於本產品的注意事項ONTAP</block>
@@ -509,7 +501,6 @@
   <block id="30749b02bc62d931d770e6c719254e7b" category="list-text">BlueXP介面顯示標準和BYOL支援的其他機器類型：NA-HIGHEM-4。不過、這種機器類型並不適用於正式作業環境。我們僅針對特定的實驗室環境提供此功能。</block>
   <block id="9889b7a9df56580016f59ccd942fb1d1" category="inline-link">BlueXP版本說明</block>
   <block id="fde45fa5cd70a93e88151b83aa348f12" category="inline-link">BlueXP API端點</block>
-  <block id="40aa449308d0af16355f19e61ffe344b" category="paragraph">不、這不需要。HA配對中的資料會在節點之間同步鏡射、以便在Google Cloud發生故障時提供資料。例如、如果您在節點A上購買8 TB磁碟、則BlueXP也會在節點B上配置8 TB磁碟、用於鏡射資料。雖然已配置16 TB容量、但根據授權上限、僅需8 TB。</block>
   <block id="2819feead2b07762a4465189ab8b2f52" category="paragraph-title">對於HA配對、每個節點或整個HA配對的授權容量限制是多少？</block>
   <block id="7093c2c9844cf46dcd5d50c6d596d244" category="paragraph-title">對於HA配對、鏡射資料是否會根據授權容量限制計算？</block>
   <block id="9d123a356c832621891a3328c128b78b" category="list-text">L8s_v3 ^2^</block>
@@ -576,7 +567,6 @@
   <block id="81a074db33c6f62838933c92142f16d6" category="paragraph"><block ref="f969ecf664fae2f86e88c525c7dd7acf" category="inline-link-rx"></block>。</block>
   <block id="70a8e1fb7e815dcae7d43566ab0db1e7" category="paragraph"><block ref="45c029924054162202773bd86e09b271" category="inline-link-rx"></block>。</block>
   <block id="a990fdc46668be8e7f963c8df127bbe8" category="paragraph">在某些組態中、磁碟限制會讓您無法單獨使用磁碟來達到容量限制。在這些情況下、您可以達到容量上限<block ref="aea0958203307daa433f894622f3e640" category="inline-link-rx"></block>。如需詳細資料、請參閱下方的容量和磁碟限制。</block>
-  <block id="100e0e5b58741c034dadba013998e8b8" category="list-text">如果您的組態支援Amazon EBS彈性磁碟區功能、則Aggregate最多可包含8個磁碟、最多可提供128 TiB的容量。使用GP3或IO1磁碟時、Amazon EBS Elastic Volumes功能預設會在_new _ Cloud Volumes ONTAP 版本9.11.0或更新的系統上啟用。<block ref="d6d48ea3644fd45f9f7ff8f4c8d4ae57" category="inline-link-rx"></block></block>
   <block id="c0ad13124302d4d047c0f916a6418182" category="paragraph"><block ref="cc3941262f254d1055804ecddca39dec" category="inline-link-rx"></block>。</block>
   <block id="4bdb15bfe1bad472d818dc31e8f53185" category="paragraph">最新版的BlueXP也會提供其他功能和增強功能。請參閱<block ref="c7887e85c6060ae2594d873a0f2ae025" category="inline-link-rx"></block> 以取得詳細資料。</block>
   <block id="a92c2d98e174fb58a9af451a8c3413f9" category="paragraph"><block ref="8271d50d033781f1596acf863334de58" category="inline-link-macro-rx"></block>。</block>
@@ -812,8 +802,6 @@
   <block id="549504876cb29a5866aca5cf3802fe6d" category="list-text">^4^ 這些 VM 類型支援在共用託管磁碟上執行的單一可用區和多可用區配置中的 HA 對。對於 LS_v3 VM 類型、 ONTAP 9.13.1 版開始提供多個可用性區域支援。對於 Eds_v5 VM 類型、多個可用性區域支援從 ONTAP 9.14.1 RC1 版開始。</block>
   <block id="4e2d7e12a50a6543c1e295c672343668" category="cell">已優化^4^</block>
   <block id="dd47c5ffc608943bbe951c1bc249e4a3" category="inline-link">更新功能 Cloud Volumes ONTAP</block>
-  <block id="1eb96c178e7f735868c3e0db46da5177" category="paragraph">Cloud Volumes ONTAP不支援 Azure 虛擬機器 (VM) 擴展，因為它們會影響BlueXP管理作業。在部署期間， BlueXP會阻止在您的虛擬機器上安裝任何擴充功能。如果您現有的Cloud Volumes ONTAP虛擬機器上已安裝擴展， NetApp強烈建議您聯絡 Microsoft Azure 支援部門將其刪除。</block>
-  <block id="816bcc0866a6fd49370b7a416001b4e9" category="paragraph">從 2025 年 7 月 14 日開始，如果在您的Cloud Volumes ONTAP VM 上偵測到 VM 擴展， NetApp將在BlueXP中通知您並發送電子郵件。</block>
   <block id="48a1881670db273e8743aa5bc3c47be1" category="list-text">SMB 持續可用性 (CA)</block>
   <block id="66f1432987337e84ca83c5bdf6848b9e" category="inline-link">持續可用的 SMB 共享</block>
   <block id="b469f24f7b40dd39d564f20b26834f51" category="paragraph"><block ref="8c32a537fad73fe139f927507d338c47" category="inline-link-rx"></block>不支援無中斷運作。</block>
@@ -830,4 +818,41 @@
   <block id="004557d03a688223801f3c9351c02ee9" category="cell">已優化^7^</block>
   <block id="8642a53dd7d0662eb87089fce9268665" category="list-text">^7^ 自 2025 年 8 月 11 日起， Cloud Volumes ONTAP優化授權將被棄用，並且將不再可在 Azure 市場中以即用即付 (PAYGO) 訂閱的方式購買或續訂。有關更多信息，請參閱<block ref="1080c8772df7208f65fb600e0d40b155" category="inline-link-rx"></block> 。</block>
   <block id="a11297aa85d33243a4a5a316eb075590" category="list-text">^4^ 自 2025 年 8 月 11 日起， Cloud Volumes ONTAP Optimized 授權將被棄用，並且將不再可在 Google Cloud 市場中以即用即付 (PAYGO) 訂閱的方式購買或續訂。有關信息，請參閱<block ref="1080c8772df7208f65fb600e0d40b155" category="inline-link-rx"></block>。</block>
+  <block id="8d051a62e2d203f6829d7d7282bfaad2" category="inline-link">FabricPool最佳實踐</block>
+  <block id="1fa61fc2f5b77b2d0fa94849b6af3dbb" category="paragraph">透過基於容量的許可，每個Cloud Volumes ONTAP系統都支援分層到物件儲存。總分層容量可以擴展到雲端提供者的儲存桶限制。雖然許可證沒有施加容量限制，但您應該遵循<block ref="c6ca22161b60218024eaf899637cc82e" category="inline-link-rx"></block>確保在配置和管理分層時實現最佳效能、可靠性和成本效率。</block>
+  <block id="847e3ee04fb8abbb4d0d1afa56101a04" category="cell">靈活^2^</block>
+  <block id="fe70a2c1423d8dc6d93d9ed56139eace" category="inline-link">Azure VM 管理擴充功能可以安裝到 Cloud Volume ONTAP中嗎？</block>
+  <block id="9afd5f64e8e4dee128f7ec6ba0028fe0" category="paragraph">Cloud Volumes ONTAP不支援 Azure 虛擬機器 (VM) 擴展，因為它們會影響BlueXP管理作業。在部署期間， BlueXP會阻止在您的虛擬機器上安裝任何擴充功能。如果您現有的Cloud Volumes ONTAP VM 上已安裝擴展，請聯絡 Microsoft Azure 支援將其刪除。如需指導，請參閱知識庫 (KB) 文章<block ref="6d01312163294b91508e568dd491d345" category="inline-link-rx"></block></block>
+  <block id="18a9f864fef2d6af1e02766d38585370" category="paragraph">從 2025 年 7 月 14 日開始，如果在您的Cloud Volumes ONTAP VM 上偵測到 VM 擴展， NetApp將發送電子郵件並在BlueXP中通知您。</block>
+  <block id="3c95fa05a59cc1bbea5cd04255c3878b" category="paragraph">最大系統容量包括基於磁碟的儲存以及用於資料分層的物件儲存。</block>
+  <block id="11df62ebd9af6aec3766ffa2d277d960" category="paragraph-title">基於容量的許可證的容量限制</block>
+  <block id="df710f89ebb9e663bd3d66607a0bf413" category="inline-link">AWS 文件</block>
+  <block id="42118bfa7201ec0bae6a7c55dc56387e" category="paragraph">透過基於容量的許可，每個Cloud Volumes ONTAP系統都支援分層到物件儲存。總分層容量可以擴展到雲端提供者的儲存桶限制。雖然許可證沒有施加容量限制，但您應該遵循<block ref="c6ca22161b60218024eaf899637cc82e" category="inline-link-rx"></block>確保在配置和管理分層時實現最佳效能、可靠性和成本效率。請參閱<block ref="699cd23bd03b9a62b6e7a9fe25109bb3" category="inline-link-rx"></block>了解更多。</block>
+  <block id="e292aa024fbf164ca3da18861c8d1fed" category="list-text">其他許可證類型的容量限制</block>
+  <block id="22827129a19cf89772bdcf4690c2a33d" category="paragraph">容量限制針對的是整個 HA 對。它不是每個節點的。例如，Premium 許可證允許兩個節點使用最多 368 TiB。</block>
+  <block id="776260409d15e3bf4b8b6b05b0472c1c" category="list-text">您無法在 HA 對中的兩個節點上建立 18 個聚合，因為這會超出資料磁碟限制。</block>
+  <block id="967a34cae0dcd075fa74b42dcc7efab4" category="list-text">最大聚合大小取決於其磁碟，不包括用於資料分層的物件儲存。</block>
+  <block id="7fa1f86184c7f330217fb3596f2aa10a" category="list-text">如果您的配置支援 Amazon EBS 彈性磁碟區功能，則聚合最多可包含 8 個磁碟，從而提供最多 128 TiB 的容量。預設情況下，當您使用 gp3 或 io1 磁碟時， Cloud Volumes ONTAP 9.11.0 及更高版本的系統會啟用 Amazon EBS Elastic Volumes。<block ref="d6d48ea3644fd45f9f7ff8f4c8d4ae57" category="inline-link-rx"></block></block>
+  <block id="1c5d4d5b3df2ab67b0a0577f6853b0fe" category="section-title">基於容量的授權不同部署模式的限制</block>
+  <block id="34076b805502c0cfbcd6caea2f061842" category="admonition">有關單節點和 HA 配置的最大系統容量和資料分層容量限制，請參閱<block ref="23480a14d285390e1b7e1d67acd7bce6" category="inline-xref-macro-rx"></block>。</block>
+  <block id="323a2487b0d5c474f2b87eb189cd77eb" category="section-title">基於節點的授權的不同部署模式的限制</block>
+  <block id="b1b103b3711ab75fd78baf8544303a02" category="paragraph">NetApp不支援超出系統容量限制。如果達到許可容量限制， BlueXP將顯示需要採取行動的訊息並阻止您新增更多磁碟。</block>
+  <block id="6b209360b200c08a554735be2c77d1ca" category="inline-link">託管磁碟的 Azure 文件</block>
+  <block id="531b133840ee35cf5193230121ea7443" category="inline-link">Azure Blob 儲存體文檔</block>
+  <block id="0277f6faf50443f930d676caf5df530b" category="paragraph">透過基於容量的許可，每個Cloud Volumes ONTAP系統都支援分層到物件儲存。總分層容量可以擴展到雲端提供者的儲存桶限制。雖然許可證沒有施加容量限制，但您應該遵循<block ref="c6ca22161b60218024eaf899637cc82e" category="inline-link-rx"></block>確保在配置和管理分層時實現最佳效能、可靠性和成本效率。請參閱<block ref="c5c853b91015c45f4e626225eb89092f" category="inline-link-rx"></block>和<block ref="6782e281e8536503245f524b6778618f" category="inline-link-rx"></block>。</block>
+  <block id="9e1048f957212fa3c5348c90108fadb2" category="paragraph">容量限制因虛擬機器大小和系統類型（單節點或 HA 對）而異。</block>
+  <block id="27ec94bf72bfeade6e3be4da773bf774" category="paragraph">以下註釋解釋了表格中的數字：</block>
+  <block id="b0e0c6760d9a4298c0d0582142ffe301" category="list-text">您可以看到單獨使用磁碟時以及使用磁碟和冷資料分層到物件儲存時的最大系統容量。</block>
+  <block id="b4a5fb3f789f6d08047f81ea8e4e92e9" category="paragraph">以下磁碟限制適用於使用基於容量的許可包的Cloud Volumes ONTAP系統。<block ref="360eefdcdd22adda63e8597e9466029a" category="inline-link-rx"></block> 。</block>
+  <block id="d29b6be74fc4db7d655ea399e5f3cac6" category="admonition">有關單節點、單一可用區域中具有頁 blob 的 HA 對以及單一和多個可用區域中具有共享託管磁碟的 HA 對的最大系統容量和資料分層容量限制，請參閱<block ref="7184709fc91b33a5dc1db3aa29bb38fb" category="inline-xref-macro-rx"></block>。</block>
+  <block id="9cb96726e4839703596eada3cf290aef" category="paragraph">以下磁碟限制適用於使用基於節點的許可的Cloud Volumes ONTAP系統。基於節點的許可是上一代模型，可讓您按節點許可Cloud Volumes ONTAP 。現有客戶仍可獲得基於節點的授權。</block>
+  <block id="224fd3d6c6aee1a82004220bae5e00cd" category="paragraph">您可以為Cloud Volumes ONTAP BYOL 單節點或 HA 對系統購買多個基於節點的許可證，以分配超過 368 TiB 的容量，最高可達經過測試和支援的最大系統容量限制 2 PiB。請注意，磁碟限制可能會阻止您僅使用磁碟就達到容量限制。您可以透過以下方式超越磁碟限制<block ref="aea0958203307daa433f894622f3e640" category="inline-link-rx"></block>。<block ref="ca37ce4dde5616ef242d545490c7e6ee" category="inline-link-rx"></block> 。  Cloud Volumes ONTAP支援的最大測試和支援系統容量為 2 PiB，超過 2 PiB 限制將導致系統配置不受支援。</block>
+  <block id="ca27ff02499591810bfa3b09a74798e4" category="paragraph">這些都是經過測試的極限。不支援設定更多儲存虛擬機器。</block>
+  <block id="c2011c8b617d4ddd742579058df5db85" category="paragraph">用於災難復原 (DR) 的儲存虛擬機器不需要附加許可證，但它們會計入儲存虛擬機器限制。例如，如果您有 12 個資料服務和 12 個 DR 儲存虛擬機，則您已達到限制並且無法建立更多虛擬機。</block>
+  <block id="b0cd7667098b2a3439c52ba1f9334faa" category="inline-link">Google Cloud 文件</block>
+  <block id="414b69410d05f51016375822b14c44e4" category="paragraph">透過基於容量的許可，每個Cloud Volumes ONTAP系統都支援分層到物件儲存。總分層容量可以擴展到雲端提供者的儲存桶限制。雖然許可證沒有施加容量限制，但您應該遵循<block ref="c6ca22161b60218024eaf899637cc82e" category="inline-link-rx"></block>確保在配置和管理分層時實現最佳效能、可靠性和成本效率。請參閱<block ref="2e0002153e48bc718fd2af4b8dbc37d1" category="inline-link-rx"></block>了解更多。</block>
+  <block id="39e993539dff7e47f9e560fd13c210ca" category="paragraph">不，不是這樣的。 HA 對中的資料在節點之間同步鏡像，以便在 Google Cloud 發生故障時資料可用。例如，如果您在節點 A 上購買了 8 TB 磁碟， BlueXP也會在節點 B 上指派 8 TB 磁碟用於鏡像資料。雖然設定了 16 TB 的容量，但只有 8 TB 計入許可證限制。</block>
+  <block id="8d9a423778ca04c9c66a4f1fa8312b7e" category="list-text">組成聚合的磁碟決定了聚合容量限制。此限制不包括用於資料分層的物件儲存。</block>
+  <block id="821ffb366b34e93755978fef81bc940d" category="paragraph">這些都是經過測試的極限。不支援配置更多儲存虛擬機器。</block>
+  <block id="16283ebc943b0f7f5ee08013f7f4e52c" category="list-text">對於基於節點的 BYOL，除了預設隨Cloud Volumes ONTAP附帶的第一個儲存虛擬機器之外，每個額外的_資料服務_儲存虛擬機器都需要附加授權。聯絡您的客戶團隊以取得儲存 VM 附加授權。</block>
 </blocks>

@@ -20,9 +20,9 @@ summary: 這些已知限制僅適用於Cloud Volumes ONTAP Microsoft Azure中的
 
 == 使用 Azure VM 延伸功能的限制
 
-Cloud Volumes ONTAP不支援 Azure 虛擬機器 (VM) 擴展，因為它們會影響BlueXP管理作業。在部署期間， BlueXP會阻止在您的虛擬機器上安裝任何擴充功能。如果您現有的Cloud Volumes ONTAP虛擬機器上已安裝擴展， NetApp強烈建議您聯絡 Microsoft Azure 支援部門將其刪除。
+Cloud Volumes ONTAP不支援 Azure 虛擬機器 (VM) 擴展，因為它們會影響BlueXP管理作業。在部署期間， BlueXP會阻止在您的虛擬機器上安裝任何擴充功能。如果您現有的Cloud Volumes ONTAP VM 上已安裝擴展，請聯絡 Microsoft Azure 支援將其刪除。如需指導，請參閱知識庫 (KB) 文章 https://kb.netapp.com/Cloud/Cloud_Volumes_ONTAP/Can_Azure_VM_Management_Extensions_be_installed_into_Cloud_Volume_ONTAP["Azure VM 管理擴充功能可以安裝到 Cloud Volume ONTAP中嗎？"^]
 
-從 2025 年 7 月 14 日開始，如果在您的Cloud Volumes ONTAP VM 上偵測到 VM 擴展， NetApp將在BlueXP中通知您並發送電子郵件。
+從 2025 年 7 月 14 日開始，如果在您的Cloud Volumes ONTAP VM 上偵測到 VM 擴展， NetApp將發送電子郵件並在BlueXP中通知您。
 
 
 
