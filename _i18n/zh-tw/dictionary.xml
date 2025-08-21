@@ -796,7 +796,6 @@
   <block id="e8226b64239abaa5e0216217eaa35aae" category="list-text">^3^ 從ONTAP版本 9.13.1 開始支援多個可用區域。</block>
   <block id="ada5a0f28401b1863a90b26fafa4c5ef" category="list-text">^4^ 從ONTAP版本 9.14.1 RC1 開始支援多個可用區域。</block>
   <block id="3d286a847602807c5f94bcf6fdef60be" category="list-text">^5^ 此 VM 類型包括本機 NVMe 存儲， Cloud Volumes ONTAP將其用作_Flash Cache_。Flash Cache 可透過即時智慧快取來加速資料存取、快取最近讀取的使用者資料和 NetApp 中繼資料。它能有效處理隨機讀取密集的工作負載、包括資料庫、電子郵件和檔案服務。<block ref="b6abeaa384c5670d0721bcc6323011fc" category="inline-link-rx"></block>。</block>
-  <block id="ee1f574bc95607cfdc97b1c953a104b2" category="list-text">^6^ 有關 HA 部署單可用區和多可用區支援的磁碟類型的信息，請參閱<block ref="f48956bad241329abf5e1ff5123459dd" category="inline-link-rx"></block> 。</block>
   <block id="b0975698f88b92c8fbe80f0dbf6305ad" category="list-text">L8s_v3 ^4,5^</block>
   <block id="c06088d15edfd911af2ec4c45b08e41b" category="list-text">^3^ 這些 VM 類型僅支援在共用託管磁碟上執行的單一可用區域配置中的 HA 對。</block>
   <block id="549504876cb29a5866aca5cf3802fe6d" category="list-text">^4^ 這些 VM 類型支援在共用託管磁碟上執行的單一可用區和多可用區配置中的 HA 對。對於 LS_v3 VM 類型、 ONTAP 9.13.1 版開始提供多個可用性區域支援。對於 Eds_v5 VM 類型、多個可用性區域支援從 ONTAP 9.14.1 RC1 版開始。</block>
@@ -816,7 +815,6 @@
   <block id="84f2cfe539c789603fba39917f99f628" category="list-text">^5^ 從 2025 年 8 月 11 日開始， Cloud Volumes ONTAP優化授權將被棄用，並且將不再可在 Azure 市場中購買或續訂以進行即用即付 (PAYGO) 訂閱。有關更多信息，請參閱<block ref="43fcd9c2498ef205b9218293a558faae" category="inline-link-rx"></block> 。</block>
   <block id="1423917d8d89129ae623d919645b3100" category="list-text">^4^ 從 2025 年 8 月 11 日開始， Cloud Volumes ONTAP優化授權將被棄用，並且將不再可在 Azure 市場中以即用即付 (PAYGO) 訂閱的方式購買或續訂。有關更多信息，請參閱<block ref="43fcd9c2498ef205b9218293a558faae" category="inline-link-rx"></block> 。</block>
   <block id="004557d03a688223801f3c9351c02ee9" category="cell">已優化^7^</block>
-  <block id="8642a53dd7d0662eb87089fce9268665" category="list-text">^7^ 自 2025 年 8 月 11 日起， Cloud Volumes ONTAP優化授權將被棄用，並且將不再可在 Azure 市場中以即用即付 (PAYGO) 訂閱的方式購買或續訂。有關更多信息，請參閱<block ref="1080c8772df7208f65fb600e0d40b155" category="inline-link-rx"></block> 。</block>
   <block id="a11297aa85d33243a4a5a316eb075590" category="list-text">^4^ 自 2025 年 8 月 11 日起， Cloud Volumes ONTAP Optimized 授權將被棄用，並且將不再可在 Google Cloud 市場中以即用即付 (PAYGO) 訂閱的方式購買或續訂。有關信息，請參閱<block ref="1080c8772df7208f65fb600e0d40b155" category="inline-link-rx"></block>。</block>
   <block id="8d051a62e2d203f6829d7d7282bfaad2" category="inline-link">FabricPool最佳實踐</block>
   <block id="1fa61fc2f5b77b2d0fa94849b6af3dbb" category="paragraph">透過基於容量的許可，每個Cloud Volumes ONTAP系統都支援分層到物件儲存。總分層容量可以擴展到雲端提供者的儲存桶限制。雖然許可證沒有施加容量限制，但您應該遵循<block ref="c6ca22161b60218024eaf899637cc82e" category="inline-link-rx"></block>確保在配置和管理分層時實現最佳效能、可靠性和成本效率。</block>
@@ -855,4 +853,8 @@
   <block id="8d9a423778ca04c9c66a4f1fa8312b7e" category="list-text">組成聚合的磁碟決定了聚合容量限制。此限制不包括用於資料分層的物件儲存。</block>
   <block id="821ffb366b34e93755978fef81bc940d" category="paragraph">這些都是經過測試的極限。不支援配置更多儲存虛擬機器。</block>
   <block id="16283ebc943b0f7f5ee08013f7f4e52c" category="list-text">對於基於節點的 BYOL，除了預設隨Cloud Volumes ONTAP附帶的第一個儲存虛擬機器之外，每個額外的_資料服務_儲存虛擬機器都需要附加授權。聯絡您的客戶團隊以取得儲存 VM 附加授權。</block>
+  <block id="acdea6c80f3845eb2767234fb04788c2" category="cell">支援的資料盤類型</block>
+  <block id="d894dfdb1bbb11ae0641d7c6e97d92e2" category="cell">進階 SSD 託管磁碟或進階 SSD v2 託管磁碟。</block>
+  <block id="09c6a071fdfa0f65318d9e3e960e825e" category="list-text">^6^ 有關 HA 部署單可用區和多可用區系統資料的內部磁碟的信息，請參閱<block ref="f48956bad241329abf5e1ff5123459dd" category="inline-link-rx"></block>。</block>
+  <block id="42762fecca2ab07cc92a3d950f2052c9" category="list-text">^7^ 自 2025 年 8 月 11 日起， Cloud Volumes ONTAP優化授權將被棄用，並且將不再可在 Azure 市場中以即用即付 (PAYGO) 訂閱的方式購買或續訂。<block ref="43fcd9c2498ef205b9218293a558faae" category="inline-link-rx"></block> 。</block>
 </blocks>

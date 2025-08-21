@@ -366,7 +366,7 @@ NOTE: Azure 頁面 Blobs 不支援任何新部署。
 
 
 
-| 支援的磁碟類型 3+| 頁面 
+| 支援的資料盤類型 3+| 頁面 
 |===
 附註：
 
@@ -436,7 +436,7 @@ NOTE: Azure 頁面 Blobs 不支援任何新部署。
 
 
 
-| 支援的磁碟類型^6^ 3+| 標準 HDD 託管磁碟、標準 SSD 託管磁碟、優質 SSD 託管磁碟、以及優質 SSD v2 託管磁碟。 
+| 支援的磁碟類型^6^ 3+| 進階 SSD 託管磁碟或進階 SSD v2 託管磁碟。 
 |===
 附註：
 
@@ -445,8 +445,8 @@ NOTE: Azure 頁面 Blobs 不支援任何新部署。
 . ^3^ 從ONTAP版本 9.13.1 開始支援多個可用區域。
 . ^4^ 從ONTAP版本 9.14.1 RC1 開始支援多個可用區域。
 . ^5^ 此 VM 類型包括本機 NVMe 存儲， Cloud Volumes ONTAP將其用作_Flash Cache_。Flash Cache 可透過即時智慧快取來加速資料存取、快取最近讀取的使用者資料和 NetApp 中繼資料。它能有效處理隨機讀取密集的工作負載、包括資料庫、電子郵件和檔案服務。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-flash-cache.html["深入瞭解"^]。
-. ^6^ 有關 HA 部署單可用區和多可用區支援的磁碟類型的信息，請參閱 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-default-configs.html#azure-ha-pair["Azure（HA配對）"^] 。
-. ^7^ 自 2025 年 8 月 11 日起， Cloud Volumes ONTAP優化授權將被棄用，並且將不再可在 Azure 市場中以即用即付 (PAYGO) 訂閱的方式購買或續訂。有關更多信息，請參閱 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["更新功能 Cloud Volumes ONTAP"^] 。
+. ^6^ 有關 HA 部署單可用區和多可用區系統資料的內部磁碟的信息，請參閱 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-default-configs.html#azure-ha-pair["Azure（HA配對）"^]。
+. ^7^ 自 2025 年 8 月 11 日起， Cloud Volumes ONTAP優化授權將被棄用，並且將不再可在 Azure 市場中以即用即付 (PAYGO) 訂閱的方式購買或續訂。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#11-august-2025["優化許可證的可用性終止"^] 。
 
 
 --
