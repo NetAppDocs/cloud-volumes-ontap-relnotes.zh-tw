@@ -1,9 +1,9 @@
 ---
 indexpage:
-  title: Cloud Volumes ONTAP 9.16.1 版本資訊
-  summary: 這些版本資訊說明 Cloud Volumes ONTAP 9.16.1 的新功能、限制及已知問題。
+  title: Cloud Volumes ONTAP 9.17.1 發行說明
+  summary: 這些發行說明描述了Cloud Volumes ONTAP 9.17.1 的新功能、限制和已知問題。
   keywords: RN, CVO, release notes Cloud Volumes ONTAP
-  lead: 這些版本資訊說明 Cloud Volumes ONTAP 9.16.1 的新功能、限制及已知問題。
+  lead: 這些發行說明描述了Cloud Volumes ONTAP 9.17.1 的新功能、限制和已知問題。
   tiles:
   - title: 開始使用
     links:
