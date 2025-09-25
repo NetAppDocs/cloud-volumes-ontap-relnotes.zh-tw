@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: reference-limitations-azure.html 
-keywords: limitations, ha, azure, pay-as-you-go, paygo, cloud solution provider, vm, flash cache 
+keywords: limitations, ha, azure, pay-as-you-go, paygo, cloud solution provider, vm, flash cache; limitations in HA deployment in MAZ, SAZ, multiple availability xone, single availability zone Azure CVO, PSSDv2, premium SSD v2 limitation in CVO, flash cache limitation in CVO 
 summary: 這些已知限制僅適用於Cloud Volumes ONTAP Microsoft Azure中的某些功能。 
 ---
 = Azure 中 Cloud Volumes ONTAP 的已知限制
@@ -26,6 +26,34 @@ Cloud Volumes ONTAP不支援 Azure 虛擬機器 (VM) 擴展，因為它們會影
 
 
 
+== HA 配置的進階 SSD v2 磁碟限制
+
+進階 SSD v2 託管磁碟對於 Azure 中的高可用性 (HA) 部署有以下限制：
+
+* 非區域性區域的 HA 部署不支援。
+* 不支援跨多個可用區域的 HA 部署。
+* 僅在單一可用區域內部署的 HA 配置中支援。
+
+
+若要將 Premium SSD v2 託管磁碟與Cloud Volumes ONTAP HA 設定一起使用，請確保符合下列要求：
+
+* Cloud Volumes ONTAP版本為 9.15.1 或更高版本。
+* HA 部署位於 Azure 單一可用區域。
+* 所選區域和區域支援高級 SSD v2 託管磁碟。有關受支援區域的信息，請參閱 https://azure.microsoft.com/en-us/explore/global-infrastructure/products-by-region/["Microsoft Azure 網站：按地區提供的產品"^]。
+
+
+有關更多信息，請參閱 https://docs.netapp.com/us-en/cloud-volumes-ontap-9151-relnotes/reference-new.html#support-for-premium-ssd-v2-managed-disks-in-azure["Azure 中對進階 SSD v2 託管磁碟的支持"^] 。
+
+
+
+== 在單一可用性區域中部署 HA 的限制
+
+從Cloud Volumes ONTAP 9.15.1 開始，您可以在 Azure 中的單一可用區域 (AZ) 中以 HA 模式部署虛擬機器 (VM) 執行個體。有關支援此功能的標準的信息，請參閱 https://docs.netapp.com/us-en/cloud-volumes-ontap-9151-relnotes/reference-new.html#deploy-ha-pairs-in-single-availability-zones-in-azure["在 Azure 的單一可用性區域中部署 HA 配對"^]。
+
+如果 Cloud Volumes ONTAP 版本早於 9.15.1 ，或不符合上述任何條件，則使用可用度集的先前部署模式即會生效。這僅適用於 HA 組態。
+
+
+
 == Flash Cache限制
 
 Cloud Volumes ONTAP 在某些 VM 類型中使用本機 NVMe 儲存設備做為 _Flash Caches_ 。請注意此限制：
@@ -35,16 +63,8 @@ Cloud Volumes ONTAP 在某些 VM 類型中使用本機 NVMe 儲存設備做為 _
 
 
 
-== 高可用度部署的限制
+== HA 部署的限制
 
-某些地區不支援高可用度（ HA ）配對。
+某些區域不支援 HA 對。
 
 https://bluexp.netapp.com/cloud-volumes-global-regions["檢視支援的Azure地區清單"^]。
-
-
-
-== 在單一可用性區域中部署 HA 的限制
-
-從 Cloud Volumes ONTAP 9.15.1 開始、您可以在 Azure 的單一可用性區域（ AZs ）中、以 HA 模式部署虛擬機器（ VM ）執行個體。如需支援此功能的條件資訊，請 https://docs.netapp.com/us-en/cloud-volumes-ontap-9151-relnotes/reference-new.html#deploy-ha-pairs-in-single-availability-zones-on-azure["在 Azure 的單一可用性區域中部署 HA 配對"^]參閱。
-
-如果 Cloud Volumes ONTAP 版本早於 9.15.1 ，或不符合上述任何條件，則使用可用度集的先前部署模式即會生效。這僅適用於 HA 組態。
