@@ -123,7 +123,7 @@ Azure中提供的支援可作為單一節點系統、以及高可用度（HA）�
 |===
 附註：
 
-. ^1^ 在 Azure 中部署新的 Cloud Volumes ONTAP 執行個體時， DS_v2 和 ES_v3 機器系列不再可供 BlueXP  選擇。這些系列將僅保留在舊的現有系統中，並提供支援。Azure 僅支援 9.12.1 版的 Cloud Volumes ONTAP 新部署。建議您切換至 ES_v4 或任何其他與 Cloud Volumes ONTAP 9.12.1 及更新版本相容的系列。不過， DS_v2 和 ES_v3 系列機器將可用於透過 API 進行的新部署。
+. ^1^ 在 Azure 中部署Cloud Volumes ONTAP的新實例時， NetApp控制台上不再提供 DS_v2 和 Es_v3 機器系列的選擇。這些系列將僅在較舊的現有系統中保留和支援。從 9.12.1 版本開始，Azure 僅支援Cloud Volumes ONTAP的新部署。我們建議您切換到 Es_v4 或任何其他與Cloud Volumes ONTAP 9.12.1 及更高版本相容的系列。但是，DS_v2 和 Es_v3 系列機器將可用於透過 API 進行的新部署。
 . ^2^ 此 VM 類型包含本機 NVMe 儲存設備， Cloud Volumes ONTAP 使用此儲存設備做為 _Flash Caches_ 。Flash Cache 可透過即時智慧快取來加速資料存取、快取最近讀取的使用者資料和 NetApp 中繼資料。它能有效處理隨機讀取密集的工作負載、包括資料庫、電子郵件和檔案服務。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-flash-cache.html["深入瞭解"^]。
 +
 在 Azure 上設定 Flash Cache 所需的最低 ONTAP 版本為 9.13.1 GA 。
@@ -135,7 +135,7 @@ Azure中提供的支援可作為單一節點系統、以及高可用度（HA）�
 +
 相反地、如果您Cloud Volumes ONTAP 使用任何其他VM類型來部署支援功能、您將無法變更為使用Ultra SSD來執行VNVRAM的VM類型。例如、您無法從E8s_v3變更為E8ds_v4。
 
-. ^4^ 有關單節點部署中支援的磁碟類型的信息，請參閱 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-default-configs.html#azure-single-node["Azure （單一節點）"^] 。使用單一節點系統時、所有執行個體類型都支援高速寫入。您可以在部署期間或之後的任何時間、從 BlueXP  啟用高速寫入速度。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-write-speed.html["深入瞭解如何選擇寫入速度"^]。使用SSD時可啟用增強的寫入效能。
+. ^4^ 有關單節點部署中支援的磁碟類型的信息，請參閱 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-default-configs.html#azure-single-node["Azure （單一節點）"^]。使用單節點系統時，所有實例類型都支援高寫入速度。您可以在部署期間或之後的任何時間從控制台啟用高速寫入。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-write-speed.html["深入瞭解如何選擇寫入速度"^] 。使用 SSD 時可實現增強的寫入效能。
 . ^5^ 從 2025 年 8 月 11 日開始， Cloud Volumes ONTAP優化授權將被棄用，並且將不再可在 Azure 市場中購買或續訂以進行即用即付 (PAYGO) 訂閱。有關更多信息，請參閱 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#11-august-2025["優化許可證的可用性終止"^] 。
 
 
@@ -213,7 +213,7 @@ Azure中提供的支援可作為單一節點系統、以及高可用度（HA）�
 |===
 附註：
 
-. ^1^ 在 Azure 中部署新的 Cloud Volumes ONTAP 執行個體時， DS_v2 和 ES_v3 機器系列不再可供 BlueXP  選擇。這些系列將僅保留在舊的現有系統中，並提供支援。Azure 僅支援 9.12.1 版的 Cloud Volumes ONTAP 新部署。建議您切換至 ES_v4 或任何其他與 Cloud Volumes ONTAP 9.12.1 及更新版本相容的系列。不過， DS_v2 和 ES_v3 系列機器將可用於透過 API 進行的新部署。
+. ^1^ 在 Azure 中部署Cloud Volumes ONTAP的新執行個體時，控制台上不再提供 DS_v2 和 Es_v3 機器系列的選擇。這些系列將僅在較舊的現有系統中保留和支援。從 9.12.1 版本開始，Azure 僅支援Cloud Volumes ONTAP的新部署。我們建議您切換到 Es_v4 或任何其他與Cloud Volumes ONTAP 9.12.1 及更高版本相容的系列。但是，DS_v2 和 Es_v3 系列機器將可用於透過 API 進行的新部署。
 . ^2^ 此 VM 類型包含本機 NVMe 儲存設備， Cloud Volumes ONTAP 使用此儲存設備做為 _Flash Caches_ 。Flash Cache 可透過即時智慧快取來加速資料存取、快取最近讀取的使用者資料和 NetApp 中繼資料。它能有效處理隨機讀取密集的工作負載、包括資料庫、電子郵件和檔案服務。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-flash-cache.html["深入瞭解"^]。
 . ^3^ 這些 VM 類型使用用於 VNVRAM 的， https://docs.microsoft.com/en-us/azure/virtual-machines/windows/disks-enable-ultra-ssd["超SSD"^]可提供更好的寫入效能。
 +
@@ -222,7 +222,7 @@ Azure中提供的支援可作為單一節點系統、以及高可用度（HA）�
 +
 相反地、如果您Cloud Volumes ONTAP 使用任何其他VM類型來部署支援功能、您將無法變更為使用Ultra SSD來執行VNVRAM的VM類型。例如、您無法從E8s_v3變更為E8ds_v4。
 
-. ^4^ 使用單一節點系統時，所有執行個體類型都支援高寫入速度。您可以在部署期間或之後的任何時間、從 BlueXP  啟用高速寫入速度。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-write-speed.html["深入瞭解如何選擇寫入速度"^]。使用SSD時可啟用增強的寫入效能。
+. ^4^ 使用單節點系統時，所有實例類型都支援高寫入速度。您可以在部署期間或之後的任何時間從控制台啟用高速寫入。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-write-speed.html["深入瞭解如何選擇寫入速度"^] 。使用 SSD 時可實現增強的寫入效能。
 . PAYGO Explore 不支援 ^5^Data 分層至 Azure Blob 儲存設備。
 
 
@@ -307,7 +307,7 @@ NOTE: Azure 頁面 Blobs 不支援任何新部署。
 |===
 附註：
 
-. ^1^ 使用 HA 對時， Cloud Volumes ONTAP支援這些 VM 類型的高寫入速度。您可以在部署期間或之後的任何時間、從 BlueXP  啟用高速寫入速度。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-write-speed.html["深入瞭解如何選擇寫入速度"^]。
+. ^1^ 使用 HA 對時， Cloud Volumes ONTAP支援這些 VM 類型的高寫入速度。您可以在部署期間或之後的任何時間從控制台啟用高速寫入。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-write-speed.html["深入瞭解如何選擇寫入速度"^] 。
 . ^2^ 僅在需要 Azure 維護控制時才建議使用此 VM。由於價格較高、因此不建議用於任何其他使用案例。
 . ^3^ 這些虛擬機器僅在Cloud Volumes ONTAP 9.11.1 或更早版本的部署中支援。有了這些VM類型、您可以將現有的頁面配置從Cloud Volumes ONTAP 版本資訊的版本9.11.1升級至9.12.1.您無法使用Cloud Volumes ONTAP 更新版本的更新版本執行新的頁面配置。
 . ^4^ 從 2025 年 8 月 11 日開始， Cloud Volumes ONTAP優化授權將被棄用，並且將不再可在 Azure 市場中以即用即付 (PAYGO) 訂閱的方式購買或續訂。有關更多信息，請參閱 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#11-august-2025["優化許可證的可用性終止"^] 。
@@ -370,7 +370,7 @@ NOTE: Azure 頁面 Blobs 不支援任何新部署。
 |===
 附註：
 
-. ^1^ 使用 HA 對時， Cloud Volumes ONTAP支援這些 VM 類型的高寫入速度。您可以在部署期間或之後的任何時間、從 BlueXP  啟用高速寫入速度。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-write-speed.html["深入瞭解如何選擇寫入速度"^]。
+. ^1^ 使用 HA 對時， Cloud Volumes ONTAP支援這些 VM 類型的高寫入速度。您可以在部署期間或之後的任何時間從控制台啟用高速寫入。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-write-speed.html["深入瞭解如何選擇寫入速度"^] 。
 . ^2^ 僅在需要 Azure 維護控制時才建議使用此 VM。由於價格較高、因此不建議用於任何其他使用案例。
 . ^3^ 這些虛擬機器僅在Cloud Volumes ONTAP 9.11.1 或更早版本的部署中支援。有了這些VM類型、您可以將現有的頁面配置從Cloud Volumes ONTAP 版本資訊的版本9.11.1升級至9.12.1.您無法使用Cloud Volumes ONTAP 更新版本的更新版本執行新的頁面配置。
 
@@ -440,7 +440,7 @@ NOTE: Azure 頁面 Blobs 不支援任何新部署。
 |===
 附註：
 
-. ^1^ 使用 HA 對時， Cloud Volumes ONTAP支援這些 VM 類型的高寫入速度。您可以在部署期間或之後的任何時間、從 BlueXP  啟用高速寫入速度。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-write-speed.html["深入瞭解如何選擇寫入速度"^]。
+. ^1^ 使用 HA 對時， Cloud Volumes ONTAP支援這些 VM 類型的高寫入速度。您可以在部署期間或之後的任何時間從控制台啟用高速寫入。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-write-speed.html["深入瞭解如何選擇寫入速度"^] 。
 . ^2^ 僅在需要 Azure 維護控制時才建議使用此 VM。由於價格較高、因此不建議用於任何其他使用案例。
 . ^3^ 從ONTAP版本 9.13.1 開始支援多個可用區域。
 . ^4^ 從ONTAP版本 9.14.1 RC1 開始支援多個可用區域。
@@ -501,7 +501,7 @@ NOTE: Azure 頁面 Blobs 不支援任何新部署。
 |===
 附註：
 
-. ^1^ 使用 HA 對時， Cloud Volumes ONTAP支援這些 VM 類型的高寫入速度。您可以在部署期間或之後的任何時間、從 BlueXP  啟用高速寫入速度。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-write-speed.html["深入瞭解如何選擇寫入速度"^]。
+. ^1^ 使用 HA 對時， Cloud Volumes ONTAP支援這些 VM 類型的高寫入速度。您可以在部署期間或之後的任何時間從控制台啟用高速寫入。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-write-speed.html["深入瞭解如何選擇寫入速度"^] 。
 . ^2^ 僅在需要 Azure 維護控制時才建議使用此 VM。由於價格較高、因此不建議用於任何其他使用案例。
 . ^3^ 這些 VM 類型僅支援在共用託管磁碟上執行的單一可用區域配置中的 HA 對。
 . ^4^ 這些 VM 類型支援在共用託管磁碟上執行的單一可用區和多可用區配置中的 HA 對。對於 LS_v3 VM 類型、 ONTAP 9.13.1 版開始提供多個可用性區域支援。對於 Eds_v5 VM 類型、多個可用性區域支援從 ONTAP 9.14.1 RC1 版開始。

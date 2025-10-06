@@ -4,7 +4,6 @@
   <block id="a22f9146e3d3f141a5a11a5aadc4ace1" category="inline-link-macro">所有雲端供應商的不完整功能Cloud Volumes ONTAP</block>
   <block id="66c8008cfff39be32e25f6351f5b9375" category="paragraph">下列已知限制僅適用於Cloud Volumes ONTAP Amazon Web Services的功能。請務必同時檢閱 <block ref="edcf15b4d9d7d1e018ccca7ce112dd3e" category="inline-link-macro-rx"></block>。</block>
   <block id="f29e4ae2503b27ece70880e681c97257" category="section-title">AWS Outpost限制</block>
-  <block id="996af92ade7f6e5af3be3c265f31fd2c" category="paragraph">如果您有 AWS Outpost 、您可以 Cloud Volumes ONTAP 在「工作環境」精靈中選取 Outpost VPC 、在該 Outpost 中部署功能不全。體驗與 AWS 中的任何其他 VPC 相同。請注意、您必須先在 AWS Outpost 部署 Connector 。</block>
   <block id="50ebfbf4de02a5dcfa64a72d2eaeb26b" category="paragraph">有幾項限制可以指出：</block>
   <block id="3ff92f3e56a256140e09a01036ff5637" category="list-text">目前僅 Cloud Volumes ONTAP 支援單一節點的不支援系統</block>
   <block id="4c1f393916fe04b53ddaa79934ee8d6f" category="list-text">您可以搭配 Cloud Volumes ONTAP 使用的 EC2 執行個體僅限於您的據點所提供的項目</block>
@@ -489,17 +488,6 @@
   <block id="8a11b7df22322ab2814174e7745c863f" category="inline-link">關於本產品的注意事項ONTAP</block>
   <block id="a65d010a2b24f9e4a0919b7faf52d022" category="list-text"><block ref="a65d010a2b24f9e4a0919b7faf52d022" category="inline-link-rx"></block></block>
   <block id="6614eabe1ab14f33107830de1efb584a" category="inline-link-macro">瞭解如何變更EC2執行個體類型Cloud Volumes ONTAP 以供使用</block>
-  <block id="fd1f8e9df9f2971a09de148f57ee5ce0" category="section-title">軟體更新必須由BlueXP完成</block>
-  <block id="c6925d752394e325c0b435137fbe997c" category="paragraph">必須從BlueXP完成升級。Cloud Volumes ONTAP您不應 Cloud Volumes ONTAP 使用 System Manager 或 CLI 來升級功能。這樣做可能會影響系統穩定性。</block>
-  <block id="93931e849ddff0b1178bc9a719400883" category="paragraph">從Cloud Volumes ONTAP 雲端供應商的主控台變更支援的支援功能組態、會導致不受支援的組態設定。任何對BlueXP所建立及管理的支援資源所做的變更Cloud Volumes ONTAP 、都會影響系統穩定性和BlueXP管理系統的能力。</block>
-  <block id="50cc29422b9e0a20958b889dcdd61a0f" category="section-title">磁碟和集合體必須從BlueXP進行管理</block>
-  <block id="0dca6333e3e343d1b25adfe474ce6b88" category="paragraph">所有磁碟和集合體都必須直接從BlueXP建立和刪除。您不應從其他管理工具執行這些動作。這樣做可能會影響系統穩定性、阻礙未來新增磁碟的能力、並可能產生備援雲端供應商費用。</block>
-  <block id="38575f0fc0d26dc67b2a72ebc7d0e845" category="paragraph">從BlueXP建立磁碟區時、您可以選擇「無儲存效率」、也可以先建立磁碟區、然後再建立<block ref="41233aab48d70287f1bbc60d78ce6eab" category="inline-link-rx"></block>。</block>
-  <block id="406542fd6b2bb7b1e564e4a6d627bddb" category="paragraph">NetApp不支援超過系統容量限制。如果您達到授權容量上限、則BlueXP會顯示必要行動訊息、不再允許您新增其他磁碟。</block>
-  <block id="59f715c959b1702bb88d03230a637982" category="paragraph">不、這不需要。AWS HA配對中的資料會在節點之間同步鏡射、以便在發生故障時提供資料。例如、如果您在節點A上購買8個TiB磁碟、則BlueXP也會在節點B上配置8個TiB磁碟、用於鏡射資料。雖然已配置16個TiB容量、但根據授權上限只計算8個TiB。</block>
-  <block id="846a4ecea919427b6111365c125ada6f" category="list-text">這些欄中所列的數字、包括了BlueXP預設會建立的初始儲存VM。例如、如果此欄中列出24個、表示您可以建立23個額外的儲存VM、總共24個。</block>
-  <block id="30749b02bc62d931d770e6c719254e7b" category="list-text">BlueXP介面顯示標準和BYOL支援的其他機器類型：NA-HIGHEM-4。不過、這種機器類型並不適用於正式作業環境。我們僅針對特定的實驗室環境提供此功能。</block>
-  <block id="fde45fa5cd70a93e88151b83aa348f12" category="inline-link">BlueXP API端點</block>
   <block id="2819feead2b07762a4465189ab8b2f52" category="paragraph-title">對於HA配對、每個節點或整個HA配對的授權容量限制是多少？</block>
   <block id="7093c2c9844cf46dcd5d50c6d596d244" category="paragraph-title">對於HA配對、鏡射資料是否會根據授權容量限制計算？</block>
   <block id="9d123a356c832621891a3328c128b78b" category="list-text">L8s_v3 ^2^</block>
@@ -527,7 +515,6 @@
   <block id="f59964eb1e1669da7d916b7e136c88bd" category="list-text">m6id.32xlarge</block>
   <block id="dfb01a7b38cba8284269f37f00622809" category="paragraph">請閱讀這些附註、深入瞭解升級至此版本的相關資訊。</block>
   <block id="b78b1188c7979365981f7c88049f9366" category="section-title">如何升級</block>
-  <block id="c716eebe2519c2ba4a2e109b59dd8b13" category="inline-link">瞭解如何在BlueXP通知您時進行升級</block>
   <block id="75026846c1403e202a52bdb027762fbb" category="section-title">停機</block>
   <block id="9f0f02784feedfa2549a9e3a51cfa315" category="list-text">單一節點系統的升級可讓系統離線長達25分鐘、在此期間I/O會中斷。</block>
   <block id="618671ce849d1a8ff524b77c314fe4e2" category="section-title">不再支援c4、m4和r4執行個體</block>
@@ -548,11 +535,9 @@
   <block id="7b9e5415e02ff7ad5eaae61345740517" category="inline-link">瞭解 Cloud Volumes ONTAP HA 配對在 Google Cloud 中的儲存功能如何運作</block>
   <block id="1b604734bf53595ed7c7d204bb25e549" category="list-text">L16s_v3 ^2^</block>
   <block id="645c4fc55b2cf93995a9e487870102f5" category="list-text">L32s_v3 ^2^</block>
-  <block id="468539119bbdc1adf73b917e2900aee4" category="inline-link">瞭解如何使用 BlueXP 備份與還原來備份及還原 ONTAP 資料</block>
   <block id="f5d86d667fcde1b9fc5b1c45e55d135e" category="cell">64 ^4^</block>
   <block id="5ce58b1e3bfddca3ae7d5a13676224ff" category="list-text">雖然這些 EC2 執行個體類型支援超過 64 個 vCPU 、但 Cloud Volumes ONTAP 僅支援最多 64 個 vCPU 。</block>
   <block id="c46270a9bdf069bd0e015f7953e02355" category="paragraph"><block ref="c46270a9bdf069bd0e015f7953e02355" category="inline-link-rx"></block></block>
-  <block id="d75c8a72363ede5ded8979310421b255" category="paragraph">如果您善用<block ref="e066b15eeebd4e6d571fd7dd588f94f7" category="inline-link-rx"></block> 在您部署Cloud Volumes ONTAP 的VPC中、您需要實作DNS記錄、將流量轉送至所需的<block ref="e6b10532507a1a1747789a49cf51c637" category="inline-link-rx"></block>。</block>
   <block id="79d3c4941fdb49ae08cc30405f716cce" category="list-text">在某些組態中、磁碟限制會讓您無法單獨使用磁碟來達到容量限制。在這些情況下、您可以達到容量上限<block ref="aea0958203307daa433f894622f3e640" category="inline-link-rx"></block>。如需磁碟限制的相關資訊、請參閱 <block ref="71ccaacc6f6c8feca068c7ff1a7b2eb5" category="inline-link-macro-rx"></block>。</block>
   <block id="ca40429b1b07555a35de829b976a6961" category="paragraph">在 AWS 中、 Aggregate 最多可包含 6 個大小相同的磁碟。但是如果您的組態支援Amazon EBS彈性Volume功能、則Aggregate最多可包含8個磁碟。<block ref="d6d48ea3644fd45f9f7ff8f4c8d4ae57" category="inline-link-rx"></block></block>
   <block id="9df4ca2adcfbf390d35edbeb52928a78" category="list-text">某些執行個體類型包括本機NVMe儲存設備、Cloud Volumes ONTAP 這些儲存設備使用做為_Flash Cache。Flash Cache 可透過即時智慧快取來加速資料存取、快取最近讀取的使用者資料和 NetApp 中繼資料。它適用於隨機讀取密集的工作負載、包括資料庫、電子郵件和檔案服務。所有磁碟區都必須停用壓縮、才能充分發揮 Flash Cache 效能的改善效益。<block ref="da56a164195bbdee72f1dfc4ea53669d" category="inline-link-rx"></block>。</block>
@@ -564,10 +549,8 @@
   <block id="396e70da46ca6b8f2dd7d352ab5d7f16" category="paragraph">在某些組態中、磁碟限制會讓您無法單獨使用磁碟來達到容量限制。您可以達到容量上限<block ref="aea0958203307daa433f894622f3e640" category="inline-link-rx"></block>。如需詳細資料、請參閱下列磁碟限制。</block>
   <block id="769a653e8483d7efc5ec7ad2044e739c" category="paragraph"><block ref="b8246ed4559cd25bd4b019aae2787f00" category="inline-link-rx"></block>。</block>
   <block id="81a074db33c6f62838933c92142f16d6" category="paragraph"><block ref="f969ecf664fae2f86e88c525c7dd7acf" category="inline-link-rx"></block>。</block>
-  <block id="70a8e1fb7e815dcae7d43566ab0db1e7" category="paragraph"><block ref="45c029924054162202773bd86e09b271" category="inline-link-rx"></block>。</block>
   <block id="a990fdc46668be8e7f963c8df127bbe8" category="paragraph">在某些組態中、磁碟限制會讓您無法單獨使用磁碟來達到容量限制。在這些情況下、您可以達到容量上限<block ref="aea0958203307daa433f894622f3e640" category="inline-link-rx"></block>。如需詳細資料、請參閱下方的容量和磁碟限制。</block>
   <block id="c0ad13124302d4d047c0f916a6418182" category="paragraph"><block ref="cc3941262f254d1055804ecddca39dec" category="inline-link-rx"></block>。</block>
-  <block id="a92c2d98e174fb58a9af451a8c3413f9" category="paragraph"><block ref="8271d50d033781f1596acf863334de58" category="inline-link-macro-rx"></block>。</block>
   <block id="34b2f4eab827285a262b1781e672e882" category="paragraph"><block ref="3f0e03f473a215943c109dc7746cdb60" category="inline-link-macro-rx"></block>。</block>
   <block id="5f47eaf30741e1b189cb3927920a050e" category="list-text">L48s_v3 ^2^</block>
   <block id="5d77e4246523d19041d8aaab83469a88" category="list-text">L64s_v3 ^2^</block>
@@ -608,7 +591,6 @@
   <block id="ae809759e1518d5c4c2019b9c03f15a1" category="list-text">從 ONTAP 9.12.1P2 開始、上限為 128 TB 。在 ONTAP 9.11.1 及更早版本中、上限為 16 TB 。</block>
   <block id="44693df7930e7e6d7bb4f466625bc372" category="list-text">使用下列工具和最低版本、可建立最多 300 TiB 的 FlexVol Volume ：</block>
   <block id="5680c249ee040de9c43f982996ed2a24" category="list-text">從 Cloud Volumes ONTAP 9.12.1 P2 和 9.13.0 P2 開始、系統管理員和 ONTAP CLI</block>
-  <block id="68c68c70121e1d9364223bb9fded83b0" category="list-text">BlueXP 從 Cloud Volumes ONTAP 9.13.1 開始</block>
   <block id="0ce1565dc58071deb098bde3e5a6a4b6" category="cell">E4ds_v5</block>
   <block id="625fbc51242c48d9e17a8b8b2fe6e5c7" category="cell">E8ds_v5</block>
   <block id="f88888fbc8a693671b869eaeffac30c7" category="cell">E20ds_v5</block>
@@ -638,8 +620,6 @@
   <block id="1668ca1bd914c1d847f23b491319ac91" category="sidebar">Microsoft Azure</block>
   <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">部落格與社群</block>
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp社群</block>
-  <block id="bd5465eb0e8cf8f303aee7ea9420c8b1" category="sidebar">BlueXP部落格</block>
-  <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">雲端網路研討會</block>
   <block id="43556f17551d900e8a2cd6d933da722d" category="admonition">初始部署後、支援修改用於 Cloud Volumes ONTAP 資源的 Azure Subscription 名稱。</block>
   <block id="5d47d15bb6c95cde595a22f670bc8cdf" category="list-text">E32ds_v4 ^1^</block>
   <block id="a9161f4d77d799baa3a3dc4cfeaefca3" category="list-text">E48ds_v4 ^1^</block>
@@ -690,10 +670,8 @@
   <block id="475a08176fc17d0c6254ca6f0c476b75" category="list-text">E32s_v3 ^1 、 3^</block>
   <block id="c88c885a2fefa2da765b4c347fda5ae4" category="list-text">E48s_v3 ^1 、 3^</block>
   <block id="4692ba0d874f9b133db280379656a9ce" category="list-text">E64is_v3 ^1 、 3^</block>
-  <block id="a63ee61a82be26dabec71dbc1e3c06a5" category="list-text">^1^ 在 Azure 中部署新的 Cloud Volumes ONTAP 執行個體時， DS_v2 和 ES_v3 機器系列不再可供 BlueXP  選擇。這些系列將僅保留在舊的現有系統中，並提供支援。Azure 僅支援 9.12.1 版的 Cloud Volumes ONTAP 新部署。建議您切換至 ES_v4 或任何其他與 Cloud Volumes ONTAP 9.12.1 及更新版本相容的系列。不過， DS_v2 和 ES_v3 系列機器將可用於透過 API 進行的新部署。</block>
   <block id="99b1f6d00bfb2ab2985a552648f9e5c1" category="list-text">^2^ 此 VM 類型包含本機 NVMe 儲存設備， Cloud Volumes ONTAP 使用此儲存設備做為 _Flash Caches_ 。Flash Cache 可透過即時智慧快取來加速資料存取、快取最近讀取的使用者資料和 NetApp 中繼資料。它能有效處理隨機讀取密集的工作負載、包括資料庫、電子郵件和檔案服務。<block ref="b6abeaa384c5670d0721bcc6323011fc" category="inline-link-rx"></block>。</block>
   <block id="9ea31caa0e1962ae75e1a321be9430b7" category="list-text">^3^ 這些 VM 類型使用用於 VNVRAM 的，<block ref="d656d82278337f3ecf8db6b2a30a45f2" category="inline-link-rx"></block>可提供更好的寫入效能。</block>
-  <block id="8b3b87610bfcad95c57bd42409dfca29" category="list-text">^4^ 使用單一節點系統時，所有執行個體類型都支援高寫入速度。您可以在部署期間或之後的任何時間、從 BlueXP  啟用高速寫入速度。<block ref="721fe5ee3bbc3d8295d8615ed77ff9be" category="inline-link-rx"></block>。使用SSD時可啟用增強的寫入效能。</block>
   <block id="24559871a19879472a902be1674774bd" category="cell">2 TiB ^5^</block>
   <block id="85133a824a7524ff6b8a398dd3816914" category="list-text">PAYGO Explore 不支援 ^5^Data 分層至 Azure Blob 儲存設備。</block>
   <block id="10b45e1c6ef2fa44200d515d2a6fc694" category="paragraph">您可以將下列組態與 Azure 中現有的 Cloud Volumes ONTAP HA 頁面 BLOB 部署搭配使用。</block>
@@ -701,7 +679,6 @@
   <block id="bd4a13e4ffdffbf6589318b707665ee9" category="list-text">N1-Standard-8 ^1^</block>
   <block id="2adbdb8a41a872c39f798f0f7e1d4a41" category="list-text">N1-Standard-32 ^1^</block>
   <block id="fd19b4f8d16fbd446f92c206592bcc85" category="cell">支援的磁碟類型^2^</block>
-  <block id="5d3dde9c211a10976121e86b1e72361e" category="list-text">^1^ 在 Google Cloud 中部署新的 Cloud Volumes ONTAP 執行個體時， n1 系列機器不再可供 BlueXP  選擇。N1 系列機器將僅保留在舊版現有系統中、並受到支援。Cloud Volumes ONTAP 的新部署僅從 9.8 版開始支援 Google Cloud 。我們建議您切換至與 Cloud Volumes ONTAP 9.8 及更新版本相容的 n2 系列機器。不過、 N1 系列機器將可用於透過 API 進行的新部署。</block>
   <block id="c819caf9beab404b5f2223fbcc970eb7" category="list-text">^2^ 磁碟限制可防止您單獨使用磁碟來達到最大系統容量限制。您可以透過達到容量限制<block ref="aea0958203307daa433f894622f3e640" category="inline-link-rx"></block>。</block>
   <block id="827de26590a8eaf472a57d852b9725a4" category="list-text">^3^ 使用平衡式持續磁碟和效能（ SSD ）持續磁碟時，會啟用增強的寫入效能。</block>
   <block id="fb68df6302dcf52c3640cda14ef6c3e2" category="paragraph">從 Cloud Volumes ONTAP 9.13.0 開始、 _Flash Caches_ 、高寫入速度、以及高達 8 、 896 位元組的最大傳輸單元（ MTU ）、可用於下列 HA 配對部署執行個體：</block>
@@ -709,7 +686,6 @@
   <block id="6b5bde370fd32f6d8d3a5e33315ee222" category="list-text">N1 標準 -32 ^3^</block>
   <block id="634926381cf0a7884523c112877267d0" category="list-text">^1^ 磁碟限制可防止您單獨使用磁碟來達到最大系統容量限制。您可以透過達到容量限制<block ref="aea0958203307daa433f894622f3e640" category="inline-link-rx"></block>。</block>
   <block id="22bbad4e1cc44662dc7478520e4f0e07" category="list-text">^2^ PAYGO Explore 不支援將資料分層至 Google Cloud Storage 。</block>
-  <block id="9c6d70371c04fac1c5b3babc1c1a755e" category="list-text">^3^ 在 Google Cloud 中部署新的 Cloud Volumes ONTAP 執行個體時， n1 系列機器不再可供 BlueXP  選擇。N1 系列機器將僅保留在舊版現有系統中、並受到支援。Cloud Volumes ONTAP 的新部署僅從 9.8 版開始支援 Google Cloud 。我們建議您切換至與 Cloud Volumes ONTAP 9.8 及更新版本相容的 n2 系列機器。不過、 N1 系列機器將可用於透過 API 執行的新部署。</block>
   <block id="31269d00cd277adf90f42f882afbd293" category="list-text">^4^ 使用平衡式持續磁碟和效能（ SSD ）持續磁碟時，會啟用增強的寫入效能。</block>
   <block id="c3647f40e3574e0e6f49e20c19135bfa" category="section-title">使用 Azure VM 延伸功能的限制</block>
   <block id="0890aa708cef7529c2bd35cb7d2895df" category="paragraph">如需 AWS 區域支援<block ref="e55b14db85f4d4837890e415926626e0" category="inline-link-rx"></block>、請參閱。</block>
@@ -747,7 +723,6 @@
   <block id="f9f7c1c9687f8f087477f0ae4cac6b45" category="inline-link">Microsoft Azure 文件</block>
   <block id="e2f4ab859b01d65da06c213f94a69131" category="paragraph">有關支援的實例規格，請參閱<block ref="84495d3a9882d3bd6b6590d973db25e5" category="inline-link-rx"></block> 。</block>
   <block id="5639612d2f12168c8a83a7d9f034340d" category="inline-link">Azure （單一節點）</block>
-  <block id="88e2312354057a90322664c2df9708ae" category="list-text">^4^ 有關單節點部署中支援的磁碟類型的信息，請參閱<block ref="5d976ccca41daf11d6b5e395edda488a" category="inline-link-rx"></block> 。使用單一節點系統時、所有執行個體類型都支援高速寫入。您可以在部署期間或之後的任何時間、從 BlueXP  啟用高速寫入速度。<block ref="721fe5ee3bbc3d8295d8615ed77ff9be" category="inline-link-rx"></block>。使用SSD時可啟用增強的寫入效能。</block>
   <block id="9116d248ecfb6241ae0ac82e933291a7" category="cell">支援的磁碟類型^6^</block>
   <block id="70ed196a226ad517ee4fecdca325036d" category="inline-link">Azure（HA配對）</block>
   <block id="7ec816bcf3858e037c57a46bfa8643ba" category="paragraph">有關特定機器類型的更多信息，請參閱 Google Cloud 文件：</block>
@@ -755,11 +730,9 @@
   <block id="b10cf18ba66c2ae046931259e614fe81" category="list-text"><block ref="b10cf18ba66c2ae046931259e614fe81" category="inline-link-rx"></block></block>
   <block id="d59a55e5a766d0a45a73ef03504c6b5b" category="inline-link">N2系列通用機型</block>
   <block id="0ab6f9218085a410dabf81dbe7da1b1a" category="list-text"><block ref="0ab6f9218085a410dabf81dbe7da1b1a" category="inline-link-rx"></block></block>
-  <block id="313e5c6346ba30bdb749b42654c60b9e" category="list-text">^1^ 使用 HA 對時， Cloud Volumes ONTAP支援這些 VM 類型的高寫入速度。您可以在部署期間或之後的任何時間、從 BlueXP  啟用高速寫入速度。<block ref="18805b87db41583a67ecc2414d022f2b" category="inline-link-rx"></block>。</block>
   <block id="7a44fe38188ff958cad09ce844759662" category="list-text">^2^ 僅在需要 Azure 維護控制時才建議使用此 VM。由於價格較高、因此不建議用於任何其他使用案例。</block>
   <block id="7b78f11572d7f890feb55bd86cdbee51" category="list-text">^3^ 這些虛擬機器僅在Cloud Volumes ONTAP 9.11.1 或更早版本的部署中支援。有了這些VM類型、您可以將現有的頁面配置從Cloud Volumes ONTAP 版本資訊的版本9.11.1升級至9.12.1.您無法使用Cloud Volumes ONTAP 更新版本的更新版本執行新的頁面配置。</block>
   <block id="fd50247d3654244e2fa376c69aef2589" category="list-text">L8s_v3 ^1 、 3 、 5^</block>
-  <block id="c1e3164a5d2ff8f31e49973a181ebbee" category="list-text">^1^ 使用 HA 對時， Cloud Volumes ONTAP支援這些 VM 類型的高寫入速度。您可以在部署期間或之後的任何時間、從 BlueXP  啟用高速寫入速度。<block ref="721fe5ee3bbc3d8295d8615ed77ff9be" category="inline-link-rx"></block>。</block>
   <block id="e8226b64239abaa5e0216217eaa35aae" category="list-text">^3^ 從ONTAP版本 9.13.1 開始支援多個可用區域。</block>
   <block id="ada5a0f28401b1863a90b26fafa4c5ef" category="list-text">^4^ 從ONTAP版本 9.14.1 RC1 開始支援多個可用區域。</block>
   <block id="3d286a847602807c5f94bcf6fdef60be" category="list-text">^5^ 此 VM 類型包括本機 NVMe 存儲， Cloud Volumes ONTAP將其用作_Flash Cache_。Flash Cache 可透過即時智慧快取來加速資料存取、快取最近讀取的使用者資料和 NetApp 中繼資料。它能有效處理隨機讀取密集的工作負載、包括資料庫、電子郵件和檔案服務。<block ref="b6abeaa384c5670d0721bcc6323011fc" category="inline-link-rx"></block>。</block>
@@ -783,8 +756,6 @@
   <block id="1fa61fc2f5b77b2d0fa94849b6af3dbb" category="paragraph">透過基於容量的許可，每個Cloud Volumes ONTAP系統都支援分層到物件儲存。總分層容量可以擴展到雲端提供者的儲存桶限制。雖然許可證沒有施加容量限制，但您應該遵循<block ref="c6ca22161b60218024eaf899637cc82e" category="inline-link-rx"></block>確保在配置和管理分層時實現最佳效能、可靠性和成本效率。</block>
   <block id="847e3ee04fb8abbb4d0d1afa56101a04" category="cell">靈活^2^</block>
   <block id="fe70a2c1423d8dc6d93d9ed56139eace" category="inline-link">Azure VM 管理擴充功能可以安裝到 Cloud Volume ONTAP中嗎？</block>
-  <block id="9afd5f64e8e4dee128f7ec6ba0028fe0" category="paragraph">Cloud Volumes ONTAP不支援 Azure 虛擬機器 (VM) 擴展，因為它們會影響BlueXP管理作業。在部署期間， BlueXP會阻止在您的虛擬機器上安裝任何擴充功能。如果您現有的Cloud Volumes ONTAP VM 上已安裝擴展，請聯絡 Microsoft Azure 支援將其刪除。如需指導，請參閱知識庫 (KB) 文章<block ref="6d01312163294b91508e568dd491d345" category="inline-link-rx"></block></block>
-  <block id="18a9f864fef2d6af1e02766d38585370" category="paragraph">從 2025 年 7 月 14 日開始，如果在您的Cloud Volumes ONTAP VM 上偵測到 VM 擴展， NetApp將發送電子郵件並在BlueXP中通知您。</block>
   <block id="3c95fa05a59cc1bbea5cd04255c3878b" category="paragraph">最大系統容量包括基於磁碟的儲存以及用於資料分層的物件儲存。</block>
   <block id="11df62ebd9af6aec3766ffa2d277d960" category="paragraph-title">基於容量的許可證的容量限制</block>
   <block id="df710f89ebb9e663bd3d66607a0bf413" category="inline-link">AWS 文件</block>
@@ -797,7 +768,6 @@
   <block id="1c5d4d5b3df2ab67b0a0577f6853b0fe" category="section-title">基於容量的授權不同部署模式的限制</block>
   <block id="34076b805502c0cfbcd6caea2f061842" category="admonition">有關單節點和 HA 配置的最大系統容量和資料分層容量限制，請參閱<block ref="23480a14d285390e1b7e1d67acd7bce6" category="inline-xref-macro-rx"></block>。</block>
   <block id="323a2487b0d5c474f2b87eb189cd77eb" category="section-title">基於節點的授權的不同部署模式的限制</block>
-  <block id="b1b103b3711ab75fd78baf8544303a02" category="paragraph">NetApp不支援超出系統容量限制。如果達到許可容量限制， BlueXP將顯示需要採取行動的訊息並阻止您新增更多磁碟。</block>
   <block id="6b209360b200c08a554735be2c77d1ca" category="inline-link">託管磁碟的 Azure 文件</block>
   <block id="531b133840ee35cf5193230121ea7443" category="inline-link">Azure Blob 儲存體文檔</block>
   <block id="0277f6faf50443f930d676caf5df530b" category="paragraph">透過基於容量的許可，每個Cloud Volumes ONTAP系統都支援分層到物件儲存。總分層容量可以擴展到雲端提供者的儲存桶限制。雖然許可證沒有施加容量限制，但您應該遵循<block ref="c6ca22161b60218024eaf899637cc82e" category="inline-link-rx"></block>確保在配置和管理分層時實現最佳效能、可靠性和成本效率。請參閱<block ref="c5c853b91015c45f4e626225eb89092f" category="inline-link-rx"></block>和<block ref="6782e281e8536503245f524b6778618f" category="inline-link-rx"></block>。</block>
@@ -812,7 +782,6 @@
   <block id="c2011c8b617d4ddd742579058df5db85" category="paragraph">用於災難復原 (DR) 的儲存虛擬機器不需要附加許可證，但它們會計入儲存虛擬機器限制。例如，如果您有 12 個資料服務和 12 個 DR 儲存虛擬機，則您已達到限制並且無法建立更多虛擬機。</block>
   <block id="b0cd7667098b2a3439c52ba1f9334faa" category="inline-link">Google Cloud 文件</block>
   <block id="414b69410d05f51016375822b14c44e4" category="paragraph">透過基於容量的許可，每個Cloud Volumes ONTAP系統都支援分層到物件儲存。總分層容量可以擴展到雲端提供者的儲存桶限制。雖然許可證沒有施加容量限制，但您應該遵循<block ref="c6ca22161b60218024eaf899637cc82e" category="inline-link-rx"></block>確保在配置和管理分層時實現最佳效能、可靠性和成本效率。請參閱<block ref="2e0002153e48bc718fd2af4b8dbc37d1" category="inline-link-rx"></block>了解更多。</block>
-  <block id="39e993539dff7e47f9e560fd13c210ca" category="paragraph">不，不是這樣的。 HA 對中的資料在節點之間同步鏡像，以便在 Google Cloud 發生故障時資料可用。例如，如果您在節點 A 上購買了 8 TB 磁碟， BlueXP也會在節點 B 上指派 8 TB 磁碟用於鏡像資料。雖然設定了 16 TB 的容量，但只有 8 TB 計入許可證限制。</block>
   <block id="8d9a423778ca04c9c66a4f1fa8312b7e" category="list-text">組成聚合的磁碟決定了聚合容量限制。此限制不包括用於資料分層的物件儲存。</block>
   <block id="821ffb366b34e93755978fef81bc940d" category="paragraph">這些都是經過測試的極限。不支援配置更多儲存虛擬機器。</block>
   <block id="16283ebc943b0f7f5ee08013f7f4e52c" category="list-text">對於基於節點的 BYOL，除了預設隨Cloud Volumes ONTAP附帶的第一個儲存虛擬機器之外，每個額外的_資料服務_儲存虛擬機器都需要附加授權。聯絡您的客戶團隊以取得儲存 VM 附加授權。</block>
@@ -827,7 +796,6 @@
   <block id="c9636b1359c39d947689e7d7030a3876" category="paragraph">Cloud Volumes ONTAP 9.17.1 可在 Azure 和 Google Cloud 中部署和升級。</block>
   <block id="db3cc6b5ebbff132de6d6986ec232460" category="section-title">9.17.1 RC1（2025 年 9 月 4 日）</block>
   <block id="8d9a14656b6d91eecabf8d5f9a39888c" category="paragraph">現在您可以使用Cloud Volumes ONTAP 9.17.1 候選版本 1 在 Azure 和 Google Cloud 中進行部署和升級。但此版本暫不支援在 AWS 中部署和升級。 BlueXP</block>
-  <block id="1dc5d2150ca63e1eb180153cd4fd3848" category="paragraph">您可以從 Azure 和 Google Cloud 中的 9.16.1 版本升級至Cloud Volumes ONTAP 9.17.1 RC1。  BlueXP將提示您將符合條件的Cloud Volumes ONTAP系統升級至此版本。</block>
   <block id="a925267cf1e3f473e26af9a1c7e069bd" category="admonition">對於 AWS，系統不會提示您進行此升級。  AWS 不支援升級到Cloud Volumes ONTAP 9.17.1 RC1。</block>
   <block id="1be92e36c3e9ca47e988acc51bde4499" category="sidebar">這些發行說明描述了Cloud Volumes ONTAP 9.17.1 的新功能、限制和已知問題。</block>
   <block id="4cf5c8db7f505fa308225ecc9355e4d5" category="sidebar">Cloud Volumes ONTAP 9.17.1 發行說明</block>
@@ -847,4 +815,38 @@
   <block id="17f65eba8f584b7ce968f1741f49a63d" category="paragraph">從Cloud Volumes ONTAP 9.15.1 開始，您可以在 Azure 中的單一可用區域 (AZ) 中以 HA 模式部署虛擬機器 (VM) 執行個體。有關支援此功能的標準的信息，請參閱<block ref="49b9d02c37364ae9681ce7a59d4d9548" category="inline-link-rx"></block>。</block>
   <block id="ed5b1d9ebcc8b8d189007ac8c9494846" category="section-title">HA 部署的限制</block>
   <block id="b1969fa9ebe4dd2003618adb77082978" category="paragraph">某些區域不支援 HA 對。</block>
+  <block id="3f994f50a7ba231a5397b2a11497b272" category="list-text">^1^ 在 Azure 中部署Cloud Volumes ONTAP的新實例時， NetApp控制台上不再提供 DS_v2 和 Es_v3 機器系列的選擇。這些系列將僅在較舊的現有系統中保留和支援。從 9.12.1 版本開始，Azure 僅支援Cloud Volumes ONTAP的新部署。我們建議您切換到 Es_v4 或任何其他與Cloud Volumes ONTAP 9.12.1 及更高版本相容的系列。但是，DS_v2 和 Es_v3 系列機器將可用於透過 API 進行的新部署。</block>
+  <block id="60ffb33f36dd41ec7837416044ddf175" category="list-text">^4^ 有關單節點部署中支援的磁碟類型的信息，請參閱<block ref="5d976ccca41daf11d6b5e395edda488a" category="inline-link-rx"></block>。使用單節點系統時，所有實例類型都支援高寫入速度。您可以在部署期間或之後的任何時間從控制台啟用高速寫入。<block ref="721fe5ee3bbc3d8295d8615ed77ff9be" category="inline-link-rx"></block> 。使用 SSD 時可實現增強的寫入效能。</block>
+  <block id="1b86b14d468d8ed84f5d72f2f7d74d10" category="list-text">^1^ 在 Azure 中部署Cloud Volumes ONTAP的新執行個體時，控制台上不再提供 DS_v2 和 Es_v3 機器系列的選擇。這些系列將僅在較舊的現有系統中保留和支援。從 9.12.1 版本開始，Azure 僅支援Cloud Volumes ONTAP的新部署。我們建議您切換到 Es_v4 或任何其他與Cloud Volumes ONTAP 9.12.1 及更高版本相容的系列。但是，DS_v2 和 Es_v3 系列機器將可用於透過 API 進行的新部署。</block>
+  <block id="532ba8cc24d0d71f06b46f9c976e1a08" category="list-text">^4^ 使用單節點系統時，所有實例類型都支援高寫入速度。您可以在部署期間或之後的任何時間從控制台啟用高速寫入。<block ref="721fe5ee3bbc3d8295d8615ed77ff9be" category="inline-link-rx"></block> 。使用 SSD 時可實現增強的寫入效能。</block>
+  <block id="63c51e90bb823244bb44fdef3fa111d2" category="list-text">^1^ 使用 HA 對時， Cloud Volumes ONTAP支援這些 VM 類型的高寫入速度。您可以在部署期間或之後的任何時間從控制台啟用高速寫入。<block ref="18805b87db41583a67ecc2414d022f2b" category="inline-link-rx"></block> 。</block>
+  <block id="addbd739f53cc9b7f78ee8946f1edee3" category="list-text">^1^ 使用 HA 對時， Cloud Volumes ONTAP支援這些 VM 類型的高寫入速度。您可以在部署期間或之後的任何時間從控制台啟用高速寫入。<block ref="721fe5ee3bbc3d8295d8615ed77ff9be" category="inline-link-rx"></block> 。</block>
+  <block id="9a12688a6b9775d81793103d67b5e77d" category="list-text">^1^ 在 Google Cloud 中部署Cloud Volumes ONTAP的新實例時， NetApp控制台上不再可選擇 n1 系列機器。n1 系列機器將保留，並且僅在較舊的現有系統中支援。從 9.8 版本開始，Google Cloud 才支援Cloud Volumes ONTAP的新部署。我們建議您切換到與Cloud Volumes ONTAP 9.8 及更高版本相容的 n2 系列機器。不過，n1 系列機器將可用於透過 API 進行的新部署。</block>
+  <block id="c2856495b789c9d1ed585b2bc5d22666" category="list-text">^3^ 在 Google Cloud 中部署Cloud Volumes ONTAP的新實例時，控制台上不再可選擇 n1 系列機器。n1 系列機器將保留，並且僅在較舊的現有系統中支援。從 9.8 版本開始，Google Cloud 才支援Cloud Volumes ONTAP的新部署。我們建議您切換到與Cloud Volumes ONTAP 9.8 及更高版本相容的 n2 系列機器。然而，n1 系列機器將可用於透過 API 執行的新部署。</block>
+  <block id="f12609fcc63bc4a6557ff32bd8a2f8e1" category="paragraph">控制台顯示了標準和 BYOL 支援的額外機器類型：n1-highmem-4。然而，這種機器類型並不適合生產環境。我們僅將其用於特定的實驗室環境。</block>
+  <block id="d6944f8049c5d6bc7d3ef2af994f7e6f" category="paragraph">如果您有 AWS Outpost，則可以透過在部署期間選擇 Outpost VPC 在該 Outpost 中部署Cloud Volumes ONTAP 。體驗與駐留在 AWS 中的任何其他 VPC 相同。請注意，您需要先在 AWS Outpost 中部署控制台代理程式。</block>
+  <block id="5b3db0480124e621b8d9ca310865f940" category="paragraph">您可以在從NetApp控制台建立磁碟區時選擇無儲存效率，也可以建立磁碟區然後<block ref="41233aab48d70287f1bbc60d78ce6eab" category="inline-link-rx"></block>。</block>
+  <block id="e893b24c5db66be271bfdd91aecbad3e" category="paragraph">Cloud Volumes ONTAP不支援 Azure 虛擬機器 (VM) 擴展，因為它們會影響NetApp控制台中的管理操作。在部署期間，控制台會阻止在您的虛擬機器上安裝任何擴充功能。如果您現有的Cloud Volumes ONTAP VM 上已安裝擴展，請聯絡 Microsoft Azure 支援將其刪除。如需指導，請參閱知識庫 (KB) 文章<block ref="6d01312163294b91508e568dd491d345" category="inline-link-rx"></block></block>
+  <block id="cdea228f1fb9b0b9d76a0a25fd7fbfba" category="paragraph">從 2025 年 7 月 14 日開始，如果在您的Cloud Volumes ONTAP VM 上偵測到 VM 擴展， NetApp將發送電子郵件並在控制台中通知您。</block>
+  <block id="7f2c2680723c37260bd0babb983eed78" category="inline-link">API 端點</block>
+  <block id="56783dabaebb97d8ebf959e46aa8585e" category="paragraph">如果你利用<block ref="e066b15eeebd4e6d571fd7dd588f94f7" category="inline-link-rx"></block>在部署Cloud Volumes ONTAP 的VPC 中，您需要實作 DNS 記錄，將流量轉送到所需的<block ref="e9891a9da1b518a42d53f0f127589e52" category="inline-link-rx"></block>。</block>
+  <block id="17144250d1d5eb60096d14a51310303e" category="inline-link">了解如何使用NetApp Backup and Recovery 備份和還原ONTAP數據</block>
+  <block id="d7eed7589b8f07f96b8197b902b73e32" category="paragraph"><block ref="742a96aea32a807781aec89ea807060c" category="inline-link-rx"></block> 。</block>
+  <block id="7cf335b38e21aae8cc64cad4a3d4dc53" category="section-title">軟體更新必須透過NetApp控制台完成</block>
+  <block id="cab29c68f850cef8048857fd40533092" category="paragraph">必須從NetApp控制台完成Cloud Volumes ONTAP的升級。您不應使用系統管理員或 CLI 升級Cloud Volumes ONTAP 。這樣做會影響系統穩定性。</block>
+  <block id="011f8f65e213e69ccc97b5e0b505f293" category="paragraph">從雲端提供者的控制台變更Cloud Volumes ONTAP配置會導致設定不受支援。對控制台建立和管理的Cloud Volumes ONTAP資源的任何變更都可能影響系統穩定性和控制台管理系統的能力。</block>
+  <block id="0de151a03fe58bed8a1b572da0b1362d" category="section-title">必須從控制台管理磁碟和聚合</block>
+  <block id="ef623f71a5402f0cf0aa574c6b57af28" category="paragraph">必須直接從控制台建立和刪除所有磁碟和聚合。您不應從其他管理工具執行這些操作。這樣做會影響系統穩定性，妨礙將來添加磁碟的能力，並可能產生冗餘的雲端供應商費用。</block>
+  <block id="0acf1e2df2b9b01874319803eabf4809" category="paragraph">NetApp不支援超出系統容量限制。如果達到許可容量限制， NetApp控制台將顯示「需要操作」訊息，並且不再允許您新增其他磁碟。</block>
+  <block id="301c8bf668879078e7313202f8c6e3bc" category="paragraph">不，不是這樣的。AWS HA 對中的資料在節點之間同步鏡像，以便在發生故障時資料可用。例如，如果您在節點 A 上購買了一個 8 TiB 磁碟，控制台也會在節點 B 上指派 8 TiB 磁碟用於鏡像資料。雖然預置了 16 TiB 的容量，但只有 8 TiB 計入許可證限制。</block>
+  <block id="a5796a79fc3c6a4b2730839d1c84fda2" category="list-text">這些列中列出的數字包括控制台預設建立的初始儲存虛擬機器。例如，如果此列列出 24，則表示您可以建立 23 個額外的儲存虛擬機，總共 24 個。</block>
+  <block id="5efa1457589f46f1624073221bb45945" category="list-text">從Cloud Volumes ONTAP 9.13.1 開始</block>
+  <block id="97a0dd0fbd62c81c022f19f81ea6d3d8" category="paragraph">NetApp不支援超出系統容量限制。如果達到許可容量限制， NetApp控制台將顯示「需要採取措施」訊息並阻止您新增更多磁碟。</block>
+  <block id="ff5c4e33b0daeafb77b665a5b85965b3" category="list-text">從Cloud Volumes ONTAP 9.12.1 P2 和 9.13.0 P2 開始的系統管理員和ONTAP CLI</block>
+  <block id="26a761fa26c9fc375a164034ff206aca" category="paragraph">不，不是這樣的。HA 對中的資料在節點之間同步鏡像，以便在 Google Cloud 發生故障時資料可用。例如，如果您在節點 A 上購買了一個 8 TB 磁碟，控制台也會在節點 B 上指派一個 8 TB 磁碟用於鏡像資料。雖然設定了 16 TB 的容量，但只有 8 TB 計入許可證限制。</block>
+  <block id="1d3b6bcaa662fb815c64aec0bffd0aa5" category="inline-link-macro">了解控制台通知您時如何升級</block>
+  <block id="c1c95a79ba017a924aa27e6d62ce3148" category="paragraph"><block ref="96dd1055c54322c16d3691cb1f44b801" category="inline-link-macro-rx"></block> 。</block>
+  <block id="ec7fa7e95a261dd6d86a889d93e8e7fd" category="paragraph">您可以從 Azure 和 Google Cloud 中的 9.16.1 版本升級至Cloud Volumes ONTAP 9.17.1 RC1。控制台將提示您將符合條件的Cloud Volumes ONTAP系統升級至此版本。</block>
+  <block id="3c031b939f6ec312ee601d021e7a6644" category="sidebar">NetApp控制台</block>
+  <block id="cc58d3a9b2264c4fd8cb1d3f61b90bdc" category="sidebar">NetApp資料服務</block>
 </blocks>
