@@ -460,7 +460,6 @@
   <block id="eba85a087985c7150b43d2878dd0c2da" category="list-text">128 TiB原始容量、含彈性磁碟區^3^</block>
   <block id="b7d71850fd138e6cd477a1887cc244f3" category="cell">每個Aggregate的磁碟數^4^</block>
   <block id="449daf85c71a9f8eb7c666134b1d9b95" category="list-text">1-6</block>
-  <block id="734bf70b1c522fd659b58c67d2c015e9" category="list-text">1-8個彈性Volume ^3^</block>
   <block id="70fb554e00e352dd7da6941d99b53751" category="inline-link">深入瞭解彈性磁碟區的支援</block>
   <block id="dc2065e297a9790d182a555ba250dbda" category="cell">節點型BYOL</block>
   <block id="75b66e0b3cef735ea985bd79ab9601e2" category="cell">m5dn.4xlarge</block>
@@ -849,4 +848,12 @@
   <block id="ec7fa7e95a261dd6d86a889d93e8e7fd" category="paragraph">您可以從 Azure 和 Google Cloud 中的 9.16.1 版本升級至Cloud Volumes ONTAP 9.17.1 RC1。控制台將提示您將符合條件的Cloud Volumes ONTAP系統升級至此版本。</block>
   <block id="3c031b939f6ec312ee601d021e7a6644" category="sidebar">NetApp控制台</block>
   <block id="cc58d3a9b2264c4fd8cb1d3f61b90bdc" category="sidebar">NetApp資料服務</block>
+  <block id="8217e312ff09919418aea279cfd2ad1b" category="list-text">4 或 8 個（有彈性卷）^3^</block>
+  <block id="c81e728d9d4c2f636f067f89cc14862c" category="cell">2</block>
+  <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="inline-link">Cloud Volumes ONTAP</block>
+  <block id="5d1eb95c23458b15c13fe46f408728aa" category="paragraph">最新版本的NetApp Console也引進了其他功能和增強功能。欲了解更多信息，請參閱<block ref="56e5ce972271b4b4616ecc1db39a9778" category="inline-link-rx"></block> 在控制台中管理。</block>
+  <block id="86de323bb8011aa153a28e1ec6251441" category="section-title">9.17.1 P1（2025年11月4日）</block>
+  <block id="8027200a53fea356fb83667e546c5730" category="paragraph">Cloud Volumes ONTAP 9.17.1 P1 修補程式現已可在 Azure 和 Google Cloud 中部署和升級。但此版本暫不支援在 AWS 中部署和升級。 BlueXP控制台將提示您將現有系統升級到此補丁版本。</block>
+  <block id="a9380d77cd3c45a5f15f09b231323443" category="inline-link-macro">查看 P1 補丁修復的錯誤列表</block>
+  <block id="eea79595a199aeba235c28ddf7c6a513" category="paragraph"><block ref="429dec56698d9248dce2c6adf256ffe7" category="inline-link-macro-rx"></block>（需要登入NetApp支援站點）。</block>
 </blocks>

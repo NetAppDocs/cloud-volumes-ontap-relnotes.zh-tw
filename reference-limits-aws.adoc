@@ -80,12 +80,12 @@ NetApp不支援超出系統容量限制。如果達到許可容量限制， NetA
 
 | 每個Aggregate的磁碟數^4^  a| 
 * 1-6
-* 1-8個彈性Volume ^3^
+* 4 或 8 個（有彈性卷）^3^
 
 
 
 
-| 每個Aggregate的RAID群組數目上限 | 1. 
+| 每個Aggregate的RAID群組數目上限 | 2 
 |===
 附註：
 
