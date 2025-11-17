@@ -792,10 +792,7 @@
   <block id="5d400a6226e85167dbd60b61421128ef" category="list-text"><block ref="5d400a6226e85167dbd60b61421128ef" category="inline-link-macro-rx"></block></block>
   <block id="6076bde119ef4c539333767fd60b037b" category="summary">Cloud Volumes ONTAP 9.17.1 包含一項新的增強功能。</block>
   <block id="35e59ce342eaf6b146f59a2ec17b5019" category="doc">Cloud Volumes ONTAP 9.17.1 中的新功能</block>
-  <block id="c9636b1359c39d947689e7d7030a3876" category="paragraph">Cloud Volumes ONTAP 9.17.1 可在 Azure 和 Google Cloud 中部署和升級。</block>
   <block id="db3cc6b5ebbff132de6d6986ec232460" category="section-title">9.17.1 RC1（2025 年 9 月 4 日）</block>
-  <block id="8d9a14656b6d91eecabf8d5f9a39888c" category="paragraph">現在您可以使用Cloud Volumes ONTAP 9.17.1 候選版本 1 在 Azure 和 Google Cloud 中進行部署和升級。但此版本暫不支援在 AWS 中部署和升級。 BlueXP</block>
-  <block id="a925267cf1e3f473e26af9a1c7e069bd" category="admonition">對於 AWS，系統不會提示您進行此升級。  AWS 不支援升級到Cloud Volumes ONTAP 9.17.1 RC1。</block>
   <block id="1be92e36c3e9ca47e988acc51bde4499" category="sidebar">這些發行說明描述了Cloud Volumes ONTAP 9.17.1 的新功能、限制和已知問題。</block>
   <block id="4cf5c8db7f505fa308225ecc9355e4d5" category="sidebar">Cloud Volumes ONTAP 9.17.1 發行說明</block>
   <block id="003bdd8b041b75252a40e81df0fa7067" category="sidebar">Cloud Volumes ONTAP 9.17.1 發行說明</block>
@@ -845,15 +842,19 @@
   <block id="26a761fa26c9fc375a164034ff206aca" category="paragraph">不，不是這樣的。HA 對中的資料在節點之間同步鏡像，以便在 Google Cloud 發生故障時資料可用。例如，如果您在節點 A 上購買了一個 8 TB 磁碟，控制台也會在節點 B 上指派一個 8 TB 磁碟用於鏡像資料。雖然設定了 16 TB 的容量，但只有 8 TB 計入許可證限制。</block>
   <block id="1d3b6bcaa662fb815c64aec0bffd0aa5" category="inline-link-macro">了解控制台通知您時如何升級</block>
   <block id="c1c95a79ba017a924aa27e6d62ce3148" category="paragraph"><block ref="96dd1055c54322c16d3691cb1f44b801" category="inline-link-macro-rx"></block> 。</block>
-  <block id="ec7fa7e95a261dd6d86a889d93e8e7fd" category="paragraph">您可以從 Azure 和 Google Cloud 中的 9.16.1 版本升級至Cloud Volumes ONTAP 9.17.1 RC1。控制台將提示您將符合條件的Cloud Volumes ONTAP系統升級至此版本。</block>
   <block id="3c031b939f6ec312ee601d021e7a6644" category="sidebar">NetApp控制台</block>
   <block id="cc58d3a9b2264c4fd8cb1d3f61b90bdc" category="sidebar">NetApp資料服務</block>
   <block id="8217e312ff09919418aea279cfd2ad1b" category="list-text">4 或 8 個（有彈性卷）^3^</block>
   <block id="c81e728d9d4c2f636f067f89cc14862c" category="cell">2</block>
   <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="inline-link">Cloud Volumes ONTAP</block>
-  <block id="5d1eb95c23458b15c13fe46f408728aa" category="paragraph">最新版本的NetApp Console也引進了其他功能和增強功能。欲了解更多信息，請參閱<block ref="56e5ce972271b4b4616ecc1db39a9778" category="inline-link-rx"></block> 在控制台中管理。</block>
   <block id="86de323bb8011aa153a28e1ec6251441" category="section-title">9.17.1 P1（2025年11月4日）</block>
-  <block id="8027200a53fea356fb83667e546c5730" category="paragraph">Cloud Volumes ONTAP 9.17.1 P1 修補程式現已可在 Azure 和 Google Cloud 中部署和升級。但此版本暫不支援在 AWS 中部署和升級。 BlueXP控制台將提示您將現有系統升級到此補丁版本。</block>
   <block id="a9380d77cd3c45a5f15f09b231323443" category="inline-link-macro">查看 P1 補丁修復的錯誤列表</block>
   <block id="eea79595a199aeba235c28ddf7c6a513" category="paragraph"><block ref="429dec56698d9248dce2c6adf256ffe7" category="inline-link-macro-rx"></block>（需要登入NetApp支援站點）。</block>
+  <block id="ecf15dfab4d665bf128d1e2206f73a60" category="paragraph">Cloud Volumes ONTAP 9.17.1 包含新的增強功能。</block>
+  <block id="efb171bcd8d21c30ceeb8df57557cce9" category="paragraph">NetApp Console的最新版本也引進了新的Cloud Volumes ONTAP功能。欲了解更多信息，請參閱<block ref="56e5ce972271b4b4616ecc1db39a9778" category="inline-link-rx"></block> 在控制台中管理。</block>
+  <block id="6fb051256b243143bc0b276db97f7c41" category="paragraph">Cloud Volumes ONTAP 9.17.1 P1 修補程式現已可在 AWS、Azure 和 Google Cloud 中部署和升級。控制台將提示您將現有系統升級到此補丁版本。</block>
+  <block id="9545c7a855bc88b301687212c3cb35d6" category="paragraph">現在您可以使用Cloud Volumes ONTAP 9.17.1 候選版本 1 在 Azure 和 Google Cloud 中進行部署和升級。</block>
+  <block id="8690f53f07f007360e78dc29e5309562" category="admonition">此版本無法在 AWS 中部署和升級。</block>
+  <block id="57a0ba977b3ce94f8d770dc7f07f0621" category="paragraph">Cloud Volumes ONTAP的升級必須透過控制台完成。您不應使用系統管理員或 CLI 升級Cloud Volumes ONTAP 。這樣做會影響系統穩定性。</block>
+  <block id="39c7d7fdae3f61f4fd797ff61941cf21" category="paragraph">您可以在 AWS、Azure 和 Google Cloud 中從 9.16.1 版本升級到Cloud Volumes ONTAP 9.17.1。對於 AWS，您可以升級至Cloud Volumes ONTAP 9.17.1 P1 及更高版本。控制台將提示您將符合條件的Cloud Volumes ONTAP系統升級至此版本。</block>
 </blocks>

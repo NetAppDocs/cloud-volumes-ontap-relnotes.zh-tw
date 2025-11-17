@@ -14,15 +14,15 @@ summary: Cloud Volumes ONTAP 9.17.1 包含一項新的增強功能。
 
 
 [role="lead"]
-Cloud Volumes ONTAP 9.17.1 可在 Azure 和 Google Cloud 中部署和升級。
+Cloud Volumes ONTAP 9.17.1 包含新的增強功能。
 
-最新版本的NetApp Console也引進了其他功能和增強功能。欲了解更多信息，請參閱 https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/whats-new.html["Cloud Volumes ONTAP"^] 在控制台中管理。
+NetApp Console的最新版本也引進了新的Cloud Volumes ONTAP功能。欲了解更多信息，請參閱 https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/whats-new.html["Cloud Volumes ONTAP"^] 在控制台中管理。
 
 
 
 == 9.17.1 P1（2025年11月4日）
 
-Cloud Volumes ONTAP 9.17.1 P1 修補程式現已可在 Azure 和 Google Cloud 中部署和升級。但此版本暫不支援在 AWS 中部署和升級。 BlueXP控制台將提示您將現有系統升級到此補丁版本。
+Cloud Volumes ONTAP 9.17.1 P1 修補程式現已可在 AWS、Azure 和 Google Cloud 中部署和升級。控制台將提示您將現有系統升級到此補丁版本。
 
 link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.17.1P1["查看 P1 補丁修復的錯誤列表"^]（需要登入NetApp支援站點）。
 
@@ -30,7 +30,10 @@ link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/
 
 == 9.17.1 RC1（2025 年 9 月 4 日）
 
-現在您可以使用Cloud Volumes ONTAP 9.17.1 候選版本 1 在 Azure 和 Google Cloud 中進行部署和升級。但此版本暫不支援在 AWS 中部署和升級。 BlueXP
+現在您可以使用Cloud Volumes ONTAP 9.17.1 候選版本 1 在 Azure 和 Google Cloud 中進行部署和升級。
+
+
+NOTE: 此版本無法在 AWS 中部署和升級。
 
 
 
@@ -42,7 +45,7 @@ link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/
 
 === 如何升級
 
-必須從NetApp控制台完成Cloud Volumes ONTAP的升級。您不應使用系統管理員或 CLI 升級Cloud Volumes ONTAP 。這樣做會影響系統穩定性。
+Cloud Volumes ONTAP的升級必須透過控制台完成。您不應使用系統管理員或 CLI 升級Cloud Volumes ONTAP 。這樣做會影響系統穩定性。
 
 link:http://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html["了解控制台通知您時如何升級"^] 。
 
@@ -50,10 +53,7 @@ link:http://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap
 
 === 支援的升級途徑
 
-您可以從 Azure 和 Google Cloud 中的 9.16.1 版本升級至Cloud Volumes ONTAP 9.17.1 RC1。控制台將提示您將符合條件的Cloud Volumes ONTAP系統升級至此版本。
-
-
-NOTE: 對於 AWS，系統不會提示您進行此升級。  AWS 不支援升級到Cloud Volumes ONTAP 9.17.1 RC1。
+您可以在 AWS、Azure 和 Google Cloud 中從 9.16.1 版本升級到Cloud Volumes ONTAP 9.17.1。對於 AWS，您可以升級至Cloud Volumes ONTAP 9.17.1 P1 及更高版本。控制台將提示您將符合條件的Cloud Volumes ONTAP系統升級至此版本。
 
 
 
