@@ -856,4 +856,8 @@
   <block id="15c46c6e8cc3bc71a1f7ac25fd043a38" category="inline-link">標準</block>
   <block id="b21dfdf1c7842fb2345e529943fe3797" category="paragraph">同樣，如果您選擇高級 SSD 管理磁碟來滿足以下環境要求：<block ref="15bd670ffefc5e29ca2fb072751f55bb" category="inline-link-rx"></block> 對於 Premium SSD v2 管理磁碟，控制台會自動部署 Premium SSD v2 管理磁碟。您無法切換到進階 SSD v1 管理磁碟。</block>
   <block id="ea848964069f461947feaaafed2ce380" category="list-text">^6^ 如果您選擇高級 SSD 管理磁碟來滿足以下環境要求：<block ref="15bd670ffefc5e29ca2fb072751f55bb" category="inline-link-rx"></block> 對於 Premium SSD v2 管理磁碟，控制台會自動部署 Premium SSD v2 管理磁碟。您無法切換到進階 SSD v1 管理磁碟。有關高可用性部署（包括單可用區和多可用區）的系統資料內部磁碟的信息，請參閱：<block ref="f48956bad241329abf5e1ff5123459dd" category="inline-link-rx"></block>。</block>
+  <block id="1b8bd8d1af0142c72fd4e204caacf454" category="section-title">9.17.1 P2（2025年12月4日）</block>
+  <block id="ef472153bbc56318dce19177ac3fa1b4" category="paragraph">Cloud Volumes ONTAP 9.17.1 P2 修補程式現已可在 AWS、Azure 和 Google Cloud 中進行升級。控制台將提示您將現有系統升級到此補丁版本。</block>
+  <block id="ce5d0c77f167b881391469fc27895727" category="inline-link-macro">查看 P2 補丁修復的錯誤列表</block>
+  <block id="a40be2bf2d5d6d88cd3370cec7aad194" category="paragraph"><block ref="ac39adedf16f862832f2e839cb1736f3" category="inline-link-macro-rx"></block>（需要登入NetApp支援站點）。</block>
 </blocks>
