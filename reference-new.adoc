@@ -20,6 +20,14 @@ NetApp Console的最新版本也引進了新的Cloud Volumes ONTAP功能。欲�
 
 
 
+== 9.17.1 P3（2025年12月22日）
+
+Cloud Volumes ONTAP 9.17.1 P3 修補程式現已可在 AWS、Azure 和 Google Cloud 中進行升級。控制台將提示您將現有系統升級到此補丁版本。
+
+link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.17.1P3["查看 P3 補丁修復的錯誤列表"^]（需要登入NetApp支援站點）。
+
+
+
 == 9.17.1 P2（2025年12月4日）
 
 Cloud Volumes ONTAP 9.17.1 P2 修補程式現已可在 AWS、Azure 和 Google Cloud 中進行升級。控制台將提示您將現有系統升級到此補丁版本。
