@@ -782,14 +782,6 @@
   <block id="acdea6c80f3845eb2767234fb04788c2" category="cell">支援的資料盤類型</block>
   <block id="d894dfdb1bbb11ae0641d7c6e97d92e2" category="cell">進階 SSD 託管磁碟或進階 SSD v2 託管磁碟。</block>
   <block id="42762fecca2ab07cc92a3d950f2052c9" category="list-text">^7^ 自 2025 年 8 月 11 日起， Cloud Volumes ONTAP優化授權將被棄用，並且將不再可在 Azure 市場中以即用即付 (PAYGO) 訂閱的方式購買或續訂。<block ref="43fcd9c2498ef205b9218293a558faae" category="inline-link-rx"></block> 。</block>
-  <block id="be666ea41d284101ddfda886424c2d07" category="inline-link-macro">Cloud Volumes ONTAP 9.17.1 公告</block>
-  <block id="5d400a6226e85167dbd60b61421128ef" category="list-text"><block ref="5d400a6226e85167dbd60b61421128ef" category="inline-link-macro-rx"></block></block>
-  <block id="6076bde119ef4c539333767fd60b037b" category="summary">Cloud Volumes ONTAP 9.17.1 包含一項新的增強功能。</block>
-  <block id="35e59ce342eaf6b146f59a2ec17b5019" category="doc">Cloud Volumes ONTAP 9.17.1 中的新功能</block>
-  <block id="db3cc6b5ebbff132de6d6986ec232460" category="section-title">9.17.1 RC1（2025 年 9 月 4 日）</block>
-  <block id="1be92e36c3e9ca47e988acc51bde4499" category="sidebar">這些發行說明描述了Cloud Volumes ONTAP 9.17.1 的新功能、限制和已知問題。</block>
-  <block id="4cf5c8db7f505fa308225ecc9355e4d5" category="sidebar">Cloud Volumes ONTAP 9.17.1 發行說明</block>
-  <block id="003bdd8b041b75252a40e81df0fa7067" category="sidebar">Cloud Volumes ONTAP 9.17.1 發行說明</block>
   <block id="7662ffdf9f88ef8d3503c5a47332d185" category="section-title">HA 配置的進階 SSD v2 磁碟限制</block>
   <block id="628be05f52730d9bc1ff4a25a8803b9f" category="paragraph">進階 SSD v2 託管磁碟對於 Azure 中的高可用性 (HA) 部署有以下限制：</block>
   <block id="c393fdd1e5323cfc775d4d2f67c6ee3c" category="list-text">非區域性區域的 HA 部署不支援。</block>
@@ -841,24 +833,11 @@
   <block id="8217e312ff09919418aea279cfd2ad1b" category="list-text">4 或 8 個（有彈性卷）^3^</block>
   <block id="c81e728d9d4c2f636f067f89cc14862c" category="cell">2</block>
   <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="inline-link">Cloud Volumes ONTAP</block>
-  <block id="86de323bb8011aa153a28e1ec6251441" category="section-title">9.17.1 P1（2025年11月4日）</block>
-  <block id="a9380d77cd3c45a5f15f09b231323443" category="inline-link-macro">查看 P1 補丁修復的錯誤列表</block>
-  <block id="eea79595a199aeba235c28ddf7c6a513" category="paragraph"><block ref="429dec56698d9248dce2c6adf256ffe7" category="inline-link-macro-rx"></block>（需要登入NetApp支援站點）。</block>
-  <block id="ecf15dfab4d665bf128d1e2206f73a60" category="paragraph">Cloud Volumes ONTAP 9.17.1 包含新的增強功能。</block>
-  <block id="efb171bcd8d21c30ceeb8df57557cce9" category="paragraph">NetApp Console的最新版本也引進了新的Cloud Volumes ONTAP功能。欲了解更多信息，請參閱<block ref="56e5ce972271b4b4616ecc1db39a9778" category="inline-link-rx"></block> 在控制台中管理。</block>
-  <block id="6fb051256b243143bc0b276db97f7c41" category="paragraph">Cloud Volumes ONTAP 9.17.1 P1 修補程式現已可在 AWS、Azure 和 Google Cloud 中部署和升級。控制台將提示您將現有系統升級到此補丁版本。</block>
-  <block id="9545c7a855bc88b301687212c3cb35d6" category="paragraph">現在您可以使用Cloud Volumes ONTAP 9.17.1 候選版本 1 在 Azure 和 Google Cloud 中進行部署和升級。</block>
-  <block id="8690f53f07f007360e78dc29e5309562" category="admonition">此版本無法在 AWS 中部署和升級。</block>
   <block id="57a0ba977b3ce94f8d770dc7f07f0621" category="paragraph">Cloud Volumes ONTAP的升級必須透過控制台完成。您不應使用系統管理員或 CLI 升級Cloud Volumes ONTAP 。這樣做會影響系統穩定性。</block>
-  <block id="39c7d7fdae3f61f4fd797ff61941cf21" category="paragraph">您可以在 AWS、Azure 和 Google Cloud 中從 9.16.1 版本升級到Cloud Volumes ONTAP 9.17.1。對於 AWS，您可以升級至Cloud Volumes ONTAP 9.17.1 P1 及更高版本。控制台將提示您將符合條件的Cloud Volumes ONTAP系統升級至此版本。</block>
   <block id="2f3a829bc17b59e7781cb4c84d7fdaac" category="paragraph">如果在部署新的Cloud Volumes ONTAP系統時選擇其中任何一種 VM 類型，則無法變更為不使用 Ultra SSD 作為 VNVRAM 的另一種 VM 類型。例如，您無法從 E8ds_v4 變更為 E8s_v3，但可以從 E8ds_v4 變更為 E32ds_v4，因為這兩種 VM 類型都使用 Ultra SSD。反之，如果您使用任何其他 VM 類型部署了Cloud Volumes ONTAP ，則無法變更為使用 Ultra SSD 作為 VNVRAM 的另一種 VM 類型。例如，你不能將不使用 Ultra SSD 作為 VNVRAM 的 E8s_v3 改為使用 Ultra SSD 作為 VNVRAM 的 E8ds_v4。</block>
   <block id="15c46c6e8cc3bc71a1f7ac25fd043a38" category="inline-link">標準</block>
   <block id="b21dfdf1c7842fb2345e529943fe3797" category="paragraph">同樣，如果您選擇高級 SSD 管理磁碟來滿足以下環境要求：<block ref="15bd670ffefc5e29ca2fb072751f55bb" category="inline-link-rx"></block> 對於 Premium SSD v2 管理磁碟，控制台會自動部署 Premium SSD v2 管理磁碟。您無法切換到進階 SSD v1 管理磁碟。</block>
   <block id="ea848964069f461947feaaafed2ce380" category="list-text">^6^ 如果您選擇高級 SSD 管理磁碟來滿足以下環境要求：<block ref="15bd670ffefc5e29ca2fb072751f55bb" category="inline-link-rx"></block> 對於 Premium SSD v2 管理磁碟，控制台會自動部署 Premium SSD v2 管理磁碟。您無法切換到進階 SSD v1 管理磁碟。有關高可用性部署（包括單可用區和多可用區）的系統資料內部磁碟的信息，請參閱：<block ref="f48956bad241329abf5e1ff5123459dd" category="inline-link-rx"></block>。</block>
-  <block id="1b8bd8d1af0142c72fd4e204caacf454" category="section-title">9.17.1 P2（2025年12月4日）</block>
-  <block id="ef472153bbc56318dce19177ac3fa1b4" category="paragraph">Cloud Volumes ONTAP 9.17.1 P2 修補程式現已可在 AWS、Azure 和 Google Cloud 中進行升級。控制台將提示您將現有系統升級到此補丁版本。</block>
-  <block id="ce5d0c77f167b881391469fc27895727" category="inline-link-macro">查看 P2 補丁修復的錯誤列表</block>
-  <block id="a40be2bf2d5d6d88cd3370cec7aad194" category="paragraph"><block ref="ac39adedf16f862832f2e839cb1736f3" category="inline-link-macro-rx"></block>（需要登入NetApp支援站點）。</block>
   <block id="02fab2cadf45bea30480ac0cf50e7203" category="list-text">E4ds_v6 ^6^</block>
   <block id="06413994c4aa1a93ecf2981f24ff2396" category="list-text">E20ds_v6 ^6^</block>
   <block id="10dc072def6ec7e5386a9f5dd3ab2c8a" category="list-text">E32ds_v6 ^6^</block>
@@ -871,8 +850,17 @@
   <block id="6fca818cb2b74d72dd8849c2a4e34d2b" category="list-text">E48ds_v6 ^8^</block>
   <block id="bbc7e0e0269760cbd08e32205763eede" category="list-text">E64ds_v6 ^8^</block>
   <block id="312c1718d8151f9dd3f53ad516f59210" category="list-text">^8^ Edsv6 VM 類型支援Cloud Volumes ONTAP 9.17.1 及更高版本的全新部署。您無法將現有部署切換為任何其他 VM 類型，例如從 Edsv5 切換到 Edsv6；僅支援 Edsv6 變體之間的大小變更（例如 E20ds_v6 → E32ds_v6）。有關此虛擬機器類型的信息，請參閱<block ref="45ec24eb73012d89f19225059116e005" category="inline-link-rx"></block>。</block>
-  <block id="78ca1e9b4071731d926af62548edb6ec" category="section-title">9.17.1 P3（2025年12月22日）</block>
-  <block id="052ffa7a1e7c8dd40078c40c114b4029" category="paragraph">Cloud Volumes ONTAP 9.17.1 P3 修補程式現已可在 AWS、Azure 和 Google Cloud 中進行升級。控制台將提示您將現有系統升級到此補丁版本。</block>
-  <block id="4c7cf73669136d536c96ca7317eb5ceb" category="inline-link-macro">查看 P3 補丁修復的錯誤列表</block>
-  <block id="d0805c87e6349186d93041afd3764619" category="paragraph"><block ref="d209673dd7156618bec41c386164b39f" category="inline-link-macro-rx"></block>（需要登入NetApp支援站點）。</block>
+  <block id="e8d1ba67e4c7362e24e23edc094c913a" category="inline-link-macro">Cloud Volumes ONTAP 9.18.1 的注意事項</block>
+  <block id="cbacdd329731dd3da20817c0b9394825" category="list-text"><block ref="cbacdd329731dd3da20817c0b9394825" category="inline-link-macro-rx"></block></block>
+  <block id="b8aa7f56f0169d56c55b780e1d221a2d" category="summary">Cloud Volumes ONTAP 9.18.1 包含一項新的增強功能。</block>
+  <block id="e20a47504b3168c3c934ea71a6245502" category="doc">Cloud Volumes ONTAP 9.18.1 的新增功能</block>
+  <block id="c9cd8b532a08b529a0ff7a2fffea627b" category="paragraph">現在您可以部署和升級到 Cloud Volumes ONTAP 9.18.1。您可以在 NetApp Console 中查看此版本的基本版本以及可用於部署和升級的最新修補程式版本。</block>
+  <block id="08a0be2ea6fee1009726a83673928a21" category="paragraph">若要了解 Cloud Volumes ONTAP 最新版本 NetApp Console 中引入的 Cloud Volumes ONTAP 功能，請參閱新增功能<block ref="56e5ce972271b4b4616ecc1db39a9778" category="inline-link-rx"></block>。</block>
+  <block id="5374a9a52531aed841e032cdf44811c1" category="section-title">9.18.1 GA（2026 年 2 月 10 日）</block>
+  <block id="ab70c277ac78079e46a1214dd294b323" category="paragraph">Cloud Volumes ONTAP 9.18.1 正式版現已在 Amazon Web Services（AWS）和 Microsoft Azure 上發布，可供部署和升級。此版本暫不支援在 Google Cloud 上部署和升級。</block>
+  <block id="a5fe82604076d645f09893cad1967294" category="paragraph">您可以從 AWS 和 Azure 上的 9.17.1 P1 及更高版本修補程式升級至 Cloud Volumes ONTAP 9.18.1。NetApp Console 將提示您將符合條件的 Cloud Volumes ONTAP 系統升級至此版本。</block>
+  <block id="2e03bd3de874b4ffe3a85b7507d0a69e" category="admonition">Cloud Volumes ONTAP 9.18.1 無法在 Google Cloud 中進行升級。</block>
+  <block id="7ee7c49a2608d3d31956026fdc3bf833" category="sidebar">這些版本資訊說明 Cloud Volumes ONTAP 9.18.1 的新功能、限制和已知問題。</block>
+  <block id="001b20e35d2188363ca847fd669007f8" category="sidebar">Cloud Volumes ONTAP 9.18.1 版本說明</block>
+  <block id="e0b3d5810800c1af83b5753f4a2a2f7e" category="sidebar">Cloud Volumes ONTAP 9.18.1 版本說明</block>
 </blocks>
