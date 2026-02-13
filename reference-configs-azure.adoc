@@ -20,9 +20,9 @@ Azure支援多Cloud Volumes ONTAP 種支援的支援功能。
 
 == 依授權支援的組態
 
-Azure中提供的支援可作為單一節點系統、以及高可用度（HA）節點配對、以提供容錯能力和不中斷營運。Cloud Volumes ONTAP
+Cloud Volumes ONTAP 在 Azure 中既可以作為單節點系統使用，也可以作為高可用性（HA）節點對使用，以實現容錯和不中斷營運。
 
-不支援將單一節點系統升級為HA配對。如果您想在單一節點系統和HA配對之間切換、則需要部署新系統、並將資料從現有系統複寫到新系統。
+不支援將單節點系統升級為 HA 配對。如果您想在單節點系統和 HA 配對之間切換，則需要部署新系統，並將資料從現有系統複寫到新系統。
 
 可在雲端供應商的保留或隨需VM執行個體上執行。Cloud Volumes ONTAP不支援使用其他VM執行個體類型的解決方案。
 
@@ -30,7 +30,7 @@ Azure中提供的支援可作為單一節點系統、以及高可用度（HA）�
 
 
 
-=== 單一節點系統
+=== 單節點系統
 
 在 Azure 中將 Cloud Volumes ONTAP 部署為單一節點系統時、您可以選擇下列容量型或節點型授權組態。
 
@@ -56,11 +56,12 @@ Azure中提供的支援可作為單一節點系統、以及高可用度（HA）�
 * DS13_v2 ^1^
 * DS14_v2 ^1^
 * DS15_v2 ^1^
-* E4s_v3 ^1^
-* E8s_v3 ^1^
-* E32s_v3 ^1 、 3^
-* E48s_v3 ^1 、 3^
-* E64is_v3 ^1 、 3^
+* E4bds_v5 ^7^
+* E8bds_v5 ^7^
+* E16bds_v5 ^7^
+* E32bds_v5 ^7^
+* E48bds_v5 ^7^
+* E64bds_v5 ^7^
 * E4ds_v4
 * E8ds_v4
 * E32ds_v4 ^3^
@@ -77,6 +78,12 @@ Azure中提供的支援可作為單一節點系統、以及高可用度（HA）�
 * E32ds_v6 ^6^
 * E48ds_v6 ^6^
 * E64ds_v6 ^6^
+* E4s_v3 ^1^
+* E8s_v3 ^1^
+* E32s_v3 ^1 、 3^
+* E48s_v3 ^1 、 3^
+* E64is_v3 ^1 、 3^
+* E104ids_v5 ^7^
 * L8s_v3 ^2^
 * L16s_v3 ^2^
 * L32s_v3 ^2^
@@ -99,11 +106,12 @@ Azure中提供的支援可作為單一節點系統、以及高可用度（HA）�
 * DS13_v2 ^1^
 * DS14_v2 ^1^
 * DS15_v2 ^1^
-* E4s_v3 ^1^
-* E8s_v3 ^1^
-* E32s_v3 ^1 、 3^
-* E48s_v3 ^1 、 3^
-* E64is_v3 ^1 、 3^
+* E4bds_v5 ^7^
+* E8bds_v5 ^7^
+* E16bds_v5 ^7^
+* E32bds_v5 ^7^
+* E48bds_v5 ^7^
+* E64bds_v5 ^7^
 * E4ds_v4 ^3^
 * E8ds_v4 ^3^
 * E32ds_v4 ^3^
@@ -120,6 +128,12 @@ Azure中提供的支援可作為單一節點系統、以及高可用度（HA）�
 * E32ds_v6 ^6^
 * E48ds_v6 ^6^
 * E64ds_v6 ^6^
+* E4s_v3 ^1^
+* E8s_v3 ^1^
+* E32s_v3 ^1 、 3^
+* E48s_v3 ^1 、 3^
+* E64is_v3 ^1 、 3^
+* E104ids_v5 ^7^
 * L8s_v3 ^2^
 * L16s_v3 ^2^
 * L32s_v3 ^2^
@@ -133,7 +147,7 @@ Azure中提供的支援可作為單一節點系統、以及高可用度（HA）�
 |===
 附註：
 
-. ^1^ 在 Azure 中部署Cloud Volumes ONTAP的新實例時， NetApp控制台上不再提供 DS_v2 和 Es_v3 機器系列的選擇。這些系列將僅在較舊的現有系統中保留和支援。從 9.12.1 版本開始，Azure 僅支援Cloud Volumes ONTAP的新部署。我們建議您切換到 Es_v4 或任何其他與Cloud Volumes ONTAP 9.12.1 及更高版本相容的系列。但是，DS_v2 和 Es_v3 系列機器將可用於透過 API 進行的新部署。
+. ^1^ 在 NetApp Console 上部署新的 Cloud Volumes ONTAP 執行個體時，將不再提供 DSv2 和 Esv3 機器系列的選擇。這些系列機器將僅在舊版現有系統中保留並提供支援。Azure 中的 Cloud Volumes ONTAP 新部署僅支援從 9.12.1 版本開始。我們建議您切換到 Es_v4 或任何其他與 Cloud Volumes ONTAP 9.12.1 及更高版本相容的系列機器。但是，DS_v2 和 Es_v3 系列機器仍然可用於透過 API 進行的新部署。
 . ^2^ 此 VM 類型包含本機 NVMe 儲存設備， Cloud Volumes ONTAP 使用此儲存設備做為 _Flash Caches_ 。Flash Cache 可透過即時智慧快取來加速資料存取、快取最近讀取的使用者資料和 NetApp 中繼資料。它能有效處理隨機讀取密集的工作負載、包括資料庫、電子郵件和檔案服務。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-flash-cache.html["深入瞭解"^]。
 +
 在 Azure 上設定 Flash Cache 所需的最低 ONTAP 版本為 9.13.1 GA 。
@@ -145,9 +159,10 @@ Azure中提供的支援可作為單一節點系統、以及高可用度（HA）�
 +
 同樣，如果您選擇高級 SSD 管理磁碟來滿足以下環境要求： https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-ha-azure.html#ha-single-availability-zone-configuration-with-shared-managed-disks["標準"^] 對於 Premium SSD v2 管理磁碟，控制台會自動部署 Premium SSD v2 管理磁碟。您無法切換到進階 SSD v1 管理磁碟。
 
-. ^4^ 有關單節點部署中支援的磁碟類型的信息，請參閱 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-default-configs.html#azure-single-node["Azure （單一節點）"^]。使用單節點系統時，所有實例類型都支援高寫入速度。您可以在部署期間或之後的任何時間從控制台啟用高速寫入。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-write-speed.html["深入瞭解如何選擇寫入速度"^] 。使用 SSD 時可實現增強的寫入效能。
+. ^4^ 有關單節點部署中支援的磁碟類型資訊，請參閱 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-default-configs.html#azure-single-node["Azure （單一節點）"^]。使用單節點系統時，所有執行個體類型均支援高寫入速度。您可以在部署期間或之後隨時從 Console 啟用高寫入速度 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-write-speed.html["深入瞭解如何選擇寫入速度"^]。使用 SSD 時會啟用增強的寫入效能。
 . ^5^ 從 2025 年 8 月 11 日開始， Cloud Volumes ONTAP優化授權將被棄用，並且將不再可在 Azure 市場中購買或續訂以進行即用即付 (PAYGO) 訂閱。有關更多信息，請參閱 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#11-august-2025["優化許可證的可用性終止"^] 。
 . ^6^ Edsv6 VM 類型支援Cloud Volumes ONTAP 9.17.1 及更高版本的全新部署。您無法將現有部署切換為任何其他 VM 類型，例如從 Edsv5 切換到 Edsv6；僅支援 Edsv6 變體之間的大小變更（例如 E20ds_v6 → E32ds_v6）。有關此虛擬機器類型的信息，請參閱 https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/edsv6-series?tabs=sizebasic["Azure 文件：Edsv6 尺寸系列"^]。
+. ^7^ Ebdsv5 和 E104ids_v5 VM 可用於 Cloud Volumes ONTAP 9.18.1 及更高版本的全新部署和升級。您可以將現有的 Edsv4、Edsv5 或其他 Ebdsv5 VM 類型變更或升級為 Ebdsv5。您可以將 Ebdsv5 或 Eidsv5 VM 升級到 E104ids_v5。
 
 
 --
@@ -162,6 +177,7 @@ Azure中提供的支援可作為單一節點系統、以及高可用度（HA）�
 
 
 | 支援的虛擬機器類型  a| 
+* E4bds_v5 ^7^
 * E4s_v3 ^1^
 * E4ds_v4 ^3^
 * E4ds_v5
@@ -170,6 +186,7 @@ Azure中提供的支援可作為單一節點系統、以及高可用度（HA）�
  a| 
 * DS4_v2 ^1^
 * DS13_v2 ^1^
+* E8bds_v5 ^7^
 * E8s_v3 ^1^
 * E8ds_v4 ^3^
 * E8ds_v5
@@ -179,9 +196,14 @@ Azure中提供的支援可作為單一節點系統、以及高可用度（HA）�
 * DS5_v2 ^1^
 * DS14_v2 ^1^
 * DS15_v2 ^1^
+* E16bds_v5 ^7^
+* E32bds_v5 ^7^
+* E48bds_v5 ^7^
+* E64bds_v5 ^7^
 * E32s_v3 ^1 、 3^
 * E48s_v3 ^1 、 3^
 * E64is_v3 ^1 、 3^
+* E104ids_v5 ^7^
 * E32ds_v4 ^3^
 * E48ds_v4 ^3^
 * E80ids_v4 ^3^
@@ -200,11 +222,18 @@ Azure中提供的支援可作為單一節點系統、以及高可用度（HA）�
 * DS13_v2 ^1^
 * DS14_v2 ^1^
 * DS15_v2 ^1^
+* E4bds_v5 ^7^
+* E8bds_v5 ^7^
+* E16bds_v5 ^7^
+* E32bds_v5 ^7^
+* E48bds_v5 ^7^
+* E64bds_v5 ^7^
 * E4s_v3 ^1^
 * E8s_v3 ^1^
 * E32s_v3 ^1 、 3^
 * E48s_v3 ^1 、 3^
 * E64is_v3 ^1 、 3^
+* E104ids_v5 ^7^
 * E4ds_v4 ^3^
 * E8ds_v4 ^3^
 * E32ds_v4 ^3^
@@ -243,9 +272,10 @@ Azure中提供的支援可作為單一節點系統、以及高可用度（HA）�
 +
 同樣，如果您選擇高級 SSD 管理磁碟來滿足以下環境要求： https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-ha-azure.html#ha-single-availability-zone-configuration-with-shared-managed-disks["標準"^] 對於 Premium SSD v2 管理磁碟，控制台會自動部署 Premium SSD v2 管理磁碟。您無法切換到進階 SSD v1 管理磁碟。
 
-. ^4^ 使用單節點系統時，所有實例類型都支援高寫入速度。您可以在部署期間或之後的任何時間從控制台啟用高速寫入。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-write-speed.html["深入瞭解如何選擇寫入速度"^] 。使用 SSD 時可實現增強的寫入效能。
+. ^4^ 使用單節點系統時，所有執行個體類型均支援高寫入速度。您可以在部署期間或之後隨時從 Console 啟用高寫入速度 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-write-speed.html["深入瞭解如何選擇寫入速度"^]。使用 SSD 時，可啟用增強的寫入效能。
 . PAYGO Explore 不支援 ^5^Data 分層至 Azure Blob 儲存設備。
 . ^6^ Edsv6 VM 類型支援Cloud Volumes ONTAP 9.17.1 及更高版本的全新部署。您無法將現有部署切換為任何其他 VM 類型，例如從 Edsv5 切換到 Edsv6；僅支援 Edsv6 變體之間的大小變更（例如 E20ds_v6 → E32ds_v6）。有關此虛擬機器類型的信息，請參閱 https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/edsv6-series?tabs=sizebasic["Azure 文件：Edsv6 尺寸系列"^]。
+. ^7^ Ebdsv5 和 E104ids_v5 VM 可用於 Cloud Volumes ONTAP 9.18.1 及更高版本的全新部署和升級。您可以將現有的 Edsv4、Edsv5 或其他 Ebdsv5 VM 類型變更或升級為 Ebdsv5。您可以將 Ebdsv5 或 Eidsv5 VM 升級到 E104ids_v5。
 
 
 --
@@ -277,10 +307,16 @@ Azure中提供的支援可作為單一節點系統、以及高可用度（HA）�
 
 
 | 支援的虛擬機器類型  a| 
+* E8bds_v5 ^9^
+* E16bds_v5 ^9^
+* E32bds_v5 ^9^
+* E48bds_v5 ^9^
+* E64bds_v5 ^9^
 * E8ds_v4
 * E32ds_v4 ^1^
 * E48ds_v4 ^1^
 * E80ids_v4 ^1、1^
+* E104ids_v5 ^9^
 * E8ds_v5 ^4^
 * E20ds_v5 ^1,4^
 * E32ds_v5 ^1,4^
@@ -301,10 +337,16 @@ Azure中提供的支援可作為單一節點系統、以及高可用度（HA）�
 * E8ds_v5 ^4^
 
  a| 
+* E8bds_v5 ^9^
+* E16bds_v5 ^9^
+* E32bds_v5 ^9^
+* E48bds_v5 ^9^
+* E64bds_v5 ^9^
 * E8ds_v4
 * E32ds_v4 ^1^
 * E48ds_v4 ^1^
 * E80ids_v4 ^1、1^
+* E104ids_v5 ^9^
 * E8ds_v5 ^4^
 * E20ds_v5 ^1,4^
 * E32ds_v5 ^1,4^
@@ -335,6 +377,7 @@ Azure中提供的支援可作為單一節點系統、以及高可用度（HA）�
 . ^6^ 如果您選擇高級 SSD 管理磁碟來滿足以下環境要求： https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-ha-azure.html#ha-single-availability-zone-configuration-with-shared-managed-disks["標準"^] 對於 Premium SSD v2 管理磁碟，控制台會自動部署 Premium SSD v2 管理磁碟。您無法切換到進階 SSD v1 管理磁碟。有關高可用性部署（包括單可用區和多可用區）的系統資料內部磁碟的信息，請參閱： https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-default-configs.html#azure-ha-pair["Azure（HA配對）"^]。
 . ^7^ 自 2025 年 8 月 11 日起， Cloud Volumes ONTAP優化授權將被棄用，並且將不再可在 Azure 市場中以即用即付 (PAYGO) 訂閱的方式購買或續訂。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#11-august-2025["優化許可證的可用性終止"^] 。
 . ^8^ Edsv6 VM 類型支援Cloud Volumes ONTAP 9.17.1 及更高版本的全新部署。您無法將現有部署切換為任何其他 VM 類型，例如從 Edsv5 切換到 Edsv6；僅支援 Edsv6 變體之間的大小變更（例如 E20ds_v6 → E32ds_v6）。有關此虛擬機器類型的信息，請參閱 https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/edsv6-series?tabs=sizebasic["Azure 文件：Edsv6 尺寸系列"^]。
+. ^9^ Ebdsv5 和 E104ids_v5 VM 可用於 Cloud Volumes ONTAP 9.18.1 及更新版本的新部署和升級。您可以將現有的 Edsv4、Edsv5 或其他 Ebdsv5 VM 類型變更或升級至 Ebdsv5。您可以將 Ebdsv5 或 Eidsv5 VM 升級至 E104ids_v5。
 
 
 --
@@ -350,13 +393,18 @@ Azure中提供的支援可作為單一節點系統、以及高可用度（HA）�
 
 | 支援的虛擬機器類型  a| 
 * E8ds_v4 ^4^
-* E8ds_v5
+* E8bds_v5 ^7^
 * L8s_v3 ^4,5^
 
  a| 
+* E16bds_v5 ^7^
+* E32bds_v5 ^7^
+* E48bds_v5 ^7^
+* E64bds_v5 ^7^
 * E32ds_v4 ^1、4^
 * E48ds_v4 ^1、4^
 * E80ids_v4 ^1、2、4^
+* E104ids_v5 ^7^
 * E20ds_v5 ^1^
 * E32ds_v5 ^1^
 * E48ds_v5 ^1^
@@ -371,10 +419,17 @@ Azure中提供的支援可作為單一節點系統、以及高可用度（HA）�
 * L64s_v3 ^1 、 4 、 5^
 
  a| 
+* E4bds_v5 ^7^
+* E8bds_v5 ^7^
+* E16bds_v5 ^7^
+* E32bds_v5 ^7^
+* E48bds_v5 ^7^
+* E64bds_v5 ^7^
 * E8ds_v4 ^4^
 * E32ds_v4 ^1、4^
 * E48ds_v4 ^1、4^
 * E80ids_v4 ^1、2、4^
+* E104ids_v5 ^7^
 * E4ds_v5
 * E8ds_v5
 * E20ds_v5 ^1^
@@ -403,6 +458,7 @@ Azure中提供的支援可作為單一節點系統、以及高可用度（HA）�
 . ^4^ 這些 VM 類型支援在共用託管磁碟上執行的單一可用區和多可用區配置中的 HA 對。對於 LS_v3 VM 類型、 ONTAP 9.13.1 版開始提供多個可用性區域支援。對於 Eds_v5 VM 類型、多個可用性區域支援從 ONTAP 9.14.1 RC1 版開始。
 . ^5^ 此 VM 類型包括本機 NVMe 存儲， Cloud Volumes ONTAP將其用作_Flash Cache_。Flash Cache 可透過即時智慧快取來加速資料存取、快取最近讀取的使用者資料和 NetApp 中繼資料。它能有效處理隨機讀取密集的工作負載、包括資料庫、電子郵件和檔案服務。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-flash-cache.html["深入瞭解"^]。
 . ^6^ Edsv6 VM 類型支援Cloud Volumes ONTAP 9.17.1 及更高版本的全新部署。您無法將現有部署切換為任何其他 VM 類型，例如從 Edsv5 切換到 Edsv6；僅支援 Edsv6 變體之間的大小變更（例如 E20ds_v6 → E32ds_v6）。有關此虛擬機器類型的信息，請參閱 https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/edsv6-series?tabs=sizebasic["Azure 文件：Edsv6 尺寸系列"^]。
+. ^7^ Ebdsv5 和 E104ids_v5 VM 可用於 Cloud Volumes ONTAP 9.18.1 及更高版本的新部署和升級。您可以將現有的 Edsv4、Edsv5 或其他 Ebdsv5 VM 類型變更或升級至 Ebdsv5。您可以將 Ebdsv5 或 Eidsv5 VM 升級至 E104ids_v5。
 
 
 --
@@ -558,9 +614,9 @@ NOTE: Azure 頁面 Blobs 不支援任何新部署。
 
 
 
-=== 單一節點系統
+=== 單節點系統
 
-單一節點系統使用Azure託管磁碟。支援下列磁碟大小：
+單節點系統使用 Azure Managed Disks。支援下列磁碟大小：
 
 [cols="3*"]
 |===

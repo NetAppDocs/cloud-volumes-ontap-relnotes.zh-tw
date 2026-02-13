@@ -20,9 +20,6 @@
   <block id="ac1c2f0887629ee768721c3b8cf91e3a" category="inline-link">瞭解儲存設備如何在Cloud Volumes ONTAP AWS上執行的一套功能不只是一套</block>
   <block id="b889869e31827a33530d6fd02141fdb5" category="summary">Azure支援多Cloud Volumes ONTAP 種支援的支援功能。</block>
   <block id="c334038ed8a782403ae705a8de1f584b" category="section-title">依授權支援的組態</block>
-  <block id="9f1dc929787c1a2d05667987a87c083b" category="paragraph">Azure中提供的支援可作為單一節點系統、以及高可用度（HA）節點配對、以提供容錯能力和不中斷營運。Cloud Volumes ONTAP</block>
-  <block id="ffe182d798fac96ff130cb1500052036" category="paragraph">不支援將單一節點系統升級為HA配對。如果您想在單一節點系統和HA配對之間切換、則需要部署新系統、並將資料從現有系統複寫到新系統。</block>
-  <block id="078325cc35a9c8c9290e445f32bd1855" category="section-title">單一節點系統</block>
   <block id="d41d8cd98f00b204e9800998ecf8427e" category="cell"></block>
   <block id="d8fe59d93325a956d9b5fd3e85bb96d8" category="cell">Freemium</block>
   <block id="671e8254c7b0d121dddb0c891a704d08" category="cell">PAYGO瀏覽</block>
@@ -62,7 +59,6 @@
   <block id="18ca3c89ae9e8edbe217f2c9b7c6107d" category="inline-link">深入瞭解如何選擇寫入速度</block>
   <block id="36e4aa065725aff22926f2fed53bc3c7" category="section-title">支援的磁碟大小</block>
   <block id="88d444d836b2ea3ca342f4cc3a6b2b50" category="paragraph">在Azure中、Aggregate最多可包含12個相同類型和大小的磁碟。</block>
-  <block id="90d1dad6ac7388ba65631ec0b927dabc" category="paragraph">單一節點系統使用Azure託管磁碟。支援下列磁碟大小：</block>
   <block id="fac18bfae2384f6eccc3a9779ce41d25" category="cell">優質SSD</block>
   <block id="be08eab34bc0f034d51f82767686b3b7" category="cell">標準SSD</block>
   <block id="ef80fe66906aa69c663bc559d808a821" category="cell">標準HDD</block>
@@ -75,7 +71,6 @@
   <block id="d47eab2f6c8443515b4726d2c0efbcec" category="list-text">100 GiB</block>
   <block id="fa082ab1a05e05550971e6e5f583dcfe" category="summary">AWS支援多Cloud Volumes ONTAP 種支援的支援功能。</block>
   <block id="7db0f9060b8b2def82346add7b8e89c0" category="section-title">支援的節點數</block>
-  <block id="a0a1c13507a24083c5a835cbc79ea6c7" category="paragraph">AWS可在單一節點系統中使用、也可作為高可用度（HA）節點配對、以提供容錯功能和不中斷營運。Cloud Volumes ONTAP</block>
   <block id="bff50f1947dbec1e11bc66d60ca0b1d9" category="section-title">支援的儲存設備</block>
   <block id="721f444864f7f20b038565facc11ed77" category="paragraph">支援多種EBS磁碟類型、以及S3物件儲存、以利資料分層。Cloud Volumes ONTAP最大儲存容量取決於您選擇的授權。</block>
   <block id="e17c7f98af970809162c4395474988ad" category="section-title">依授權提供儲存支援</block>
@@ -160,7 +155,6 @@
   <block id="0584ce565c824b7b7f50282d9a19945b" category="cell">384..</block>
   <block id="fa8f49d51a641a3bff30030d048d2d98" category="cell">m5dn.24xlarge</block>
   <block id="dfeeabb8d703f59f841c2a6e2ed8d240" category="inline-link">深入瞭解 Flash Cache</block>
-  <block id="8e6a2ebba2f4ad1a560224744383ef97" category="list-text">r5.12xlarge執行個體類型具有已知的支援限制。如果節點因發生緊急狀況而意外重新開機、系統可能不會收集用於疑難排解的核心檔案、而會造成問題的根本原因。客戶接受風險及有限支援條款、並在發生此情況時承擔所有支援責任。此限制會影響新部署的HA配對和從9.8升級的HA配對。此限制不會影響新部署的單一節點系統。</block>
   <block id="9de28fbf6817cd511eb799f9575b611d" category="list-text">當您選擇EC2執行個體類型時、可以指定它是共用執行個體或專屬執行個體。</block>
   <block id="afea36f2c9999a231c58b7e9dcf3b16e" category="list-text">可在保留或隨需EC2執行個體上執行。Cloud Volumes ONTAP不支援使用其他執行個體類型的解決方案。</block>
   <block id="8c4b25218155a1fdb972f4169855d04f" category="section-title">支援的地區</block>
@@ -315,7 +309,6 @@
   <block id="ce5ee1bd79a3fbc4ee9fee207a94ef54" category="paragraph">容量限制適用於整個HA配對。不是每個節點。例如、如果您使用Premium授權、則兩個節點之間最多可有368TB的容量。</block>
   <block id="466cd90b62b5da75ee4bd662add41e7f" category="section-title">磁碟和分層限制</block>
   <block id="08fca9107919e2a3190d5edc75ce7c61" category="cell">最大資料磁碟數</block>
-  <block id="73a5b4e1955745ba2e19b7f891caf5fd" category="list-text">124適用於單一節點系統</block>
   <block id="2b7385ac96adbf2201cf7b11333b798c" category="list-text">每個節點123個、適用於HA配對</block>
   <block id="4b4891ea5a4ccf6a32baf317c31a9391" category="cell">最大磁碟大小</block>
   <block id="c1edd650c09defc6ca8d0aaf67803ddc" category="cell">64 TB</block>
@@ -413,7 +406,6 @@
   <block id="4e9780ecc95f5dbfb27e64e3ded5cd85" category="paragraph">下列已知限制僅適用於Cloud Volumes ONTAP Microsoft Azure中的功能。請務必同時檢閱 <block ref="edcf15b4d9d7d1e018ccca7ce112dd3e" category="inline-link-macro-rx"></block>。</block>
   <block id="d91c9372e1fdf74d651217f1a36e518b" category="inline-link">檢視支援的Azure地區清單</block>
   <block id="9141535b8d150812f3cded29f090ad8c" category="summary">Google Cloud支援多Cloud Volumes ONTAP 種支援的支援功能。</block>
-  <block id="12fe559ef81ce645ef1aee77885e1827" category="paragraph">不支援將單一節點系統升級為HA配對。如果您想在單一節點系統和HA配對之間切換、則需要部署新系統、並將資料從現有系統複寫到新系統。</block>
   <block id="8c0495bb0212f48146ab592de8a205d9" category="cell">2 TB ^2^</block>
   <block id="c217f1a10b2c84178d69b991f9ca2a8d" category="cell">支援的機器類型^3^</block>
   <block id="88ba83f191bd27de24492d3f347d8add" category="list-text">n2-Standard-4</block>
@@ -434,7 +426,6 @@
   <block id="2318ed77a95c79ae448f3b0d0b40414c" category="paragraph">NetApp已實作工具、目的是針對可能因適用的雲端供應商服務而導致的客戶技術問題、與適用的雲端供應商建立連結。不過、 維持無縫支援流程的最佳方法是：（i）與NetApp及適用的雲端供應商維持目前的支援合約、以及（ii）在發生技術問題且客戶需要清楚說明時、與NetApp及適用的雲端供應商協調聯合提報會議 導致這些技術問題的產品或服務。</block>
   <block id="034784053601e78fdb1d3e456d5a7c59" category="section-title">Azure維護活動</block>
   <block id="eb43b40e67fff3351b74b6f875e497b9" category="paragraph">Microsoft會在Azure虛擬機器（VM）基礎架構上排程並以程式設計方式宣布可能影響Cloud Volumes ONTAP 到某些虛擬機器的維護事件。這些活動會在維護時間前15分鐘公布。</block>
-  <block id="5e486cb2e38fc7f03f038af21eb3cdb9" category="paragraph">支援針對維護事件進行特殊處理、以利Cloud Volumes ONTAP 實現高可用度（HA）配對。為了維持應用程式健全狀況、我們會執行預防性接管、以排定穩定性的優先順序、因為連線中斷超過15秒將會停用容錯移轉功能。</block>
   <block id="1222cf807490df82fd7e0146eb6798c1" category="paragraph">當維護時段公佈時、目標節點的合作夥伴節點將執行接管。維護完成後、系統會啟動一個恢復功能。恢復之後、HA配對應該會恢復正常狀態。如果沒有發生這種情況、請聯絡NetApp支援部門以尋求協助。請注意、維護事件一次針對HA配對中的其中一個VM、通常兩個節點都會在相對短的時間內鎖定。</block>
   <block id="c4d6a904ef528003bf03bc2e65cffd26" category="section-title">支援的升級途徑</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新增功能</block>
@@ -469,7 +460,6 @@
   <block id="33f66f5b18b24875dca7a81c8f84c5b9" category="cell">896 TiB</block>
   <block id="a4a5e7bfb7afd26ff6a225ef7681add9" category="paragraph">下表顯示單一磁碟的最大系統容量、以及磁碟和冷資料分層至物件儲存設備的最大系統容量。磁碟限制僅適用於包含使用者資料的磁碟。限制不包括開機磁碟、根磁碟或NVRAM。</block>
   <block id="aa22c87da31d41edeac2ffbad9e7507d" category="cell">視授權而定。請參閱上述的最大系統容量限制。</block>
-  <block id="4309266475af7c71bb88f9be6f8c3940" category="paragraph">容量限制會因您使用的EC2執行個體類型系列、以及您使用的是單一節點系統或HA配對而有所不同。</block>
   <block id="b1fb395f7c47ced4c12fc74fad2320b5" category="paragraph">下列附註提供您在下表中所見數字的詳細資料：</block>
   <block id="3ee4a294c58f9e6c4461dc10d825844c" category="list-text">磁碟限制僅適用於包含使用者資料的磁碟。</block>
   <block id="e7caa46d6e70a5b96752b4644b9f1527" category="paragraph">限制不包括開機磁碟和根磁碟。</block>
@@ -483,7 +473,6 @@
   <block id="9dbb7f356b08de585f6ddbe523e4a8d8" category="section-title">HA與PAYGO Premium配對</block>
   <block id="1bc398eeb632d3ea2f565d86881775d8" category="section-title">HA與BYOL配對</block>
   <block id="bbeef84c33f1676ea87c5c7f476795e6" category="paragraph">限制不包括根磁碟、核心磁碟和VNVRAM。</block>
-  <block id="0d5277886c056c697a81cb7ba46178fc" category="list-text">針對具有特定VM大小的單一節點系統所列出的896 TiB磁碟型限制、是_已測試_的限制。</block>
   <block id="8a11b7df22322ab2814174e7745c863f" category="inline-link">關於本產品的注意事項ONTAP</block>
   <block id="a65d010a2b24f9e4a0919b7faf52d022" category="list-text"><block ref="a65d010a2b24f9e4a0919b7faf52d022" category="inline-link-rx"></block></block>
   <block id="6614eabe1ab14f33107830de1efb584a" category="inline-link-macro">瞭解如何變更EC2執行個體類型Cloud Volumes ONTAP 以供使用</block>
@@ -514,7 +503,6 @@
   <block id="dfb01a7b38cba8284269f37f00622809" category="paragraph">請閱讀這些附註、深入瞭解升級至此版本的相關資訊。</block>
   <block id="b78b1188c7979365981f7c88049f9366" category="section-title">如何升級</block>
   <block id="75026846c1403e202a52bdb027762fbb" category="section-title">停機</block>
-  <block id="9f0f02784feedfa2549a9e3a51cfa315" category="list-text">單一節點系統的升級可讓系統離線長達25分鐘、在此期間I/O會中斷。</block>
   <block id="618671ce849d1a8ff524b77c314fe4e2" category="section-title">不再支援c4、m4和r4執行個體</block>
   <block id="e19784a5420512b2876c7b24680652b5" category="cell">40、000</block>
   <block id="4237e167da34ce4cc54b7915a9ee779a" category="list-text">所有磁碟區都必須停用壓縮功能、才能充分發揮Flash Cache效能提升功能Cloud Volumes ONTAP 、直到更新至VMware版。當您部署或升級Cloud Volumes ONTAP 至盡力9.12.1時、就不需要停用壓縮功能。</block>
@@ -539,7 +527,6 @@
   <block id="79d3c4941fdb49ae08cc30405f716cce" category="list-text">在某些組態中、磁碟限制會讓您無法單獨使用磁碟來達到容量限制。在這些情況下、您可以達到容量上限<block ref="aea0958203307daa433f894622f3e640" category="inline-link-rx"></block>。如需磁碟限制的相關資訊、請參閱 <block ref="71ccaacc6f6c8feca068c7ff1a7b2eb5" category="inline-link-macro-rx"></block>。</block>
   <block id="ca40429b1b07555a35de829b976a6961" category="paragraph">在 AWS 中、 Aggregate 最多可包含 6 個大小相同的磁碟。但是如果您的組態支援Amazon EBS彈性Volume功能、則Aggregate最多可包含8個磁碟。<block ref="d6d48ea3644fd45f9f7ff8f4c8d4ae57" category="inline-link-rx"></block></block>
   <block id="9df4ca2adcfbf390d35edbeb52928a78" category="list-text">某些執行個體類型包括本機NVMe儲存設備、Cloud Volumes ONTAP 這些儲存設備使用做為_Flash Cache。Flash Cache 可透過即時智慧快取來加速資料存取、快取最近讀取的使用者資料和 NetApp 中繼資料。它適用於隨機讀取密集的工作負載、包括資料庫、電子郵件和檔案服務。所有磁碟區都必須停用壓縮、才能充分發揮 Flash Cache 效能的改善效益。<block ref="da56a164195bbdee72f1dfc4ea53669d" category="inline-link-rx"></block>。</block>
-  <block id="ce4956d12fe22f1b1243720ce22651e0" category="list-text">使用HA配對時、支援大部分執行個體類型的高速寫入速度。Cloud Volumes ONTAP使用單一節點系統時、所有執行個體類型都支援高速寫入。<block ref="721fe5ee3bbc3d8295d8615ed77ff9be" category="inline-link-rx"></block>。</block>
   <block id="f6dcc1a079544e36390b698b6f59bf4e" category="paragraph">下列磁碟限制適用於Cloud Volumes ONTAP 使用容量型授權套件的各個系統。<block ref="360eefdcdd22adda63e8597e9466029a" category="inline-link-rx"></block></block>
   <block id="fc8746b925f8923889b77841242bf054" category="paragraph"><block ref="771bd01d5b66ba0bcb76d734267dc8bb" category="inline-link-rx"></block>。</block>
   <block id="ae90a2e4532cb9b615489b63c36e2383" category="paragraph"><block ref="dca5658ae26fff987979f5de0a83e9fd" category="inline-link-rx"></block>。</block>
@@ -602,7 +589,6 @@
   <block id="c0147218881d0d0fb9dddce993d7c08c" category="list-text">E48ds_v5 ^1^</block>
   <block id="d071b0d9481cad34966de3c7caf72b29" category="list-text">E64ds_v5 ^1^</block>
   <block id="6c390ecab52e3e5345764abdf66b4a13" category="list-text">E20ds_v5 ^1^</block>
-  <block id="ea724697af39ce2b490b5643777ed273" category="paragraph">Cloud Volumes ONTAP 可在 Google Cloud 中作為單一節點系統使用、也可作為高可用度（ HA ）節點配對、以提供容錯能力和不中斷營運的功能。</block>
   <block id="f52ead6bbf1fb1c871d206603e5a2347" category="open-title">容量型授權</block>
   <block id="d56bf07ec8cd4e9f29339d605ffef95c" category="open-title">節點型授權</block>
   <block id="bde67b5966889851166e3f5c7b09ff05" category="paragraph">在 Azure 中將 Cloud Volumes ONTAP 部署為單一節點系統時、您可以選擇下列容量型或節點型授權組態。</block>
@@ -797,10 +783,7 @@
   <block id="17f65eba8f584b7ce968f1741f49a63d" category="paragraph">從Cloud Volumes ONTAP 9.15.1 開始，您可以在 Azure 中的單一可用區域 (AZ) 中以 HA 模式部署虛擬機器 (VM) 執行個體。有關支援此功能的標準的信息，請參閱<block ref="49b9d02c37364ae9681ce7a59d4d9548" category="inline-link-rx"></block>。</block>
   <block id="ed5b1d9ebcc8b8d189007ac8c9494846" category="section-title">HA 部署的限制</block>
   <block id="b1969fa9ebe4dd2003618adb77082978" category="paragraph">某些區域不支援 HA 對。</block>
-  <block id="3f994f50a7ba231a5397b2a11497b272" category="list-text">^1^ 在 Azure 中部署Cloud Volumes ONTAP的新實例時， NetApp控制台上不再提供 DS_v2 和 Es_v3 機器系列的選擇。這些系列將僅在較舊的現有系統中保留和支援。從 9.12.1 版本開始，Azure 僅支援Cloud Volumes ONTAP的新部署。我們建議您切換到 Es_v4 或任何其他與Cloud Volumes ONTAP 9.12.1 及更高版本相容的系列。但是，DS_v2 和 Es_v3 系列機器將可用於透過 API 進行的新部署。</block>
-  <block id="60ffb33f36dd41ec7837416044ddf175" category="list-text">^4^ 有關單節點部署中支援的磁碟類型的信息，請參閱<block ref="5d976ccca41daf11d6b5e395edda488a" category="inline-link-rx"></block>。使用單節點系統時，所有實例類型都支援高寫入速度。您可以在部署期間或之後的任何時間從控制台啟用高速寫入。<block ref="721fe5ee3bbc3d8295d8615ed77ff9be" category="inline-link-rx"></block> 。使用 SSD 時可實現增強的寫入效能。</block>
   <block id="1b86b14d468d8ed84f5d72f2f7d74d10" category="list-text">^1^ 在 Azure 中部署Cloud Volumes ONTAP的新執行個體時，控制台上不再提供 DS_v2 和 Es_v3 機器系列的選擇。這些系列將僅在較舊的現有系統中保留和支援。從 9.12.1 版本開始，Azure 僅支援Cloud Volumes ONTAP的新部署。我們建議您切換到 Es_v4 或任何其他與Cloud Volumes ONTAP 9.12.1 及更高版本相容的系列。但是，DS_v2 和 Es_v3 系列機器將可用於透過 API 進行的新部署。</block>
-  <block id="532ba8cc24d0d71f06b46f9c976e1a08" category="list-text">^4^ 使用單節點系統時，所有實例類型都支援高寫入速度。您可以在部署期間或之後的任何時間從控制台啟用高速寫入。<block ref="721fe5ee3bbc3d8295d8615ed77ff9be" category="inline-link-rx"></block> 。使用 SSD 時可實現增強的寫入效能。</block>
   <block id="63c51e90bb823244bb44fdef3fa111d2" category="list-text">^1^ 使用 HA 對時， Cloud Volumes ONTAP支援這些 VM 類型的高寫入速度。您可以在部署期間或之後的任何時間從控制台啟用高速寫入。<block ref="18805b87db41583a67ecc2414d022f2b" category="inline-link-rx"></block> 。</block>
   <block id="addbd739f53cc9b7f78ee8946f1edee3" category="list-text">^1^ 使用 HA 對時， Cloud Volumes ONTAP支援這些 VM 類型的高寫入速度。您可以在部署期間或之後的任何時間從控制台啟用高速寫入。<block ref="721fe5ee3bbc3d8295d8615ed77ff9be" category="inline-link-rx"></block> 。</block>
   <block id="9a12688a6b9775d81793103d67b5e77d" category="list-text">^1^ 在 Google Cloud 中部署Cloud Volumes ONTAP的新實例時， NetApp控制台上不再可選擇 n1 系列機器。n1 系列機器將保留，並且僅在較舊的現有系統中支援。從 9.8 版本開始，Google Cloud 才支援Cloud Volumes ONTAP的新部署。我們建議您切換到與Cloud Volumes ONTAP 9.8 及更高版本相容的 n2 系列機器。不過，n1 系列機器將可用於透過 API 進行的新部署。</block>
@@ -863,4 +846,38 @@
   <block id="7ee7c49a2608d3d31956026fdc3bf833" category="sidebar">這些版本資訊說明 Cloud Volumes ONTAP 9.18.1 的新功能、限制和已知問題。</block>
   <block id="001b20e35d2188363ca847fd669007f8" category="sidebar">Cloud Volumes ONTAP 9.18.1 版本說明</block>
   <block id="e0b3d5810800c1af83b5753f4a2a2f7e" category="sidebar">Cloud Volumes ONTAP 9.18.1 版本說明</block>
+  <block id="9cb5231fae0fa398b4997a3404e75449" category="paragraph">Cloud Volumes ONTAP 在 AWS 中既可以作為單節點系統使用，也可以作為高可用性（HA）節點對使用，以實現容錯和不間斷操作。</block>
+  <block id="ef4986bf1cd31453df648c0c88caab37" category="paragraph">不支援將單節點系統升級為 HA 配對。如果您想在單節點系統和 HA 配對之間切換，則需要部署新系統，並將資料從現有系統複寫到新系統。</block>
+  <block id="231fd9de718f42c1c9e89368821092dd" category="open-title">其他授權</block>
+  <block id="eedc677bbd07d9095251c43bc5a4b33d" category="list-text">使用 HA 配對時，Cloud Volumes ONTAP 的大多數執行個體類型支援高寫入速度。使用單節點系統時，所有執行個體類型均支援高寫入速度<block ref="721fe5ee3bbc3d8295d8615ed77ff9be" category="inline-link-rx"></block>。</block>
+  <block id="d79ae3bafac04fb5a94c065465345b1c" category="list-text">r5.12xlarge 實例類型存在已知的支援性限制。如果節點因崩潰而意外重啟，系統可能無法收集用於故障排除和根本原因分析的核心轉儲檔案。客戶接受此風險和有限的支援條款，並承擔發生此情況時的所有支援責任。此限制會影響新部署的 HA 對以及從 9.8 版本升級的 HA 對。新部署的單節點系統不受此限制的影響。</block>
+  <block id="4b40cbab0027c4d9d78baf0e5d6fda5d" category="paragraph">Cloud Volumes ONTAP 在 Azure 中既可以作為單節點系統使用，也可以作為高可用性（HA）節點對使用，以實現容錯和不中斷營運。</block>
+  <block id="1df33292a2fca2da6ee337f54fc40930" category="section-title">單節點系統</block>
+  <block id="3b8c3df5626bc43aec26530659b49924" category="list-text">E4bds_v5 ^7^</block>
+  <block id="a5ad09c71ba5e0587c92b30e647007d2" category="list-text">E8bds_v5 ^7^</block>
+  <block id="62f13a38954d80d4731af8cce6ff44ce" category="list-text">E16bds_v5 ^7^</block>
+  <block id="790607e207ea5b72ced99b7b00ab5267" category="list-text">E32bds_v5 ^7^</block>
+  <block id="7c9ea67787bbf71717c6975389d413af" category="list-text">E48bds_v5 ^7^</block>
+  <block id="519405312759dbe64953e3db6bed97a5" category="list-text">E64bds_v5 ^7^</block>
+  <block id="1b6e6ed136dc27160aa24ba7c0aa1fd0" category="list-text">E104ids_v5 ^7^</block>
+  <block id="1884aab981286236b4bcfe85e346c59a" category="list-text">^1^ 在 NetApp Console 上部署新的 Cloud Volumes ONTAP 執行個體時，將不再提供 DSv2 和 Esv3 機器系列的選擇。這些系列機器將僅在舊版現有系統中保留並提供支援。Azure 中的 Cloud Volumes ONTAP 新部署僅支援從 9.12.1 版本開始。我們建議您切換到 Es_v4 或任何其他與 Cloud Volumes ONTAP 9.12.1 及更高版本相容的系列機器。但是，DS_v2 和 Es_v3 系列機器仍然可用於透過 API 進行的新部署。</block>
+  <block id="54eafc097b7ad6fc619cb7eacb3b3eac" category="list-text">^4^ 有關單節點部署中支援的磁碟類型資訊，請參閱<block ref="5d976ccca41daf11d6b5e395edda488a" category="inline-link-rx"></block>。使用單節點系統時，所有執行個體類型均支援高寫入速度。您可以在部署期間或之後隨時從 Console 啟用高寫入速度<block ref="721fe5ee3bbc3d8295d8615ed77ff9be" category="inline-link-rx"></block>。使用 SSD 時會啟用增強的寫入效能。</block>
+  <block id="338aa3c87bbe1645a2248b5cdc2e08d7" category="list-text">^7^ Ebdsv5 和 E104ids_v5 VM 可用於 Cloud Volumes ONTAP 9.18.1 及更高版本的全新部署和升級。您可以將現有的 Edsv4、Edsv5 或其他 Ebdsv5 VM 類型變更或升級為 Ebdsv5。您可以將 Ebdsv5 或 Eidsv5 VM 升級到 E104ids_v5。</block>
+  <block id="bfd11c4f8f3ffe0b82e499f7dc4f9a65" category="list-text">^4^ 使用單節點系統時，所有執行個體類型均支援高寫入速度。您可以在部署期間或之後隨時從 Console 啟用高寫入速度<block ref="721fe5ee3bbc3d8295d8615ed77ff9be" category="inline-link-rx"></block>。使用 SSD 時，可啟用增強的寫入效能。</block>
+  <block id="c15a2dd9239375267b11e9cc0750fde3" category="list-text">E8bds_v5 ^9^</block>
+  <block id="e8d4c23be4f7e5ec7dd2fa499ffe6ac1" category="list-text">E16bds_v5 ^9^</block>
+  <block id="858f6ce34bdf4523d2935c8aec758bc8" category="list-text">E32bds_v5 ^9^</block>
+  <block id="1184562f85d984e07c1bf1c2d17c39b5" category="list-text">E48bds_v5 ^9^</block>
+  <block id="a10a9e62fc438d5cda957750f5be82a2" category="list-text">E64bds_v5 ^9^</block>
+  <block id="22526b360edd5e859e84ac73135c26a8" category="list-text">E104ids_v5 ^9^</block>
+  <block id="b8a35e66cdb2aef61b6d6df1e379eb6d" category="list-text">^9^ Ebdsv5 和 E104ids_v5 VM 可用於 Cloud Volumes ONTAP 9.18.1 及更新版本的新部署和升級。您可以將現有的 Edsv4、Edsv5 或其他 Ebdsv5 VM 類型變更或升級至 Ebdsv5。您可以將 Ebdsv5 或 Eidsv5 VM 升級至 E104ids_v5。</block>
+  <block id="2734a588d77e522c61fe0ebc740d82c8" category="list-text">^7^ Ebdsv5 和 E104ids_v5 VM 可用於 Cloud Volumes ONTAP 9.18.1 及更高版本的新部署和升級。您可以將現有的 Edsv4、Edsv5 或其他 Ebdsv5 VM 類型變更或升級至 Ebdsv5。您可以將 Ebdsv5 或 Eidsv5 VM 升級至 E104ids_v5。</block>
+  <block id="9c1e913676fba2b8aed76868b26dcc89" category="paragraph">單節點系統使用 Azure Managed Disks。支援下列磁碟大小：</block>
+  <block id="7da25d0bfd841afbb16233681b5b72ca" category="paragraph">Cloud Volumes ONTAP 在 Google Cloud 中既可以作為單節點系統使用，也可以作為高可用性（HA）節點對使用，以實現容錯和不間斷操作。</block>
+  <block id="bd45cef377eedc42228cc5c125be0686" category="paragraph">不支援將單節點系統升級為 HA 配對。如果您想在單節點系統和 HA 配對之間切換，則需要部署新系統並將資料從現有系統複寫到新系統。</block>
+  <block id="d462a208123e3b668b64a11f26085e0c" category="paragraph">容量限制會因您使用的 EC2 執行個體類型系列以及您使用的是單節點系統還是 HA 配對而異。</block>
+  <block id="35d763acd264e7f10fbf35d2da58bfe3" category="list-text">對於某些 VM 大小的單節點系統，列出的 896 TiB 磁碟型限制是經過 _測試_ 的限制。</block>
+  <block id="7996776cc07408b62e3e588c6e576723" category="list-text">單節點系統為 124</block>
+  <block id="777aa7f6fc6d119be846af0333b88f27" category="list-text">單節點系統的升級會使系統離線最多 25 分鐘，在此期間 I/O 會中斷。</block>
+  <block id="8cfc1cd76589ea7ff4c1934750bae7e9" category="paragraph">Cloud Volumes ONTAP 高可用性（HA）配對支援特殊的維護事件處理。為了維護應用程式健全狀況，我們會執行預防性接管以優先確保穩定性，因為任何超過 15 秒的連線中斷都會停用容錯移轉功能。</block>
 </blocks>
