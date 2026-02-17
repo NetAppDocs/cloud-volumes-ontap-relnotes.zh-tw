@@ -166,7 +166,7 @@ Cloud Volumes ONTAP 在 Azure 中既可以作為單節點系統使用，也可�
 
 
 --
-.節點型授權
+.其他授權
 --
 [cols="h,d,d,d,d"]
 |===
@@ -381,7 +381,7 @@ Cloud Volumes ONTAP 在 Azure 中既可以作為單節點系統使用，也可�
 
 
 --
-.節點型授權
+.其他授權
 --
 [cols="h,d,d,d"]
 |===
@@ -543,7 +543,7 @@ NOTE: Azure 頁面 Blobs 不支援任何新部署。
 
 
 --
-.節點型授權
+.其他授權
 --
 [cols="h,d,d,d"]
 |===
