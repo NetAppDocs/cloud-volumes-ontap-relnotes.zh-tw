@@ -20,6 +20,14 @@ summary: Cloud Volumes ONTAP 9.18.1 包含一項新的增強功能。
 
 
 
+== 9.18.1 P1（2026 年 3 月 31 日）
+
+Cloud Volumes ONTAP 9.18.1 P1 修補程式現已可在 AWS、Azure 和 Google Cloud 中部署和升級。Console 將提示您將現有系統升級到此修補程式版本。
+
+link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.18.1P1["檢視 P1 修補程式中已修正的錯誤清單"^]（需要登入 NetApp Support Site）。
+
+
+
 == 9.18.1 GA（2026 年 2 月 10 日）
 
 Cloud Volumes ONTAP 9.18.1 正式版現已可在 Amazon Web Services（AWS）、Microsoft Azure 和 Google Cloud 中部署和升級。
