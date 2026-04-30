@@ -95,7 +95,7 @@ link:reference-limits-gcp.html["深入瞭解Google Cloud的磁碟限制"]。
 
 . ^3^ 使用平衡式持續磁碟和效能（ SSD ）持續磁碟時，會啟用增強的寫入效能。
 . ^4^ 自 2025 年 8 月 11 日起， Cloud Volumes ONTAP Optimized 授權將被棄用，並且將不再可在 Google Cloud 市場中以即用即付 (PAYGO) 訂閱的方式購買或續訂。有關信息，請參閱 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["更新功能 Cloud Volumes ONTAP"^]。
-. ^5^ 您可以在 Cloud Volumes ONTAP 9.18.1 及更高版本上部署新一代 C3 系列虛擬機器。c3-standard-44 和 c3-standard-88 虛擬機器及其 LSSD 變體預設支援 Google Cloud Console 中的 Tier-1 頻寬。使用 C3 虛擬機器類型，您無法向現有 Aggregate 添加磁碟，也無法切換到 C3 系列中的其他變體。有關 LSSD 變體的更多資訊，請參閱 link:reference-configs-gcp.html#flash-cache-support["Flash Cache 支援"]。
+. ^5^ 您可以在 Cloud Volumes ONTAP 9.18.1 及更高版本上部署新一代 C3 系列虛擬機器。c3-standard-44 和 c3-standard-88 虛擬機器及其 LSSD 變體預設支援 Google Cloud Console 中的 Tier-1 頻寬。有關 LSSD 變體的更多資訊，請參閱 link:reference-configs-gcp.html#flash-cache-support["Flash Cache 支援"]。
 
 
 --
@@ -160,7 +160,7 @@ link:reference-limits-gcp.html["深入瞭解Google Cloud的磁碟限制"]。
 全新Cloud Volumes ONTAP 的功能不再支援custom 4-16384機器類型。如果您在此機器類型上執行現有的系統、您可以繼續使用、但我們建議您切換至n2-Standard-4機器類型。
 
 . ^4^ 使用平衡式持續磁碟和效能（ SSD ）持續磁碟時，會啟用增強的寫入效能。
-. ^5^ 您可以在 Cloud Volumes ONTAP 9.18.1 及更高版本上部署新一代 C3 系列虛擬機器。c3-standard-44 和 c3-standard-88 虛擬機器及其 LSSD 變體預設支援 Google Cloud Console 中的 Tier-1 頻寬。使用 C3 虛擬機器類型，您無法向現有 Aggregate 添加磁碟，也無法切換到 C3 系列中的其他變體。有關 LSSD 變體的更多資訊，請參閱 link:reference-configs-gcp.html#flash-cache-support["Flash Cache 支援"]。
+. ^5^ 您可以在 Cloud Volumes ONTAP 9.18.1 及更高版本上部署新一代 C3 系列虛擬機器。c3-standard-44 和 c3-standard-88 虛擬機器及其 LSSD 變體預設支援 Google Cloud Console 中的 Tier-1 頻寬。有關 LSSD 變體的更多資訊，請參閱 link:reference-configs-gcp.html#flash-cache-support["Flash Cache 支援"]。
 
 
 控制台顯示了標準和 BYOL 支援的額外機器類型：n1-highmem-4。然而，這種機器類型並不適合生產環境。我們僅將其用於特定的實驗室環境。
@@ -313,9 +313,11 @@ link:reference-limits-gcp.html["深入瞭解Google Cloud的磁碟限制"]。
 部署符合條件的執行個體類型時、您可以啟用 _Flash Cache_ 和高寫入速度。若要啟用 8,896 位元組的較高最大傳輸單元、您必須為部署選擇 VPC-1 、 VPC-2 或 VPC-3 。較高的 MTU 可實現較高的網路處理量。如需啟動其中一項部署的詳細資訊、請參閱 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-gcp.html["在 Google Cloud 啟動 Cloud Volumes ONTAP"^]。
 
 
-NOTE: _Flash快取_、高寫入模式和8、896的MTU是功能相依的、無法在設定的執行個體中個別停用。
+NOTE: _Flash Cache_、高寫入模式和 MTU 為 8,896 是功能相關的，無法在已設定的執行個體中個別停用。
 
-從 Cloud Volumes ONTAP 9.18.1 開始，如果您選擇 C3 VM 的本機 SSD（LSSD）變體，Flash Cache 預設會啟用。請查看此表以了解 VM 變體及其支援的 LSSD 數量上限：
+在單節點部署中，從 Cloud Volumes ONTAP 9.18.1 開始，如果您選擇 C3 VM 的本機 SSD（LSSD）變體，Flash Cache 預設會啟用。即使目標變體支援 Flash Cache，您也無法在 Cloud Volumes ONTAP 部署中切換 C3 LSSD VM 變體。
+
+請查看下表，以了解虛擬機器變體及其支援的 LSSD 數量：
 
 [cols="1,1"]
 |===

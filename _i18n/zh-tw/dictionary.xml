@@ -513,7 +513,6 @@
   <block id="de04224de00bacc811083f3a49af24b0" category="list-text">E80ids_v4 ^1、2、4^</block>
   <block id="33031b274bf5d81fbfbd69c1f2ea39a2" category="list-text">n2-Standard-48</block>
   <block id="7c347fcea29ffaea485ee6128a9d7a06" category="list-text">n2-Standard-64</block>
-  <block id="13a86b4a06586a14808c627b883e338d" category="admonition">_Flash快取_、高寫入模式和8、896的MTU是功能相依的、無法在設定的執行個體中個別停用。</block>
   <block id="0bd47e4dae550ba8bfd133248f3efde6" category="list-text">16 TiB（僅限託管磁碟）</block>
   <block id="e976f9591845e426a456344d35bd0caf" category="list-text">32 TiB（僅限託管磁碟）</block>
   <block id="7b9e5415e02ff7ad5eaae61345740517" category="inline-link">瞭解 Cloud Volumes ONTAP HA 配對在 Google Cloud 中的儲存功能如何運作</block>
@@ -864,7 +863,6 @@
   <block id="a10a9e62fc438d5cda957750f5be82a2" category="list-text">E64bds_v5 ^9^</block>
   <block id="22526b360edd5e859e84ac73135c26a8" category="list-text">E104ids_v5 ^9^</block>
   <block id="b8a35e66cdb2aef61b6d6df1e379eb6d" category="list-text">^9^ Ebdsv5 和 E104ids_v5 VM 可用於 Cloud Volumes ONTAP 9.18.1 及更新版本的新部署和升級。您可以將現有的 Edsv4、Edsv5 或其他 Ebdsv5 VM 類型變更或升級至 Ebdsv5。您可以將 Ebdsv5 或 Eidsv5 VM 升級至 E104ids_v5。</block>
-  <block id="2734a588d77e522c61fe0ebc740d82c8" category="list-text">^7^ Ebdsv5 和 E104ids_v5 VM 可用於 Cloud Volumes ONTAP 9.18.1 及更高版本的新部署和升級。您可以將現有的 Edsv4、Edsv5 或其他 Ebdsv5 VM 類型變更或升級至 Ebdsv5。您可以將 Ebdsv5 或 Eidsv5 VM 升級至 E104ids_v5。</block>
   <block id="9c1e913676fba2b8aed76868b26dcc89" category="paragraph">單節點系統使用 Azure Managed Disks。支援下列磁碟大小：</block>
   <block id="7da25d0bfd841afbb16233681b5b72ca" category="paragraph">Cloud Volumes ONTAP 在 Google Cloud 中既可以作為單節點系統使用，也可以作為高可用性（HA）節點對使用，以實現容錯和不間斷操作。</block>
   <block id="bd45cef377eedc42228cc5c125be0686" category="paragraph">不支援將單節點系統升級為 HA 配對。如果您想在單節點系統和 HA 配對之間切換，則需要部署新系統並將資料從現有系統複寫到新系統。</block>
@@ -881,13 +879,11 @@
   <block id="71fb3d90d5bc2f0c21c4b59bfd197d67" category="list-text">c3-standard-88、c3-standard-88-lssd ^5^</block>
   <block id="440594064d57a904b2c7fce0bdfa4a39" category="cell">平衡型持久性磁碟 ^3^、高效能（SSD）持久性磁碟 ^3^ 與標準（HDD）持久性磁碟。C3 虛擬機器僅支援 Hyperdisk 平衡型磁碟。</block>
   <block id="d60c6adcad1706add7c779a42393ec88" category="inline-link-macro">Flash Cache 支援</block>
-  <block id="60c0844205cf1310833606006fa8b6fa" category="list-text">^5^ 您可以在 Cloud Volumes ONTAP 9.18.1 及更高版本上部署新一代 C3 系列虛擬機器。c3-standard-44 和 c3-standard-88 虛擬機器及其 LSSD 變體預設支援 Google Cloud Console 中的 Tier-1 頻寬。使用 C3 虛擬機器類型，您無法向現有 Aggregate 添加磁碟，也無法切換到 C3 系列中的其他變體。有關 LSSD 變體的更多資訊，請參閱 <block ref="a3ca704cc55629e0cfb930ef958889bb" category="inline-link-macro-rx"></block>。</block>
   <block id="c24cb0b82dac3c2a02963bf23b1d0650" category="cell">平衡型持久性磁碟 ^4^、高效能（SSD）持久性磁碟 ^4^ 與標準（HDD）持久性磁碟。C3 虛擬機器僅支援 Hyperdisk 平衡型磁碟。</block>
   <block id="10c35d6a4a80bde624a9ba13f97ce24a" category="section-title">高可用性（HA）配對</block>
   <block id="fab4c4cf338a8dd4c15c662d65f36827" category="cell">基於授權的最大系統容量（磁碟 + 物件儲存）</block>
   <block id="254d5c87d5ab437395f866390ea49cd0" category="inline-link">在 Google Cloud 啟動 Cloud Volumes ONTAP</block>
   <block id="80a9aa4591dfcec1028b269fd96084b5" category="paragraph">部署符合條件的執行個體類型時、您可以啟用 _Flash Cache_ 和高寫入速度。若要啟用 8,896 位元組的較高最大傳輸單元、您必須為部署選擇 VPC-1 、 VPC-2 或 VPC-3 。較高的 MTU 可實現較高的網路處理量。如需啟動其中一項部署的詳細資訊、請參閱<block ref="958eb36238d0859ba89677740ca359aa" category="inline-link-rx"></block>。</block>
-  <block id="d076c2db8ac31c31f4b9d088a8b87a24" category="paragraph">從 Cloud Volumes ONTAP 9.18.1 開始，如果您選擇 C3 VM 的本機 SSD（LSSD）變體，Flash Cache 預設會啟用。請查看此表以了解 VM 變體及其支援的 LSSD 數量上限：</block>
   <block id="d54092cc3c2c2778d416f1225b37f056" category="cell">VM 類型</block>
   <block id="7fbb74773227f16e493c8d262749ccfc" category="cell">已連接的 LSSD 磁碟數量</block>
   <block id="e16e833ea94b9887a3dc1398681e4002" category="cell">c3-standard-4-lssd</block>
@@ -912,4 +908,22 @@
   <block id="66b93dcdc5716dedd5e7fcf8a6f2c744" category="paragraph">Cloud Volumes ONTAP 9.18.1 P1 修補程式現已可在 AWS、Azure 和 Google Cloud 中部署和升級。Console 將提示您將現有系統升級到此修補程式版本。</block>
   <block id="a9380d77cd3c45a5f15f09b231323443" category="inline-link-macro">檢視 P1 修補程式中已修正的錯誤清單</block>
   <block id="d4e91a63e862afe5d30e173965c6c4a1" category="paragraph"><block ref="eb1c958143bf6120158dde219a58c506" category="inline-link-macro-rx"></block>（需要登入 NetApp Support Site）。</block>
+  <block id="180b53d09539df4cd298ca82cb98c8bb" category="example-title">DSv2 系列</block>
+  <block id="ffe4ca59df6616b254c0040e73c39f29" category="example-title">Ebdsv5 系列</block>
+  <block id="ad3e18365947f98cd146bb09d36a6798" category="example-title">Edsv4 系列</block>
+  <block id="01fccaba70ed8fb928632a75b5d1a213" category="example-title">Edsv5 系列</block>
+  <block id="e9608387c81779c09348e6e33faf76df" category="example-title">Edsv6 系列</block>
+  <block id="567c28529cbc2d54b6f507e897297508" category="example-title">Esv3 系列</block>
+  <block id="7c7463f1a66713791639f6ac5fd233c8" category="example-title">Lsv3 系列</block>
+  <block id="34e6880c88acc332512e9f643fb56b1f" category="example-title">Edsv5 系列</block>
+  <block id="96623089d34324947cb85e45a7aa6d71" category="example-title">Edsv6 系列</block>
+  <block id="74236a30875ab4ba4eba0b2066b112a0" category="example-title">Dsv2 系列</block>
+  <block id="83ec1da92379d4aa7444743f42a48c24" category="list-text">^5^ 您可以在 Cloud Volumes ONTAP 9.18.1 及更高版本上部署新一代 C3 系列虛擬機器。c3-standard-44 和 c3-standard-88 虛擬機器及其 LSSD 變體預設支援 Google Cloud Console 中的 Tier-1 頻寬。有關 LSSD 變體的更多資訊，請參閱 <block ref="a3ca704cc55629e0cfb930ef958889bb" category="inline-link-macro-rx"></block>。</block>
+  <block id="e4dc6128b719feb8c40c1a651d390050" category="admonition">_Flash Cache_、高寫入模式和 MTU 為 8,896 是功能相關的，無法在已設定的執行個體中個別停用。</block>
+  <block id="c538e24ff658f3f0f3239b6f8d51e48f" category="paragraph">在單節點部署中，從 Cloud Volumes ONTAP 9.18.1 開始，如果您選擇 C3 VM 的本機 SSD（LSSD）變體，Flash Cache 預設會啟用。即使目標變體支援 Flash Cache，您也無法在 Cloud Volumes ONTAP 部署中切換 C3 LSSD VM 變體。</block>
+  <block id="bbbc2c55d76f069b82eb0de6bf28057d" category="paragraph">請查看下表，以了解虛擬機器變體及其支援的 LSSD 數量：</block>
+  <block id="27f7ce2af3afe3ff869adedcf68e85cc" category="section-title">9.18.1 P2（2026 年 4 月 30 日）</block>
+  <block id="3cbfcd6492053f416bf02c99b23b7630" category="paragraph">Cloud Volumes ONTAP 9.18.1 P2 修補程式現已可在 AWS、Azure 和 Google Cloud 中部署和升級。Console 將提示您將現有系統升級到此修補程式版本。</block>
+  <block id="ce5d0c77f167b881391469fc27895727" category="inline-link-macro">檢視 P2 修補程式中已修正的錯誤清單</block>
+  <block id="e4005bbac6c9dcfff8a33e8e077a64c7" category="paragraph"><block ref="4f7e8d39f7d7dbd55e211b03ab5cff07" category="inline-link-macro-rx"></block>（需要登入 NetApp Support Site）。</block>
 </blocks>
