@@ -176,7 +176,6 @@
   <block id="4d2719ea5599a5bf1a9973d3b247f959" category="section-title">不受授權限制SnapManager</block>
   <block id="c91bb6f1740b2a7b3e274deca5e32b94" category="paragraph">支援以伺服器為單位的各個伺服器授權。SnapManager Cloud Volumes ONTAP不SnapManager 支援每個儲存系統（不支援此套件）授權。</block>
   <block id="c3f5fdee9b6adb6eccff2d4c189ead12" category="section-title">不支援ONTAP 的支援功能</block>
-  <block id="534cab245a3cc0ececa966044bad6ba2" category="paragraph">下列功能Cloud Volumes ONTAP 不支援使用下列功能：</block>
   <block id="a031ea731cd3c4992b7f33bad9f72a00" category="list-text">Aggregate層級即時重複資料刪除技術</block>
   <block id="98e2e51de88bd2dae78a66fdad91936c" category="list-text">Aggregate層級背景重複資料刪除技術</block>
   <block id="5873635ff256383dcb0b47a0e49f71b1" category="list-text">磁碟維護中心</block>
@@ -926,4 +925,6 @@
   <block id="3cbfcd6492053f416bf02c99b23b7630" category="paragraph">Cloud Volumes ONTAP 9.18.1 P2 修補程式現已可在 AWS、Azure 和 Google Cloud 中部署和升級。Console 將提示您將現有系統升級到此修補程式版本。</block>
   <block id="ce5d0c77f167b881391469fc27895727" category="inline-link-macro">檢視 P2 修補程式中已修正的錯誤清單</block>
   <block id="e4005bbac6c9dcfff8a33e8e077a64c7" category="paragraph"><block ref="4f7e8d39f7d7dbd55e211b03ab5cff07" category="inline-link-macro-rx"></block>（需要登入 NetApp Support Site）。</block>
+  <block id="2f8a4700ca3941a576474070acbc2005" category="paragraph">Cloud Volumes ONTAP 不支援某些 ONTAP 功能，包括但不限於：</block>
+  <block id="a2733b935845e428d2910b4aedaf426b" category="list-text">用於加密的 Onboard Key Manager（OKM）</block>
 </blocks>
