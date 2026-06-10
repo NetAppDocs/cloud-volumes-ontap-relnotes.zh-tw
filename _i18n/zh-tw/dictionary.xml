@@ -958,4 +958,5 @@
   <block id="1b976ec3c5a29cc801abf14a5b73d976" category="list-text"><block ref="1b976ec3c5a29cc801abf14a5b73d976" category="inline-link-rx"></block></block>
   <block id="511ad3b8ad49da139e74e84deac5f108" category="inline-link">Amazon EC2 R5 執行個體</block>
   <block id="fc58e772b0e187c9acd0ead80273cfa3" category="list-text"><block ref="fc58e772b0e187c9acd0ead80273cfa3" category="inline-link-rx"></block></block>
+  <block id="d725a8f993233f84880bb4bfdd79e966" category="list-text">^2^ 僅在需要 Azure 維護控制時才使用此 VM。由於價格較高，不建議將其用於其他使用案例。使用 Isolated 執行個體類型進行 Azure 維護控制時，請確保 HA 配對中的每個 VM 在 Azure 中都有自己的 Maintenance Configuration，並錯開排程，以避免兩個 VM 同時離線。</block>
 </blocks>

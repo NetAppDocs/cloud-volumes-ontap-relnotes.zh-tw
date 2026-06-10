@@ -668,7 +668,7 @@ Cloud Volumes ONTAP 在 Azure 中既可以作為單節點系統使用，也可�
 附註：
 
 . ^1^ 使用 HA 對時， Cloud Volumes ONTAP支援這些 VM 類型的高寫入速度。您可以在部署期間或之後的任何時間從控制台啟用高速寫入。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-write-speed.html["深入瞭解如何選擇寫入速度"^] 。
-. ^2^ 僅在需要 Azure 維護控制時才建議使用此 VM。由於價格較高、因此不建議用於任何其他使用案例。
+. ^2^ 僅在需要 Azure 維護控制時才使用此 VM。由於價格較高，不建議將其用於其他使用案例。使用 Isolated 執行個體類型進行 Azure 維護控制時，請確保 HA 配對中的每個 VM 在 Azure 中都有自己的 Maintenance Configuration，並錯開排程，以避免兩個 VM 同時離線。
 . ^3^ 從ONTAP版本 9.13.1 開始支援多個可用區域。
 . ^4^ 從ONTAP版本 9.14.1 RC1 開始支援多個可用區域。
 . ^5^ 此 VM 類型包括本機 NVMe 存儲， Cloud Volumes ONTAP將其用作_Flash Cache_。Flash Cache 可透過即時智慧快取來加速資料存取、快取最近讀取的使用者資料和 NetApp 中繼資料。它能有效處理隨機讀取密集的工作負載、包括資料庫、電子郵件和檔案服務。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-flash-cache.html["深入瞭解"^]。
@@ -823,7 +823,7 @@ Cloud Volumes ONTAP 在 Azure 中既可以作為單節點系統使用，也可�
 附註：
 
 . ^1^ 使用 HA 對時， Cloud Volumes ONTAP支援這些 VM 類型的高寫入速度。您可以在部署期間或之後的任何時間從控制台啟用高速寫入。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-write-speed.html["深入瞭解如何選擇寫入速度"^] 。
-. ^2^ 僅在需要 Azure 維護控制時才建議使用此 VM。由於價格較高、因此不建議用於任何其他使用案例。
+. ^2^ 僅在需要 Azure 維護控制時才使用此 VM。由於價格較高，不建議將其用於其他使用案例。使用 Isolated 執行個體類型進行 Azure 維護控制時，請確保 HA 配對中的每個 VM 在 Azure 中都有自己的 Maintenance Configuration，並錯開排程，以避免兩個 VM 同時離線。
 . ^3^ 這些 VM 類型僅支援在共用託管磁碟上執行的單一可用區域配置中的 HA 對。
 . ^4^ 這些 VM 類型支援在共用託管磁碟上執行的單一可用區和多可用區配置中的 HA 對。對於 LS_v3 VM 類型、 ONTAP 9.13.1 版開始提供多個可用性區域支援。對於 Eds_v5 VM 類型、多個可用性區域支援從 ONTAP 9.14.1 RC1 版開始。
 . ^5^ 此 VM 類型包括本機 NVMe 存儲， Cloud Volumes ONTAP將其用作_Flash Cache_。Flash Cache 可透過即時智慧快取來加速資料存取、快取最近讀取的使用者資料和 NetApp 中繼資料。它能有效處理隨機讀取密集的工作負載、包括資料庫、電子郵件和檔案服務。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-flash-cache.html["深入瞭解"^]。
