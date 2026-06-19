@@ -846,10 +846,8 @@
   <block id="3b7cc07efa81c4ceb17419c4584c144f" category="cell">c3-standard-22</block>
   <block id="578ae146a454ae8eb958e84ae9263447" category="cell">c3-standard-44</block>
   <block id="ed861c7159dd25edfdb3756b850c62c0" category="cell">c3-standard-88</block>
-  <block id="95ff4bf55c71eae9f06c5b072249ba20" category="paragraph">Cloud Volumes ONTAP 9.18.1 正式版現已可在 Amazon Web Services（AWS）、Microsoft Azure 和 Google Cloud 中部署和升級。</block>
   <block id="83462a4045d14d58d15d9f74015dd308" category="paragraph">您可以從 AWS、Azure 和 Google Cloud 上的 9.17.1 P1 及更高版本升級到 Cloud Volumes ONTAP 9.18.1。Console 將提示您將符合條件的 Cloud Volumes ONTAP 系統升級至此版本。</block>
   <block id="e819c4410e5eb8f68db481717f672a21" category="section-title">9.18.1 P1（2026 年 3 月 31 日）</block>
-  <block id="66b93dcdc5716dedd5e7fcf8a6f2c744" category="paragraph">Cloud Volumes ONTAP 9.18.1 P1 修補程式現已可在 AWS、Azure 和 Google Cloud 中部署和升級。Console 將提示您將現有系統升級到此修補程式版本。</block>
   <block id="a9380d77cd3c45a5f15f09b231323443" category="inline-link-macro">檢視 P1 修補程式中已修正的錯誤清單</block>
   <block id="d4e91a63e862afe5d30e173965c6c4a1" category="paragraph"><block ref="eb1c958143bf6120158dde219a58c506" category="inline-link-macro-rx"></block>（需要登入 NetApp Support Site）。</block>
   <block id="180b53d09539df4cd298ca82cb98c8bb" category="example-title">DSv2 系列</block>
@@ -959,4 +957,9 @@
   <block id="511ad3b8ad49da139e74e84deac5f108" category="inline-link">Amazon EC2 R5 執行個體</block>
   <block id="fc58e772b0e187c9acd0ead80273cfa3" category="list-text"><block ref="fc58e772b0e187c9acd0ead80273cfa3" category="inline-link-rx"></block></block>
   <block id="d725a8f993233f84880bb4bfdd79e966" category="list-text">^2^ 僅在需要 Azure 維護控制時才使用此 VM。由於價格較高，不建議將其用於其他使用案例。使用 Isolated 執行個體類型進行 Azure 維護控制時，請確保 HA 配對中的每個 VM 在 Azure 中都有自己的 Maintenance Configuration，並錯開排程，以避免兩個 VM 同時離線。</block>
+  <block id="e4050cfabb278e71586e11c10cffa6af" category="admonition">對於 AWS，Cloud Volumes ONTAP 9.18.1 P2 是部署和升級的標準版本。任何低於 9.18.1 的版本或修補程式均不受支援。</block>
+  <block id="8f43580fc31dbb2410e11fce972a5f32" category="paragraph">Cloud Volumes ONTAP 9.18.1 P1 修補程式現已可在 Azure 和 Google Cloud 中部署和升級。主控台將提示您將現有系統升級至此修補程式版本。</block>
+  <block id="548040f8ba001121a2a79ff7a79c6fec" category="admonition">此版本無法在 AWS 中部署和升級。</block>
+  <block id="4784f30782ad7a581149233cf75620d5" category="paragraph">Cloud Volumes ONTAP 9.18.1 正式版現已可在 Microsoft Azure 和 Google Cloud 中部署和升級。</block>
+  <block id="2744e632b0c00bba17d3f5ded4a007b0" category="admonition">此版本無法在 Amazon Web Services (AWS) 中部署和升級。</block>
 </blocks>
