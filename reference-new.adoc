@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: reference-new.html 
 keywords: 'what"s new, new, features, release notes, enhancements' 
-summary: Cloud Volumes ONTAP 9.18.1 包含一項新的增強功能。 
+summary: Cloud Volumes ONTAP 9.19.1 包含一項新的增強功能。 
 ---
-= Cloud Volumes ONTAP 9.18.1 的新增功能
+= Cloud Volumes ONTAP 9.19.1 的新增功能
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,49 +14,27 @@ summary: Cloud Volumes ONTAP 9.18.1 包含一項新的增強功能。
 
 
 [role="lead"]
-現在您可以部署和升級到 Cloud Volumes ONTAP 9.18.1。您可以在 NetApp Console 中查看此版本的基本版本以及可用於部署和升級的最新修補程式版本。
+現在您可以部署和升級到 Cloud Volumes ONTAP 9.19.1。您可以在 NetApp Console 中查看此版本的基本版本以及可用於部署和升級的最新修補程式版本。
 
 若要了解 Cloud Volumes ONTAP 最新版本 NetApp Console 中引入的 Cloud Volumes ONTAP 功能，請參閱新增功能 https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/whats-new.html["Cloud Volumes ONTAP"^]。
 
 
 
-== 9.18.1 P2（2026 年 4 月 30 日）
+[[9-19-1-rc-13-july-2026]]
+== 9.19.1 RC（2026 年 7 月 13 日）
 
-Cloud Volumes ONTAP 9.18.1 P2 修補程式現已可在 AWS、Azure 和 Google Cloud 中部署和升級。Console 將提示您將現有系統升級到此修補程式版本。
-
-
-NOTE: 對於 AWS，Cloud Volumes ONTAP 9.18.1 P2 是部署和升級的標準版本。任何低於 9.18.1 的版本或修補程式均不受支援。
-
-link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.18.1P2["檢視 P2 修補程式中已修正的錯誤清單"^]（需要登入 NetApp Support Site）。
+Cloud Volumes ONTAP 9.19.1 版本候選版 (RC) 現已發布，僅限在 Google Cloud 中部署和升級。此版本暫不支援在 Amazon Web Services (AWS) 和 Microsoft Azure (Azure) 中部署和升級。
 
 
 
-== 9.18.1 P1（2026 年 3 月 31 日）
-
-Cloud Volumes ONTAP 9.18.1 P1 修補程式現已可在 Azure 和 Google Cloud 中部署和升級。主控台將提示您將現有系統升級至此修補程式版本。
-
-
-NOTE: 此版本無法在 AWS 中部署和升級。
-
-link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.18.1P1["檢視 P1 修補程式中已修正的錯誤清單"^]（需要登入 NetApp Support Site）。
-
-
-
-== 9.18.1 GA（2026 年 2 月 10 日）
-
-Cloud Volumes ONTAP 9.18.1 正式版現已可在 Microsoft Azure 和 Google Cloud 中部署和升級。
-
-
-NOTE: 此版本無法在 Amazon Web Services (AWS) 中部署和升級。
-
-
-
+[[upgrade-notes]]
 == 升級附註
 
 請閱讀這些附註、深入瞭解升級至此版本的相關資訊。
 
 
 
+[[how-to-upgrade]]
 === 如何升級
 
 Cloud Volumes ONTAP的升級必須透過控制台完成。您不應使用系統管理員或 CLI 升級Cloud Volumes ONTAP 。這樣做會影響系統穩定性。
@@ -65,12 +43,17 @@ link:http://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap
 
 
 
+[[supported-upgrade-path]]
 === 支援的升級途徑
 
-您可以從 AWS、Azure 和 Google Cloud 上的 9.17.1 P1 及更高版本升級到 Cloud Volumes ONTAP 9.18.1。Console 將提示您將符合條件的 Cloud Volumes ONTAP 系統升級至此版本。
+您只能在 Google Cloud 中將 Cloud Volumes ONTAP 從 9.18.1 升級到 9.19.1 RC。Console 會提示您將符合條件的 Cloud Volumes ONTAP 系統升級至此版本。
+
+
+NOTE: 在 AWS 和 Azure 中，系統不會提示您升級至 9.19.1 RC，因為此版本對這些雲端供應商而言無法進行部署和升級。
 
 
 
+[[downtime]]
 === 停機
 
 * 單節點系統的升級會使系統離線最多 25 分鐘，在此期間 I/O 會中斷。

@@ -18,6 +18,7 @@ AWS支援多Cloud Volumes ONTAP 種支援的支援功能。
 
 
 
+[[supported-number-of-nodes]]
 == 支援的節點數
 
 Cloud Volumes ONTAP 在 AWS 中既可以作為單節點系統使用，也可以作為高可用性（HA）節點對使用，以實現容錯和不間斷操作。
@@ -26,12 +27,14 @@ Cloud Volumes ONTAP 在 AWS 中既可以作為單節點系統使用，也可以�
 
 
 
+[[supported-storage]]
 == 支援的儲存設備
 
 支援多種EBS磁碟類型、以及S3物件儲存、以利資料分層。Cloud Volumes ONTAP最大儲存容量取決於您選擇的授權。
 
 
 
+[[storage-support-by-license]]
 === 依授權提供儲存支援
 
 每個授權都支援不同的最大系統容量。最大系統容量包括磁碟型儲存設備、以及用於資料分層的物件式儲存設備。NetApp不支援超過此限制。
@@ -532,6 +535,7 @@ AWS 本機區域中的這些執行個體類型不支援高寫入速度。
 ====
 
 
+[[support-for-flash-cache-and-high-write-speed]]
 === 支援 Flash Cache 和高寫入速度
 
 下表列出哪些支援的 EC2 執行個體類型支援 Flash Cache 和高寫入速度。
@@ -662,6 +666,7 @@ pass:[*] Flash Cache 支援 m6id.xlarge、m6id.2xlarge、m6idn.xlarge 和 m6idn.
 
 
 
+[[supported-disk-sizes]]
 === 支援的磁碟大小
 
 在 AWS 中、 Aggregate 最多可包含 6 個大小相同的磁碟。但是如果您的組態支援Amazon EBS彈性Volume功能、則Aggregate最多可包含8個磁碟。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-aws-elastic-volumes.html["深入瞭解彈性磁碟區的支援"^]
@@ -704,6 +709,7 @@ pass:[*] Flash Cache 支援 m6id.xlarge、m6id.2xlarge、m6idn.xlarge 和 m6idn.
 |===
 
 
+[[c4-m4-and-r4-instances-no-longer-supported]]
 === 不再支援c4、m4和r4執行個體
 
 Cloud Volumes ONTAP 已不再支援 AWS 中的 c4、m4 和 r4 EC2 執行個體類型。
@@ -721,12 +727,14 @@ link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-change-ec2-in
 
 
 
+[[supported-regions]]
 == 支援的地區
 
 如需 AWS 區域支援 https://bluexp.netapp.com/cloud-volumes-global-regions["Cloud Volumes全球區域"^]、請參閱。
 
 
 
+[[related-information]]
 == 相關資訊
 
 * https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-types.html["Amazon EC2 執行個體類型"^]

@@ -18,6 +18,7 @@ Azure支援多Cloud Volumes ONTAP 種支援的支援功能。
 
 
 
+[[supported-configurations-by-license]]
 == 依授權支援的組態
 
 Cloud Volumes ONTAP 在 Azure 中既可以作為單節點系統使用，也可以作為高可用性（HA）節點對使用，以實現容錯和不中斷營運。
@@ -30,6 +31,7 @@ Cloud Volumes ONTAP 在 Azure 中既可以作為單節點系統使用，也可�
 
 
 
+[[single-node-systems]]
 === 單節點系統
 
 在 Azure 中將 Cloud Volumes ONTAP 部署為單一節點系統時、您可以選擇下列容量型或節點型授權組態。
@@ -514,6 +516,7 @@ Cloud Volumes ONTAP 在 Azure 中既可以作為單節點系統使用，也可�
 ====
 
 
+[[ha-pairs]]
 === HA 配對
 
 在Cloud Volumes ONTAP Azure中部署以HA配對形式部署的時、您可以從下列組態中進行選擇。
@@ -1110,12 +1113,14 @@ NOTE: Azure 頁面 Blobs 不支援任何新部署。
 ====
 
 
+[[supported-disk-sizes]]
 == 支援的磁碟大小
 
 在Azure中、Aggregate最多可包含12個相同類型和大小的磁碟。
 
 
 
+[[single-node-systems]]
 === 單節點系統
 
 單節點系統使用 Azure Managed Disks。支援下列磁碟大小：
@@ -1158,6 +1163,7 @@ NOTE: Azure 頁面 Blobs 不支援任何新部署。
 |===
 
 
+[[ha-pairs]]
 === HA 配對
 
 HA 配對使用 Azure 託管磁碟。支援下列磁碟類型和大小。
@@ -1177,6 +1183,7 @@ HA 配對使用 Azure 託管磁碟。支援下列磁碟類型和大小。
 
 
 
+[[supported-regions]]
 == 支援的地區
 
 如需 Azure 區域支援 https://bluexp.netapp.com/cloud-volumes-global-regions["Cloud Volumes全球區域"^]、請參閱。

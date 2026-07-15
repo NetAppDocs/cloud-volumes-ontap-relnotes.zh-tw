@@ -18,12 +18,14 @@ summary: 在Azure中、由於儲存組態限制、因此可提供可靠的作業
 
 
 
+[[maximum-system-capacity-by-license]]
 == 依授權提供的最大系統容量
 
 整個系統的最大容量Cloud Volumes ONTAP 取決於其授權。最大系統容量包括磁碟型儲存設備、以及用於資料分層的物件式儲存設備。
 
 NetApp不支援超出系統容量限制。如果達到許可容量限制， NetApp控制台將顯示「需要採取措施」訊息並阻止您新增更多磁碟。
 
+[[cap-license-azure]]
 .基於容量的許可證的容量限制
 透過基於容量的許可，每個Cloud Volumes ONTAP系統都支援分層到物件儲存。總分層容量可以擴展到雲端提供者的儲存桶限制。雖然許可證沒有施加容量限制，但您應該遵循 https://www.netapp.com/pdf.html?item=/media/17239-tr-4598.pdf["FabricPool最佳實踐"^]確保在配置和管理分層時實現最佳效能、可靠性和成本效率。請參閱 https://learn.microsoft.com/en-us/azure/storage/common/scalability-targets-standard-account["託管磁碟的 Azure 文件"^]和 https://learn.microsoft.com/en-us/azure/storage/blobs/scalability-targets["Azure Blob 儲存體文檔"^]。
 
@@ -54,6 +56,7 @@ NetApp不支援超出系統容量限制。如果達到許可容量限制， NetA
 
 
 
+[[aggregate-limits]]
 == Aggregate限制
 
 使用Azure儲存設備做為磁碟、並將其分組為_aggregate。Cloud Volumes ONTAPAggregate可為磁碟區提供儲存設備。
@@ -83,6 +86,7 @@ NetApp不支援超出系統容量限制。如果達到許可容量限制， NetA
 
 
 
+[[disk-and-tiering-limits-by-vm-size]]
 == 磁碟和分層限制、依VM大小而定
 
 容量限制因虛擬機器大小和系統類型（單節點或 HA 對）而異。
@@ -101,6 +105,7 @@ NetApp不支援超出系統容量限制。如果達到許可容量限制， NetA
 
 
 
+[[limits-for-different-deployment-modes-of-capacity-based-licensing]]
 === 基於容量的授權不同部署模式的限制
 
 以下磁碟限制適用於使用基於容量的許可包的Cloud Volumes ONTAP系統。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html["深入瞭Cloud Volumes ONTAP 解功能多樣的授權選項"^] 。
@@ -331,6 +336,7 @@ NOTE: 有關單節點、單一可用區域中具有頁 blob 的 HA 對以及單�
 |===
 
 
+[[limits-for-different-deployment-modes-of-node-based-licensing]]
 === 基於節點的授權的不同部署模式的限制
 
 以下磁碟限制適用於使用基於節點的許可的Cloud Volumes ONTAP系統。基於節點的許可是上一代模型，可讓您按節點許可Cloud Volumes ONTAP 。現有客戶仍可獲得基於節點的授權。
@@ -618,6 +624,7 @@ HA配對有兩種組態類型：頁面blob和多個可用度區域。每個組�
 ====
 
 
+[[storage-vm-limits]]
 == 儲存VM限制
 
 有些組態可讓您建立更多的儲存VM（SVM）以Cloud Volumes ONTAP 供支援。
@@ -663,6 +670,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-managing-svms-azur
 
 
 
+[[file-and-volume-limits]]
 == 檔案與Volume限制
 
 [cols="22,22,56"]
@@ -705,6 +713,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-managing-svms-azur
 
 
 
+[[iscsi-storage-limits]]
 == iSCSI儲存限制
 
 [cols="3*"]

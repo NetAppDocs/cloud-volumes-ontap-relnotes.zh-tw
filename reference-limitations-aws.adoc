@@ -18,6 +18,7 @@ summary: 這些已知的限制僅適用於Cloud Volumes ONTAP Amazon Web Service
 
 
 
+[[aws-outpost-limitations]]
 == AWS Outpost限制
 
 如果您有 AWS Outpost，則可以透過在部署期間選擇 Outpost VPC 在該 Outpost 中部署Cloud Volumes ONTAP 。體驗與駐留在 AWS 中的任何其他 VPC 相同。請注意，您需要先在 AWS Outpost 中部署控制台代理程式。
@@ -31,6 +32,7 @@ summary: 這些已知的限制僅適用於Cloud Volumes ONTAP Amazon Web Service
 
 
 
+[[flash-cache-limitations]]
 == Flash Cache限制
 
 C5D和R5D執行個體類型包括本機NVMe儲存設備、Cloud Volumes ONTAP 可做為_Flash Cache。請注意下列限制：
@@ -44,12 +46,14 @@ C5D和R5D執行個體類型包括本機NVMe儲存設備、Cloud Volumes ONTAP �
 
 
 
+[[false-alarms-reported-by-amazon-cloudwatch]]
 == Amazon CloudWatch回報的誤報
 
 當閒置時、不釋放CPU Cloud Volumes ONTAP https://aws.amazon.com/cloudwatch/["Amazon CloudWatch"^] 可針對EC2執行個體回報高CPU警告、因為它能看到100%的使用率。您可以忽略此警報。使用「flex統計 資料」命令可顯示CPU的實際使用量。ONTAP
 
 
 
+[[cloud-volumes-ontap-ha-pairs-do-not-support-immediate-storage-giveback]]
 == 不支援立即儲存恢復的部分Cloud Volumes ONTAP
 
 節點重新開機後、合作夥伴必須先同步資料、才能退回儲存設備。重新同步資料所需的時間取決於節點當機時用戶端寫入的資料量、以及恢復期間的資料寫入速度。
