@@ -16,7 +16,7 @@ summary: Cloud Volumes ONTAP 9.19.1 包含一項新的增強功能。
 [role="lead"]
 現在您可以部署和升級到 Cloud Volumes ONTAP 9.19.1。您可以在 NetApp Console 中查看此版本的基本版本以及可用於部署和升級的最新修補程式版本。
 
-若要了解 Cloud Volumes ONTAP 最新版本 NetApp Console 中引入的 Cloud Volumes ONTAP 功能，請參閱新增功能 https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/whats-new.html["Cloud Volumes ONTAP"^]。
+要進一步瞭解 Cloud Volumes ONTAP 的功能、支援的組態、限制等資訊，請參閱 https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/index.html["Cloud Volumes ONTAP 文檔"^]。
 
 
 

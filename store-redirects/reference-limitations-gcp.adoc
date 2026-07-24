@@ -1,0 +1,8 @@
+---
+permalink: reference-limitations-gcp.html 
+redirect: storage-management-cloud-volumes-ontap/reference-limitations-gcp.html 
+---
+= 
+:allow-uri-read: 
+
+

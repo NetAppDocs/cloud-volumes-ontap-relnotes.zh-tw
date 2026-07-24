@@ -1,0 +1,8 @@
+---
+permalink: reference-limitations-aws.html 
+redirect: storage-management-cloud-volumes-ontap/reference-limitations-aws.html 
+---
+= 
+:allow-uri-read: 
+
+

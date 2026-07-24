@@ -62,38 +62,6 @@ sidebar:
     url: "/index.html"
   - title: 新增功能
     url: "/reference-new.html"
-  - title: 授權總覽
-    url: "/concept-licensing.html"
-  - title: 支援的組態
-    entries:
-    - title: AWS
-      url: "/reference-configs-aws.html"
-    - title: Azure
-      url: "/reference-configs-azure.html"
-    - title: Google Cloud
-      url: "/reference-configs-gcp.html"
-  - title: 儲存限制
-    entries:
-    - title: AWS
-      url: "/reference-limits-aws.html"
-    - title: Azure
-      url: "/reference-limits-azure.html"
-    - title: Google Cloud
-      url: "/reference-limits-gcp.html"
-  - title: 已知問題
-    url: "/reference-issues.html"
-  - title: 已知限制
-    entries:
-    - title: 常見限制
-      url: "/reference-limitations.html"
-    - title: AWS的限制
-      url: "/reference-limitations-aws.html"
-    - title: Azure的限制
-      url: "/reference-limitations-azure.html"
-    - title: Google Cloud的限制
-      url: "/reference-limitations-gcp.html"
-  - title: 雲端供應商整合
-    url: "/reference-provider-integrations.html"
   - title: 法律聲明
     url: "/legal-notices.html"
 product-family:

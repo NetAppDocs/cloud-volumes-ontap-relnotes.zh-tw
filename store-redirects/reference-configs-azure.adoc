@@ -1,0 +1,8 @@
+---
+permalink: reference-configs-azure.html 
+redirect: storage-management-cloud-volumes-ontap/reference-configs-azure.html 
+---
+= 
+:allow-uri-read: 
+
+

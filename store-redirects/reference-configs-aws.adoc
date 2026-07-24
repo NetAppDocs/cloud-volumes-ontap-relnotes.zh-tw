@@ -1,0 +1,8 @@
+---
+permalink: reference-configs-aws.html 
+redirect: storage-management-cloud-volumes-ontap/reference-configs-aws.html 
+---
+= 
+:allow-uri-read: 
+
+
