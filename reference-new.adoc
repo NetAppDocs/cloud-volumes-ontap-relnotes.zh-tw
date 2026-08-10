@@ -20,10 +20,10 @@ summary: Cloud Volumes ONTAP 9.19.1 包含一項新的增強功能。
 
 
 
-[[9-19-1-rc-13-july-2026]]
-== 9.19.1 RC（2026 年 7 月 13 日）
+[[9-19-1-10-august-2026]]
+== 9.19.1（2026年8月10日）
 
-Cloud Volumes ONTAP 9.19.1 版本候選版 (RC) 現已發布，僅限在 Google Cloud 中部署和升級。此版本暫不支援在 Amazon Web Services (AWS) 和 Microsoft Azure (Azure) 中部署和升級。
+Cloud Volumes ONTAP 9.19.1 正式版 (GA) 現已發布，目前僅支援在 Amazon Web Services (AWS) 和 Google Cloud 上部署和升級。此版本不支援在 Microsoft Azure (Azure) 上部署和升級。
 
 
 
@@ -39,17 +39,17 @@ Cloud Volumes ONTAP 9.19.1 版本候選版 (RC) 現已發布，僅限在 Google 
 
 Cloud Volumes ONTAP的升級必須透過控制台完成。您不應使用系統管理員或 CLI 升級Cloud Volumes ONTAP 。這樣做會影響系統穩定性。
 
-link:http://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html["了解控制台通知您時如何升級"^] 。
+https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/task-updating-ontap-cloud.html["了解控制台通知您時如何升級"^]。
 
 
 
 [[supported-upgrade-path]]
 === 支援的升級途徑
 
-您只能在 Google Cloud 中將 Cloud Volumes ONTAP 從 9.18.1 升級到 9.19.1 RC。Console 會提示您將符合條件的 Cloud Volumes ONTAP 系統升級至此版本。
+您可以在 AWS 和 Google Cloud 中將 Cloud Volumes ONTAP 從 9.18.1 升級到 9.19.1。主控台將提示您將符合條件的 Cloud Volumes ONTAP 系統升級至此版本。
 
 
-NOTE: 在 AWS 和 Azure 中，系統不會提示您升級至 9.19.1 RC，因為此版本對這些雲端供應商而言無法進行部署和升級。
+NOTE: 在 Azure 中，不會提示您升級至 9.19.1，因為此版本在該雲端供應商中無法部署和升級。
 
 
 
