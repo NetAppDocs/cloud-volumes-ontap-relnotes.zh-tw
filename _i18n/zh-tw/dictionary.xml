@@ -74,4 +74,5 @@
   <block id="779179d87fedb0f1d19bc08238c479a7" category="paragraph"><block ref="675aaf3b5e84a93fbce00d949a5f961a" category="inline-link-rx"></block>。</block>
   <block id="1ba2a5867ae8351321f6970817584236" category="paragraph">您可以在 AWS 和 Google Cloud 中將 Cloud Volumes ONTAP 從 9.18.1 升級到 9.19.1。主控台將提示您將符合條件的 Cloud Volumes ONTAP 系統升級至此版本。</block>
   <block id="2962b8222cacec8cb18f5c8cdf1f04eb" category="admonition">在 Azure 中，不會提示您升級至 9.19.1，因為此版本在該雲端供應商中無法部署和升級。</block>
+  <block id="6b9b9e55102bb13f1ca535f28c0d3a98" category="doc">Cloud Volumes ONTAP 的法律聲明</block>
 </blocks>
