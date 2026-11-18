@@ -74,4 +74,8 @@
   <block id="00305f14a5070c1c507692101e1b5f2a" category="section-title">9.19.1 GA</block>
   <block id="5feeec301b3ad963361e2c7b26b8036f" category="paragraph">Cloud Volumes ONTAP 9.19.1 正式版（GA）現已可在 Amazon Web Services（AWS）、Microsoft Azure（Azure）和 Google Cloud 中部署和升級。</block>
   <block id="83b5c85b7b7c82ae7b0883b1a1e83be7" category="paragraph">您可以在 AWS、Azure 和 Google Cloud 上將 Cloud Volumes ONTAP 從 9.18.1 升級到 9.19.1。主控台將提示您將符合條件的 Cloud Volumes ONTAP 系統升級至此版本。</block>
+  <block id="5bd6b67c0bead7d1ad29ad6605d95760" category="section-title">9.19.1 P4（2026年11月12日）</block>
+  <block id="9c7c756aa868d5acfe5a496bcd456ab0" category="paragraph">Cloud Volumes ONTAP 9.19.1 P4 修補程式現已可在 Amazon Web Services （AWS）、Microsoft Azure （Azure） 和 Google Cloud 上部署和升級。主控台將提示您將現有系統升級至此修補程式版本。</block>
+  <block id="cae74b75cb879fa6011c4bc1e9acafed" category="inline-link-macro">檢視 P4 修補程式中已修正的錯誤清單</block>
+  <block id="35eeb65b2fbaa6fc7ec444d614c24f86" category="paragraph"><block ref="85e449d1926faed28bcf6240023bd25a" category="inline-link-macro-rx"></block>（需要登入 NetApp Support Site）。</block>
 </blocks>
